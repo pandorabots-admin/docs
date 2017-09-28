@@ -4,6 +4,11 @@
 
 * [About Pandorabots](README.md)
 * [Feature Comparison ](feature-comparison.md)
+* [FAQ](faq.md)
+  * [AIML](faq.md#AIML)
+  * [API](faq.md#API)
+  * [Bots](faq.md#Bots)
+  * [Integrations](faq.md#Integrations)
 
 ## AIML
 

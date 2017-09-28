@@ -1,3 +1,8 @@
-# My Awesome API
+# About the Pandorabots API
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+The Pandorabots API allows you to integrate our bot hosting service and natural language processing engine into your own application.
+
+The current offering allows you to create a bot, upload files, compile, talk to a bot \(in a variety of ways\), and delete a bot.
+
+Please take some time to read over the documentation below.
+

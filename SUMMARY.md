@@ -11,8 +11,8 @@
   * [Integrations](#integrations)
   * [Limits](#limits)
   * [Pricing](#pricing)
-  * Privacy, Security & Legal
-  * User Interface
+  * [Privacy, Security & Legal](#privacy-security-legal)
+  * [User Interface](#user-interface)
 
 ## AIML
 

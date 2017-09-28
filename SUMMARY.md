@@ -2,9 +2,8 @@
 
 ## PLATFORM OVERVIEW
 
-* [Introduction](README.md)
-* [About Pandorabots](about-pandorabots.md)
-* About Chatbots
+* [About Pandorabots](README.md)
+* [About Chatbots](about-chatbots.md)
 * Feature Comparison 
 
 ## AIML
@@ -22,9 +21,9 @@
 ## API REFERENCE
 
 * [API Basics](api-basics.md)
-* [Command Line Interface](command-line-interface.md)
-* [SDKs](sdks.md)
 * [Methods](methods.md)
   * [X1](methods/x1.md)
   * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
+* [Command Line Interface](command-line-interface.md)
+* [SDKs](sdks.md)
 

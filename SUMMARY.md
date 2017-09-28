@@ -2,14 +2,13 @@
 
 ## Platform Overview
 
-* [API Basics](README.md)
-  * Test Nest
-* [Command Line Interface](command-line-interface.md)
-* [SDKs](sdks.md)
+* About Pandorabots
+* About Chatbots
+* Feature Comparison 
 
 ## AIML
 
-* AIML Basics
+* [AIML Basics](aiml/aiml-basics.md)
 * AIML Reference
 * AIML Libraries
 

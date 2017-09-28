@@ -8,7 +8,8 @@
 ## AIML
 
 * [AIML Basics](aiml/aiml-basics.md)
-* AIML Reference
+* [AIML Reference](aiml/aiml-reference.md)
+  * aiml 
 * AIML Libraries
 
 ## BUILDING BOTS
@@ -25,4 +26,6 @@
   * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
+
+
 

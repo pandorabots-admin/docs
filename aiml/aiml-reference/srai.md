@@ -1,6 +1,6 @@
 ### &lt;srai&gt; {#srai}
 
-The_srai element_allows your bot to recursively call categories after transforming the user’s input. So you can define a template that calls another category. The acronym “srai” has no official meaning, but is sometimes defined as_symbolic reduction_or_symbolic recursion_.
+The_srai element\_allows your bot to recursively call categories after transforming the user’s input. So you can define a template that calls another category. The acronym “srai” has no official meaning, but is sometimes defined as\_symbolic reduction\_or\_symbolic recursion_.
 
 This has a wide range of uses:
 
@@ -17,158 +17,39 @@ This has a wide range of uses:
 The most typical use case of the srai element is to “reduce” an input by removing unecessary words, or by translating the input in to a shorter, more concise version.
 
 ```
-<
-category
->
-<
-pattern
->
-HELLO GOOD DAY
-<
-/pattern
->
-<
-template
->
-<
-srai
->
-HI
-<
-/srai
->
-<
-/template
->
-<
-/category
->
-<
-category
->
-<
-pattern
->
-BONJOUR
-<
-/pattern
->
-<
-template
->
-<
-srai
->
-HI
-<
-/srai
->
-<
-/template
->
-<
-/category
->
-<
-category
->
-<
-pattern
->
-GUTEN TAG
-<
-/pattern
->
-<
-template
->
-<
-srai
->
-HI
-<
-/srai
->
-<
-/template
->
-<
-/category
->
-<
-category
->
-<
-pattern
->
-HI
-<
-/pattern
->
-<
-template
->
-Hello there!
-<
-/template
->
-<
-/category
->
+<category>
+<pattern>HELLO GOOD DAY</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category>
+<pattern>BONJOUR</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category>
+<pattern>GUTEN TAG</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category>
+<pattern>HI</pattern>
+<template>Hello there!</template>
+</category>     
 ```
 
 In the case that the user’s input is “Hello good day,” “Bonjour,” or “Guten Tag,” the first three categories will recurse, and give the bot a new input “HI”. This will then match the fourth category, returning its response to the user.
 
 ```
-<
-category
->
-<
-pattern
->
-I SEE NOW THAT YOU ARE *
-<
-/pattern
->
-<
-template
->
-<
-srai
->
-YOU ARE 
-<
-star/
->
-<
-/srai
->
-<
-/template
->
-<
-/category
->
-<
-category
->
-<
-pattern
->
-YOU ARE A ROBOT
-<
-/pattern
->
-<
-template
->
-Yes I am!
-<
-/template
->
-<
-/category
->
+<category>
+<pattern>I SEE NOW THAT YOU ARE *</pattern>
+<template><srai>YOU ARE <star/></srai></template>
+</category>
+
+<category>
+<pattern>YOU ARE A ROBOT</pattern>
+<template>Yes I am!</template>
+</category>
 ```
 
 Removing unnecessary words from the input is another way to develop reductions. Reductions make writing AIML and adding to your bot a much more enjoyable process! The more reductions you have, the better your bot will be at providing relevants responses.
@@ -178,38 +59,10 @@ Removing unnecessary words from the input is another way to develop reductions. 
 Synonyms can be addressed using`<srai>`.
 
 ```
-<
-category
->
-<
-pattern
->
- _ DAD *
-<
-/pattern
->
-<
-template
->
-<
-srai
->
-<
-star/
->
- FATHER 
-<
-star index="2"/
->
-<
-/srai
->
-<
-/template
->
-<
-/category
->
+<category>
+<pattern> _ DAD *</pattern>
+<template><srai><star/> FATHER <star index="2"/></srai></template>
+</category>
 ```
 
 Anytime the user input contains the word “dad”, the bot will replace it with “father” and recurse using the new input. The benefit to this technique is to reduce categories. For instance, Thesaurus.com lists 52 synonyms for the word “good”. To account for this, you would need 52 additional categories for every one that contains the word “good”. If your bot has 100 patterns that contain the word “good”, that is 5200 additional categories you would have to write. Using the synonyms technique, you can reduce the number to just 52. You can reduce that down to just 1 by using a[set](http://docs.pandorabots.com/aiml/srai/set.md)of synonyms!
@@ -221,58 +74,15 @@ NOTE: once a word has been defined as a synonym, you cannot use it in patterns. 
 People are bad at spelling and typing, which may cause your bot to fail when trying to find a match. You can use`<srai>`to account for common spelling mistakes, or colloquialisms, such as the following:
 
 ```
-<
-category
->
-<
-pattern
->
-HOW DO I SING UP
-<
-/pattern
->
-<
-template
->
-<
-srai
->
-HOW DO I SIGN UP
-<
-/srai
->
-<
-/template
->
-<
-/category
->
-<
-category
->
-<
-pattern
->
-HOW R U
-<
-/pattern
->
-<
-template
->
-<
-srai
->
-HOW ARE YOU
-<
-/srai
->
-<
-/template
->
-<
-/category
->
+<category>
+<pattern>HOW DO I SING UP</pattern>
+<template><srai>HOW DO I SIGN UP</srai></template>
+</category>
+
+<category>
+<pattern>HOW R U</pattern>
+<template><srai>HOW ARE YOU</srai></template>
+</category>
 ```
 
 Note, spelling errors and synonyms can also be handling using[normalization](http://docs.pandorabots.com/tutorials/substitutions-and-sentence-splitting/).
@@ -282,33 +92,10 @@ Note, spelling errors and synonyms can also be handling using[normalization](htt
 The previous examples of`<srai>`returned no text of their own. Your template, however, can return both text and`<srai>`tags.
 
 ```
-<
-category
->
-<
-pattern
->
-HOWDY
-<
-/pattern
->
-<
-template
->
-<
-srai
->
-HI
-<
-/srai
->
- Are you a cowboy?
-<
-/template
->
-<
-/category
->
+<category>
+<pattern>HOWDY</pattern>
+<template><srai>HI</srai> Are you a cowboy?</template>
+</category>
 ```
 
 This would return a response “Hello there! Are you a cowboy?” if a client inputs “Howdy”.

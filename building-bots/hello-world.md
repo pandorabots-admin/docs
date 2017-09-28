@@ -52,13 +52,11 @@
   * [topic](aiml/aiml-reference/topic.md)
   * [topicstar](aiml/aiml-reference/topicstar.md)
   * [uppercase](aiml/aiml-reference/uppercase.md)
-* [AIML Libraries](aiml/aiml-libraries.md)
-  * AIML Standard Libraries
-  * Emoji\(!\)
+* AIML Libraries
 
 ## BUILDING BOTS
 
-* Hello World
+* [Hello World](building-bots/hello-world.md)
 * This Interface
 * More Advanced Tutorials
 

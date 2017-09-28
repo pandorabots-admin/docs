@@ -1,19 +1,20 @@
-### &lt;aiml&gt; {#aiml}
+---
+layout: aiml
+title: aiml
+---
 
-The_AIML root element_delimits a block of AIML code. All other elements must be descendents of the root element.
+### &lt;aiml&gt;
 
-#### Attributes {#attributes}
+The *AIML root element* delimits a block of AIML code. All other elements must be descendents of the root element.
 
-`version`\(optional\) Specifies the AIML version that the document is written in.
+#### Attributes
 
-#### Usage {#usage}
+`version` (optional)
+Specifies the AIML version that the document is written in.
 
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-<!-- AIML code goes here -->
-</aiml>
-```
+#### Usage
 
-
-
+    <?xml version="1.0" encoding="UTF-8"?>
+    <aiml version="2.0">
+    <!-- AIML code goes here -->
+    </aiml>

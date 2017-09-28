@@ -9,7 +9,8 @@
 
 * [AIML Basics](aiml/aiml-basics.md)
 * [AIML Reference](aiml/aiml-reference.md)
-  * aiml
+  * [aiml](aiml/aiml-reference/aiml.md)
+  * bot
 * AIML Libraries
 
 ## BUILDING BOTS

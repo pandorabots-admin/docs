@@ -18,7 +18,7 @@
 * This Interface
 * More Advanced Tutorials
 
-## The Pandorabots API
+## API Reference
 
 * [API Basics](api-basics.md)
 * [Command Line Interface](command-line-interface.md)

@@ -13,7 +13,6 @@
 
 ## PANDORABOTS API
 
-* [API Basics](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
 * Methods

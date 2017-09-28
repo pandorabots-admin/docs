@@ -1,4 +1,4 @@
-# About the Pandorabots API
+# About The Pandorabots API
 
 The Pandorabots API allows you to integrate our bot hosting service and natural language processing engine into your own application.
 

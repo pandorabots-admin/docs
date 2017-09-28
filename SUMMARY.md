@@ -2,7 +2,8 @@
 
 ## PLATFORM OVERVIEW
 
-* About Pandorabots
+* [Introduction](README.md)
+* [About Pandorabots](about-pandorabots.md)
 * About Chatbots
 * Feature Comparison 
 
@@ -26,6 +27,4 @@
 * [Methods](methods.md)
   * [X1](methods/x1.md)
   * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
-
-
 

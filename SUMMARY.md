@@ -3,8 +3,7 @@
 ## PLATFORM OVERVIEW
 
 * [About Pandorabots](README.md)
-* [About Chatbots](about-chatbots.md)
-* Feature Comparison 
+* [Feature Comparison ](feature-comparison.md)
 
 ## AIML
 

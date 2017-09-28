@@ -8,7 +8,8 @@
 ## AIML
 
 * [AIML Basics](aiml/aiml-basics.md)
-* [AIML Reference](aiml/aiml-reference.md)[aiml](http://docs.pandorabots.com/aiml/aiml/)
+* [AIML Reference](aiml/aiml-reference.md)
+
   * aiml
   * [bot](http://docs.pandorabots.com/aiml/bot/)
   * [category](http://docs.pandorabots.com/aiml/category/)

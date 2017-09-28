@@ -5,7 +5,7 @@
 * [About Pandorabots](README.md)
 * [Feature Comparison ](feature-comparison.md)
 * [FAQ](faq.md)
-  * [AIML](faq.md#AIML)
+  * AIML
   * [API](faq.md#API)
   * [Bots](faq.md#Bots)
   * [Integrations](faq.md#Integrations)
@@ -75,4 +75,6 @@
   * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
+
+
 

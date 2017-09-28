@@ -53,7 +53,7 @@
   * [topicstar](aiml/aiml-reference/topicstar.md)
   * [uppercase](aiml/aiml-reference/uppercase.md)
 * [AIML Libraries](aiml/aiml-libraries.md)
-  * AIML Standard Libraries
+  * [AIML Standard Libraries](aiml/aiml-libraries/aiml-standard-libraries.md)
   * Emoji\(!\)
 
 ## BUILDING BOTS
@@ -70,6 +70,4 @@
   * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
-
-
 

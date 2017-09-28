@@ -1,6 +1,6 @@
 # Summary
 
-## Platform Overview
+## PLATFORM OVERVIEW
 
 * About Pandorabots
 * About Chatbots
@@ -12,13 +12,13 @@
 * AIML Reference
 * AIML Libraries
 
-## Building Bots
+## BUILDING BOTS
 
 * Hello World
 * This Interface
 * More Advanced Tutorials
 
-## API Reference
+## API REFERENCE
 
 * [API Basics](api-basics.md)
 * [Command Line Interface](command-line-interface.md)

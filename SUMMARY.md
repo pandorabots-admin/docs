@@ -11,12 +11,12 @@
 * [AIML Reference](aiml/aiml-reference.md)
   * [aiml](aiml/aiml-reference/aiml.md)
   * [bot](aiml/aiml-reference/bot.md)
-  * category
-  * condition
+  * [category](aiml/aiml-reference/category.md)
+  * [condition](aiml/aiml-reference/condition.md)
   * date
   * denormalize
   * eval
-  * explode
+  * [explode](aiml/aiml-reference/explode.md)
   * first
   * formal
   * gender
@@ -30,7 +30,7 @@
   * lowercase
   * map
   * normalize
-  * pattern
+  * [pattern](aiml/aiml-reference/pattern.md)
   * person
   * person2
   * program
@@ -39,19 +39,19 @@
   * response
   * rest
   * sentence
-  * set
-  * size
-  * sr
+  * [set](aiml/aiml-reference/set.md)
+  * [size](aiml/aiml-reference/size.md)
+  * [sr](aiml/aiml-reference/sr.md)
   * srai
-  * sraix
-  * star
-  * template
-  * that
-  * thatstar
-  * think
-  * topic
-  * topicstar
-  * uppercase
+  * [sraix](aiml/aiml-reference/sraix.md)
+  * [star](aiml/aiml-reference/star.md)
+  * [template](aiml/aiml-reference/template.md)
+  * [that](aiml/aiml-reference/that.md)
+  * [thatstar](aiml/aiml-reference/thatstar.md)
+  * [think](aiml/aiml-reference/think.md)
+  * [topic](aiml/aiml-reference/topic.md)
+  * [topicstar](aiml/aiml-reference/topicstar.md)
+  * [uppercase](aiml/aiml-reference/uppercase.md)
 * AIML Libraries
 
 ## BUILDING BOTS

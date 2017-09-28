@@ -12,9 +12,11 @@
 * AIML Reference
 * AIML Libraries
 
-## Methods
+## Building Bots
 
-* [Defining Methods](methods.md)
+* Hello World
+* This Interface
+* More Advanced Tutorials
 
 ## The Pandorabots API
 
@@ -23,7 +25,7 @@
 * [SDKs](sdks.md)
 * [Methods](methods.md)
   * [X1](methods/x1.md)
-  * X2
+  * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
 
 
 

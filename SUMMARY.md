@@ -2,7 +2,9 @@
 
 ## Overview
 
-* [The Pandorabots API](README.md)
+* [API Basics](README.md)
+* [SDKs](sdks.md)
+* [Command Line Interface](command-line-interface.md)
 
 ## Methods
 

@@ -16,7 +16,6 @@ You should include your user key as a URL parameter to each API call that you ma
 
 ```
   user_key=USER-KEY
-
 ```
 
 Your Application ID is required in the path of your request. This can be found on your application's page. You may have multiple bots under the same`app_id`.
@@ -111,7 +110,7 @@ Steps to Basic Bot Deployment:
 
 ### SDKs {#sdks}
 
-We offer a number of free SDKs that support various languages, available for download on[Github](http://www.github.com/pandorabots):
+We offer a number of free SDKs that support various languages, available for download on [Github](http://www.github.com/pandorabots):
 
 * [Java](http://github.com/pandorabots/pb-java)
 * [Node.js](http://github.com/pandorabots/pb-node)
@@ -135,6 +134,4 @@ Keisuke Nakamura
 Slavik Markovich
 
 We strongly encourage anyone interested to develop and share their own SDK projects! If you’d like us to evaluate and link to your pb- SDK on this page, email info@pandorabots.com.
-
-
 

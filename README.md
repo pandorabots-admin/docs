@@ -22,7 +22,7 @@ Your Application ID is required in the path of your request. This can be found o
 
 ##### 2 - Rate Limits
 
-When you registered for an account, you picked a plan that specified some limits on API and usage of our server. If you want to upgrade your plan or discuss customized options, feel free to contact[support@pandorabots.com](mailto:support@pandorabots.com)
+When you registered for an account, you picked a plan that specified some limits on API and usage of our server. If you want to upgrade your plan or discuss customized options, feel free to contact [support@pandorabots.com](mailto:support@pandorabots.com)
 
 ### Bot Files {#botFiles}
 
@@ -34,9 +34,9 @@ We have released a base bot called Rosie, which will serve as a great starting p
 
 [Download Rosie](https://github.com/pandorabots/rosie)
 
-If you do not wish to use Rosie as a chatbot base, we suggest you at least grab the[substitution files available on Github](https://github.com/pandorabots/substitutions)and upload them to your bot. These files perform input pre-processing as well as allow certain string transformations to take place in AIML templates. Refer to[this blog post](http://blog.pandorabots.com/substitutions-and-sentence-splitting/)for more information regarding the use of substitutions and substitution files.
+If you do not wish to use Rosie as a chatbot base, we suggest you at least grab the [substitution files available on Github](https://github.com/pandorabots/substitutions) and upload them to your bot. These files perform input pre-processing as well as allow certain string transformations to take place in AIML templates. Refer to [this blog post](http://blog.pandorabots.com/substitutions-and-sentence-splitting/) for more information regarding the use of substitutions and substitution files.
 
-You may download the [AIML utilities repository](http://github.com/pandorabots/aiml-utilities)from our Github as well.
+You may download the [AIML utilities repository](http://github.com/pandorabots/aiml-utilities) from our Github as well.
 
 ### Bot Compilation {#botCompile}
 
@@ -51,10 +51,10 @@ If you have previously compiled a bot, but have since made changes or uploaded a
 Explore each API resource below and test them out using your own parameters.
 
 Steps to Basic Bot Deployment:  
-1\)[Create a bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/createBot)  
+1\) [Create a bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/createBot)  
 2\) Upload bot file\(s\)\*\*  
-3\)[Compile bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/compileBot)  
-4\)[Talk to your bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/talkBot)
+3\) [Compile bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/compileBot)  
+4 \)[Talk to your bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/talkBot)
 
 \*\*NOTE: The current standard of open source Swagger.js has a bug causing a problem with file upload. There is a current workaround implemented; if you want to use this interface for uploading a file, you will need to copy the file content into the input field. For file upload, we recommend using our own[CLI](https://medium.com/pandorabots-blog/introducing-the-pandorabots-cli-215ed9d637af)or a REST client of your choice \(e.g. Postman Chrome extension\).
 

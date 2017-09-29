@@ -5,7 +5,14 @@
 * [About Pandorabots](README.md)
 * [Feature Comparison ](feature-comparison.md)
 * [FAQ](faq.md)
-  * [Limits](faq.md#limits)
+  * [AIML](faq.md/#aiml)
+  * [API](faq.md/#api)
+  * Bots
+  * Integrations
+  * Limits
+  * Pricing
+  * Privacy, Security & Legal
+  * User Interface
 
 ## AIML
 

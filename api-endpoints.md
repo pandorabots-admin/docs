@@ -142,7 +142,7 @@ curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/set/colors?user
 | botname |  | **Your bot's name** | path | string |
 | file-kind |  | **Specify the type of file being uploaded: file \(for AIML files\), map, substitution, set** | path | string |
 | filename |  | **Filename to upload, must be named with only lowercase letters and numbers. Note: for non-AIML files, do not include the file extension in the path.** | path | string |
-| content |  Parameter content type:application/xml | **Type or Paste in file contents.** | body | string |
+| content | Parameter content type:application/xml | **Type or Paste in file contents.** | body | string |
 | user\_key |  | **Your application's user key.** | query | string |
 
 ---
@@ -166,7 +166,8 @@ For malformed JSON in non-AIML files, a 400 error is returned. For malformed fil
 If Active Doc spec is not working with this API, please use the following curl command examples:
 
 ```
-
+curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/properties?user_key=USER_KEY'
+  --data-binary @/home/foo/foobot.properties
 ```
 
 #### Parameters
@@ -176,12 +177,36 @@ If Active Doc spec is not working with this API, please use the following curl c
 | app\_id |  | **Your Application ID** | path | string |
 | botname |  | **Your bot's name** | path | string |
 | file-kind |  | **Specify the type of file being uploaded: pdefaults, properties** | path | string |
-| content |  Parameter content type:application/xml | **Type or Paste in file contents.** | body | string |
+| content | Parameter content type:application/xml | **Type or Paste in file contents.** | body | string |
 | user\_key |  | **Your application's user key.** | query | string |
+
+---
 
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}/{filename}**
 
-**Delete a bot file \(AIML, set, map, substitution\)**
+### _Delete a bot file \(AIML, set, map, substitution\)_
+
+#### Implementation Notes
+
+Delete an AIML, set, map or substitution bot file
+
+For malformed file-kind, a 404 error is returned. For invalid file or botname, a 412 error is returned.
+
+```
+curl -v -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILENAME?user_key=USER_KEY'
+```
+
+#### Parameters
+
+| Parameter | Value | Description | Parameter Type | Data Type |
+| :--- | :--- | :--- | :--- | :--- |
+| app\_id |  | **Your Application ID** | path | string |
+| botname |  | **Name of the bot.** | path | string |
+| file-kind |  | **Specify the type of file being deleted: file \(for AIML files\), map, substitution, set** | path | string |
+| filename |  | **Filename to delete. Note: for non-AIML files, do not include the file extension in the path.** | path | string |
+| user\_key |  | **Your application's user key.** | query | string |
+
+---
 
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}**
 

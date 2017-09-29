@@ -20,8 +20,8 @@ curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID?user_key=USER_KEY'
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | :--- | :--- | :--- | :--- | :--- |
-| app\_id |  | **Your Application ID** | path | string |
-| user\_key |  | **Your application's user key.** | query | string |
+| app\_id | \(required\) | **Your Application ID** | path | string |
+| user\_key | \(required\) | **Your application's user key.** | query | string |
 
 ---
 
@@ -45,9 +45,9 @@ curl -v  -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | :--- | :--- | :--- | :--- | :--- |
-| app\_id |  | **Your Application ID** | path | string |
-| botname |  | **Must be unique from all the other bots you have created under this app\_id. Can only be numbers and lowercase letters, and must be between 3 and 64 characters long.** | path | string |
-| user\_key |  | **Your application's user key.** | query | string |
+| app\_id | \(required\) | **Your Application ID** | path | string |
+| botname | \(required\) | **Must be unique from all the other bots you have created under this app\_id. Can only be numbers and lowercase letters, and must be between 3 and 64 characters long.** | path | string |
+| user\_key | \(required\) | **Your application's user key.** | query | string |
 
 ---
 
@@ -69,9 +69,9 @@ curl -v  -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=US
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | :--- | :--- | :--- | :--- | :--- |
-| app\_id |  | **Your Application ID** | path | string |
-| botname |  | **Name of the bot to delete.** | path | string |
-| user\_key |  | **Your application's user key.** | query | string |
+| app\_id | \(required\) | **Your Application ID** | path | string |
+| botname | \(required\) | **Name of the bot to delete.** | path | string |
+| user\_key | \(required\) | **Your application's user key.** | query | string |
 
 ---
 
@@ -95,10 +95,10 @@ curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | :--- | :--- | :--- | :--- | :--- |
-| app\_id |  | **Your Application ID** | path | string |
-| botname |  | **The name of the bot.** | path | string |
+| app\_id | \(required\) | **Your Application ID** | path | string |
+| botname | \(required\) | **The name of the bot.** | path | string |
 | return |  | If set to zip, a zip file with all bot files will be returned. | query | string |
-| user\_key |  | **Your application's user key.** | query | string |
+| user\_key | \(required\) | **Your application's user key.** | query | string |
 
 ---
 
@@ -138,12 +138,12 @@ curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/set/colors?user
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | :--- | :--- | :--- | :--- | :--- |
-| app\_id |  | **Your Application ID** | path | string |
-| botname |  | **Your bot's name** | path | string |
-| file-kind |  | **Specify the type of file being uploaded: file \(for AIML files\), map, substitution, set** | path | string |
-| filename |  | **Filename to upload, must be named with only lowercase letters and numbers. Note: for non-AIML files, do not include the file extension in the path.** | path | string |
-| content | Parameter content type:application/xml | **Type or Paste in file contents.** | body | string |
-| user\_key |  | **Your application's user key.** | query | string |
+| app\_id | \(required\) | **Your Application ID** | path | string |
+| botname | \(required\) | **Your bot's name** | path | string |
+| file-kind | \(required\) | **Specify the type of file being uploaded: file \(for AIML files\), map, substitution, set** | path | string |
+| filename | \(required\) | **Filename to upload, must be named with only lowercase letters and numbers. Note: for non-AIML files, do not include the file extension in the path.** | path | string |
+| content | Parameter content type: application/xml | **Type or Paste in file contents.** | body | string |
+| user\_key | \(required\) | **Your application's user key.** | query | string |
 
 ---
 
@@ -174,11 +174,11 @@ curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/properties?user
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | :--- | :--- | :--- | :--- | :--- |
-| app\_id |  | **Your Application ID** | path | string |
-| botname |  | **Your bot's name** | path | string |
-| file-kind |  | **Specify the type of file being uploaded: pdefaults, properties** | path | string |
-| content | Parameter content type:application/xml | **Type or Paste in file contents.** | body | string |
-| user\_key |  | **Your application's user key.** | query | string |
+| app\_id | \(required\) | **Your Application ID** | path | string |
+| botname | \(required\) | **Your bot's name** | path | string |
+| file-kind | \(required\) | **Specify the type of file being uploaded: pdefaults, properties** | path | string |
+| content | Parameter content type: application/xml | **Type or Paste in file contents.** | body | string |
+| user\_key | \(required\) | **Your application's user key.** | query | string |
 
 ---
 
@@ -200,17 +200,38 @@ curl -v -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FI
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | :--- | :--- | :--- | :--- | :--- |
-| app\_id |  | **Your Application ID** | path | string |
-| botname |  | **Name of the bot.** | path | string |
-| file-kind |  | **Specify the type of file being deleted: file \(for AIML files\), map, substitution, set** | path | string |
-| filename |  | **Filename to delete. Note: for non-AIML files, do not include the file extension in the path.** | path | string |
-| user\_key |  | **Your application's user key.** | query | string |
+| app\_id | \(required\) | **Your Application ID** | path | string |
+| botname | \(required\) | **Name of the bot.** | path | string |
+| file-kind | \(required\) | **Specify the type of file being deleted: file \(for AIML files\), map, substitution, set** | path | string |
+| filename | \(required\) | **Filename to delete. Note: for non-AIML files, do not include the file extension in the path.** | path | string |
+| user\_key | \(required\) | **Your application's user key.** | query | string |
 
 ---
 
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}**
 
-**Delete a bot file \(pdefaults, properties\)**
+### _Delete a bot file \(pdefaults, properties\)_
+
+#### Implementation Notes
+
+Delete pdefaults or properties bot file.
+
+For malformed file-kind, a 404 error is returned. For invalid botname, a 412 error is returned.
+
+```
+
+```
+
+#### Parameters
+
+| Parameter | Value | Description | Parameter Type | Data Type |
+| :--- | :--- | :--- | :--- | :--- |
+| app\_id | \(required\) | **Your Application ID** | path | string |
+| botname | \(required\) | **Name of the bot.** | path | string |
+| file-kind | \(required\) | **Specify the type of file being deleted: pdefaults, properties** | path | string |
+| user\_key | \(required\) | **Your application's user key.** | query | string |
+
+---
 
 ### **GET/bot/{app\_id}/{botname}/{file-kind}/{filename}**
 

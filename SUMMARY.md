@@ -69,7 +69,7 @@
 
 * Hello World
 * This Interface
-* More Advanced Tutorials
+* dddMore Advanced Tutorials
 
 ## API REFERENCE
 
@@ -79,4 +79,6 @@
   * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
+
+
 

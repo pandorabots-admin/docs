@@ -6,7 +6,7 @@ In Syntax column, replace {} with actual values. See Example column for input/ou
 
 | Operation | Syntax | Description | Example |
 | :--- | :--- | :--- | :--- |
-| False | XFALSE {input} | Returns FALSE for any input. | **INPUT:**XFALSE true **OUTPUT:**FALSE  **INPUT:**XFALSE hello there **OUTPUT:**FALSE |
+| False | XFALSE {input} | Returns FALSE for any input. | **INPUT: **XFALSE true **OUTPUT: **FALSE  **INPUT: **XFALSE hello there **OUTPUT: **FALSE |
 | True | XTRUE {input} | Returns TRUE for any input. | **INPUT:**XTRUE false **OUTPUT:**TRUE  **INPUT:**XTRUE hello there **OUTPUT:**TRUE |
 | Number | XNUMBER {input} | Returns the input if it is a number. Otherwise, it will return your bot's UDC response. Limited to positive numbers only. | **INPUT:**XNUMBER 3 **OUTPUT:**3  **INPUT:**XNUMBER hello there **OUTPUT:**I don't have an answer for that. |
 | String | XSTRING {input} | Returns the input as a normalized string. | **INPUT:**XSTRING yum@goodeats.com **OUTPUT:**yum at goodeats dot com  **INPUT:**XSTRING Hello there. **OUTPUT:**Hello there |
@@ -15,7 +15,7 @@ In Syntax column, replace {} with actual values. See Example column for input/ou
 | True if Number | XISNUMBER {input} | Returns TRUE if the input string is a number, and FALSE if it is not. Limited to positive integers only. | **INPUT:**XISNUMBER 236 **OUTPUT:**TRUE  **INPUT:**XISNUMBER telegram **OUTPUT:**FALSE |
 | Check Data Type \(Number, String, Boolean\) | XTYPEOF {input} | Returns datatypes XNUMBER, XSTRING, or XBOOL depending upon the type. Limited to positive integers only. | **INPUT:**XTYPEOF true **OUTPUT:**XBOOL  **INPUT:**XTYPEOF Now is the time **OUTPUT:**XSTRING  **INPUT:**XTYPEOF 34235 **OUTPUT:**XNUMBER |
 | Addition | XADD {number} XS {number} | Returns sum of two numbers. Limited to positive integers only. | **INPUT:**XADD 45 XS 132 **OUTPUT:**177  **INPUT:**XADD 1 XS 1 **OUTPUT:**2 |
-| Subtraction | XSUB {number} XS {number} | Returns difference of two numbers. Limited to positive integers only. Returns 0 if result would be negative. | **INPUT:**XADD 67 XS 1 **OUTPUT:**66  **INPUT:**XADD 45 XS 132 **OUTPUT:**0  |
+| Subtraction | XSUB {number} XS {number} | Returns difference of two numbers. Limited to positive integers only. Returns 0 if result would be negative. | **INPUT:**XADD 67 XS 1 **OUTPUT:**66  **INPUT:**XADD 45 XS 132 **OUTPUT:**0 |
 | Multiplication | XMUL {number} XS {number} | Returns product of two numbers. Limited to positive integers only. | **INPUT:**XMUL 3 XS 5 **OUTPUT:**15  **INPUT:**XMUL 0 XS 5 **OUTPUT:**0 |
 | Division | XDIV {number} XS {number} | Returns the quotient of two numbers. Limited to positive integer values. The decimal value will be truncated \(rounded down\). Returns infinite if trying to divide by zero. | **INPUT:**XDIV 11 XS 3 **OUTPUT:**3  **INPUT:**XDIV 4 XS 0 **OUTPUT:**infinite |
 | Modulo operation | XMOD {number} XS {number} | Returns the remainder after division of one number by another. Limited to positive integer values. | **INPUT:**XMOD 11 XS 3 **OUTPUT:**2  **INPUT:**XMOD 10 xs 5 **OUTPUT:**0 |

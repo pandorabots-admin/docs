@@ -1,6 +1,7 @@
 {
-    "plugins": [ "theme-api" ],
+    "plugins": [ "theme-api" ],["expandable-chapters"],
     "pluginsConfig": {
+        "expandable-chapters":{},
         "theme-api": {
             "languages": [
                 {

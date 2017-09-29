@@ -565,6 +565,8 @@ The *person element* attempts to match its contents against the `person.substitu
 
 In the above example, the phrase "waiting for you" is echoed in the template using `<star />`. But because the tag descends from the person element, the pronoun "you" is transformed to "me".### &lt;person2&gt;
 
+### &lt;person2&gt;
+
 The *person2 element* is identical to the person element, however, it is used to transform pronouns between first and third person.
 
 #### Usage
@@ -576,6 +578,7 @@ The *person2 element* is identical to the person element, however, it is used to
 
 >**Input:** Give the password to me  
 **Output:** User has asked me to give the password to them
+
 ### &lt;program&gt;
 
 The *program element* returns the name and version number of the AIML interpreter being used.

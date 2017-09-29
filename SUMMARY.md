@@ -6,7 +6,7 @@
 * [Feature Comparison ](feature-comparison.md)
 * [FAQ](faq.md)
   * [AIML](faq.md#aiml)
-  * [API](faq.md/#api)
+  * [API](faq.md#api)
   * Bots
   * Integrations
   * Limits

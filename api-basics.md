@@ -46,13 +46,7 @@ If you have just created bot, you must compile it before using the Talk API.
 
 If you have previously compiled a bot, but have since made changes or uploaded a new file, the changes will not be apparent until you re-compile the bot. You may still use the Talk API, however, you will be talking to the previously compiled version of the bot.
 
-### Active Docs {#activedocs}
 
-Explore each API resource below and test them out using your own parameters.
 
-Steps to Basic Bot Deployment:  
-1\) [Create a bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/createBot)  
-2\) Upload bot file\(s\)\*\*  
-3\) [Compile bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/compileBot)  
-4 \)[Talk to your bot](https://developer.pandorabots.com/docs#!/pandorabots_api_swagger_1_3/talkBot)
+
 

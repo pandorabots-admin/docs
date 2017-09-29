@@ -8,7 +8,6 @@
 ## AIML
 
 * [AIML Basics](aiml/aiml-basics.md)
-* [Bots](#bots)
 * [AIML Reference](/SUMMARY.md#summary)
   * [aiml](aiml/aiml-reference/aiml.md)
   * [bot](aiml/aiml-reference/bot.md)

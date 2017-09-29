@@ -64,6 +64,10 @@
 * This Interface
 * More Advanced Tutorials
 
+## INTEGRATIONS
+
+* Twilio
+
 ## API REFERENCE
 
 * [API Basics](api-basics.md)
@@ -72,4 +76,6 @@
   * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
+
+
 

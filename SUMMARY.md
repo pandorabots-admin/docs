@@ -58,6 +58,15 @@
   * [AIML Standard Libraries](aiml/aiml-libraries/aiml-standard-libraries.md)
   * Emoji\(!\)
 
+## API REFERENCE
+
+* [API Basics](api-basics.md)
+* [Methods](methods.md)
+  * [X1](methods/x1.md)
+  * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
+* [Command Line Interface](command-line-interface.md)
+* [SDKs](sdks.md)
+
 ## BUILDING BOTS
 
 * Hello World
@@ -73,14 +82,7 @@
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
 * [Twitter](/integrations/putting-your-bot-on-twitter.md)
 
-## API REFERENCE
-
-* [API Basics](api-basics.md)
-* [Methods](methods.md)
-  * [X1](methods/x1.md)
-  * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
-* [Command Line Interface](command-line-interface.md)
-* [SDKs](sdks.md)
+## 
 
 
 

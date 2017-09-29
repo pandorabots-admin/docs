@@ -69,7 +69,7 @@
 
 * Hello World
 * This Interface
-* dddMore Advanced Tutorials
+* More Advanced Tutorials
 
 ## API REFERENCE
 

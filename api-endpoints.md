@@ -282,6 +282,8 @@ curl -v -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?user_
 | file-kind | \(required\) | **Specify the type of file being retrieved: pdefaults, properties** | path | string |
 | user\_key | \(required\) | **Your application's user key.** | query | string |
 
+---
+
 ### **GET/bot/{app\_id}/{botname}/verify**
 
 ###### _Compile a bot_
@@ -385,8 +387,7 @@ curl -v  -X POST 'https://aiaas.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USE
 Start a conversation with the bot using the Anonymous Talk API. This method will allow you to request creation of an end-user client\_name that can maintain persistent predicates per end-user talking to your bot. If client\_name is NOT sent in the request, then Pandorabots will create a end-user client\_name and return it in the response. Similar to the Talk to Bot API, Pandorabots will also return a new session ID if not included in the call. Use the session ID returned to group interactions together.
 
 In addition to bot response and session ID, the HTTP response will include a new end-user client\_name in the following format:  
-aiaas-XXX-user-nnnn, where XXX is your app\_ID and nnnn is numeric starting with 0000 and incrementing after each request.  
-
+aiaas-XXX-user-nnnn, where XXX is your app\_ID and nnnn is numeric starting with 0000 and incrementing after each request.
 
 Malformed requests such as exceeding size of input or unknown end-user client\_name returns 400 error code. Error code 412 is returned if the bot is not compiled or does not exist. Error code 429 is returned if your application has reached maximum plan API call limit.
 

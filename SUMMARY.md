@@ -7,12 +7,12 @@
 * [FAQ](faq.md)
   * [AIML](faq.md#aiml)
   * [API](faq.md#api)
-  * Bots
-  * Integrations
-  * Limits
-  * Pricing
-  * Privacy, Security & Legal
-  * User Interface
+  * [Bots](faq.md#bots)
+  * [Integrations](faq.md#integrations)
+  * [Limits](faq.md#limits)
+  * [Pricing](faq.md#pricing)
+  * [Privacy, Security & Legal](faq.md#privacy-security--legal)
+  * [User Interface](faq.md#user-interface)
 
 ## AIML
 

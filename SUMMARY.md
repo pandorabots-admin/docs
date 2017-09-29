@@ -5,18 +5,11 @@
 * [About Pandorabots](README.md)
 * [Feature Comparison ](feature-comparison.md)
 * [FAQ](faq.md)
-  * [AIML](#aiml)
-  * [API](#api)
-  * [Bots](#bots)
-  * [Integrations](#integrations)
-  * [Limits](#limits)
-  * [Pricing](#pricing)
-  * [Privacy, Security & Legal](#privacy-security-legal)
-  * [User Interface](#user-interface)
 
 ## AIML
 
 * [AIML Basics](aiml/aiml-basics.md)
+* [Bots](#bots)
 * [AIML Reference](aiml/reference.md)
   * [aiml](#aiml)
   * [bot](aiml/aiml-reference/bot.md)
@@ -79,6 +72,4 @@
   * [Defining Methods](https://www.gitbook.com/book/lkunze/pandorabots-api/edit#)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
-
-
 

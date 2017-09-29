@@ -9,7 +9,7 @@
 
 * [AIML Basics](aiml/aiml-basics.md)
 * [Bots](#bots)
-* [AIML Reference](aiml/reference.md)
+* [AIML Reference](/SUMMARY.md#summary)
   * [aiml](aiml/aiml-reference/aiml.md)
   * [bot](aiml/aiml-reference/bot.md)
   * [category](aiml/aiml-reference/category.md)
@@ -81,6 +81,4 @@
 * [Telegram](/integrations/telegram-integration.md)
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
 * [Twitter](/integrations/putting-your-bot-on-twitter.md)
-
----
 

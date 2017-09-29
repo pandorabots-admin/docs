@@ -104,11 +104,80 @@ curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_
 
 ### **PUT/bot/{app\_id}/{botname}/{file-kind}/{filename}**
 
-**Upload a bot file \(AIML, set, substitution, map\)**
+### _Upload a bot file \(AIML, set, substitution, map\)_
+
+#### Implementation Notes
+
+Upload bot personality files to your bot. Files must be named with only lowercase letters and numbers with one of the following extensions:
+
+**AIML: **Extention - .aiml, file-kind - file
+
+**Sets: **Extension - .set, file-kind - set
+
+**Maps: **Extension - .map, file-kind - map
+
+**Substitutions: **Extension - .substitution, file-kind - substitution
+
+The system will overwrite existing files with the file being uploaded.
+
+If the request is malformed because the file name is invalid or malformed JSON for non-AIML files, a 400 error is returned. For malformed file-kind, a 404 error is returned. For invalid file or botname, a 412 error is returned.
+
+If Active Doc spec is not working with this API, please use the following curl command examples:
+
+```
+curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/file/foobot.aiml?user_key=USER_KEY'
+  --data-binary @/home/foo/foobot.aiml
+```
+
+```
+curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/set/colors?user_key=USER_KEY'
+  --data-binary @/home/foo/colors.set
+```
+
+#### Parameters
+
+| Parameter | Value | Description | Parameter Type | Data Type |
+| :--- | :--- | :--- | :--- | :--- |
+| app\_id |  | **Your Application ID** | path | string |
+| botname |  | **Your bot's name** | path | string |
+| file-kind |  | **Specify the type of file being uploaded: file \(for AIML files\), map, substitution, set** | path | string |
+| filename |  | **Filename to upload, must be named with only lowercase letters and numbers. Note: for non-AIML files, do not include the file extension in the path.** | path | string |
+| content |  Parameter content type:application/xml | **Type or Paste in file contents.** | body | string |
+| user\_key |  | **Your application's user key.** | query | string |
+
+---
 
 ### **PUT/bot/{app\_id}/{botname}/{file-kind}**
 
-**Upload a bot file \(pdefaults, properties\)**
+### _Upload a bot file \(pdefaults, properties\)_
+
+#### Implementation Notes
+
+Upload bot personality files to your bot. Files must be named with only lowercase letters and numbers with one of the following extensions:
+
+**Properties: **Extension - .properties, file-kind - properties, No filename required in path
+
+**Predicate defaults: **Extension - .pdefaults, file-kind - pdefaults, No filename required in path
+
+The system will overwrite existing files with the file being uploaded.
+
+For malformed JSON in non-AIML files, a 400 error is returned. For malformed file-kind, a 404 error is returned. For invalid file or botname, a 412 error is returned.
+
+If Active Doc spec is not working with this API, please use the following curl command examples:
+
+```
+
+```
+
+#### Parameters
+
+| Parameter | Value | Description | Parameter Type | Data Type |
+| :--- | :--- | :--- | :--- | :--- |
+| app\_id |  | **Your Application ID** | path | string |
+| botname |  | **Your bot's name** | path | string |
+| file-kind |  | **Specify the type of file being uploaded: pdefaults, properties** | path | string |
+| content |  Parameter content type:application/xml | **Type or Paste in file contents.** | body | string |
+| user\_key |  | **Your application's user key.** | query | string |
 
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}/{filename}**
 

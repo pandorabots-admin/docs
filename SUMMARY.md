@@ -17,10 +17,10 @@
 ## AIML
 
 * [AIML Basics](aiml/aiml-basics.md)
-* [AIML Reference](/SUMMARY.md#summary)
-  * [aiml](aiml/aiml-reference/aiml.md)
-  * [bot](aiml/aiml-reference/bot.md)
-  * [category](aiml/aiml-reference/category.md)
+* [AIML Reference](aiml/reference.md)
+  * [aiml](aiml/reference.md#aiml)
+  * [bot](aiml/reference.md#bot)
+  * [category](aiml/reference.md#category)
   * [condition](aiml/aiml-reference/condition.md)
   * [date](aiml/aiml-reference/date.md)
   * [denormalize](aiml/aiml-reference/denormalize.md)

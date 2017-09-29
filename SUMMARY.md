@@ -74,7 +74,7 @@
   * [Delete a bot](api-endpoints.md#deletebotappidbotname)
   * [List of bot files](api-endpoints.md#getbotappidbotname)
   * [Upload a bot file \(AIML, set, substitution, map\)](api-endpoints.md#putbotappidbotnamefile-kindfilename)
-  * [Upload a bot file \(pdefaults, properties\)](api-endpoints.md#putbotappbotidbotnamefile-kind)
+  * [Upload a bot file \(pdefaults, properties\)](api-endpoints.md#putbotappidbotnamefile-kind)
   * [Delete a bot file \(AIML, set, map, substitution\)](api-endpoints.md#deletebotappidbotnamefile-kindfilename)
   * [Delete a bot file \(pdefaults, properties\)](api-endpoints.md#deletebotappidbotnamefile-kind)
   * [Retrieve a bot file \(AIML, set, map, substitution\)](api-endpoints.md#getbotappidbotnamefile-kindfilename)

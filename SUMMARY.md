@@ -4,7 +4,6 @@
 
 * [About Pandorabots](README.md)
 * [Feature Comparison ](feature-comparison.md)
-* [FAQ](faq.md)
 
 ## AIML
 
@@ -77,13 +76,11 @@
 
 * [Browser](/integrations/browser-integration.md)
 * [Firebase](/integrations/tracking-your-bots-conversations.md)
-* [Hubot](/integrations/connecting-your-bot-to-hubot.md) 
+* [Hubot](/integrations/connecting-your-bot-to-hubot.md)
 * [Slack](/integrations/putting-your-bot-on-slack.md)
 * [Telegram](/integrations/telegram-integration.md)
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
 * [Twitter](/integrations/putting-your-bot-on-twitter.md)
 
-## 
-
-
+---
 

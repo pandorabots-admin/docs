@@ -66,7 +66,7 @@
 
 ## INTEGRATIONS
 
-* Twilio
+* [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
 
 ## API REFERENCE
 

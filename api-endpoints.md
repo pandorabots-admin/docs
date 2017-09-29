@@ -1,8 +1,29 @@
 # API Endpoints
 
+---
+
 ### **GET/bot/{app\_id}**
 
-**List of bots**
+### _List of bots_
+
+### Implementation Notes
+
+Retrieve a list of your application's bots. Response returns JSON object with info for each bot.
+
+Returns a 401 error code for invalid app\_ID or user\_key, or if applicable, invalid referrer.
+
+```
+curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID?user_key=USER_KEY'
+```
+
+#### Parameters
+
+| Parameter | Value | Description | Parameter Type | Data Type |
+| :--- | :--- | :--- | :--- | :--- |
+| app\_id |  | **Your Application ID** | path | string |
+| user\_key |  | **Your application's user key.** | query | string |
+
+---
 
 ### **PUT/bot/{app\_id}/{botname}**
 
@@ -55,9 +76,4 @@
 ### **POST/atalk/{app\_id}/{botname}**
 
 **Anonymous Talk**
-
-  
-
-
-
 

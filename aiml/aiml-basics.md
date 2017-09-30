@@ -1,5 +1,7 @@
 # Artificial Intelligence Markup Language \(AIML\)
 
+**\#History**
+
 
 
 **What is the difference between AIML and AIML 2.0?**
@@ -28,6 +30,4 @@ The AIML 2.0 specification introduces a number of new features to the language t
 The new Pandorabots AIML interpreter is backwards compatible with AIML 1.0, so you can make full use of your old bot files. However, it does not currently support Javascript.
 
 For more details, please read Dr. Richard Wallace's full[AIML 2.0 specification](https://docs.google.com/a/pandorabots.com/document/d/1wNT25hJRyupcG51aO89UcQEiG-HkXRXusukADpFnDs4/pub).
-
-
 

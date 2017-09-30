@@ -97,7 +97,7 @@
 ## BUILDING BOTS
 
 * [Hello World](/building-bots/getting-started.md)
-* Tutorial: Building Bots on the Pandorabots Platform
+* [Tutorial: Building Bots on the Pandorabots Platform](building-bots/tutorial-building-bots-on-the-pandorabots-platform.md)
 * [Tutorials: Building Specific Types of Bots](building-bots/tutorials-building-specific-types-of-bots.md)
   * [FAQ Bot](/building-bots/simplefaqprocess.md)
   * [Concierge Bot](/building-bots/build-a-concierge-bot.md)

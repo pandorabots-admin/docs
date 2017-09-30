@@ -1,7 +1,3 @@
----
-layout: default
-title: Build a Concierge Bot
----
 
 # Building a Concierge-style bot
 

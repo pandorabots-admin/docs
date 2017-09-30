@@ -13,7 +13,6 @@
   * [Pricing](faq.md#pricing)
   * [Privacy, Security & Legal](faq.md#privacy-security--legal)
   * [User Interface](faq.md#user-interface)
-* Mitsuku
 
 ## AIML
 
@@ -100,31 +99,22 @@
 * [Hello World](/building-bots/getting-started.md)
 * Tutorial: Building Bots on the Pandorabots Platform
 * Tutorials: Building Specific Types of Bots
-  * [FAQ](/building-bots/simplefaqprocess.md)
+  * [FAQ Bot](/building-bots/simplefaqprocess.md)
   * [Concierge](/building-bots/build-a-concierge-bot.md)
 
 ## INTEGRATIONS
 
 * [Browser](/integrations/browser-integration.md)
-
 * [Firebase](/integrations/tracking-your-bots-conversations.md)
-
 * [Hubot](/integrations/connecting-your-bot-to-hubot.md)
-
 * [Mustache Templating Engine](/integrations/dynamicdata.md)
-
 * [Slack](/integrations/putting-your-bot-on-slack.md)
-
 * [Telegram](/integrations/telegram-integration.md)
-
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
-
 * [Twitter](/integrations/putting-your-bot-on-twitter.md)
 
 ## MODULES
 
 * [Mitsuku](/modules/Mitsuku.md)
 * [OpenWeather](/modules/OpenWeather.md)
-
-
 

@@ -109,11 +109,14 @@
 
 * [Hubot](/integrations/connecting-your-bot-to-hubot.md)
 
+* [Mustache Templating Engine](/integrations/dynamicdata.md)
+
 * [Slack](/integrations/putting-your-bot-on-slack.md)
 
 * [Telegram](/integrations/telegram-integration.md)
 
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
+
 * [Twitter](/integrations/putting-your-bot-on-twitter.md)
 
 ## MODULES

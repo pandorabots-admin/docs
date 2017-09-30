@@ -124,5 +124,7 @@ Add all your categories to your Pandorabot, compile and start training your bot 
 
 ## TIPS TO STREAMLINE THIS PROCESS {#tips-to-streamline-this-process}
 
-Using a spreadsheet to automate building categories with AIML tags can make this process easier.![](http://docs.pandorabots.com/images/faqchatbottemplate.png)
+Using a spreadsheet to automate building categories with AIML tags can make this process easier
+
+.![](http://docs.pandorabots.com/images/faqchatbottemplate.png)
 

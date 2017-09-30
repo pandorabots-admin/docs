@@ -13,6 +13,7 @@
   * [Pricing](faq.md#pricing)
   * [Privacy, Security & Legal](faq.md#privacy-security--legal)
   * [User Interface](faq.md#user-interface)
+* Mitsuku
 
 ## AIML
 
@@ -102,4 +103,11 @@
 * [Telegram](/integrations/telegram-integration.md)
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
 * [Twitter](/integrations/putting-your-bot-on-twitter.md)
+
+## MODULES
+
+* [Mitsuku](/modules/Mitsuku.md)
+* [OpenWeather](/modules/OpenWeather.md)
+
+
 

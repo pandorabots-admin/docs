@@ -50,5 +50,5 @@ Selecting the name of an individual bot on the left navigation panel will open a
 
 #### Bot Deployment
 
-The **Deployment Page**, accessible via the _Deploy_ link under each individual bot name displayed on the left nav, lists a variety of _Integrations. _Integrations provide an easy method for deploying your bot to popular third party platforms and channels like Facebook Messenger and the Web. 
+The **Deployment Page**, accessible via the _Deploy_ link under each individual bot name displayed on the left nav, lists a variety of _Integrations_. Integrations provide an easy method for deploying your bot to popular third party platforms and channels like Facebook Messenger and the Web.
 

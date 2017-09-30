@@ -42,11 +42,13 @@ Platform users who require more in-depth analytics can plug in additional third-
 
 #### Bot Editing
 
-Selecting the name of an individual bot on the left navigation panel will open a drop-down menu consisting of several components, including: _Edit_, _Deploy_, _Logs_, and _Delete_. The **Editor **is your gateway to creating and maintaining your bot files. 
+Selecting the name of an individual bot on the left navigation panel will open a drop-down menu consisting of several components, including: _Edit_, _Deploy_, _Logs_, and _Delete_. The **Editor **is your gateway to creating and maintaining your bot files.
+
+\#\#\#Download bot files
+
+\#\#\#Staging v. Production
 
 #### Bot Deployment
 
-The **Deployment Page**, accessible via 
-
-
+The **Deployment Page**, accessible via the _Deploy_ link under each individual bot name displayed on the left nav, lists a variety of _Integrations. _Integrations provide an easy method for deploying your bot to popular third party platforms and channels like Facebook Messenger and the Web. 
 

@@ -97,7 +97,7 @@
 * [Hello World](/building-bots/getting-started.md)
 * Tutorial: Building Bots on the Pandorabots Platform
 * Tutorial: Building Specific Types of Bots
-  * [FAQ](/building-bots/build-a-concierge-bot.md)
+  * [FAQ](/building-bots/simplefaqprocess.md)
   * [Concierge](/building-bots/build-a-concierge-bot.md)
 
 ## INTEGRATIONS
@@ -107,6 +107,7 @@
 * [Firebase](/integrations/tracking-your-bots-conversations.md)
 
 * [Hubot](/integrations/connecting-your-bot-to-hubot.md)
+
 * [Slack](/integrations/putting-your-bot-on-slack.md)
 * [Telegram](/integrations/telegram-integration.md)
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)

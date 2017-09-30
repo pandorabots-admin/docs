@@ -64,6 +64,7 @@
   * [uppercase](aiml/reference.md#uppercase)
 * [AIML Libraries](aiml/aiml-libraries.md)
   * [AIML Standard Libraries](aiml/aiml-libraries/aiml-standard-libraries.md)
+  * [Modifying the Rosie Chatbot](/aiml/aiml-libraries/using-rosie.md)
   * Emoji\(!\)
 * Core Concept Deep Dives
   * [Predicates](/aiml/predicates.md)
@@ -96,7 +97,7 @@
 
 * [Hello World](/building-bots/getting-started.md)
 * Tutorial: Building Bots on the Pandorabots Platform
-* Tutorial: Building Specific Types of Bots
+* Tutorials: Building Specific Types of Bots
   * [FAQ](/building-bots/simplefaqprocess.md)
   * [Concierge](/building-bots/build-a-concierge-bot.md)
 
@@ -109,7 +110,9 @@
 * [Hubot](/integrations/connecting-your-bot-to-hubot.md)
 
 * [Slack](/integrations/putting-your-bot-on-slack.md)
+
 * [Telegram](/integrations/telegram-integration.md)
+
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
 * [Twitter](/integrations/putting-your-bot-on-twitter.md)
 

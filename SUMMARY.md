@@ -92,7 +92,7 @@
 * [API Explorer](api-explore.md)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
-* Articles
+* Related Articles
   * [End-User Management with A-Talk API](/managing-end-users-with-a-talk.md)
 
 ## BUILDING BOTS

@@ -65,6 +65,10 @@
 * [AIML Libraries](aiml/aiml-libraries.md)
   * [AIML Standard Libraries](aiml/aiml-libraries/aiml-standard-libraries.md)
   * Emoji\(!\)
+* Core Concept Deep Dives
+  * [Predicates](/aiml/predicates.md)
+  * [Substitutions & Sentence Splitting](/aiml/substitutions-and-sentence-splitting.md)
+  * [Wildcards](/aiml/wildcards.md)
 
 ## API REFERENCE
 
@@ -90,14 +94,18 @@
 
 ## BUILDING BOTS
 
-* Hello World
-* This Interface
-* More Advanced Tutorials
+* [Hello World](/building-bots/getting-started.md)
+* Tutorial: Building Bots on the Pandorabots Platform
+* Tutorial: Building Specific Types of Bots
+  * [FAQ](/building-bots/build-a-concierge-bot.md)
+  * [Concierge](/building-bots/build-a-concierge-bot.md)
 
 ## INTEGRATIONS
 
 * [Browser](/integrations/browser-integration.md)
+
 * [Firebase](/integrations/tracking-your-bots-conversations.md)
+
 * [Hubot](/integrations/connecting-your-bot-to-hubot.md)
 * [Slack](/integrations/putting-your-bot-on-slack.md)
 * [Telegram](/integrations/telegram-integration.md)

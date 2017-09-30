@@ -34,11 +34,19 @@ To create a new bot, use the "+" button next to **My Bots** on the left navigati
 
 #### Bot Statistics
 
-Clicking on **My Bots **on the left navigation panel will display some key global statistics for all of your bots for the past 30 days. These include total _Interactions_, _Clients_, _Sessions_, and the average number of _Interactions/Session_. In the broader ecosystem, "Interactions/Session" is also sometimes known as _Turns per Conversation _or_ TPC_, and is a stat botmasters measure and reference to highlight client engagement with their chatbot. 
+Clicking on **My Bots **on the left navigation panel will display some key global statistics for all of your bots for the past 30 days. These include total _Interactions_, _Clients_, _Sessions_, and the average number of _Interactions/Session_. In the broader ecosystem, "Interactions/Session" is also sometimes known as _Turns per Conversation \_or_ TPC\_, and is a stat botmasters measure and reference to highlight client engagement with their chatbot.
 
 Clicking on the name of each individual bot will display the same four individual statistics for that specific bot.
 
 Platform users who require more in-depth analytics can plug in additional third-party analytics engines of their choosing.
+
+#### Bot Editing
+
+Selecting the name of an individual bot on the left navigation panel will open a drop-down menu consisting of several components, including: _Edit_, _Deploy_, _Logs_, and _Delete_. The **Editor **is your gateway to creating and maintaining your bot files. 
+
+#### Bot Deployment
+
+The **Deployment Page**, accessible via 
 
 
 

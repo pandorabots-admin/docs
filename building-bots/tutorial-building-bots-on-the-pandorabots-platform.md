@@ -50,7 +50,7 @@ Selecting the name of an individual bot on the left navigation panel will open a
 
 #### Bot Training via the Chat Widget
 
-\#\#\#
+In the lower right hand corner of the interface, you may have noticed a circular chat icon. Clicking on this icon will allow you to chat with your bot as if you were the client from almost everywhere in the interface. This **Chat Widget **has several useful features that are vital for debugging and improving your bot. 
 
 #### Bot Log Review
 
@@ -66,5 +66,7 @@ Pandorabots also provides a RESTful API, meaning developer users can integrate t
 
 #### The Clubhouse
 
-The Deployment Page provides an option to publish your bot to **The Clubhouse**, which will make your bot available to chat with other platform users. In the Clubhouse, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs and pay back the favor by chatting with other's bots, to use for improving your bot prior to making it public. 
+The Deployment Page provides an option to publish your bot to **The Clubhouse**, which will make your bot available to chat with other platform users. In the Clubhouse, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs and pay back the favor by chatting with other's bots, to use for improving your bot prior to making it public.
+
+
 

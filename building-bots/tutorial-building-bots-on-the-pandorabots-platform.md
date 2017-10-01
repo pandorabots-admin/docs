@@ -66,5 +66,5 @@ Pandorabots also provides a RESTful API, meaning developer users can integrate t
 
 #### The Clubhouse
 
-One
+The Deployment Page provides an option to publish your bot to **The Clubhouse**, which will make your bot available to chat with other platform users. In the Clubhouse, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs and pay back the favor by chatting with other's bots, to use for improving your bot prior to making it public. 
 

@@ -36,11 +36,11 @@ Please visit the AIML Reference section of the _Pandorabots Documentation_ for a
 
 **What is an API alert?**
 
-When your application gets close to or exceeds a limitation you will be alerted via email and it will be included as an alert on your Account Page. Please see the Limits section for more questions about limitations.
+When your application gets close to or exceeds a limitation you will be alerted via email and it will be included as an alert on your Account Page. Please see the _Limits_ section for more questions about limitations.
 
 **What is an application (app) ID and user key?**
 
-To access the API you need both a user key and application ID for authentication.
+To access the API you need both a user key and application ID for authentication. Your user key must never be shared with anyone else, and if you ever have reason to believe that it has been compromised, regenerate the key on your Account page.
 
 **How can I find my user key?**
 

@@ -210,7 +210,7 @@ Modules are similar to libraries insofar as they allow you to extend your chatbo
 
 **Why are some features locked?**
 
-Certain advanced and premium features provided by the interface require a valid credit card on file to access. We give away as many free tools and services and open source software as possible, but still need to gainfully employ the people who work hard to make these available for you. We hope you'll find the service valuable and consider supporting our efforts!
+Certain advanced and premium features provided by the interface require a valid credit card on file to access. We give away as many free tools and services and open source software as possible, but still need to gainfully employ the people who work hard to make these available for you! We hope you'll find the service valuable and consider supporting our efforts.
 
 **What does it mean if a feature is "Coming Soon"?**
 

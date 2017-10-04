@@ -186,17 +186,13 @@ The Deploy page provides access to a variety of Integrations, which are easy met
 
 **What is the Logs page?**
 
-The Logs Page provides chatlogs (i.e., conversations clients have had ith your bot) dating back 30 days. Chatlogs are indispensable for improving your bot, and you should review them regularly and make updates accordingly. You may download your logs at any time using the Download Icon on the Logs Page.
+The Logs Page provides chatlogs (i.e., conversations clients have had qith your bot) dating back 30 days. Chatlogs are indispensable for improving your bot, and you should review them regularly and make updates accordingly. You may download your logs at any time using the Download Icon on the Logs Page.
 
 **What are "Integrations"?**
 
 Integrations, accessible via the Deploy Page, are easy methods for publishing your bot on third party channels.
 
 **What is the Clubhouse?**
-
-
-
-**Why are some features locked?**
 
 
 
@@ -211,6 +207,10 @@ Integrations, accessible via the Deploy Page, are easy methods for publishing yo
 **What are Modules?**
 
 
+
+**Why are some features locked?**
+
+Certain advanced and premium features provided by the interface require a valid credit card on file to access. We provide as many free tools and services and open source software as possible, but still need to gainfully employ the people who work hard to provide these for you. We hope you'll find the service valuable and consider supporting our efforts!
 
 **What does it mean if a feature is "Coming Soon"?**
 

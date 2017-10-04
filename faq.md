@@ -86,7 +86,7 @@ Supported Integrations are determined by a variety of factors including, but not
 
 **Are custom Integrations available?**
 
-Yes, Pandorabots can develop and provide custom integrations for Enterprise Tier platform users. All other users are welcome to build roll their own and integrate bots hosted on the platform into their application using our RESTful API.
+Yes, Pandorabots can develop and provide custom integrations for Enterprise Tier platform users. All other users are welcome to roll their own and integrate bots hosted on the platform into their application using our RESTful API.
 ___
 ###Limits
 
@@ -186,7 +186,7 @@ The Deploy page provides access to a variety of Integrations, which are easy met
 
 **What is the Logs page?**
 
-
+The Logs Page provides chatlogs (i.e., conversations clients have had ith your bot) dating back 30 days. Chatlogs are indispensable for improving your bot, and you should review them regularly and make updates accordingly. You may download your logs at any time using the Download Icon on the Logs Page.
 
 **What are "Integrations"?**
 

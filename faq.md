@@ -31,7 +31,7 @@ Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot)
 **What tags are supported in AIML?**
 
 Please visit the AIML Reference section of the _Pandorabots Documentation_ for a full ist of supported tags. 
-
+___
 ###API
 
 **What is an API alert?**
@@ -53,7 +53,7 @@ You may find your app ID under the "Custom Application" Integration on the Deplo
 **I'm not a developer - can I use the API?**
 
 The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for any motivated self-starter eager to study the documentation!
-
+___
 ###Bots
 
 **How do I create a bot?**
@@ -73,7 +73,7 @@ There is a green indicator light next to your bot, meaning that it is currently 
 **Can I create a bot in any language?**
 
 AIML can be written in almost any natural language. Segmentation is required for some languages - please contact us to learn more about our machine learning based segementer and other language-specific tools. 
-
+___
 ###Integrations
 
 **What Integrations are available?**
@@ -87,7 +87,7 @@ Supported Integrations are determined by a variety of factors including, but not
 **Are custom Integrations available?**
 
 Yes, Pandorabots can develop and provide custom integrations for Enterprise Tier platform users. All other users are welcome to build roll their own and integrate bots hosted on the platform into their application using our RESTful API.
-
+___
 ###Limits
 
 **What is the max file size I can upload?**
@@ -121,7 +121,7 @@ We strive for service level uptimes of 99.5% for all users. However, only the en
 **Where are my chatlogs from last month?**
 
 Chatlog data and monthly statistics are only available dating back the previous 30 days. You may download your logs at any time from the Logs page. If you require longer or customer storage, please contact us to inquire about the Enterprise Tier.
-
+___
 ###Pricing
 
 **What is included in the Free Tier?**

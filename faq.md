@@ -40,7 +40,7 @@ When your application gets close to or exceeds a limitation you will be alerted 
 
 **What is an application (app) ID and user key?**
 
-To access the API you need both a user key and application ID for authentication. Your user key must never be shared with anyone else, and if you ever have reason to believe that it has been compromised, regenerate the key on your Account page.
+To access the API you need both a user key and application ID for authentication. Your user key must never be shared with anyone else, and if you ever have reason to believe that it has been compromised, regenerate the key on your Account Page.
 
 **How can I find my user key?**
 
@@ -52,7 +52,7 @@ You may find your app ID under the "Custom Application" Integration on the Deplo
 
 **I'm not a developer - can I use the API?**
 
-
+The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for motivated hobbyists eager to study the documentation.
 
 ###Bots
 

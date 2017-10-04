@@ -30,7 +30,7 @@ Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot)
 
 **What tags are supported in AIML?**
 
-Please visit the AIML Reference section of docs.pandorabots.com for a full ist of supported tags. 
+Please visit the AIML Reference section of the _Pandorabots Documentation_ for a full ist of supported tags. 
 
 ###API
 

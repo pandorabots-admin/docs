@@ -86,7 +86,7 @@ Supported Integrations are determined by a variety of factors including, but not
 
 **Are custom Integrations available?**
 
-
+Yes, Pandorabots can develop and provide custom integrations for Enterprise Tier platform users. All other users are welcome to build roll their own and integrate bots hosted on the platform into their application using our RESTful API.
 
 ###Limits
 

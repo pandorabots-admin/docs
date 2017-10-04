@@ -150,6 +150,7 @@ Please have your organization or department head email us with any relevant deta
 
 **How can I update my credit card information?**
 
+Visit the Account Page to update your credit card and other personal information on file. 
 ___
 
 ###Privacy, Security & Legal

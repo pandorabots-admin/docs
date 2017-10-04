@@ -173,21 +173,16 @@ Bots that violate our Terms of Service can be deleted any time at Pandorabots' d
 
 As a general policy, we recommend routinely backing up your bot files. You may download a zip file any time from the Files tab in the Editor. 
 
-###Topic
-
-**Question**
-
-Answer
-
+___
 ###User Interface
 
 **What is the Editor?**
 
-
+The Editor is your gateway to creating and maintaining bot files. It is an embedded version of the ACE editor and is optimized for editing AIML files.
 
 **What is the Deploy page?**
 
-
+The Deploy page provides access to a variety of Integrations, which are easy methods for publishing your bot on third party channels.
 
 **What is the Logs page?**
 
@@ -195,7 +190,7 @@ Answer
 
 **What are "Integrations"?**
 
-
+Integrations, accessible via the Deploy Page, are easy methods for publishing your bot on third party channels.
 
 **What is the Clubhouse?**
 
@@ -209,7 +204,7 @@ Answer
 
 
 
-**What are Libraries? **
+**What are Libraries?**
 
 
 

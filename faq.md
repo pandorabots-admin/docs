@@ -194,7 +194,7 @@ Integrations, accessible via the Deploy Page, are easy methods for publishing yo
 
 **What is the Clubhouse?**
 
-
+The Clubhouse is a place where you can publish your bot-in-progress for other users to talk to, and chat with their bots as well. It's a great way to exchange logs and feedback and foster the community! 
 
 **What is the Directory?**
 

@@ -206,7 +206,7 @@ Libraries are open source AIML files you can modify or incorporate into your cha
 
 **What are Modules?**
 
-
+Modules are similar to libraries insofar as they allow you to extend your chatbot with pre-written AIML code, but unlike open libraries the code is a "black box" to protect the author of the module's IP. Because modules often consist of valuable or proprietary code, there may be a fee entailed with usage.
 
 **Why are some features locked?**
 

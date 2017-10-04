@@ -104,7 +104,7 @@ The Free and Premium Tiers of the Pandorabots Platform available via this intera
 
 **How can I adjust my max monthly limit?**
 
-Please email us at support@pandorabots.com to inquire about adjusting your monthly limit up or down. Note: customers who anticipate exceeding certain volumes may require an upgrade to the Enterprise Tier.
+Please email us at support@pandorabots.com to inquire about adjusting your monthly limit up or down. Note: customers who anticipate exceeding certain volumes may necessitate an upgrade to the Enterprise Tier.
 
 **What is the average response time for bots?**
 

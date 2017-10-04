@@ -62,7 +62,9 @@ Create a new bot by clicking on the "+" icon next to "My Bots" on the Left Navig
 
 **What do the bot indicator lights mean?**
 
-
+* Green: Your bot is compiled and should be responsive to clients on whatever channels it is deployed to
+* Yellow: There are differences between the version of the bot you are currently editing on the _Staging Server_ and the bot that is live to the public on the _Production Server_. Push any new changes live by clicking the _Publish_ button in the upper right hand corner of the _Editor_, but not before thoroughly testing your bot for any breaking changes!
+* Red: Your bot has compile errors that need to be addressed before it can function properly. 
 
 **What does it mean if my bot is compiled / uncompiled?**
 

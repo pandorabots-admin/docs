@@ -52,7 +52,7 @@ You may find your app ID under the "Custom Application" Integration on the Deplo
 
 **I'm not a developer - can I use the API?**
 
-The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for motivated hobbyists eager to study the documentation.
+The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for any motivated self-starter eager to study the documentation!
 
 ###Bots
 

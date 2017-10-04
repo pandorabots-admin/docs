@@ -108,7 +108,7 @@ Please email us at support@pandorabots.com to inquire about adjusting your month
 
 **What is the average response time for bots?**
 
-The average bot response time is 0.3 seconds (300 milliseconds). Additional latency can occur due to third party factors such as the deployment platform or client's network connection.
+The average bot response time is 0.3 seconds (300 milliseconds). Exceptionally large bots can also take a bit longer to initially load into memory. Additional latency can occur due to third party factors such as the deployment platform or client's network connection.
 
 **What is the average uptime for the system?**
 

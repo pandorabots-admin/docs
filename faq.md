@@ -116,11 +116,11 @@ We strive for service level uptimes of 99.5% for all users. However, only the en
 
 **Is there a limit to how many bots I can create?**
 
-The Free Tier allows up to 2 bots; the Premium Tier allows up to 20 bots; and the Enterprise Tier does not expressly limit the number of bots. 
+The Free Tier allows up to 2 bots; the Premium Tier allows up to 20 bots; and the Enterprise Tier includes a custom plan to accommodate the number of bots required by your application.
 
 **Where are my chatlogs from last month?**
 
-Chatlog data and monthly statistics are only available dating back the previous 30 days. You may download your logs at any time from the Logs page. If you require longer or customer storage, please contact us to inquire about the Enterprise Tier.
+Chatlog data and monthly statistics are only available dating back the previous 30 days. You may download your logs at any time from the Logs page. If you require longer or custom storage, dashboards, or analytics, please contact us to inquire about the Enterprise Tier.
 ___
 ###Pricing
 

@@ -140,10 +140,6 @@ ___
 
 You can track your monthly usage (updated in real time) and associated charges to date by visiting your account page, where you may also access your monthly invoices.
 
-****
-
-
-
 **Do you offer student discounts?**
 
 Please have your organization or department head email us with any relevant details and we will consider the request.

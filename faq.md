@@ -78,7 +78,7 @@ AIML can be written in almost any natural language. Segmentation is required for
 
 **What Integrations are available?**
 
-
+Visit the _Deploy Page_ to see a list of available integrations, which provide an easy way to publish your bot on third party channels like popular voice and messaging platforms. 
 
 **What Integrations will be available in the future?**
 

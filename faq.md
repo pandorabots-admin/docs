@@ -82,7 +82,7 @@ Visit the _Deploy Page_ to see a list of available integrations, which provide a
 
 **What Integrations will be available in the future?**
 
-
+Supported Integrations are determined by a variety of factors including, but not limited to, technical feasibility, ecosystem demand, and platform partner relationships. If you wish to see support added for a channel that is not currently available, please email us at support@pandorabots.com and we'd be happy to consider your request.
 
 **Are custom Integrations available?**
 

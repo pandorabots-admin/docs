@@ -198,11 +198,11 @@ The Clubhouse is a place where you can publish your bot-in-progress for other us
 
 **What is the Directory?**
 
-
+The Directory is similar to the Clubhouse except that instead of making your bot available exclusively to other platform users, it allows you to list your bot for the general public to discover and chat with via [directory.pandorabots.com](/directory.pandorabots.com).
 
 **What are Libraries?**
 
-
+Libraries are open source AIML files you can modify or incorporate into your chatbot to avoid "re-inventing the wheel." If you have created a collection of AIML files you would like us to consider listing as an available library, please contact us! 
 
 **What are Modules?**
 

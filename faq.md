@@ -161,7 +161,7 @@ The Pandorabots platform is not HIPPA compliant by default, but higher levels of
 
 **How is my data used and stored?**
 
-Please read our privacy policy for further details.
+Please read our Privacy Policy for further details.
 
 **Do I own my bot?**
 
@@ -170,6 +170,8 @@ Yes, all the code you develop using our platform is owned by you or your organiz
 **My bot was deleted!**
 
 Bots that violate our Terms of Service can be deleted any time at Pandorabots' discretion. If you believe your bot or account were deleted for some other reason, please contact us at support@pandorabots.com.
+
+As a general policy, we recommend routinely backing up your bot files. You may download a zip file any time from the Files tab in the Editor. 
 
 ###Topic
 

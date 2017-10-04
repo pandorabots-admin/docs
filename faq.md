@@ -1,6 +1,6 @@
 #Frequently Asked Questions
 
-######_Can't find the answer to your question below? Email us at support@pandorabots.com_
+######Can't find the answer to your question below? Email us at support@pandorabots.com
 
 ###AIML
 
@@ -100,7 +100,7 @@ The Free and Premium Tiers of the Pandorabots Platform available via this intera
 
 **Why is the default max queries 100,000 per month?**
 
-
+The default exists for two reasons: (1) To protect any platform users whose bots experience a sudden, unanticipated surge in popularity from paying more than $199/month; and (2) Because any entity that anticipates traffic  
 
 **How can I adjust my max monthly limit?**
 

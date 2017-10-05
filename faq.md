@@ -118,7 +118,7 @@ The average bot response time is 0.3 seconds (300 milliseconds). Exceptionally l
 
 **What is the average uptime for the system?**
 
-We strive for service level uptimes of 99.5% for all users. However, only the enterprise tier gaurentees uptime levels of 99.5% or higher. 
+We strive for service level uptimes of at least 99.5% for all users. However, only the enterprise tier gaurentees uptime levels of 99.5% or higher. 
 
 **Is there a limit to how many bots I can create?**
 

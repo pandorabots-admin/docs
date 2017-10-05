@@ -132,7 +132,7 @@ ___
 
 **What is a "query"?**
 
-The Pandorabots Platform charges on a per _Interaction_ basis, which consists of both the user input to the bot _and_ the bot's output (i.e., at least two messages). This is also known a _Talk API Call_, or _Query_ for short. Essentially, our platform takes a user input, parses it using our NLP engine, and returns the output you specified to the end user. 
+The Pandorabots Platform charges on a per _Interaction_ basis. An Interaction consists of both the user input to the bot _and_ the bot's output (i.e., two messages). This is also known a _Talk API Call_, or _Query_ for short. Essentially, our platform takes a user input, parses it using our NLP engine, and returns the output you specified to the end user. 
 
 **What is included in the Free Tier?**
 

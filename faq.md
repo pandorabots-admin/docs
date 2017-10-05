@@ -136,7 +136,7 @@ ___
 
 **Why is a credit card required to access certain features?**
 
-There is a paywall in place to access certain Deployment features of the platform designed to filter casual users from qualified, serious botmaster building quality bots. Your credit card will only ever be billed for usage that is not covered by the free tier. And, while we'd love to make everything free, there are commercial realities involved in running a bootstrapped business. We hope you'll find the service valuable enough to consider supporting our efforts.
+There is a paywall in place to access certain Deployment features in an effort to maintain quality standards for bots published on the platform. Your credit card will only ever be billed for usage that is not covered by the free tier. And, while we'd love to make everything free, there are commercial realities involved in running a bootstrapped business. We hope you'll find the service valuable enough to consider supporting our efforts.
 
 **When will Pandorabots charge my credit card?**
 

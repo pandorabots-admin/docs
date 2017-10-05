@@ -140,23 +140,19 @@ ___
 
 **When will Pandorabots charge my credit card?**
 
-
+Billing typically occurs on the 7th day of each month. 
 
 **How do I track monthly charges and access invoices?**
 
-You can track your monthly usage (updated in real time) and associated charges to date by visiting your account page, where you may also access your monthly invoices.
+You can track your monthly usage (updated in real time) and associated charges to date by visiting your Account page, where you may also access your monthly invoices.
 
 **Do you offer student discounts?**
 
 Please have your organization or department head email us with any relevant details and we will consider the request.
 
-**How can I remove my credit card information?**
-
-
-
 **How can I update my credit card information?**
 
-Visit the Account Page to update your credit card and other personal information on file. 
+Visit the Account Page to update (or delete) your credit card and other personal information on file. 
 ___
 
 ###Privacy, Security & Legal

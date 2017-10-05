@@ -136,7 +136,7 @@ ___
 
 **Why is a credit card required to access certain features?**
 
-
+We give away as many free tools and services and open source software as possible, but still need to gainfully employ the people who work hard to make these available for you! We hope you'll find the service valuable and consider supporting our efforts.
 
 **When will Pandorabots charge my credit card?**
 

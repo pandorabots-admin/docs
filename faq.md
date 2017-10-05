@@ -60,6 +60,12 @@ ___
 
 Create a new bot by clicking on the "+" icon next to "My Bots" on the Left Navigation bar. 
 
+**Can I host my own bot?**
+
+Sure! There are a number of open source AIML interpreters available in the wild of varying degrees of quality and developer support (i.e., use at your own risk!). You can download your bot files at any time via the Editor. 
+
+However, you cannot license and download an on premise version of the Pandorabots Platform, which is a strictly SaaS offering and requires expertise to run. Unless you are highly advanced technically and have lots of time to spare building an interpreter from scratch or modifying a deprecated code base, we highly recommend using our best in class interpreter-as-a-service.
+
 **What do the bot indicator lights mean?**
 
 * Green: Your bot is compiled and should be responsive to clients on whatever channels it is deployed to.

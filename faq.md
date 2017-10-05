@@ -130,13 +130,21 @@ Chatlog data and monthly statistics are only available dating back the previous 
 ___
 ###Pricing
 
+**What is a "query"?**
+
+The Pandorabots Platform charges on a per _Interaction_ basis, which consists of both the user input to the bot _and_ the bot's output (i.e., at least two messages). This is also known a _Talk API Call_, or _Query_ for short. Essentially, our platform takes a user input, parses it using our NLP engine, and returns the output you specified to the end user. 
+
 **What is included in the Free Tier?**
 
+The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.002 (USD) per query. Users who input a credit card will automatically have access to the Premium Tier. 
 
+**What is included in the Premium Tier?**
+
+The Premium Tier includes all the features of the Free Tier plus up to 20 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month. 
 
 **Why is a credit card required to access certain features?**
 
-The paywall barrier to making your bot publicly available is part of an effort to maintain high quality standards for bots published on the platform. _Your credit card will only ever be billed for usage that is not covered by the free tier_, meaning that you can still test and access all platform features for free up to a certain volume (1,000) of monthly messages. While we'd love to make everything free, there are commercial realities involved in running a bootstrapped business. We hope you enjoy the service and find it valuable enough to consider supporting our efforts.
+The paywall barrier to making your bot publicly available is part of an effort to maintain high quality standards for bots published on the platform. _Your credit card will only ever be billed for usage that is not covered by the free tier_, meaning that you can still test and access all platform features for free up to a certain volume (1,000) of monthly messages. And, while we'd love to make everything free, there are commercial realities involved in running a bootstrapped business. We hope you enjoy the service and find it valuable enough to consider supporting our efforts.
 
 **When will Pandorabots charge my credit card?**
 

@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;          
+**&lt;pattern&gt;            
 **Matches what the user says.
 
-**&lt;template&gt;          
+**&lt;template&gt;            
 **What the bot replies.
 
 Code example:
@@ -333,20 +333,19 @@ The graphic below shows the matching priority for all four wildcards, along with
 
 #### `HELLO #`**  &gt;  **`HELLO _`**  &gt;  **`HELLO THERE`**  &gt;  **`HELLO ^`**  &gt;  **`HELLO *`
 
-  
 **IMPORTANT!** Be very careful when using `#` and `_`, because they will override all other patterns you may wish to match!
 
 ###### Highest Priority Matching
 
 Sometimes, there is an exact match that we would like to take highest priority, overriding the `_` or `#` wildcards. we can use the `$` sign to signify that a pattern will be matched first given a particular word.
 
-For example, `<pattern>$WHO IS MIKE</pattern>` matches "Who is Mike?", and `<pattern>_ MIKE</pattern>` matches all other inputs ending with "Mike". 
+For example, `<pattern>$WHO IS MIKE</pattern>` matches "Who is Mike?", and `<pattern>_ MIKE</pattern>` matches all other inputs ending with "Mike".
 
-Note that `$` is _not_ a wildcard. It is a marker that says "for this particular word\(s\) - "WHO" in the example above - override the category that would have been otherwise matched. 
+Note that `$` is _not_ a wildcard. It is a marker that says "for this particular word\(s\) - "WHO" in the example above - override the category that would have been otherwise matched.
 
-###### Visualizing Matching Priority 
+###### Visualizing Matching Priority
 
+All of the bot's AIML categories are loaded into a structure called the _Graphmaster._ The order in which patterns take matching priority can be visualized in the Graphmaster:
 
-
-
+![](https://lh6.googleusercontent.com/w2kudeyyH0OxdGIzXMi6ZBllQvCseFVcr03RKvu1pp9h5ybUZY8Rx3p04Nybc4ZHcwoREc3P-Q90-l8Qeh-UiurJoxuzWm0y2kgPnEruHxZbySFXpUWq7W-Ik9XTdNtO4xJRmTG5klc)
 

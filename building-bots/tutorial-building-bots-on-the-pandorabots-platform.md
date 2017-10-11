@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                
+**&lt;pattern&gt;                  
 **Matches what the user says.
 
-**&lt;template&gt;                
+**&lt;template&gt;                  
 **What the bot replies.
 
 Code example:
@@ -400,7 +400,7 @@ You can use a property to store your bot's age. Create a new property with the n
 ```
 
 **Human:** How old are you?  
-**Bot:** I am 8 years old. 
+**Bot:** I am 8 years old.
 
 \#\#\#How to create a property file using NEW UI MISSING!
 
@@ -421,7 +421,7 @@ Note how the user of the `*` wildcard and `<star/>` allows you to write a single
 
 ###### Recalling Predicates
 
-Once you have set a predicate, it can be recalled elsewhere in your AIML. 
+Once you have set a predicate, it can be recalled elsewhere in your AIML.
 
 ```
 <category>
@@ -437,11 +437,11 @@ In combination, the previous two examples would enable the following conversatio
 **Human:** My name is Daniel.  
 **Bot:** Nice to meet you, Daniel.  
 **Human:** What is my name?  
-**Bot:** Your name is Daniel. 
+**Bot:** Your name is Daniel.
 
 ###### Using `var`
 
-Local variables work almost exactly like predicates, but their scope is limited to a single category. These are different than predicates, which can be recalled at any time during the conversation. For example: 
+Local variables work almost exactly like predicates, but their scope is limited to a single category. These are different than predicates, which can be recalled at any time during the conversation. For example:
 
 ```
 <category>
@@ -469,9 +469,9 @@ This has a wide range of uses:
 * Linking many synonymous inputs to the same template
 * Correcting spelling errors made by the client
 * Replacing colloquial expression with proper English
-* Removing unnecessary words from the input \(reduction\)
+* Removing unnecessary words from the input \(_Reduction_\)
 
-About half of the categories in a bot use recursion in some way. 
+About half of the categories in a bot use recursion in some way.
 
 ###### The `<srai>` Tag
 
@@ -488,7 +488,7 @@ If this category is matched \(i.e., the input is "Hello"\), the bot will recurse
 
 ###### Using `<srai>`
 
-The &lt;srai&gt; tag effectively translates the input that matches the categories below to "Hi", contained in the terminal category. 
+The &lt;srai&gt; tag effectively translates the input that matches the categories below to "Hi", contained in the terminal category.
 
 ```
 <category>
@@ -529,7 +529,51 @@ People are bad at spelling and typing, which may cause your bot to fail when try
 
 ###### Synonyms
 
-Conceptually similar to the spelling error technique, 
+You can also use `<srai>` in conjunction with wildcards to define synonymous words or phrases: 
+
+```
+<category>
+<pattern>_ DAD *</pattern>
+<template><srai><star/> FATHER <star index=“2”/></srai></template>
+</category>
+```
+
+Anytime the user input contains the word "dad", the bot will replace it with "father" and recuse using the same input. 
+
+###### Why Synonyms?
+
+Thesaurus.com lists 52 synonyms for the word “good”. To account for this, you would need 52 additional categories for every one that contains the word “good”.
+
+If your bot has 100 patterns that contain the word “good”, that’s 5200 additional categories you would have to write. Using the synonyms technique, you can reduce that number to just 52.
+
+_NOTE: once a word has been defined as a synonym, you cannot use it in patterns. The leading underscore `_` ensures that the bot translates the synonym before doing anything else._
+
+###### Reduction
+
+We can also use `<srai>` to remove unnecessary words from the input. 
+
+```
+<category>
+<pattern>I SEE NOW THAT YOU ARE *</pattern>
+<template><srai>YOU ARE <star/></srai></template>
+</category>
+```
+
+Reductions make writing AIML and adding to your bot a far more enjoyable process. The more reductions you have, the better your bot will be at providing relevant matches.
+
+###### Returning Text and Recuring
+
+The previous examples of `<srai>` have returnred no text of their own. You template, however, can return both text and `<srai>` tags. 
+
+```
+<category>
+<pattern>HOWDY</pattern>
+<template>
+<srai>HELLO</srai>
+Are you a cowboy?
+</template>
+</category>
+```
 
 
 

@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                  
+**&lt;pattern&gt;                    
 **Matches what the user says.
 
-**&lt;template&gt;                  
+**&lt;template&gt;                    
 **What the bot replies.
 
 Code example:
@@ -529,7 +529,7 @@ People are bad at spelling and typing, which may cause your bot to fail when try
 
 ###### Synonyms
 
-You can also use `<srai>` in conjunction with wildcards to define synonymous words or phrases: 
+You can also use `<srai>` in conjunction with wildcards to define synonymous words or phrases:
 
 ```
 <category>
@@ -538,7 +538,7 @@ You can also use `<srai>` in conjunction with wildcards to define synonymous wor
 </category>
 ```
 
-Anytime the user input contains the word "dad", the bot will replace it with "father" and recuse using the same input. 
+Anytime the user input contains the word "dad", the bot will replace it with "father" and recuse using the same input.
 
 ###### Why Synonyms?
 
@@ -546,11 +546,11 @@ Thesaurus.com lists 52 synonyms for the word “good”. To account for this, yo
 
 If your bot has 100 patterns that contain the word “good”, that’s 5200 additional categories you would have to write. Using the synonyms technique, you can reduce that number to just 52.
 
-_NOTE: once a word has been defined as a synonym, you cannot use it in patterns. The leading underscore `_` ensures that the bot translates the synonym before doing anything else._
+_NOTE: once a word has been defined as a synonym, you cannot use it in patterns. The leading underscore \`_\` ensures that the bot translates the synonym before doing anything else.\_
 
 ###### Reduction
 
-We can also use `<srai>` to remove unnecessary words from the input. 
+We can also use `<srai>` to remove unnecessary words from the input.
 
 ```
 <category>
@@ -563,7 +563,7 @@ Reductions make writing AIML and adding to your bot a far more enjoyable process
 
 ###### Returning Text and Recuring
 
-The previous examples of `<srai>` have returnred no text of their own. You template, however, can return both text and `<srai>` tags. 
+The previous examples of `<srai>` have directly returned no text of their own. You template, however, can return both text and `<srai>` tags.
 
 ```
 <category>
@@ -575,5 +575,36 @@ Are you a cowboy?
 </category>
 ```
 
+---
 
+#### Sets and Maps
+
+An AIML Set is a list of unique text strings. You can create a set using the File drop-down in the Editor.
+
+\#\#\#Add image
+
+A set called "colors" might contain the following:
+
+* red
+* orange
+* yellow
+* green
+* blue
+* purple
+* ...
+
+Sets are used to dramatically reduce your bot's overall categories. Consider the following conversation:
+
+**Human:** Is green a color?  
+**Bot:** Yes, green is a color.  
+**Human:** Is blue a color?  
+**Bot:** Yes, blue is a color.  
+**Human:** Is peanut butter a color?  
+**Bot:** No, peanut butter is not a color.
+
+Imagine how many categories would be needed to cover every color in the spectrum!
+
+Instead of giving each color its own category, we can create a set that contains all the colors, and write a single category that checks to see if the user's input contained a color in the set.
+
+This 
 

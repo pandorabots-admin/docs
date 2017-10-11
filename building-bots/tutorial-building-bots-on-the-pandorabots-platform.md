@@ -135,9 +135,9 @@ Other tags are "self-closing" and do not require a partner or an inner string, f
 
 ###### The AIML File
 
-A category is the basic unit of knowledge in AIML. 
+A category is the basic unit of knowledge in AIML.
 
-A category always contains an input _pattern_ and a response _template_. Categories are sometimes also described as _rules_, which you as the botmaster specify to describe how the chatbot should respond to client inputs. 
+A category always contains an input _pattern_ and a response _template_. Categories are sometimes also described as _rules_, which you as the botmaster specify to describe how the chatbot should respond to client inputs.
 
 Generally, the more categories you have, the more robust your chatbot will be.
 
@@ -145,10 +145,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;  
+**&lt;pattern&gt;    
 **Matches what the user says.
 
-**&lt;template&gt;  
+**&lt;template&gt;    
 **What the bot replies.
 
 Code example:
@@ -171,14 +171,32 @@ The above code would result in the following exchange between your bot and the c
 Delineates the beginning and end of a category, which is a unit of knowledge for your bot.
 
 **&lt;pattern&gt;HI&lt;/pattern&gt;**  
-Defines a pattern that matches a certain input from the client.   
+Defines a pattern that matches a certain input from the client.  
 _Note: AIML matching is case insensitive, meaning it does not differentiate between capital and lowercase letters. So, if the client said either "hi" or "HI," the bot would still match this category. Using all caps to write the pattern is a convention adopted to make the code more readable. _
 
 **&lt;template&gt;Hello world!"&lt;/template&gt;**  
-Defines the bot's response to the matched pattern. Case does matter in the template! Your bots response will be returned to the client exactly as written between the template tags. 
+Defines the bot's response to the matched pattern. Case does matter in the template! Your bots response will be returned to the client exactly as written between the template tags.
 
-**  
-**
+**&lt;/category&gt;**  
+Marks the end of the category.
+
+###### Pattern Matching
+
+The bot will search through all of its categories to form a match with the user input. 
+
+**IMPORTANT!** Remember that the _input pre-processor strips the input of all punctuation_. Therefore, you must not include punctuation marks in your patterns!
+
+WRONG:
+
+```
+<pattern>What is your name?</pattern>
+```
+
+**  CORRECT:**
+
+```
+<pattern>WHAT IS YOUR NAME</pattern>
+```
 
 
 

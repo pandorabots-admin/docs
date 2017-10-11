@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                        
+**&lt;pattern&gt;                          
 **Matches what the user says.
 
-**&lt;template&gt;                        
+**&lt;template&gt;                          
 **What the bot replies.
 
 Code example:
@@ -662,7 +662,7 @@ Set files are a simple string array and are written in the following format:
 
 ###### Maps
 
-A map is a list of key-value pairs used to form associations between words. You can create a map using the Files drop-down in the editor. 
+A map is a list of key-value pairs used to form associations between words. You can create a map using the Files drop-down in the editor.
 
 A map called "statecapitals" might look like this:
 
@@ -685,9 +685,9 @@ Consider the following conversation:
 **Human:** What is the capital of California?  
 **Bot:** Sacramento is the capital of California.  
 **Human:** What is the capital of New York?  
-**Bot:** Albany is the capital of New York.   
+**Bot:** Albany is the capital of New York.  
 **Human:** What is the capital of Texas?  
-**Bot:** Austin is the capital of Texas. 
+**Bot:** Austin is the capital of Texas.
 
 We can enable this conversation with a single category, one set, and one map:
 
@@ -700,9 +700,51 @@ We can enable this conversation with a single category, one set, and one map:
 </category>
 ```
 
-Feel free to try creating the set and map files we discussed, and then add this category to your AIML. Your bot will now be able to relay the capital of the states listed in your set and map. 
+Feel free to try creating the set and map files we discussed, and then add this category to your AIML. Your bot will now be able to relay the capital of the states listed in your set and map.
 
 ###### More on Maps
+
+Like sets, we can include a "default" category when the wildcard contents do not match an item in the map.
+
+```
+<category>
+<pattern>WHAT IS THE CAPITAL OF *</pattern>
+<template>
+I don’t know what the capital of <star/> is.
+</template>
+</category>
+```
+
+**Human:** What is the capital of Pennsyltucky?  
+**Bot:** I don't know what the capital of Pennsyltucky is.
+
+Map files are simple key-value pairs in an array, and are written in the following format:
+
+```
+[["Texas" , "Austin"], ["California" , "Sacramento"]]
+```
+
+###### Built-in Sets and Maps
+
+Pandorabots has some pre-built sets and maps that are not visible from the editor.
+
+\#\#\#Is this still true in uUI?
+
+`<set>number</set>` - matches any natural number
+
+`<map name=”successor”>` - maps any number n to n+1
+
+`<map name=”predecessor”>` - maps any number to n-1
+
+`<map name=”plural”>` - \(attempts to\) find the plural form of a singular noun \(English only\)
+
+`<map name=”singular”>` - \(attempts to\) find the singular form of a plural noun \(English only\)
+
+---
+
+#### Context
+
+###### What is Context?
 
 
 

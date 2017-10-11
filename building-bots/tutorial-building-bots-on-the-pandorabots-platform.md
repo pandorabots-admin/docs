@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                          
+**&lt;pattern&gt;                            
 **Matches what the user says.
 
-**&lt;template&gt;                          
+**&lt;template&gt;                            
 **What the bot replies.
 
 Code example:
@@ -745,6 +745,25 @@ Pandorabots has some pre-built sets and maps that are not visible from the edito
 #### Context
 
 ###### What is Context?
+
+When humans have a conversation, we are able to remember the things that have been previously said. 
+
+**Human 1:** Do you like coffee?  
+**Human 2:** Yes.
+
+Human 1 knows that "Yes" is a response to their question, because they have said it in particular context.
+
+There are several features in AIML that allow you to provide context within your category.
+
+###### The` <that>` Tag
+
+The &lt;that&gt; tag, which sits between the pattern and template, enables the bot to remember that last sentence it uttered.
+
+A category containing a `<that>` statement will ONLY be matched if the contents between the tags match the last sentence given by the bot. 
+
+This allows you to have many duplicate patterns which, depending on the previous response, will trigger different templates.
+
+###### Using That
 
 
 

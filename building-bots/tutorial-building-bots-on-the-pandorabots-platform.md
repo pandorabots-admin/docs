@@ -20,6 +20,8 @@ The Pandorabots Platform is a feature-rich user interface designed to help you, 
 
 Experienced AIML writers may choose to use their favorite text editor instead of this UI, but many find the features in this UI indispensable for bot creation, deployment, and maintenance.
 
+---
+
 ## Platform Components
 
 #### Log In
@@ -102,6 +104,8 @@ The bot responds to each sentence individually and forms a result by combining t
 
 You can customize which punctuation marks determine the end of a sentence by modifying the value of the "sentence-splitting" property in your bot's properties file.
 
+---
+
 #### Categories
 
 ###### The AIML File
@@ -117,9 +121,9 @@ Create a new AIML files under the Files drop-down within the Editor. When select
 
 ###### XML Primer
 
-AIML is an extension of a standard called XML, which is similar in syntax to HTML.
+AIML is an extension of a standard called XML.
 
-It is written using "tags" \(code\) and text.
+It is written using "tags" \(code\) and text, which should be familiar to anyone with HTML experience.
 
 Some tags comes in pairs, with some context \(text and/or other tags\) appearing between, for example:
 
@@ -145,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;    
+**&lt;pattern&gt;      
 **Matches what the user says.
 
-**&lt;template&gt;    
+**&lt;template&gt;      
 **What the bot replies.
 
 Code example:
@@ -182,11 +186,11 @@ Marks the end of the category.
 
 ###### Pattern Matching
 
-The bot will search through all of its categories to form a match with the user input. 
+The bot will search through all of its categories to form a match with the user input.
 
 **IMPORTANT!** Remember that the _input pre-processor strips the input of all punctuation_. Therefore, you must not include punctuation marks in your patterns!
 
-WRONG:
+**WRONG:**
 
 ```
 <pattern>What is your name?</pattern>
@@ -197,6 +201,98 @@ WRONG:
 ```
 <pattern>WHAT IS YOUR NAME</pattern>
 ```
+
+###### HTML Markup
+
+HTML is also an extension of XML.
+
+You can use HTML to markup your bot’s responses \(templates\) with the appropriate formatting.
+
+You can also use HTML to include images and hyperlinks that lead to other websites. [See this page](http://www.w3schools.com/html/html_basic.asp) for some HTML basics.
+
+For example, the &lt;br/&gt; HTML tag allows you to insert line breaks in the text. 
+
+```
+<category>
+<pattern>WHO ARE YOU</pattern>
+<template>I am a bot.<br/> I live in a computer.
+</template>
+</category>
+```
+
+**Human: **Who are you?  
+**Bot:** I am a bot.  
+        I live in a computer. 
+
+###### The Ultimate Default Category \(UDC\)
+
+What if the user input does not match any of the patterns you have defined?
+
+The _Ultimate Default Category \(UDC\)_ is used by the bot to provide an answer if no other suitable category can be matched. The \* in this case will match anything undefined. 
+
+```
+<category>
+<pattern>*</pattern>
+<template>I have no answer for that.</template>
+</category>
+```
+
+###### Randomized Responses
+
+You can use the **&lt;random&gt; **tag to provide many different responses for the same input pattern. This is especially useful in the UDC because it can provide some variation to the default answer. 
+
+```
+<category>
+<pattern>*</pattern>
+<template>
+<random>
+<li>What was that?</li>
+<li>I don’t understand</li>
+<li>Can you say that more clearly?</li>
+</random>
+</template>
+</category>
+```
+
+In the above example, each time a category is matched, the bot will pick one of the list elements \(&lt;li&gt;\) at random as it's response. 
+
+---
+
+#### Wildcards
+
+###### Wildcard Basics
+
+In the UDC, we used an asterisk \(\*\) in the pattern to capture the user’s input. This symbol, in AIML, is known as a _wildcard_.
+
+Wildcards are used to capture many inputs using only a single category.
+
+###### The \* Wildcard
+
+The \* symbol is able to capture **1 or more words** in the user input. 
+
+```
+<pattern>HELLO *</pattern>
+```
+
+This pattern would match all of the following inputs:
+
+* Hello there!
+* Hello Daniel.
+* Hello my good friend.
+
+This pattern would **NOT** match the word "Hello" by itself, because there must be at least one word captured by the \* to form a match. 
+
+**  
+**
+
+**  
+**
+
+**  
+**
+
+**  
+**
 
 
 

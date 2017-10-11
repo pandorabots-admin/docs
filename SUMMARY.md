@@ -103,8 +103,9 @@
   * [FAQ Bot](/building-bots/simplefaqprocess.md)
   * [Concierge Bot](/building-bots/build-a-concierge-bot.md)
 
-## INTEGRATIONS
+## DEPLOY & EXTEND
 
+* [Integrations](integrations/integrations.md)
 * [Browser](/integrations/browser-integration.md)
 * [Firebase](/integrations/tracking-your-bots-conversations.md)
 * [Hubot](/integrations/connecting-your-bot-to-hubot.md)
@@ -113,9 +114,7 @@
 * [Telegram](/integrations/telegram-integration.md)
 * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
 * [Twitter](/integrations/putting-your-bot-on-twitter.md)
-
-## MODULES
-
-* [Mitsuku](/modules/Mitsuku.md)
+* [Modules](integrations/modules.md)
 * [OpenWeather](/modules/OpenWeather.md)
+* [Mitsuku](/modules/Mitsuku.md)
 

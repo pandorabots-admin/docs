@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                            
+**&lt;pattern&gt;                              
 **Matches what the user says.
 
-**&lt;template&gt;                            
+**&lt;template&gt;                              
 **What the bot replies.
 
 Code example:
@@ -746,7 +746,7 @@ Pandorabots has some pre-built sets and maps that are not visible from the edito
 
 ###### What is Context?
 
-When humans have a conversation, we are able to remember the things that have been previously said. 
+When humans have a conversation, we are able to remember the things that have been previously said.
 
 **Human 1:** Do you like coffee?  
 **Human 2:** Yes.
@@ -755,15 +755,53 @@ Human 1 knows that "Yes" is a response to their question, because they have said
 
 There are several features in AIML that allow you to provide context within your category.
 
-###### The` <that>` Tag
+###### The`<that>` Tag
 
 The &lt;that&gt; tag, which sits between the pattern and template, enables the bot to remember that last sentence it uttered.
 
-A category containing a `<that>` statement will ONLY be matched if the contents between the tags match the last sentence given by the bot. 
+A category containing a `<that>` statement will ONLY be matched if the contents between the tags match the last sentence given by the bot.
 
 This allows you to have many duplicate patterns which, depending on the previous response, will trigger different templates.
 
-###### Using That
+###### Using `<that>`
+
+In the example below, the second category is bound to a particular context. It will only be matched _if_ the last sentence the bot said was "Do you like coffee?".
+
+```
+<category>
+<pattern>^ COFFEE ^</pattern>
+<template>Do you like coffee?</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>DO YOU LIKE COFFEE</that>
+<template>Do you prefer dark or medium roast?</template>
+</category> 
+```
+
+**Human:** I should drink some coffee.  
+**Bot:** Do you like coffee?  
+**Human:** Yes.  
+**Bot:** Do you prefer dark or medium roast?
+
+###### More on `<that>`
+
+The previous sentence stated by your bot will be stripped of punctuation when read by a category referencing if with `<that>` tags. 
+
+The new category will also ignore differences in capitalization / non-capitalized letters, and will expect any normalization you have specified in the normal.substituion file. 
+
+For these reasons, you must write the contents of your `<that>` tags like you write patterns: no punctuation, all capital letters, and normalized. If you `<that>` tags are failing, it is usually because one of these three items is amiss. 
+
+Note: `<that>` tags can also contain wildcards! Values for `<that>` variables are only valid within the scope of the active conversation.
+
+###### Topic
+
+There is a built-in predicate variable called `topic`. Categories can be grouped together based on different values for `topic`. These categories can only be matched if the topic predicate has been set to a certain value. 
+
+`Topic` allows your bot to keep context for longer than one interaction \(the function of the `<that> `tag\). This can also be used to write duplicate patterns whose templates vary depending on the context of the conversation. 
+
+###### Using Topic: Step 1
 
 
 

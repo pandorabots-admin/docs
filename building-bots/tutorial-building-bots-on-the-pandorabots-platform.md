@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;              
+**&lt;pattern&gt;                
 **Matches what the user says.
 
-**&lt;template&gt;              
+**&lt;template&gt;                
 **What the bot replies.
 
 Code example:
@@ -361,7 +361,7 @@ You can "echo" the words captured by the wildcard from within the template using
 ```
 
 **Human:** My name is Daniel.  
-**Bot:** Hello, Daniel. 
+**Bot:** Hello, Daniel.
 
 ###### Multiple Wildcards
 
@@ -374,11 +374,162 @@ You can have more than one wildcard per pattern. You can also echo multiple wild
 </category>
 ```
 
-For further reading on Wildcards, please see the 
-
 ---
 
 #### Variables
+
+###### What are Variables?
+
+In computer programming, a variable is a symbol whose value can be changed.
+
+AIML has variables as well. These can be used to store information about your bot, user, or anything else you would like. There are three types of variables:
+
+* **Properties:** global constants for the bot. These can only by changed by the botmaster.
+* **Predicates**: global variables for the bot. These are usually set by the client during conversation when a template is activated. 
+* **Local Variables:** the same as predicates except their scope is limited to one category. 
+
+###### Using Properties
+
+You can use a property to store your bot's age. Create a new property with the name "age" and the value "8". Then, insert this category:
+
+```
+<category>
+<pattern>HOW OLD ARE YOU</pattern>
+<template>I am <bot name=“age”/> years old.</template>
+</category>
+```
+
+**Human:** How old are you?  
+**Bot:** I am 8 years old. 
+
+\#\#\#How to create a property file using NEW UI MISSING!
+
+###### Setting Predicates
+
+Using a predicate variable, you can write a category that will store the name of the client. This category will store the client's name under a predicate called "name":
+
+```
+<category>
+<pattern>MY NAME IS *</pattern>
+<template>Nice to meet you, <set name=“name”><star/></set></template>
+</category>
+```
+
+\#\#\#Where client name is available on a Messaging Platform, should Pandorabots auto-set name predicate for client?
+
+Note how the user of the `*` wildcard and `<star/>` allows you to write a single category that will capture any name!
+
+###### Recalling Predicates
+
+Once you have set a predicate, it can be recalled elsewhere in your AIML. 
+
+```
+<category>
+<pattern>WHAT IS MY NAME</pattern>
+<template>Your name is <get name=“name”/>.</template>
+</category>
+```
+
+If you have set the predicate using the category in the previous example above, this will now recall the value of the predicate called "name".
+
+In combination, the previous two examples would enable the following conversation:
+
+**Human:** My name is Daniel.  
+**Bot:** Nice to meet you, Daniel.  
+**Human:** What is my name?  
+**Bot:** Your name is Daniel. 
+
+###### Using `var`
+
+Local variables work almost exactly like predicates, but their scope is limited to a single category. These are different than predicates, which can be recalled at any time during the conversation. For example: 
+
+```
+<category>
+<pattern>THE APPLE IS *</pattern>
+<template>
+<think><set var=“color”><star/></set></think>
+I like <get var= “color”> apples.
+</template>
+</category>
+```
+
+We will revisit local variables in more detail in the section on "Context."
+
+---
+
+#### Recursion and Reduction
+
+###### What is Recursion?
+
+In AIML, you can define a template that calls another category.
+
+This has a wide range of uses:
+
+* Simplifying an input using fewer words
+* Linking many synonymous inputs to the same template
+* Correcting spelling errors made by the client
+* Replacing colloquial expression with proper English
+* Removing unnecessary words from the input \(reduction\)
+
+About half of the categories in a bot use recursion in some way. 
+
+###### The `<srai>` Tag
+
+The `<srai>` tag tells the bot to look for another category:
+
+```
+<category>
+<pattern>HELLO</pattern>
+<template><srai>HI</srai></template>
+</category>
+```
+
+If this category is matched \(i.e., the input is "Hello"\), the bot will recurse. Before returning some text, it will first look for a different category that matches HI.
+
+###### Using `<srai>`
+
+The &lt;srai&gt; tag effectively translates the input that matches the categories below to "Hi", contained in the terminal category. 
+
+```
+<category>
+<pattern>HELLO</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category>
+<pattern>HI THERE</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category>
+<pattern>HOWDY</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+:
+
+<category>
+<pattern>HI</pattern>
+<template>Hi, how are you?</template>
+</category>
+```
+
+The pattern in the terminal category is also commonly known as the _**Intent**_**, which is the canonical form of what the words being used fundamentally mean**. In this case, `<srai>` is the method for specifying that Hello, Hi There, and Howdy, all mean the same thing as "Hi" \(which we humans generally intend as a Greeting\). Much of the work in bot development involves capturing all the different way we humans say the same thing insofar as it relates to your domain, which is why it is so important to regularly review your chatlogs and continously improve your bot over time.
+
+###### Common Misspellings & Colloquial Expressions
+
+People are bad at spelling and typing, which may cause your bot to fail when trying to find a match. You can use &lt;srai&gt; to account for common spelling mistakes:
+
+```
+<category>
+<pattern>HOW R U</pattern>
+<template><srai>HOW ARE YOU</srai></template>
+</category>
+```
+
+###### Synonyms
+
+Conceptually similar to the spelling error technique, 
 
 
 

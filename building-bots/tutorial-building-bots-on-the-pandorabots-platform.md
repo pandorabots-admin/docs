@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                    
+**&lt;pattern&gt;                      
 **Matches what the user says.
 
-**&lt;template&gt;                    
+**&lt;template&gt;                      
 **What the bot replies.
 
 Code example:
@@ -579,6 +579,8 @@ Are you a cowboy?
 
 #### Sets and Maps
 
+###### Sets
+
 An AIML Set is a list of unique text strings. You can create a set using the File drop-down in the Editor.
 
 \#\#\#Add image
@@ -604,7 +606,63 @@ Sets are used to dramatically reduce your bot's overall categories. Consider the
 
 Imagine how many categories would be needed to cover every color in the spectrum!
 
-Instead of giving each color its own category, we can create a set that contains all the colors, and write a single category that checks to see if the user's input contained a color in the set.
+Instead of giving each color its own category, we can create a set that contains a number of colors, and write a single category that checks to see if the user's input contained a color in the set.
 
-This 
+This category will only be matched _if_ the user's input does, in fact, contain one of the colors in the set. If the user's input does not contain one of the colors listed in the set, the category will not be matched. 
+
+###### How Sets Work
+
+The set functions like a wildcard. It captures one or more words found in the user's input. 
+
+The name of the relevant set file is placed between the `<set>` tags.
+
+```
+<category>
+<pattern>IS <set>colors</set> A COLOR</pattern>
+<template>Yes, <star/> is a color.</template>
+</category>
+```
+
+If the input contained a string not found in the set, then that pattern would not form a match. To account for this possibility, we can provide a default answer using a `*` wildcard. 
+
+```
+<category>
+<pattern>IS <set>colors</set> A COLOR</pattern>
+<template>Yes, <star/> is a color.</template>
+</category>
+
+<category>
+<pattern>IS * A COLOR</pattern>
+<template>No, <star/> is not a color.</template>
+</category>
+```
+
+The first category will match if the input contains a string found in the set.
+
+The second category will match if the input contains a string NOT found in the set.
+
+###### More on Sets
+
+Sets take precedence over \* and ^, but can be overridden by `_`, `#`, and an exact word match. 
+
+The input captured by the `<set>` tags can be echoed using the `<star/>` tag, just like a wildcard can be echoed. 
+
+```
+<category>
+<pattern>IS <set>colors</set> A COLOR</pattern>
+<template>Yes, <star/> is my favorite color!</template>
+</category>
+```
+
+Set files are a simple string array and are written in the following format:
+
+```
+[[ "Austin" ], ["Baltimore"], [ "Chicago" ], [ "Dallas"]]
+```
+
+###### Maps
+
+
+
+
 

@@ -95,7 +95,7 @@
 * Related Articles
   * [End-User Management with A-Talk API](/managing-end-users-with-a-talk.md)
 
-## BOT BUILDING TUTORIALS
+## BUILDING BOTS
 
 * [Hello World](/building-bots/getting-started.md)
 * [Bot Building 101](building-bots/tutorial-building-bots-on-the-pandorabots-platform.md)

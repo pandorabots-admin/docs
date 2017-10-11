@@ -80,11 +80,105 @@ The Deployment Page provides an option to publish your bot to **The Clubhouse**,
 
 #### Input Pre-Processing
 
-\#\#\#
+###### Normalization
+
+Corrects some spelling errors and colloquialisms \(e.g. "wanna" --&gt;"want to"\)
+
+* Substitutes words for common emoticons \(e.g. ":-\)" --&gt;"SMILE"\)
+
+* Expands contractions \(e.g. "isn't" --&gt;"is not"\)
+
+* Removes intra-sentence punctuation \(e.g. "Dr. Wallace lives on St. John St. --&gt;"Dr Wallace lives on St John St."\)
+
+We refer to the above substitution steps as Normalization.
+
+These substitutions are contained in a substitution file called normal.substitution.
+
+###### Sentence Splitting
+
+Normalization also splits sentences based on predefined punctuation characters ".", "!", and "?". It also removes these punctuation marks once the sentences have been split, leaving the inputs punctuation-free.
+
+The bot responds to each sentence individually and forms a result by combining the responses together.
+
+You can customize which punctuation marks determine the end of a sentence by modifying the value of the "sentence-splitting" property in your bot's properties file.
 
 #### Categories
 
-\#\#\#
+###### The AIML File
+
+Create a new AIML files under the Files drop-down within the Editor. When selecting your new files, you'll notice that the Editor comes pre-populated with some code:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- insert your AIML categories here -->
+</aiml>
+```
+
+###### XML Primer
+
+AIML is an extension of a standard called XML, which is similar in syntax to HTML.
+
+It is written using "tags" \(code\) and text.
+
+Some tags comes in pairs, with some context \(text and/or other tags\) appearing between, for example:
+
+```
+<template>Some string goes here</template>
+```
+
+Other tags are "self-closing" and do not require a partner or an inner string, for example:
+
+```
+<get name=“age” />
+```
+
+###### The AIML File
+
+A category is the basic unit of knowledge in AIML. 
+
+A category always contains an input _pattern_ and a response _template_. Categories are sometimes also described as _rules_, which you as the botmaster specify to describe how the chatbot should respond to client inputs. 
+
+Generally, the more categories you have, the more robust your chatbot will be.
+
+###### Hello World Example
+
+Let's take a closer look at the fundamental components of a category: the pattern and template.
+
+**&lt;pattern&gt;  
+**Matches what the user says.
+
+**&lt;template&gt;  
+**What the bot replies.
+
+Code example:
+
+```
+<category>
+<pattern>HI</pattern>
+<template>Hello world!</template>
+</category>
+```
+
+The above code would result in the following exchange between your bot and the client:
+
+**Human:** Hi  
+**Bot: **Hello world!
+
+###### Explaining the "tags"
+
+**&lt;category&gt;**  
+Delineates the beginning and end of a category, which is a unit of knowledge for your bot.
+
+**&lt;pattern&gt;HI&lt;/pattern&gt;**  
+Defines a pattern that matches a certain input from the client.   
+_Note: AIML matching is case insensitive, meaning it does not differentiate between capital and lowercase letters. So, if the client said either "hi" or "HI," the bot would still match this category. Using all caps to write the pattern is a convention adopted to make the code more readable. _
+
+**&lt;template&gt;Hello world!"&lt;/template&gt;**  
+Defines the bot's response to the matched pattern. Case does matter in the template! Your bots response will be returned to the client exactly as written between the template tags. 
+
+**  
+**
 
 
 

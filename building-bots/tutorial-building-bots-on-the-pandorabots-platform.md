@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                      
+**&lt;pattern&gt;                        
 **Matches what the user says.
 
-**&lt;template&gt;                      
+**&lt;template&gt;                        
 **What the bot replies.
 
 Code example:
@@ -608,11 +608,11 @@ Imagine how many categories would be needed to cover every color in the spectrum
 
 Instead of giving each color its own category, we can create a set that contains a number of colors, and write a single category that checks to see if the user's input contained a color in the set.
 
-This category will only be matched _if_ the user's input does, in fact, contain one of the colors in the set. If the user's input does not contain one of the colors listed in the set, the category will not be matched. 
+This category will only be matched _if_ the user's input does, in fact, contain one of the colors in the set. If the user's input does not contain one of the colors listed in the set, the category will not be matched.
 
 ###### How Sets Work
 
-The set functions like a wildcard. It captures one or more words found in the user's input. 
+The set functions like a wildcard. It captures one or more words found in the user's input.
 
 The name of the relevant set file is placed between the `<set>` tags.
 
@@ -623,7 +623,7 @@ The name of the relevant set file is placed between the `<set>` tags.
 </category>
 ```
 
-If the input contained a string not found in the set, then that pattern would not form a match. To account for this possibility, we can provide a default answer using a `*` wildcard. 
+If the input contained a string not found in the set, then that pattern would not form a match. To account for this possibility, we can provide a default answer using a `*` wildcard.
 
 ```
 <category>
@@ -643,9 +643,9 @@ The second category will match if the input contains a string NOT found in the s
 
 ###### More on Sets
 
-Sets take precedence over \* and ^, but can be overridden by `_`, `#`, and an exact word match. 
+Sets take precedence over \* and ^, but can be overridden by `_`, `#`, and an exact word match.
 
-The input captured by the `<set>` tags can be echoed using the `<star/>` tag, just like a wildcard can be echoed. 
+The input captured by the `<set>` tags can be echoed using the `<star/>` tag, just like a wildcard can be echoed.
 
 ```
 <category>
@@ -661,6 +661,48 @@ Set files are a simple string array and are written in the following format:
 ```
 
 ###### Maps
+
+A map is a list of key-value pairs used to form associations between words. You can create a map using the Files drop-down in the editor. 
+
+A map called "statecapitals" might look like this:
+
+* California: Sacramento
+* New York: Albany
+* Texas: Austin
+* ...
+
+Maps are accessed from within the template. They are used in conjunction with a set that contains a list of its keys \(the words on the left of the colon above\). For example, a set that corresponds to the "statecapitals" map would be called "states":
+
+* California
+* New York
+* Texas
+* ...
+
+###### Maps: Test Case
+
+Consider the following conversation:
+
+**Human:** What is the capital of California?  
+**Bot:** Sacramento is the capital of California.  
+**Human:** What is the capital of New York?  
+**Bot:** Albany is the capital of New York.   
+**Human:** What is the capital of Texas?  
+**Bot:** Austin is the capital of Texas. 
+
+We can enable this conversation with a single category, one set, and one map:
+
+```
+<category>
+<pattern>WHAT IS THE CAPITAL OF <set>states</set></pattern>
+<template>
+<map name=“statecapitals”><star/></map> is the capital of <star/>
+</template>
+</category>
+```
+
+Feel free to try creating the set and map files we discussed, and then add this category to your AIML. Your bot will now be able to relay the capital of the states listed in your set and map. 
+
+###### More on Maps
 
 
 

@@ -1,4 +1,4 @@
-# Building Bots on the Pandorabots Platform
+###### Building Bots on the Pandorabots Platform
 
 ###### A tutorial for writing bots using the AIML 2.0 scripting language and the Pandorabots User Interface
 
@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;            
+**&lt;pattern&gt;              
 **Matches what the user says.
 
-**&lt;template&gt;            
+**&lt;template&gt;              
 **What the bot replies.
 
 Code example:
@@ -347,5 +347,38 @@ Note that `$` is _not_ a wildcard. It is a marker that says "for this particular
 
 All of the bot's AIML categories are loaded into a structure called the _Graphmaster._ The order in which patterns take matching priority can be visualized in the Graphmaster:
 
-![](https://lh6.googleusercontent.com/w2kudeyyH0OxdGIzXMi6ZBllQvCseFVcr03RKvu1pp9h5ybUZY8Rx3p04Nybc4ZHcwoREc3P-Q90-l8Qeh-UiurJoxuzWm0y2kgPnEruHxZbySFXpUWq7W-Ik9XTdNtO4xJRmTG5klc)
+###### ![](https://lh6.googleusercontent.com/w2kudeyyH0OxdGIzXMi6ZBllQvCseFVcr03RKvu1pp9h5ybUZY8Rx3p04Nybc4ZHcwoREc3P-Q90-l8Qeh-UiurJoxuzWm0y2kgPnEruHxZbySFXpUWq7W-Ik9XTdNtO4xJRmTG5klc)
+
+###### "Echoing" Wildcards
+
+You can "echo" the words captured by the wildcard from within the template using the &lt;star/&gt; tag. For example:
+
+```
+<category>
+<pattern>MY NAME IS *</pattern>
+<template>Hello, <star/>.</template>
+</category>
+```
+
+**Human:** My name is Daniel.  
+**Bot:** Hello, Daniel. 
+
+###### Multiple Wildcards
+
+You can have more than one wildcard per pattern. You can also echo multiple wildcards in your pattern by using `<star index="x"/>`, where **x** corresponds to the index number \(position in the sentence\) of the wildcard:
+
+```
+<category>
+<pattern>MY NAME IS * AND I AM * YEARS OLD</pattern>
+<template>Hi <star/>. I am also <star index=“2”/> years old!</template>
+</category>
+```
+
+For further reading on Wildcards, please see the 
+
+---
+
+#### Variables
+
+
 

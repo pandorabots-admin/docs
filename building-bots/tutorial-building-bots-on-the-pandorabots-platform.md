@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                              
+**&lt;pattern&gt;                                
 **Matches what the user says.
 
-**&lt;template&gt;                              
+**&lt;template&gt;                                
 **What the bot replies.
 
 Code example:
@@ -777,7 +777,7 @@ In the example below, the second category is bound to a particular context. It w
 <pattern>YES</pattern>
 <that>DO YOU LIKE COFFEE</that>
 <template>Do you prefer dark or medium roast?</template>
-</category> 
+</category>
 ```
 
 **Human:** I should drink some coffee.  
@@ -787,23 +787,34 @@ In the example below, the second category is bound to a particular context. It w
 
 ###### More on `<that>`
 
-The previous sentence stated by your bot will be stripped of punctuation when read by a category referencing if with `<that>` tags. 
+The previous sentence stated by your bot will be stripped of punctuation when read by a category referencing if with `<that>` tags.
 
-The new category will also ignore differences in capitalization / non-capitalized letters, and will expect any normalization you have specified in the normal.substituion file. 
+The new category will also ignore differences in capitalization / non-capitalized letters, and will expect any normalization you have specified in the normal.substituion file.
 
-For these reasons, you must write the contents of your `<that>` tags like you write patterns: no punctuation, all capital letters, and normalized. If you `<that>` tags are failing, it is usually because one of these three items is amiss. 
+For these reasons, you must write the contents of your `<that>` tags like you write patterns: no punctuation, all capital letters, and normalized. If you `<that>` tags are failing, it is usually because one of these three items is amiss.
 
 Note: `<that>` tags can also contain wildcards! Values for `<that>` variables are only valid within the scope of the active conversation.
 
 ###### Topic
 
-There is a built-in predicate variable called `topic`. Categories can be grouped together based on different values for `topic`. These categories can only be matched if the topic predicate has been set to a certain value. 
+There is a built-in predicate variable called `topic`. Categories can be grouped together based on different values for `topic`. These categories can only be matched if the topic predicate has been set to a certain value.
 
-`Topic` allows your bot to keep context for longer than one interaction \(the function of the `<that> `tag\). This can also be used to write duplicate patterns whose templates vary depending on the context of the conversation. 
+`Topic` allows your bot to keep context for longer than one interaction \(the function of the `<that>`tag\). This can also be used to write duplicate patterns whose templates vary depending on the context of the conversation.
 
-###### Using Topic: Step 1
+###### Using Topic
 
+**Step 1:**
 
+First, you need a category that sets the topic predicate. The following example would set the topic to "coffee":
 
+```
+<category>
+<pattern>CAN WE TALK ABOUT COFFEE</pattern>
+<template>Do you like <set name=“topic”>coffee</set>?</template>
+</category>
+```
 
+**Step 2:**
+
+Now, you can group together categories within the coffee topic. Note that &lt;topic&gt; tags appear outside 
 

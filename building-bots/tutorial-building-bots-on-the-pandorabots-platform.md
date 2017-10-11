@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;      
+**&lt;pattern&gt;        
 **Matches what the user says.
 
-**&lt;template&gt;      
+**&lt;template&gt;        
 **What the bot replies.
 
 Code example:
@@ -210,7 +210,7 @@ You can use HTML to markup your bot’s responses \(templates\) with the appropr
 
 You can also use HTML to include images and hyperlinks that lead to other websites. [See this page](http://www.w3schools.com/html/html_basic.asp) for some HTML basics.
 
-For example, the &lt;br/&gt; HTML tag allows you to insert line breaks in the text. 
+For example, the &lt;br/&gt; HTML tag allows you to insert line breaks in the text.
 
 ```
 <category>
@@ -222,13 +222,13 @@ For example, the &lt;br/&gt; HTML tag allows you to insert line breaks in the te
 
 **Human: **Who are you?  
 **Bot:** I am a bot.  
-        I live in a computer. 
+        I live in a computer.
 
 ###### The Ultimate Default Category \(UDC\)
 
 What if the user input does not match any of the patterns you have defined?
 
-The _Ultimate Default Category \(UDC\)_ is used by the bot to provide an answer if no other suitable category can be matched. The \* in this case will match anything undefined. 
+The _Ultimate Default Category \(UDC\)_ is used by the bot to provide an answer if no other suitable category can be matched. The \* in this case will match anything undefined.
 
 ```
 <category>
@@ -239,7 +239,7 @@ The _Ultimate Default Category \(UDC\)_ is used by the bot to provide an answer 
 
 ###### Randomized Responses
 
-You can use the **&lt;random&gt; **tag to provide many different responses for the same input pattern. This is especially useful in the UDC because it can provide some variation to the default answer. 
+You can use the **&lt;random&gt; **tag to provide many different responses for the same input pattern. This is especially useful in the UDC because it can provide some variation to the default answer.
 
 ```
 <category>
@@ -254,7 +254,7 @@ You can use the **&lt;random&gt; **tag to provide many different responses for t
 </category>
 ```
 
-In the above example, each time a category is matched, the bot will pick one of the list elements \(&lt;li&gt;\) at random as it's response. 
+In the above example, each time a category is matched, the bot will pick one of the list elements \(&lt;li&gt;\) at random as it's response.
 
 ---
 
@@ -268,7 +268,7 @@ Wildcards are used to capture many inputs using only a single category.
 
 ###### The \* Wildcard
 
-The \* symbol is able to capture **1 or more words** in the user input. 
+The \* symbol is able to capture **1 or more words** in the user input.
 
 ```
 <pattern>HELLO *</pattern>
@@ -280,19 +280,60 @@ This pattern would match all of the following inputs:
 * Hello Daniel.
 * Hello my good friend.
 
-This pattern would **NOT** match the word "Hello" by itself, because there must be at least one word captured by the \* to form a match. 
+This pattern would **NOT** match the word "Hello" by itself, because there must be at least one word captured by the \* to form a match.
 
-**  
-**
+###### The ^ Wildcard
 
-**  
-**
+The ^ symbol is also a wildcard, however, it can capture 0 or more words.
 
-**  
-**
+```
+<pattern>HELLO ^</pattern>
+```
 
-**  
-**
+** ** This pattern would match all of the following inputs:
+
+* Hello.
+* Hello there!
+* Hello Daniel.
+* Hello my good friend.
+
+###### Matching Priority
+
+What if both `HELLO *`** **and `HELLO ^`** **exist? Which one will form a match?
+
+Wildcards are ranked in order of priority, so that certain patterns will take precedence over others.
+
+The ^ has a higher priority, so if the input is "Hello there", then `HELLO ^` would be matched first.
+
+###### Exact Matches
+
+If a pattern forms an exact match with the input, the exact match category will take precedence over any containing the ^ or \* wildcards that it could potentially match.
+
+So, if the input is "Hello there", and the pattern `HELLO THERE` exists, it will match before the other wildcard patterns `HELLO ^` and `HELLO *`. 
+
+###### The \_ and \# Wildcards
+
+There are two other wildcards, \_ and \#. These wildcards take the highest priority when matching.
+
+Even if the input forms an exact match with a pattern, the match can be overridden by a pattern containing one of these wildcards.
+
+```
+<pattern>HELLO _</pattern>
+```
+
+If the input is "Hello there", the pattern above will form a match even if `<pattern>HELLO THERE</pattern>` has been defined.   
+
+The "\_" wildcard is a "1 or more" wildcard, like \*
+
+The "\#" wildcard is a "0 or more" wildcard, like ^
+
+###### Wildcard Matching Priority 
+
+The graphic below shows the matching priority for all four wildcards, along with a pattern that contains an exact match:
+
+#### **`HELLO #`  &gt;  `HELLO _`  &gt;  `HELLO THERE`  &gt;  `HELLO ^`  &gt;  `HELLO *`**
+
+**IMPORTANT!** Be very careful when using \# and \_, because they will override all other patterns you may wish to match!
 
 
 

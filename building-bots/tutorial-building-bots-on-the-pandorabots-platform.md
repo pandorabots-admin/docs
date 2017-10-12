@@ -1,4 +1,4 @@
-###### Building Bots on the Pandorabots Platform
+# Building Bots on the Pandorabots Platform
 
 ###### A tutorial for writing bots using the AIML 2.0 scripting language and the Pandorabots User Interface
 
@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                  
+**&lt;pattern&gt;                                    
 **Matches what the user says.
 
-**&lt;template&gt;                                  
+**&lt;template&gt;                                    
 **What the bot replies.
 
 Code example:
@@ -816,7 +816,7 @@ First, you need a category that sets the topic predicate. The following example 
 
 **Step 2:**
 
-Now, you can group together categories within the coffee topic. _Note that `<topic>` tags appear outside the categories. _In AIML 2.0, `<topic>` can appear inside the category, like `<that>`. 
+Now, you can group together categories within the coffee topic. \_Note that `<topic>` tags appear outside the categories. \_In AIML 2.0, `<topic>` can appear inside the category, like `<that>`.
 
 ```
 <topic name= “coffee”>
@@ -834,19 +834,17 @@ Now, you can group together categories within the coffee topic. _Note that `<top
 </topic>
 ```
 
-The patterns above will _only match if_ the topic has been set to "coffee." If no category within the topic tags forms a match with the input, the input will match a category with no topic specified. 
+The patterns above will _only match if_ the topic has been set to "coffee." If no category within the topic tags forms a match with the input, the input will match a category with no topic specified.
 
 **\#\#\#\(By default, that = topic = \*\) &lt;set name="topic"&gt;&lt;/set&gt; --&gt; topic="unknown"**
 
 ###### More on `<topic>`
 
-The default value of topic is `*`. If you set a topic with no value \(i.e., `<set name="topic"></set>`\) the value will be "unknown." 
+The default value of topic is `*`. If you set a topic with no value \(i.e., `<set name="topic"></set>`\) the value will be "unknown."
 
-Values for topic variables are only within the scope of an active conversation. 
+Values for topic variables are only within the scope of an active conversation.
 
 ###### Conditionals
 
-The values of predicates and local variables provide a third type of context in AIML. 
-
-
+The values of predicates and local variables provide a third type of context in AIML.
 

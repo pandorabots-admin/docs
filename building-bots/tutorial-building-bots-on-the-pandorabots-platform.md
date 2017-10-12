@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                        
+**&lt;pattern&gt;                                          
 **Matches what the user says.
 
-**&lt;template&gt;                                        
+**&lt;template&gt;                                          
 **What the bot replies.
 
 Code example:
@@ -846,7 +846,7 @@ Values for topic variables are only within the scope of an active conversation.
 
 ###### Conditionals
 
-The values of predicates and local variables provide a third type of context in AIML. Using the `<condition>` tag, a bot can respond differently to the same input depending on the value of a predicate or local variable. 
+The values of predicates and local variables provide a third type of context in AIML. Using the `<condition>` tag, a bot can respond differently to the same input depending on the value of a predicate or local variable.
 
 The concept is the same as an IF - THEN - ELSE statement found in most programming languages.
 
@@ -859,11 +859,78 @@ Consider the following:
 **Human: **Today is Tuesday.  
 **Bot: **Tuesday already?  
 **Human:** Today is Wednesday.  
-**Bot: **Humpday, we're halfway to the weekend!  
-  
-The bot response is _conditioned_ on the day of the week. Using the &lt;condition&gt; tag enables this with a single category. 
+**Bot: **Humpday, we're halfway to the weekend!
 
+The bot response is _conditioned_ on the day of the week. Using the &lt;condition&gt; tag within the template enables this with a single category:
 
+```
+<condition name=“today”>
+<li value=“Monday”>...</li>
+<li value=“Tuesday”>...</li>
+<li value =“Wednesday”>...</li>
+</condition>
+```
+
+The opening tag specifies the name of a predicate to check for; _if_ the value of the predicate matches the value of any list element \(`<li>`\), _then _the text of that element will be returned. 
+
+Altogether, the category for this test case would look like this: 
+
+```
+<category>
+<pattern>TODAY IS *</pattern>
+<template>
+<think><set name=“today”> <star/></set></think>
+<condition name=“today”>
+<li value=“Monday”>Ah. The start of a new week.</li>
+<li value=“Tuesday”>Tuesday already?</li>
+<li value=”Wednesday>Humpday, halfway to the weekend!</li>
+...
+<li>That isn’t the name of a day!</li>
+</condition>
+</template>
+</category>
+```
+
+The final list element \(the one without a value attribute\) will be returned if none of the other conditions are met. 
+
+###### Conditionals: Test Case II
+
+You can also use conditionals to check the status of a predicate, i.e., whether or not it has been set. 
+
+```
+<category>
+<pattern>WHAT IS MY NAME</pattern>
+<template>
+<condition name=“name”>
+<li value=“*”>Your name is <get name=“name”></li>
+<li>You haven’t told me your name yet!</li>
+</condition>
+</template>
+</category>
+```
+
+If the "name" predicate has been set to anything \(denoted by the asterisk\), the first list element will return; if it has not been set, then the second list element will return. 
+
+###### Attributes v. Tags
+
+In AIML 2.0, any given value given by an XML attribute may also be expressed using a subtag of the same name. For example, `<li value="X">` may also be written as `<li><value>X</value>`. This makes it possible to vary the values of attributes using XML expressions, for example:
+
+```
+<category>
+<pattern>IS * EQUAL TO *</pattern>
+<template>
+<think><set var=”star”><star/></set></think>
+<condition var=”star”>
+<li><value><star index=”2”/></value>Yes</li>
+<li>No.</li>
+</condition>
+</template>
+</category>
+```
+
+###### Loops
+
+Loops are used in programming to iterate an action or function over a series of values, until a particular state has been reached. 
 
 
 

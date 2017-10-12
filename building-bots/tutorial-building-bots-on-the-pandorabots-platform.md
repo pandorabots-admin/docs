@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                    
+**&lt;pattern&gt;                                      
 **Matches what the user says.
 
-**&lt;template&gt;                                    
+**&lt;template&gt;                                      
 **What the bot replies.
 
 Code example:
@@ -561,7 +561,7 @@ We can also use `<srai>` to remove unnecessary words from the input.
 
 Reductions make writing AIML and adding to your bot a far more enjoyable process. The more reductions you have, the better your bot will be at providing relevant matches.
 
-###### Returning Text and Recuring
+###### Returning Text and Recursing
 
 The previous examples of `<srai>` have directly returned no text of their own. You template, however, can return both text and `<srai>` tags.
 

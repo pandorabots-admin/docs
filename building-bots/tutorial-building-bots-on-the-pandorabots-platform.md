@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                
+**&lt;pattern&gt;                                  
 **Matches what the user says.
 
-**&lt;template&gt;                                
+**&lt;template&gt;                                  
 **What the bot replies.
 
 Code example:
@@ -816,5 +816,37 @@ First, you need a category that sets the topic predicate. The following example 
 
 **Step 2:**
 
-Now, you can group together categories within the coffee topic. Note that &lt;topic&gt; tags appear outside 
+Now, you can group together categories within the coffee topic. _Note that `<topic>` tags appear outside the categories. _In AIML 2.0, `<topic>` can appear inside the category, like `<that>`. 
+
+```
+<topic name= “coffee”>
+
+<category>
+<pattern>I LIKE THE TASTE</pattern>
+<template>I love how coffee tastes.</template>
+</category>
+
+<category>
+<pattern>IT IS TOO BITTER</pattern>
+<template>Maybe you should drink tea.</template>
+</category>
+
+</topic>
+```
+
+The patterns above will _only match if_ the topic has been set to "coffee." If no category within the topic tags forms a match with the input, the input will match a category with no topic specified. 
+
+**\#\#\#\(By default, that = topic = \*\) &lt;set name="topic"&gt;&lt;/set&gt; --&gt; topic="unknown"**
+
+###### More on `<topic>`
+
+The default value of topic is `*`. If you set a topic with no value \(i.e., `<set name="topic"></set>`\) the value will be "unknown." 
+
+Values for topic variables are only within the scope of an active conversation. 
+
+###### Conditionals
+
+The values of predicates and local variables provide a third type of context in AIML. 
+
+
 

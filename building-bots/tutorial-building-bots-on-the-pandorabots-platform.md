@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                      
+**&lt;pattern&gt;                                        
 **Matches what the user says.
 
-**&lt;template&gt;                                      
+**&lt;template&gt;                                        
 **What the bot replies.
 
 Code example:
@@ -846,5 +846,26 @@ Values for topic variables are only within the scope of an active conversation.
 
 ###### Conditionals
 
-The values of predicates and local variables provide a third type of context in AIML.
+The values of predicates and local variables provide a third type of context in AIML. Using the `<condition>` tag, a bot can respond differently to the same input depending on the value of a predicate or local variable. 
+
+The concept is the same as an IF - THEN - ELSE statement found in most programming languages.
+
+###### Conditionals: Test Case I
+
+Consider the following:
+
+**Human:** Today is Monday.  
+**Bot:** The start of the work week!  
+**Human: **Today is Tuesday.  
+**Bot: **Tuesday already?  
+**Human:** Today is Wednesday.  
+**Bot: **Humpday, we're halfway to the weekend!  
+  
+The bot response is _conditioned_ on the day of the week. Using the &lt;condition&gt; tag enables this with a single category. 
+
+
+
+
+
+
 

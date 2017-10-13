@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                          
+**&lt;pattern&gt;                                            
 **Matches what the user says.
 
-**&lt;template&gt;                                          
+**&lt;template&gt;                                            
 **What the bot replies.
 
 Code example:
@@ -871,9 +871,9 @@ The bot response is _conditioned_ on the day of the week. Using the &lt;conditio
 </condition>
 ```
 
-The opening tag specifies the name of a predicate to check for; _if_ the value of the predicate matches the value of any list element \(`<li>`\), _then _the text of that element will be returned. 
+The opening tag specifies the name of a predicate to check for; _if_ the value of the predicate matches the value of any list element \(`<li>`\), \_then \_the text of that element will be returned.
 
-Altogether, the category for this test case would look like this: 
+Altogether, the category for this test case would look like this:
 
 ```
 <category>
@@ -891,11 +891,11 @@ Altogether, the category for this test case would look like this:
 </category>
 ```
 
-The final list element \(the one without a value attribute\) will be returned if none of the other conditions are met. 
+The final list element \(the one without a value attribute\) will be returned if none of the other conditions are met.
 
 ###### Conditionals: Test Case II
 
-You can also use conditionals to check the status of a predicate, i.e., whether or not it has been set. 
+You can also use conditionals to check the status of a predicate, i.e., whether or not it has been set.
 
 ```
 <category>
@@ -909,7 +909,7 @@ You can also use conditionals to check the status of a predicate, i.e., whether 
 </category>
 ```
 
-If the "name" predicate has been set to anything \(denoted by the asterisk\), the first list element will return; if it has not been set, then the second list element will return. 
+If the "name" predicate has been set to anything \(denoted by the asterisk\), the first list element will return; if it has not been set, then the second list element will return.
 
 ###### Attributes v. Tags
 
@@ -930,7 +930,73 @@ In AIML 2.0, any given value given by an XML attribute may also be expressed usi
 
 ###### Loops
 
-Loops are used in programming to iterate an action or function over a series of values, until a particular state has been reached. 
+Loops are used in programming to iterate an action or function over a series of values, until a particular state has been reached. In AIML, we can loop over list elements in a condition until a certain value has been reached, at which point the loop will terminate and the bot will give a response. 
+
+Let's say we want to recreate the following interaction:
+
+Human: Count to 8  
+Bot: 1 2 3 4 5 6 7 8
+
+We will be using the "number" set and the "successor" map to establish the relationships between numbers. 
+
+First, set up the pattern:
+
+```
+<pattern>COUNT TO <set>number</set></pattern>
+```
+
+Next, you'll want to set a local variable in your template. The variable starts your count at 0. As we loop over our list elements, this count will change:
+
+```
+<think><set var=“count”>0</set></think>
+```
+
+Next, we need to set up a condition whose list elements are dependent on the value of the variable "count":
+
+```
+<condition var=“count”>
+```
+
+Then, we create an empty list element whose value is `<star/>`. This element will be returned when the value of "count" reaches the number specified in the input:
+
+```
+<li><value><star/></value></li>
+```
+
+Our second list element will contain the loop. Using the "successor" map, we can simultaneously change the value of count, and add it to the bot's response:
+
+```
+<li>
+<set name="count">
+<map><name>successor</name><get var="count"/></map>
+</set>
+<loop/>
+</li>
+```
+
+This resets the value of “count” to the corresponding number of its current value, found in the “successor” map. It will then add the successive value to the bot’s response. Finally, `<loop/>` tells it to return the list element again, however this time, with the new value of “count”.
+
+Altogether, the above components form the following code:
+
+```
+<category>
+<pattern>COUNT TO <set>number</set></pattern>
+<template><think><set var="count">0</set>
+</think>
+<condition var="count">
+<li><value><star/></value></li>
+<li><set var="count"><map><name>successor</name><get name="count"/></map></set> <loop/></li>
+</condition></template>
+</category>
+```
+
+When the second `<li>` has looped enough time for "count" to equal 8, the first list item will be returned and the loop will terminate. The bot will then respond to all of the text returned by the second list item \(notice that when the "count" variable is reset, there is no `<think>` tag\).
+
+
+
+
+
+
 
 
 

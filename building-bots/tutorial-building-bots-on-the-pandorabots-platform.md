@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                            
+**&lt;pattern&gt;                                              
 **Matches what the user says.
 
-**&lt;template&gt;                                            
+**&lt;template&gt;                                              
 **What the bot replies.
 
 Code example:
@@ -930,14 +930,14 @@ In AIML 2.0, any given value given by an XML attribute may also be expressed usi
 
 ###### Loops
 
-Loops are used in programming to iterate an action or function over a series of values, until a particular state has been reached. In AIML, we can loop over list elements in a condition until a certain value has been reached, at which point the loop will terminate and the bot will give a response. 
+Loops are used in programming to iterate an action or function over a series of values, until a particular state has been reached. In AIML, we can loop over list elements in a condition until a certain value has been reached, at which point the loop will terminate and the bot will give a response.
 
 Let's say we want to recreate the following interaction:
 
 Human: Count to 8  
 Bot: 1 2 3 4 5 6 7 8
 
-We will be using the "number" set and the "successor" map to establish the relationships between numbers. 
+We will be using the "number" set and the "successor" map to establish the relationships between numbers.
 
 First, set up the pattern:
 
@@ -992,9 +992,59 @@ Altogether, the above components form the following code:
 
 When the second `<li>` has looped enough time for "count" to equal 8, the first list item will be returned and the loop will terminate. The bot will then respond to all of the text returned by the second list item \(notice that when the "count" variable is reset, there is no `<think>` tag\).
 
+---
 
+#### Learning
 
+###### What is Learning?
 
+AIML 2.0 has features that allow your clients to teach the bot new information. 
+
+Using the `<learn>` and `<learnf>` tags, clients can actually generate new categories from within their conversation. 
+
+Categories learned using `<learn>` will only be accessible to that particular conversation, and will eventually be cleared after some idle time of no interaction with the bot.
+
+Categories learned using `<learnf>` will be written to a new AIML file and can be accessed by anyone talking with your bot. \(Careful! Your clients may teach the bot naughty things, so use `<learnf>` with extreme caution.\) 
+
+###### How Learning Works
+
+When the category below is matched, the bot will now have access to the category found within the &lt;learn&gt; tags: 
+
+```
+<category>
+<pattern>THE SKY IS BLUE</pattern>
+<template>I will remember that the sky is blue
+<learn>
+<category>
+<pattern>WHAT COLOR IS THE SKY</pattern>
+<template>The sky is blue</template>
+</category>
+</learn>
+</template>
+</category>
+```
+
+Learning involves _nested_ categories. To access variables defined in the outer category from the inner category, we use the `<eval>` tags. Anything found within the &lt;eval&gt; tags will be evaluated FIRST, before the new category is actually created. This allows us to use `<star/> `within the `<learn>` tags to access parts of the input matched by the outer category. 
+
+```
+<category>
+<pattern>THE * IS BLUE</pattern>
+<template>I will remember that the <star/> is blue
+<learn>
+<category>
+<pattern>WHAT COLOR IS THE <eval><star/></eval></pattern>
+<template>The <eval><star/></eval> is blue</template>
+</category>
+</learn>
+</template>
+</category>
+```
+
+We can now reference the words captured by the wildcard in our new category. 
+
+---
+
+#### Revisiting Key Platform Components
 
 
 

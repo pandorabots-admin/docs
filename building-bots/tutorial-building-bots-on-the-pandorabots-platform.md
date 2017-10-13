@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                              
+**&lt;pattern&gt;                                                
 **Matches what the user says.
 
-**&lt;template&gt;                                              
+**&lt;template&gt;                                                
 **What the bot replies.
 
 Code example:
@@ -998,17 +998,17 @@ When the second `<li>` has looped enough time for "count" to equal 8, the first 
 
 ###### What is Learning?
 
-AIML 2.0 has features that allow your clients to teach the bot new information. 
+AIML 2.0 has features that allow your clients to teach the bot new information.
 
-Using the `<learn>` and `<learnf>` tags, clients can actually generate new categories from within their conversation. 
+Using the `<learn>` and `<learnf>` tags, clients can actually generate new categories from within their conversation.
 
 Categories learned using `<learn>` will only be accessible to that particular conversation, and will eventually be cleared after some idle time of no interaction with the bot.
 
-Categories learned using `<learnf>` will be written to a new AIML file and can be accessed by anyone talking with your bot. \(Careful! Your clients may teach the bot naughty things, so use `<learnf>` with extreme caution.\) 
+Categories learned using `<learnf>` will be written to a new AIML file and can be accessed by anyone talking with your bot. \(Careful! Your clients may teach the bot naughty things, so use `<learnf>` with extreme caution.\)
 
 ###### How Learning Works
 
-When the category below is matched, the bot will now have access to the category found within the &lt;learn&gt; tags: 
+When the category below is matched, the bot will now have access to the category found within the &lt;learn&gt; tags:
 
 ```
 <category>
@@ -1024,7 +1024,7 @@ When the category below is matched, the bot will now have access to the category
 </category>
 ```
 
-Learning involves _nested_ categories. To access variables defined in the outer category from the inner category, we use the `<eval>` tags. Anything found within the &lt;eval&gt; tags will be evaluated FIRST, before the new category is actually created. This allows us to use `<star/> `within the `<learn>` tags to access parts of the input matched by the outer category. 
+Learning involves _nested_ categories. To access variables defined in the outer category from the inner category, we use the `<eval>` tags. Anything found within the &lt;eval&gt; tags will be evaluated FIRST, before the new category is actually created. This allows us to use `<star/>`within the `<learn>` tags to access parts of the input matched by the outer category.
 
 ```
 <category>
@@ -1040,15 +1040,11 @@ Learning involves _nested_ categories. To access variables defined in the outer 
 </category>
 ```
 
-We can now reference the words captured by the wildcard in our new category. 
+We can now reference the words captured by the wildcard in our new category.
 
 ---
 
 #### Revisiting Key Platform Components
-
-
-
-
 
 
 

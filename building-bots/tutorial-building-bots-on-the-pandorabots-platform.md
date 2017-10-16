@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                  
+**&lt;pattern&gt;                                                    
 **Matches what the user says.
 
-**&lt;template&gt;                                                  
+**&lt;template&gt;                                                    
 **What the bot replies.
 
 Code example:
@@ -1052,29 +1052,52 @@ We can now reference the words captured by the wildcard in our new category.
 
 \#\#\#Base bots and Rosie
 
-
-
 ---
 
 ## Additional AIML Features
 
+#### List Processing 
 
+Use the `<first>` and `<rest>` tags to access certain words in the input:
 
+`<first>A B C</first>` = A  
+`<rest>A B C</rest>` = B C
 
+Note that a "word" in AIML is separated from other words using a space. These tags will have no effect if the content is \(1\) empty or \(2\)  a single word.
 
+`<rest></rest>` = NIL
 
+#### Substitutions
 
+Substitutions are used to "normalize" interactions that involve pronounces, punctuation, gender, etc. You can call a substitution by using the file's name within a tag, for example: `person.substitution` = `<person>`. 
 
+```
+<category>
+<pattern>I AM *</pattern>
+<template>
+YOU ARE <person><star/></person>
+</template>
+</category>
+```
 
+**Human: **I am waiting for you.  
+**Bot: **You are waiting for me. 
 
+In this category above, the substitution file "person" has found a 2nd-person pronoun in the wildcard contents and converted it to a 1st-person pronoun when echoed in the template. 
 
+This works in reverse as well.
 
+###### Pronoun-based Substitutions
 
+The example above made use of the file `person.substitution`, which is used to transform pronouns between first and second person. 
 
+`person2.substitution` is used to transform between first and third person pronouns. 
 
+`gender.substitution` is used to transform between male and female gender pronouns.
 
+#### Denormalization
 
-
+Earlier in the tutorial, we introduced the concept of input pre-processing or "normalization". This involved the correction of common misspellings, contractions, and most importantly, the removal/replacement of punctuation found in the input.
 
 
 

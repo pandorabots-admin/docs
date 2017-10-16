@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                        
+**&lt;pattern&gt;                                                          
 **Matches what the user says.
 
-**&lt;template&gt;                                                        
+**&lt;template&gt;                                                          
 **What the bot replies.
 
 Code example:
@@ -1176,13 +1176,9 @@ The easiest way to make your bots available to the public \(in a few clicks or l
 
 ## Updating your Bot
 
+Regularly reviewing chatlogs and continuously updating your chatbot based on what clients are actually saying is a critical component of bot development. In fact, we often say that the _real work_ starts after your initial launch, because you cannot design a conversational experience in a vacuum. Even if you have data like call center or live agent chat logs, you still cannot predict everything that your end-users are going to say.
 
-
-
-
-
-
-
+Visit the Logs page for your bot to review conversation logs, and make updates based on high priority logs \(which appear at the top\) where your bot didn't have a sufficient answer.
 
 
 

@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                          
+**&lt;pattern&gt;                                                            
 **Matches what the user says.
 
-**&lt;template&gt;                                                          
+**&lt;template&gt;                                                            
 **What the bot replies.
 
 Code example:
@@ -1046,7 +1046,26 @@ We can now reference the words captured by the wildcard in our new category.
 
 #### Revisiting Key Platform Components
 
-\#\#\#Training features of the Chat widget
+###### The Chat Widget
+
+In addition to allowing you to converse with your bot as if you were the end-user, the Chat Widget also displays some vital information about each interaction and allows you to train your chatbot by making changes to the AIML within the interface. 
+
+Beneath each message bubble containing the bot's response, there is an option to _Show Metadata_. Displaying the metadata will show you the following information:
+
+* Pattern: The pattern that matched your input and triggered the output in the message bubble
+* `That`: Displays the previous response from the bot \(blank if you have just started the dialog\)
+* `Topic`: Displays the topic if one has been set
+* File: A link to the file containing the relevant file, which you may click on to edit that file directly in the Editor
+
+Beneath the above metadata, you also have the option to run a Trace, which will show you the exact series of steps that led from the input to your bot's output, and can be vital for debugging purposes.  
+
+You may also edit the bot response directly from within the chat widget by selecting the edit icon within the bot message bubble. This will open the _Alter Response_ modal and prompt you to define a new response \(template\) and save it to a given `.aiml` file. 
+
+Clicking on the arrow icon next to the _New Response_ input field will open additional fields allowing you to directly edit the Pattern, Template, That, and Topic values. 
+
+Retyping your original input after altering the bot response should return the new template you defined. 
+
+To reset the bot's memory, which will clear any predicates stored about the current conversation, click on the refresh icon next to your bot's name on the top bar of the chat widget. 
 
 \#\#\#The Clubhouse advanced features
 
@@ -1170,7 +1189,7 @@ If you are a developer or have one on staff, you may use the Pandorabots API to 
 
 ###### Using the Turnkey Platform Integrations
 
-The easiest way to make your bots available to the public \(in a few clicks or less!\) is via the Deploy Page, accessible from the menu that appears whenever an individual bot is selected. Simply navigate to the interface and follow the instructions listed for each available Integration you wish to use.
+The easiest way to make your bots available to the public \(in a few simple steps!\) is via the Deploy Page, accessible from the menu that appears whenever an individual bot is selected. Simply navigate to the interface and follow the instructions listed for each available Integration you wish to use.
 
 ---
 
@@ -1179,6 +1198,4 @@ The easiest way to make your bots available to the public \(in a few clicks or l
 Regularly reviewing chatlogs and continuously updating your chatbot based on what clients are actually saying is a critical component of bot development. In fact, we often say that the _real work_ starts after your initial launch, because you cannot design a conversational experience in a vacuum. Even if you have data like call center or live agent chat logs, you still cannot predict everything that your end-users are going to say.
 
 Visit the Logs page for your bot to review conversation logs, and make updates based on high priority logs \(which appear at the top\) where your bot didn't have a sufficient answer.
-
-
 

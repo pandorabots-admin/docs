@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                            
+**&lt;pattern&gt;                                                              
 **Matches what the user says.
 
-**&lt;template&gt;                                                            
+**&lt;template&gt;                                                              
 **What the bot replies.
 
 Code example:
@@ -1048,7 +1048,7 @@ We can now reference the words captured by the wildcard in our new category.
 
 ###### The Chat Widget
 
-In addition to allowing you to converse with your bot as if you were the end-user, the Chat Widget also displays some vital information about each interaction and allows you to train your chatbot by making changes to the AIML within the interface. 
+In addition to allowing you to converse with your bot as if you were the end-user, the Chat Widget also displays some vital information about each interaction and allows you to train your chatbot by making changes to the AIML within the interface.
 
 Beneath each message bubble containing the bot's response, there is an option to _Show Metadata_. Displaying the metadata will show you the following information:
 
@@ -1057,19 +1057,44 @@ Beneath each message bubble containing the bot's response, there is an option to
 * `Topic`: Displays the topic if one has been set
 * File: A link to the file containing the relevant file, which you may click on to edit that file directly in the Editor
 
-Beneath the above metadata, you also have the option to run a Trace, which will show you the exact series of steps that led from the input to your bot's output, and can be vital for debugging purposes.  
+Beneath the above metadata, you also have the option to run a Trace, which will show you the exact series of steps that led from the input to your bot's output, and can be vital for debugging purposes.
 
-You may also edit the bot response directly from within the chat widget by selecting the edit icon within the bot message bubble. This will open the _Alter Response_ modal and prompt you to define a new response \(template\) and save it to a given `.aiml` file. 
+You may also edit the bot response directly from within the chat widget by selecting the edit icon within the bot message bubble. This will open the _Alter Response_ modal and prompt you to define a new response \(template\) and save it to a given `.aiml` file.
 
-Clicking on the arrow icon next to the _New Response_ input field will open additional fields allowing you to directly edit the Pattern, Template, That, and Topic values. 
+Clicking on the arrow icon next to the _New Response_ input field will open additional fields allowing you to directly edit the Pattern, Template, That, and Topic values. \#\#\#Should these be typed with/without tags? Not clear in the interface!
 
-Retyping your original input after altering the bot response should return the new template you defined. 
+Retyping your original input after altering the bot response should return the new template you defined.
 
-To reset the bot's memory, which will clear any predicates stored about the current conversation, click on the refresh icon next to your bot's name on the top bar of the chat widget. 
+To reset the bot's memory, which will clear any predicates stored about the current conversation, click on the refresh icon next to your bot's name on the top bar of the chat widget.
 
-\#\#\#The Clubhouse advanced features
+\#\#\#Show/Hide Predicate functionality is currently missing!!!
 
-\#\#\#Base bots and Rosie
+###### The Clubhouse and `<sraix>`
+
+\#\#\#Confirm we want to expose this feature - check how many use on current PG
+
+The `<sraix>` tag \(first introduced in the AIML 2.0 spec\) allows your bot to access the categories of another bot. The tag is very similar to `<srai>`, however, instead of searching your own bot for another category to match, it will search the bot you have specified in the attribute. 
+
+You can use `<sraix>` to leverage the knowledge bases' of other bots in the Clubhouse, specifying them based on their botid \(username/botname\). If you have published you bot to the Clubhouse, \#\#\#and your username is published\#\#\#,  other platform users may use `<sraix>` to link up with your bot.
+
+\#\#\#So the publish to clubhouse widget should have a opt-in or out saying whether you make your "botid" public meaning others can link up to your bot.
+
+Why is this useful? Imagine another platform user has created a bot that is an expert about anything related to coffee botid: unXXXXXXXX/coffeebot\).
+
+If this bot has been published to the Clubhouse, your bot can access its expertise \(contained in its AIML categories\) by sending it any input that relates to coffee:
+
+```
+<category>
+<pattern>I LIKE COFFEE</pattern>
+<template><sraix bot=“johndoe/coffeebot”>COFFEE</sraix></template>
+</category>
+```
+
+If coffeebot is able to form a match, your bot will return coffeebot's output as if it were its own output to the client. 
+
+###### Bot Libraries
+
+\#\#\#Using Rosie and Base Bot
 
 ---
 

@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                
+**&lt;pattern&gt;                                                  
 **Matches what the user says.
 
-**&lt;template&gt;                                                
+**&lt;template&gt;                                                  
 **What the bot replies.
 
 Code example:
@@ -1045,6 +1045,46 @@ We can now reference the words captured by the wildcard in our new category.
 ---
 
 #### Revisiting Key Platform Components
+
+\#\#\#Training features of the Chat widget
+
+\#\#\#The Clubhouse advanced features
+
+\#\#\#Base bots and Rosie
+
+
+
+---
+
+## Additional AIML Features
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

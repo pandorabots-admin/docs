@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                    
+**&lt;pattern&gt;                                                      
 **Matches what the user says.
 
-**&lt;template&gt;                                                    
+**&lt;template&gt;                                                      
 **What the bot replies.
 
 Code example:
@@ -1056,7 +1056,7 @@ We can now reference the words captured by the wildcard in our new category.
 
 ## Additional AIML Features
 
-#### List Processing 
+#### List Processing
 
 Use the `<first>` and `<rest>` tags to access certain words in the input:
 
@@ -1069,7 +1069,7 @@ Note that a "word" in AIML is separated from other words using a space. These ta
 
 #### Substitutions
 
-Substitutions are used to "normalize" interactions that involve pronounces, punctuation, gender, etc. You can call a substitution by using the file's name within a tag, for example: `person.substitution` = `<person>`. 
+Substitutions are used to "normalize" interactions that involve pronounces, punctuation, gender, etc. You can call a substitution by using the file's name within a tag, for example: `person.substitution` = `<person>`.
 
 ```
 <category>
@@ -1081,17 +1081,17 @@ YOU ARE <person><star/></person>
 ```
 
 **Human: **I am waiting for you.  
-**Bot: **You are waiting for me. 
+**Bot: **You are waiting for me.
 
-In this category above, the substitution file "person" has found a 2nd-person pronoun in the wildcard contents and converted it to a 1st-person pronoun when echoed in the template. 
+In this category above, the substitution file "person" has found a 2nd-person pronoun in the wildcard contents and converted it to a 1st-person pronoun when echoed in the template.
 
 This works in reverse as well.
 
 ###### Pronoun-based Substitutions
 
-The example above made use of the file `person.substitution`, which is used to transform pronouns between first and second person. 
+The example above made use of the file `person.substitution`, which is used to transform pronouns between first and second person.
 
-`person2.substitution` is used to transform between first and third person pronouns. 
+`person2.substitution` is used to transform between first and third person pronouns.
 
 `gender.substitution` is used to transform between male and female gender pronouns.
 
@@ -1099,13 +1099,72 @@ The example above made use of the file `person.substitution`, which is used to t
 
 Earlier in the tutorial, we introduced the concept of input pre-processing or "normalization". This involved the correction of common misspellings, contractions, and most importantly, the removal/replacement of punctuation found in the input.
 
+This means that punctuation is not "preserved" by simply echoing part of the user's input, for example:
 
+```
+<category>
+<pattern>URL *</pattern>
+<template><star/></template>
+</category>
+```
 
+**Human: **URL google.com  
+**Bot:** google dot com
 
+To preserve punctuation found in the input we use `denormalize.substitution`. This file contains all of the words that punctuation marks are normalized to. From the previous example, we know that the string ".com" is normalized to "dot com". To reverse this substitution, we echo the user's input within the denormalize tags:
 
+```
+<category>
+<pattern>URL *</pattern>
+<template>
+<denormalize><star/></denormalize>
+</template>
+</category>
+```
 
+**Human: **URL google.com  
+**Bot:** google.com
 
+\#\#\#More relevant example using emoji?
 
+###### The Default Substitutions Files
+
+Substitutions are available to you via the substitution files provided by default. We strongly suggest that you _**do not remove**_ any of these substitutions. The contents of these files will only become applicable if you reference them in your template, so you should keep them in tact in case you wish to use any of the operations. You may also add to or update your substitution files. 
+
+#### Date
+
+You can return the current date in the format of your choice, specified like the arguments to the [**UNIX strftime function**](http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html). `<date format="%B %d, %Y />` will return today's date. 
+
+#### Interval
+
+You can use `<interval>`, `<from>` and `<to>`, and `<style>` to calculate the internal between two dates \(in this case, the bot's birthdate property and today's date\):
+
+```
+<category>
+<pattern>AGE IN YEARS</pattern>
+<template><interval format="%B %d, %Y">
+<style>years</style>
+<from><bot name="birthdate"/></from>
+<to><date format="%B %d, %Y" /></to>
+</interval></template>
+</category>
+```
+
+---
+
+## Next Steps: Deploying your Bot
+
+Congratulations! If you've made it this far, we hope you are well on your way to becoming a proficient botmaster. 
+
+After a period of initial development, you may find yourself wanting to share your bot with the world but unleashing it on popular messaging or voice channels. There are a number of different ways to make bots built on the Pandorabots Platform public. 
+
+###### Downloading your Bot Files
+
+You may download your bot files at any time via the Files tab in the Editor, and we recommend making frequent, regular backups. Since AIML is an open-standard, there are a number of opensource packages, including some interpreters, you can use. Pandorabots is one of the few platforms that is an open system \(not a black box\) and therefore actually exposes your code to you and allows you to download it and make full use of it elsewhere.
+
+Of course, writing your own interpreter or attempting to make use of opensource projects with little or deprecated support can be incredibly challenging and time consuming, which is why Pandorabots offers its state-of-the-art interpreter as a service and provides API access to its hosting platform and SDKs
+
+###### Using the Pandorabots API
 
 
 

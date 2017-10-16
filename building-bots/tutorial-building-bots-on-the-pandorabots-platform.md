@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                      
+**&lt;pattern&gt;                                                        
 **Matches what the user says.
 
-**&lt;template&gt;                                                      
+**&lt;template&gt;                                                        
 **What the bot replies.
 
 Code example:
@@ -1129,11 +1129,11 @@ To preserve punctuation found in the input we use `denormalize.substitution`. Th
 
 ###### The Default Substitutions Files
 
-Substitutions are available to you via the substitution files provided by default. We strongly suggest that you _**do not remove**_ any of these substitutions. The contents of these files will only become applicable if you reference them in your template, so you should keep them in tact in case you wish to use any of the operations. You may also add to or update your substitution files. 
+Substitutions are available to you via the substitution files provided by default. We strongly suggest that you _**do not remove**_ any of these substitutions. The contents of these files will only become applicable if you reference them in your template, so you should keep them in tact in case you wish to use any of the operations. You may also add to or update your substitution files.
 
 #### Date
 
-You can return the current date in the format of your choice, specified like the arguments to the [**UNIX strftime function**](http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html). `<date format="%B %d, %Y />` will return today's date. 
+You can return the current date in the format of your choice, specified like the arguments to the [**UNIX strftime function**](http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html). `<date format="%B %d, %Y />` will return today's date.
 
 #### Interval
 
@@ -1154,9 +1154,9 @@ You can use `<interval>`, `<from>` and `<to>`, and `<style>` to calculate the in
 
 ## Next Steps: Deploying your Bot
 
-Congratulations! If you've made it this far, we hope you are well on your way to becoming a proficient botmaster. 
+Congratulations! If you've made it this far, we hope you are well on your way to becoming a proficient botmaster.
 
-After a period of initial development, you may find yourself wanting to share your bot with the world but unleashing it on popular messaging or voice channels. There are a number of different ways to make bots built on the Pandorabots Platform public. 
+After a period of initial development, you may find yourself wanting to share your bot with the world but unleashing it on popular messaging or voice channels. There are a number of different ways to make bots built on the Pandorabots Platform public.
 
 ###### Downloading your Bot Files
 
@@ -1165,6 +1165,22 @@ You may download your bot files at any time via the Files tab in the Editor, and
 Of course, writing your own interpreter or attempting to make use of opensource projects with little or deprecated support can be incredibly challenging and time consuming, which is why Pandorabots offers its state-of-the-art interpreter as a service and provides API access to its hosting platform and SDKs
 
 ###### Using the Pandorabots API
+
+If you are a developer or have one on staff, you may use the Pandorabots API to integrate your chatbot into any application. Visit the API Reference section to learn more.
+
+###### Using the Turnkey Platform Integrations
+
+The easiest way to make your bots available to the public \(in a few clicks or less!\) is via the Deploy Page, accessible from the menu that appears whenever an individual bot is selected. Simply navigate to the interface and follow the instructions listed for each available Integration you wish to use.
+
+---
+
+## Updating your Bot
+
+
+
+
+
+
 
 
 

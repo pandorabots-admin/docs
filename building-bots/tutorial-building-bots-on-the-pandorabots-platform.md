@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                  
+**&lt;pattern&gt;                                                                    
 **Matches what the user says.
 
-**&lt;template&gt;                                                                  
+**&lt;template&gt;                                                                    
 **What the bot replies.
 
 Code example:
@@ -1200,7 +1200,7 @@ You can use `<interval>`, `<from>` and `<to>`, and `<style>` to calculate the in
 
 Congratulations! If you've made it this far, we hope you are well on your way to becoming a proficient botmaster.
 
-After a period of initial development, you may find yourself wanting to share your bot with the world but unleashing it on popular messaging or voice channels. There are a number of different ways to make bots built on the Pandorabots Platform public.
+After a period of initial development, you may find yourself wanting to share your bot with the world by unleashing it on popular messaging or voice channels. There are a number of different ways to make bots built on the Pandorabots Platform public.
 
 ###### Downloading your Bot Files
 

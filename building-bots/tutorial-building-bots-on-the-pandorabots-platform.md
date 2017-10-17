@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                    
+**&lt;pattern&gt;                                                                      
 **Matches what the user says.
 
-**&lt;template&gt;                                                                    
+**&lt;template&gt;                                                                      
 **What the bot replies.
 
 Code example:
@@ -1230,5 +1230,7 @@ Frequently updating your bot to account for all the possible things a human migh
 
 As you can see, there is a word that occurs most frequently, followed by another word that occurs next most frequently, followed by a third word that occurs less frequently and so on. For a given body of text, it doesn't matter whether you break the text into letters, words, phrases, or sentences: the same distribution will always appear for natural languages.
 
-In the course of bot development, you will find that many people say the same thing or ask the same types of questions, so you only need a finite number of rules for a decent bot.
+In the course of bot development, you will find that many people say the same thing or ask the same types of questions, so you only need to define a finite number of rules to create a decent bot.
+
+Happy bot-making!
 

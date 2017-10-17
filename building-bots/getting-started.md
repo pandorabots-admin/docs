@@ -2,7 +2,7 @@
 
 If you’ve found this tutorial, you hopefully know what a chatbot is and what Pandorabots can do to help you build and deploy one.
 
-For those of you who don’t know, a chatbot is an application that can have a conversation in natural language. You can say something to the bot, and the bot will parse your input and provide the most relevent response it can. This type of application is known as the[stimulus response model](http://docs.pandorabots.com/tutorials/getting-started/).
+For those of you who don’t know, a chatbot is an application that can have a conversation in natural language. You can say something to the bot, and the bot will parse your input and provide the most relevent response it can. This type of application is known as the [stimulus response model](http://docs.pandorabots.com/tutorials/getting-started/).
 
 ## What is Pandorabots? {#what-is-pandorabots}
 
@@ -10,7 +10,7 @@ Pandorabots offers a cloud-based chatbot compiler and runtime. Our platform is t
 
 This tutorial will focus on how to actually develop the bot. We will be talking primarily about AIML, and how to organize your code into organized, reusable modules for maximum efficiency.
 
-This tutorial is platform-agnostic, meaning that you may use any of our services to edit and deploy your bot. If you’d like help deploying via the Pandorabots API, please take a look at our[CLI](https://github.com/pandorabots/pb-cli). We’ll assume that you have the capability to edit a file, add it to your bot, compile the bot, and talk to the bot.
+This tutorial is platform-agnostic, meaning that you may use any of our services to edit and deploy your bot. If you’d like help deploying via the Pandorabots API, please take a look at our [CLI](https://github.com/pandorabots/pb-cli). We’ll assume that you have the capability to edit a file, add it to your bot, compile the bot, and talk to the bot.
 
 ## What is AIML? {#what-is-aiml}
 

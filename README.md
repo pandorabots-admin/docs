@@ -8,7 +8,7 @@ Artificial Intelligence Markup Language is a simple scripting language and the o
 
 **What is Pandorabots?**
 
-Pandorabots is a web service that makes available tools for building, hosting, and deploying chatbots, including the[Playground IDE](https://playground.pandorabots.com/)and[AIaaS API](https://developer.pandorabots.com/).
+Pandorabots is a web service that makes available tools for building, hosting, and deploying chatbots, including the[Playground IDE](https://playground.pandorabots.com/) and [AIaaS API](https://developer.pandorabots.com/).
 
 **Why build a chatbot?**
 

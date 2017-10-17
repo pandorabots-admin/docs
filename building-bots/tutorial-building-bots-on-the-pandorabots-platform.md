@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                              
+**&lt;pattern&gt;                                                                
 **Matches what the user says.
 
-**&lt;template&gt;                                                              
+**&lt;template&gt;                                                                
 **What the bot replies.
 
 Code example:
@@ -1073,7 +1073,7 @@ To reset the bot's memory, which will clear any predicates stored about the curr
 
 \#\#\#Confirm we want to expose this feature - check how many use on current PG
 
-The `<sraix>` tag \(first introduced in the AIML 2.0 spec\) allows your bot to access the categories of another bot. The tag is very similar to `<srai>`, however, instead of searching your own bot for another category to match, it will search the bot you have specified in the attribute. 
+The `<sraix>` tag \(first introduced in the AIML 2.0 spec\) allows your bot to access the categories of another bot. The tag is very similar to `<srai>`, however, instead of searching your own bot for another category to match, it will search the bot you have specified in the attribute.
 
 You can use `<sraix>` to leverage the knowledge bases' of other bots in the Clubhouse, specifying them based on their botid \(username/botname\). If you have published you bot to the Clubhouse, \#\#\#and your username is published\#\#\#,  other platform users may use `<sraix>` to link up with your bot.
 
@@ -1090,7 +1090,7 @@ If this bot has been published to the Clubhouse, your bot can access its experti
 </category>
 ```
 
-If coffeebot is able to form a match, your bot will return coffeebot's output as if it were its own output to the client. 
+If coffeebot is able to form a match, your bot will return coffeebot's output as if it were its own output to the client.
 
 ###### Bot Libraries
 
@@ -1223,4 +1223,12 @@ The easiest way to make your bots available to the public \(in a few simple step
 Regularly reviewing chatlogs and continuously updating your chatbot based on what clients are actually saying is a critical component of bot development. In fact, we often say that the _real work_ starts after your initial launch, because you cannot design a conversational experience in a vacuum. Even if you have data like call center or live agent chat logs, you still cannot predict everything that your end-users are going to say.
 
 Visit the Logs page for your bot to review conversation logs, and make updates based on high priority logs \(which appear at the top\) where your bot didn't have a sufficient answer.
+
+Frequently updating your bot to account for all the possible things a human might say in conversation may seem like a daunting task. However, you may rest assured that in reality - and especially with regard to a particular domain - people actually tend to say the same thing in conversation most of the time. This phenomenon is known as Zipf's Law, which explains a curve that represents the frequency at which words appear in human language.
+
+ ![](https://lh6.googleusercontent.com/5XdBtnlDoXq8xZNK8ZyboB9sp2P3_D9_ZsEB0IbARA7rPYh6AVsvG1C5mUtcnDX-uTJsYAjzxNMYOuIzS4gOCFJqW6geKMPYtSgyV0ZuDO4zy2LVxR-UyW2r3XoQSM9ta_-r8jOhXPY)
+
+As you can see, there is a word that occurs most frequently, followed by another word that occurs next most frequently, followed by a third word that occurs less frequently and so on. For a given body of text, it doesn't matter whether you break the text into letters, words, phrases, or sentences: the same distribution will always appear for natural languages. 
+
+In the course of bot development, you will find that many people say the same thing or ask the same types of questions, so you only need a finite number of rules for a decent bot.
 

@@ -1,3 +1,25 @@
+# About Pandorabots
+
+###### We are the largest, most established, chatbot development and hosting platform. 
+
+---
+
+Welcome to Pandorabots! We offer a mostly free, online web service for building and deploying chatbots.
+
+**What is a chatbot? **A chatbot or bot is a conversational software program designed to chat with humans via voice or text. 
+
+Chatbots can be deployed in a variety of channels including popular voice and messaging platforms. The use cases are virtually endless, from automating common customer service queries, to providing touch points along the customer journey, to optimizing internal IT processes, to learning applications like language and enterprise soft skills, to games, toys and entertainment. 
+
+
+
+
+
+
+
+
+
+
+
 **What is a chatbot?**
 
 A chatbot is an artificially intelligent software program that uses natural language processing to hold a human-like conversation with end-users.

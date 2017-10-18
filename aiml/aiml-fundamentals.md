@@ -1,6 +1,6 @@
 # AIML Fundamentals
 
-AIML, or Artificial Intelligence Mark-up Language enables people to input knowledge into chatbots. 
+AIML, or Artificial Intelligence Mark-up Language enables people to input knowledge into chatbots.
 
 AIML, describes a class of data objects called AIML objects and partially describes the behavior of computer programs that process them. AIML objects are made up of units called **topics **and **categories**, which contain either parsed or unparsed data.
 
@@ -16,40 +16,36 @@ More generally, AIML tags transform the reply into a mini computer program which
 
 AIML 1.x versions supports two ways to interface other languages and systems. The `<system>` tag executes any program accessible as an operating system shell command, and inserts the results in the reply. Similarly, the `<javascript>` tag allows arbitrary scripting inside the templates. \(Note that Pandorabots supports AIML 2.0, which does not implement these tags.\)
 
-The optional context portion of the category consists of two variants, called `<that>` and `<topic>`. The &lt;that&gt; tag appears inside the category, and its pattern must match the robot’s last utterance. Remembering one last utterance is important if the robot asks a question. The &lt;topic&gt; tag appears outside the category, and collects a group of categories together. The topic may be set inside any template.
+The optional context portion of the category consists of two variants, called `<that>` and `<topic>`. The `<that>` tag appears inside the category, and its pattern must match the robot’s last utterance. Remembering one last utterance is important if the chatbot asks a question. The `<topic>` tag appears outside the category, and collects a group of categories together. The topic may be set inside any template.
 
-AIML is not exactly the same as a simple database of questions and answers. The pattern matching "query" language is much simpler than something like SQL. But a category template may contain the recursive &lt;srai&gt; tag, so that the output depends not only on one matched category, but also any others recursively reached through &lt;srai&gt;.
+AIML is not exactly the same as a simple database of questions and answers. The pattern matching "query" language is much simpler than something like SQL. But a category template may contain the recursive `<srai>` tag, so that the output depends not only on one matched category, but also any others recursively reached through `<srai>`.
 
 ## RECURSION
 
-AIML implements recursion with the &lt;srai&gt; operator. No agreement exists about the meaning of the acronym. The "A.I." stands for artificial intelligence, but "S.R." may mean "stimulus-response," "syntactic rewrite," "symbolic reduction," "simple recursion," or "synonym resolution." The disagreement over the acronym reflects the variety of applications for &lt;srai&gt; in AIML. Each of these is described in more detail in a subsection below:
+AIML implements recursion with the `<srai>` operator. No agreement exists about the meaning of the acronym. The "A.I." stands for artificial intelligence, but "S.R." may mean "stimulus-response," "syntactic rewrite," "symbolic reduction," "simple recursion," or "synonym resolution." The disagreement over the acronym reflects the variety of applications for `<srai>` in AIML. Each of these is described in more detail in a subsection below:
 
-    \(1\).**Symbolic Reduction**: Reduce complex grammatic forms to simpler ones.
+1. **Symbolic Reduction:** Reduce complex grammatical forms to simpler ones.
+2. **Divide and Conquer:** Split an input into two or more sub-parts, and combine the responses to each.
+3. **Synonyms:** Map different ways of saying the same thing to the same reply.
+4. Spelling or grammar corrections
+5. Detecting keywords anywhere in the input.
+6. **Conditionals:** Certain forms of branching may be implemented with `<srai>`
+7. Any combination of \(1\)-\(6\)
 
-    \(2\).**Divide and Conquer**: Split an input into two or more subparts, and combine the responses to each.
-
-    \(3\).**Synonyms**: Map different ways of saying the same thing to the same reply.
-
-    \(4\). Spelling or grammar corrections.
-
-    \(5\). Detecting keywords anywhere in the input.
-
-    \(6\).**Conditionals:**Certain forms of branching may be implemented with &lt;srai&gt;.
-
-    \(7\). Any combination of \(1\)-\(6\).
-
-The danger of &lt;srai&gt; is that it permits the botmaster to create infinite loops. Though posing some risk to novice programmers, we surmised that including &lt;srai&gt; was much simpler than any of the iterative block structured control tags which might have replaced it.
+The danger of `<srai>` is that it permits the botmaster to create infinite loops. Though posing some risk to novice programmers, including `<srai>` is much simpler than any of the iterative block structured control tags which might have replaced it.
 
 ### \(1\). Symbolic Reduction
 
-Symbolic reduction refers to the process of simplifying complex grammatical forms into simpler ones. Usually, the atomic patterns in categories storing robot knowledge are stated in the simplest possible terms, for example we tend to prefer patterns like "WHO IS SOCRATES" to ones like "DO YOU KNOW WHO SOCRATES IS" when storing biographical information about Socrates.
+Symbolic reduction refers to the process of simplifying complex grammatical forms into simpler ones. Usually, the atomic patterns in categories storing chatbot knowledge are stated in the simplest possible terms, for example we tend to prefer patterns like "WHO IS SOCRATES" to ones like "DO YOU KNOW WHO SOCRATES IS" when storing biographical information about Socrates.
 
 Many of the more complex forms reduce to simpler forms using AIML categories designed for symbolic reduction:
 
-&lt;category&gt;  
-&lt;pattern&gt;DO YOU KNOW WHO \* IS&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;WHO IS &lt;star/&gt;&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+```
+<category>
+<pattern>DO YOU KNOW WHO * IS</pattern>
+<template><srai>WHO IS <star/></srai></template>
+</category>
+```
 
 Whatever input matched this pattern, the portion bound to the wildcard \* may be inserted into the reply with the markup &lt;star/&gt;. This category reduces any input of the form "Do you know who X is?" to "Who is X?"
 
@@ -250,7 +246,7 @@ C: Orange you glad I didn’t say banana.
 
 R: Ha ha very funny, Nancy.
 
-Internally the AIML interpreter stores the input pattern, that pattern and topic pattern along a single path, like: INPUT &lt;that&gt; THAT &lt;topic&gt; TOPIC.  When the values of &lt;that&gt; or &lt;topic&gt; are not specified, the program implicitly sets the values of the corresponding THAT or TOPIC pattern to the wildcard \*.
+Internally the AIML interpreter stores the input pattern, that pattern and topic pattern along a single path, like: INPUT &lt;that&gt; THAT &lt;topic&gt; TOPIC.  When the values of &lt;that&gt; or &lt;topic&gt; are not specified, the program implicitly sets the values of the corresponding THAT or TOPIC pattern to the wildcard \*.
 
 The first part of the path to match is the input. If more than one category have the same input pattern, the program may distinguish between them depending on the value of &lt;that&gt;. If two or more categories have the same &lt;pattern&gt; and &lt;that&gt;, the final step is to choose the reply based on the &lt;topic&gt;.
 
@@ -278,6 +274,4 @@ We have plotted some beautiful images of the A.L.I.C.E. brain contents represent
 No other theory of natural language processing can better explain or reproduce the results within our territory. You don’t need a complex theory of learning, neural nets, or cognitive models to explain how to chat within the limits of A.L.I.C.E.’s 25,000 categories. Our stimulus-response model is as good a theory as any other for these cases, and certainly the simplest. If there is any room left for "higher" natural language theories, it lies outside the map of the A.L.I.C.E. brain.
 
 Academics are fond of concocting riddles and linguistic paradoxes that supposedly show how difficult the natural language problem is. "John saw the mountains flying over Zurich" or "Fruit flies like a banana" reveal the ambiguity of language and the limits of an A.L.I.C.E.-style approach \(though not these particular examples, of course, A.L.I.C.E. already knows about them\). In the years to come we will only advance the frontier further. The basic outline of the spiral graph may look much the same, for we have found all of the "big trees" from "A \*" to "YOUR \*". These trees may become bigger, but unless language itself changes we won’t find any more big trees \(except of course in foreign languages\). The work of those seeking to explain natural language in terms of something more complex than stimulus response will take place beyond our frontier, increasingly in the hinterlands occupied by only the rarest forms of language. Our territory of language already contains the highest population of sentences that people use. Expanding the borders even more we will continue to absorb the stragglers outside, until the very last human critic cannot think of one sentence to "fool" A.L.I.C.E..
-
-
 

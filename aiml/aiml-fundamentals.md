@@ -64,43 +64,47 @@ The markup `<sr/>` is simply an abbreviation for `<srai><star/></srai>`.
 
 ### \(3\). Synonyms
 
-The AIML 1.01 standard does not permit more than one pattern per category. Synonyms are perhaps the most common application of &lt;srai&gt;. Many ways to say the same thing reduce to one category, which contains the reply:
+AIML does not permit more than one pattern per category. Synonyms are perhaps the most common application of `<srai>`. Many ways to say the same thing reduce to one category, which contains the reply:
 
-&lt;category&gt;  
-&lt;pattern&gt;HELLO&lt;/pattern&gt;  
-&lt;template&gt;Hi there!&lt;/template&gt;  
-&lt;/category&gt;
+```
+<category>
+<pattern>HELLO</pattern>
+<template>Hi there!</template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;HI&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;HELLO&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>HI</pattern>
+<template><srai>HELLO</srai></template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;HI THERE&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;HELLO&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>HI THERE</pattern>
+<template><srai>HELLO</srai></template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;HOWDY&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;HELLO&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>HOWDY</pattern>
+<template><srai>HELLO</srai></template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;HOLA&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;HELLO&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>HOLA</pattern>
+<template><srai>HELLO</srai></template>
+</category>
+```
 
 ### \(4\). Spelling and Grammar correction
 
 The single most common client spelling mistake is the use of "your" when "you’re" or "you are" is intended. Not every occurrence of "your" however should be turned into "you’re." A small amount of grammatical context is usually necessary to catch this error:
 
-&lt;category&gt;  
-&lt;pattern&gt;YOUR A \*&lt;/pattern&gt;  
-&lt;template&gt;I think you mean "you’re" or "you are" not "your."  
-&lt;srai&gt;YOU ARE A &lt;star/&gt;&lt;/srai&gt;  
-&lt;/template&gt;  
-&lt;/category&gt;
+```
+<category>
+<pattern>YOUR A *</pattern>
+<template>I think you mean "you’re" or "you are" not "your."
+<srai>YOU ARE A <star/></srai>
+</template>
+</category>
+```
 
 Here the bot both corrects the client input and acts as a language tutor.
 
@@ -108,46 +112,50 @@ Here the bot both corrects the client input and acts as a language tutor.
 
 Frequently we would like to write an AIML template which is activated by the appearance of a keyword anywhere in the input sentence. The general format of four AIML categories is illustrated by this example borrowed from ELIZA:
 
-&lt;category&gt;  
-&lt;pattern&gt;MOTHER&lt;/pattern&gt;  
-&lt;template&gt; Tell me more about your family. &lt;/template&gt;  
-&lt;/category&gt;
+```
+<category>
+<pattern>MOTHER</pattern>
+<template> Tell me more about your family. </template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;\_ MOTHER&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;MOTHER&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>_ MOTHER</pattern>
+<template><srai>MOTHER</srai></template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;MOTHER \_&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;MOTHER&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>MOTHER _</pattern>
+<template><srai>MOTHER</srai></template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;\_ MOTHER \*&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;MOTHER&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>_ MOTHER *</pattern>
+<template><srai>MOTHER</srai></template>
+</category>
+```
 
-The first category both detects the keyword when it appears by itself, and provides the generic response. The second category detects the keyword as the suffix of a sentence. The third detects it as the prefix of an input sentence, and finally the last category detects the keyword as an infix. Each of the last three categories uses &lt;srai&gt; to link to the first, so that all four cases produce the same reply, but it needs to be written and stored only once.
+The first category both detects the keyword when it appears by itself, and provides the generic response. The second category detects the keyword as the suffix of a sentence. The third detects it as the prefix of an input sentence, and finally the last category detects the keyword as an infix. Each of the last three categories uses `<srai>` to link to the first, so that all four cases produce the same reply, but it needs to be written and stored only once.
 
 ### \(6\). Conditionals
 
-It is possible to write conditional branches in AIML, using only the &lt;srai&gt; tag. Consider three categories:
+It is possible to write conditional branches in AIML, using only the `<srai>` tag. Consider three categories:
 
-&lt;category&gt;  
-&lt;pattern&gt;WHO IS HE&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;WHOISHE &lt;get name="he"/&gt;&lt;/srai&gt;&lt;/template&gt;  
-&lt;/category&gt;
+```
+<category>
+<pattern>WHO IS HE</pattern>
+<template><srai>WHOISHE <get name="he"/></srai></template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;WHOISHE \*&lt;/pattern&gt;  
-&lt;template&gt;He is &lt;get name="he"/&gt;.&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>WHOISHE *</pattern>
+<template>He is <get name="he"/>.</template>
+</category>
 
-&lt;category&gt;  
-&lt;pattern&gt;WHOISHE UNKNOWN&lt;/pattern&gt;  
-&lt;template&gt;I don’t know who he is.&lt;/template&gt;  
-&lt;/category&gt;
+<category>
+<pattern>WHOISHE UNKNOWN</pattern>
+<template>I don’t know who he is.</template>
+</category>
+```
 
 Provided that the predicate "he" is initialized to "Unknown," the categories execute a conditional branch depending on whether "he" has been set. As a convenience to the botmaster, AIML also provides the equivalent function through the &lt;condition&gt; tag.
 

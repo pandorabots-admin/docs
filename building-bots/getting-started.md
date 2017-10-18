@@ -2,7 +2,7 @@
 
 If you’ve found this tutorial, you hopefully know what a chatbot is and what Pandorabots can do to help you build and deploy one.
 
-For those of you who don’t know, a chatbot is an application that can have a conversation in natural language. You can say something to the bot, and the bot will parse your input and provide the most relevent response it can. This type of application is known as the [stimulus response model](http://docs.pandorabots.com/tutorials/getting-started/).
+For those of you who don’t know, a chatbot is an application that can have a conversation in natural language. You can say something to the bot, and the bot will parse your input and provide the most relevent response it can. This type of application is known as the stimulus response model.
 
 ## What is Pandorabots? {#what-is-pandorabots}
 
@@ -83,7 +83,5 @@ This marks the end of the AIML document.
 
 ## Moving forward {#moving-forward}
 
-Your next stop should be [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) where you can master both AIML and Platform basics. 
-
-
+Your next stop should be [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) where you can master both AIML and Platform basics.
 

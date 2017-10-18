@@ -22,9 +22,9 @@ Extensible
 
 Machine learning based systems and APIs \(like Watson, api.ai, wit.ai, etc.\) are black boxes. In theory, the user can provide sample inputs, and the correct response, and the system can then identify inputs that are similar to the sample inputs and learn that these map to the same response. In reality, these systems are not effective without a large amount of training data, and it is not possible to debug the system when it returns the wrong answer.
 
-These ML-based systems have another problem: performance. Above approximately ~500 defined intents, the systems begin to slow way down. By contrast, the response time for bots hosted on Pandorabots is always around ~300 milliseconds, even for bots that have ~300,000 intents defined. For finite domains, a botmaster may not need to define over 500 intents, but generally speaking robust chatbots have a lot more intents defined, and that number should only increase over time. 
+When it comes to these systems, you, the user, do not own your data, and you do not own the code for your chatbot. Your data is being fed into a third party system that dictates what input is returned, and why. From the perspective of a large brand, returning a "learned" input from a machine rather than trained copywriters on staff would be disastrous! 
 
-
+These ML-based systems have another problem: performance. Above approximately ~500 defined intents, the systems begin to slow way down. By contrast, the response time for bots hosted on Pandorabots is always around ~300 milliseconds, even for bots that have ~300,000 intents defined. For finite domains, a botmaster may not need to define over 500 intents, but generally speaking robust chatbots have a lot more intents defined, and that number should only increase over time.
 
 ###### Enterprise Ready
 

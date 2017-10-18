@@ -36,7 +36,7 @@ The danger of `<srai>` is that it permits the botmaster to create infinite loops
 
 ### \(1\). Symbolic Reduction
 
-Symbolic reduction refers to the process of simplifying complex grammatical forms into simpler ones. Usually, the atomic patterns in categories storing chatbot knowledge are stated in the simplest possible terms, for example we tend to prefer patterns like "WHO IS SOCRATES" to ones like "DO YOU KNOW WHO SOCRATES IS" when storing biographical information about Socrates.
+Symbolic reduction refers to the process of simplifying complex grammatical forms into simpler ones. Usually, the atomic patterns in categories storing chatbot knowledge are stated in the simplest possible terms, for example we tend to prefer patterns like "WHO IS SOCRATES" to ones like "DO YOU KNOW WHO SOCRATES IS" when storing biographical information about Socrates. The simplest term of expressing the fundamental meaning of an utterance is often also known as the _Intent_. 
 
 Many of the more complex forms reduce to simpler forms using AIML categories designed for symbolic reduction:
 
@@ -47,7 +47,7 @@ Many of the more complex forms reduce to simpler forms using AIML categories des
 </category>
 ```
 
-Whatever input matched this pattern, the portion bound to the wildcard \* may be inserted into the reply with the markup &lt;star/&gt;. This category reduces any input of the form "Do you know who X is?" to "Who is X?"
+Whatever input matched this pattern, the portion bound to the wildcard `*` may be inserted into the reply with the markup `<star/>`. This category reduces any input of the form "Do you know who X is?" to "Who is X?"
 
 ### \(2\). Divide and Conquer
 

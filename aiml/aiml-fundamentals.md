@@ -183,101 +183,107 @@ The art of AIML writing is most apparent in creating default categories, which p
 >
 > Alice: [http://www.ancientskulls.net/australopithecus.html](http://www.ancientskulls.net/australopithecus.html)
 
-While crowd-sourced learning is highly appealing, allowing clients to train your chatbot is also highly risky, because there is no way to weed out hackers and trolls who would corrupt the bot by teaching it inappropriate things \(as made famous by Microsoft Tay, the unsupervised learning bot who went "bad" on Twitter\). Therefore, we suggest restricting the Learn function to a trusted user group or development sandbox. 
+While crowd-sourced learning is highly appealing, allowing clients to train your chatbot is also highly risky, because there is no way to weed out hackers and trolls who would corrupt the bot by teaching it inappropriate things \(as made famous by Microsoft Tay, the unsupervised learning bot who went "bad" on Twitter\). Therefore, we suggest restricting the Learn function to a trusted user group or development sandbox.
 
 That is the crux of the learning problem in a nutshell. It all comes down to editing. Either the botmaster edits good quality replies to begin with, or if the bot is "open to the public" then the teacher has to edit out all the crappy answers supplied by all that "free" labor. Compared with a hypothetical learning machine capable of learning language like a child, the AIML targeting approach is more efficient and less risky from the perspective of a brand.
 
 ## CONTEXT
 
-The keyword "that" in AIML refers to the robot’s previous utterance. Specifically, if the robot responds with a multiple sentence paragraph, the value of that is set to the last sentence in the sequence. The choice of the keyword "that" is motivated by its use in ordinary language:
+The keyword "that" in AIML refers to the robot’s previous utterance. Specifically, if the robot responds with a multiple sentence paragraph, the value of that is set to the last sentence in the sequence. The choice of the keyword "that" originated from its use in ordinary language:
 
-R: Today is yesterday.
+> R: Today is yesterday.
+>
+> C: That makes no sense.
+>
+> R: The answer is 3.1412926 approximately.
+>
+> C: That is cool.
 
-C: That makes no sense.
+In AIML the syntax `<that>...</that>` encloses a pattern that matches the robot’s previous utterance. A common application of `<that>` is found in yes-no questions:
 
-R: The answer is 3.1412926 approximately.
+```
+<category>
+<pattern>YES</pattern>
+<that>DO YOU LIKE MOVIES</that>
+<template>What is your favorite movie?</template>
+</category>
+```
 
-C: That is cool.
+This category is activated when the client says YES. The chatbot must determine what they are saying "yes" to. If the chatbot asked, "Do you like movies?," this category matches, and the response, "What is your favorite movie?," continues the conversation along the same lines.
 
-In AIML the syntax &lt;that&gt;...&lt;/that&gt; encloses a pattern that matches the robot’s previous utterance. A common application of &lt;that&gt; is found in yes-no questions:
+Another sample application of `<that>` are categories that enable the robot to respond to knock-knock jokes:
 
-&lt;category&gt;  
-&lt;pattern&gt;YES&lt;/pattern&gt;  
-&lt;that&gt;DO YOU LIKE MOVIES&lt;/that&gt;  
-&lt;template&gt;What is your favorite movie?&lt;/template&gt;  
-&lt;/category&gt;
+```
+<category>
+<pattern>KNOCK KNOCK</pattern>
+<template>Who is there?</template>
+</category>
 
-This category is activated when the client says YES. The robot must find out what is he saying "yes" to. If the robot asked, "Do you like movies?," this category matches, and the response, "What is your favorite movie?," continues the conversation along the same lines.
+<category>
+<pattern>*</pattern>
+<that>WHO IS THERE</that>
+<template><person/> who?</template>
+</category>
 
-One interesting application of &lt;that&gt; are categories that enable the robot to respond to knock-knock jokes. The categories:
+<category>
+<pattern>*</pattern>
+<that>* WHO</that>
+<template>Ha ha very funny, <get name="name"/>.</template>
+</category>
+```
 
-&lt;category&gt;  
-&lt;pattern&gt;KNOCK KNOCK&lt;/pattern&gt;  
-&lt;template&gt;Who is there?&lt;/template&gt;  
-&lt;/category&gt;
+> C: Knock knock.
+>
+> R: Who’s there?
+>
+> C: Banana.
+>
+> R: Banana who?
+>
+> C: Knock knock.
+>
+> R: Who’s there?
+>
+> C: Banana.
+>
+> R: Banana who?
+>
+> C: Knock knock.
+>
+> R: Who’s there?
+>
+> C: Orange.
+>
+> R: Orange who?
+>
+> C: Orange you glad I didn’t say banana.
+>
+> R: Ha ha very funny, Nancy.
 
-&lt;category&gt;  
-&lt;pattern&gt;\*&lt;/pattern&gt;  
-&lt;that&gt;WHO IS THERE&lt;/that&gt;  
-&lt;template&gt;&lt;person/&gt; who?&lt;/template&gt;  
-&lt;/category&gt;
+Internally the AIML interpreter stores the input pattern, that pattern and topic pattern along a single path, like: INPUT &lt;that&gt; THAT &lt;topic&gt; TOPIC.  When the values of `<that>` or `<topic>` are not specified, the program implicitly sets the values of the corresponding THAT or TOPIC pattern to the wildcard `*`.
 
-&lt;category&gt;  
-&lt;pattern&gt;\*&lt;/pattern&gt;  
-&lt;that&gt;\* WHO&lt;/that&gt;  
-&lt;template&gt;Ha ha very funny, &lt;get name="name"/&gt;.&lt;/template&gt;  
-&lt;/category&gt;
+The first part of the path to match is the input. If more than one category have the same input pattern, the program may distinguish between them depending on the value of `<that>`. If two or more categories have the same `<pattern>` and `<that>`, the final step is to choose the reply based on the `<topic>`.
 
-produce the following dialogue:
+In terms of design, you should never use `<that>` unless you have written two categories with the same `<pattern>`, and never use `<topic>` unless you write two categories with the same `<pattern>` and `<that>`. Still, one of the most useful applications for `<topic>` is to create subject-dependent lines like:
 
-C: Knock knock.
+```
+<topic name="CARS">
 
-R: Who’s there?
+<category>
+<pattern>*</pattern>
+<template>
+<random>
+<li>What’s your favorite car?</li>
+<li>What kind of car do you drive?</li>
+<li>Do you get a lot of parking tickets?</li>
+<li>My favorite car is one with a driver.</li>
+</random>
+</template>
+```
 
-C: Banana.
+Considering the vast size of the set of things people could say that are grammatically correct or semantically meaningful, the number of things people actually do say is surprisingly small. In his book _How the Mind Works_, Stephen Pinker wrote:
 
-R: Banana who?
-
-C: Knock knock.
-
-R: Who’s there?
-
-C: Banana.
-
-R: Banana who?
-
-C: Knock knock.
-
-R: Who’s there?
-
-C: Orange.
-
-R: Orange who?
-
-C: Orange you glad I didn’t say banana.
-
-R: Ha ha very funny, Nancy.
-
-Internally the AIML interpreter stores the input pattern, that pattern and topic pattern along a single path, like: INPUT &lt;that&gt; THAT &lt;topic&gt; TOPIC.  When the values of &lt;that&gt; or &lt;topic&gt; are not specified, the program implicitly sets the values of the corresponding THAT or TOPIC pattern to the wildcard \*.
-
-The first part of the path to match is the input. If more than one category have the same input pattern, the program may distinguish between them depending on the value of &lt;that&gt;. If two or more categories have the same &lt;pattern&gt; and &lt;that&gt;, the final step is to choose the reply based on the &lt;topic&gt;.
-
-This structure suggests a design rule: never use &lt;that&gt; unless you have written two categories with the same &lt;pattern&gt;, and never use &lt;topic&gt; unless you write two categories with the same &lt;pattern&gt; and &lt;that&gt;. Still, one of the most useful applications for &lt;topic&gt; is to create subject-dependent "pickup lines," like:
-
-&lt;topic name="CARS"&gt;
-
-&lt;category&gt;  
-&lt;pattern&gt;\*&lt;/pattern&gt;  
-&lt;template&gt;  
-&lt;random&gt;  
-&lt;li&gt;What’s your favorite car?&lt;/li&gt;  
-&lt;li&gt;What kind of car do you drive?&lt;/li&gt;  
-&lt;li&gt;Do you get a lot of parking tickets?&lt;/li&gt;  
-&lt;li&gt;My favorite car is one with a driver.&lt;/li&gt;  
-&lt;/random&gt;  
-&lt;/template&gt;
-
-Considering the vast size of the set of things people could say that are grammatically correct or semantically meaningful, the number of things people actually do say is surprisingly small. Steven Pinker,in his book How the Mind Works wrote, "Say you have ten choices for the first word to begin a sentence, ten choices for the second word \(yielding 100 two-word beginnings\), ten choices for the third word \(yielding a thousand three-word beginnings\), and so on. \(Ten is in fact the approximate geometric mean of the number of word choices available at each point in assembling a grammatical and sensible sentence\). A little arithmetic shows that the number of sentences of 20 words or less \(not an unusual length\) is about 1020."
+> "Say you have ten choices for the first word to begin a sentence, ten choices for the second word \(yielding 100 two-word beginnings\), ten choices for the third word \(yielding a thousand three-word beginnings\), and so on. \(Ten is in fact the approximate geometric mean of the number of word choices available at each point in assembling a grammatical and sensible sentence\). A little arithmetic shows that the number of sentences of 20 words or less \(not an unusual length\) is about 1020."
 
 Fortunately for chat robot programmers, Pinker’s calculations are way off. Our experiments with A.L.I.C.E. indicate that the number of choices for the "first word" is more than ten, but it is only about two thousand. Specifically, about 2000 words covers 95% of all the first words input to A.L.I.C.E.. The number of choices for the second word is only about two. To be sure, there are some first words \("I" and "You" for example\) that have many possible second words, but the overall average is just under two words. The average branching factor decreases with each successive word.
 

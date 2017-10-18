@@ -149,10 +149,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                      
+**&lt;pattern&gt;                                                                        
 **Matches what the user says.
 
-**&lt;template&gt;                                                                      
+**&lt;template&gt;                                                                        
 **What the bot replies.
 
 Code example:
@@ -166,8 +166,8 @@ Code example:
 
 The above code would result in the following exchange between your bot and the client:
 
-**Human:** Hi  
-**Bot: **Hello world!
+> **Human:** Hi  
+> **Bot: **Hello world!
 
 ###### Explaining the "tags"
 
@@ -220,9 +220,9 @@ For example, the &lt;br/&gt; HTML tag allows you to insert line breaks in the te
 </category>
 ```
 
-**Human: **Who are you?  
-**Bot:** I am a bot.  
-        I live in a computer.
+> **Human: **Who are you?  
+> **Bot:** I am a bot.  
+>         I live in a computer.
 
 ###### The Ultimate Default Category \(UDC\)
 
@@ -360,8 +360,8 @@ You can "echo" the words captured by the wildcard from within the template using
 </category>
 ```
 
-**Human:** My name is Daniel.  
-**Bot:** Hello, Daniel.
+> **Human:** My name is Daniel.  
+> **Bot:** Hello, Daniel.
 
 ###### Multiple Wildcards
 
@@ -399,8 +399,8 @@ You can use a property to store your bot's age. Create a new property with the n
 </category>
 ```
 
-**Human:** How old are you?  
-**Bot:** I am 8 years old.
+> **Human:** How old are you?  
+> **Bot:** I am 8 years old.
 
 \#\#\#How to create a property file using NEW UI MISSING!
 
@@ -434,10 +434,10 @@ If you have set the predicate using the category in the previous example above, 
 
 In combination, the previous two examples would enable the following conversation:
 
-**Human:** My name is Daniel.  
-**Bot:** Nice to meet you, Daniel.  
-**Human:** What is my name?  
-**Bot:** Your name is Daniel.
+> **Human:** My name is Daniel.  
+> **Bot:** Nice to meet you, Daniel.  
+> **Human:** What is my name?  
+> **Bot:** Your name is Daniel.
 
 ###### Using `var`
 
@@ -597,12 +597,12 @@ A set called "colors" might contain the following:
 
 Sets are used to dramatically reduce your bot's overall categories. Consider the following conversation:
 
-**Human:** Is green a color?  
-**Bot:** Yes, green is a color.  
-**Human:** Is blue a color?  
-**Bot:** Yes, blue is a color.  
-**Human:** Is peanut butter a color?  
-**Bot:** No, peanut butter is not a color.
+> **Human:** Is green a color?  
+> **Bot:** Yes, green is a color.  
+> **Human:** Is blue a color?  
+> **Bot:** Yes, blue is a color.  
+> **Human:** Is peanut butter a color?  
+> **Bot:** No, peanut butter is not a color.
 
 Imagine how many categories would be needed to cover every color in the spectrum!
 
@@ -682,12 +682,12 @@ Maps are accessed from within the template. They are used in conjunction with a 
 
 Consider the following conversation:
 
-**Human:** What is the capital of California?  
-**Bot:** Sacramento is the capital of California.  
-**Human:** What is the capital of New York?  
-**Bot:** Albany is the capital of New York.  
-**Human:** What is the capital of Texas?  
-**Bot:** Austin is the capital of Texas.
+> **Human:** What is the capital of California?  
+> **Bot:** Sacramento is the capital of California.  
+> **Human:** What is the capital of New York?  
+> **Bot:** Albany is the capital of New York.  
+> **Human:** What is the capital of Texas?  
+> **Bot:** Austin is the capital of Texas.
 
 We can enable this conversation with a single category, one set, and one map:
 
@@ -715,8 +715,8 @@ I don’t know what the capital of <star/> is.
 </category>
 ```
 
-**Human:** What is the capital of Pennsyltucky?  
-**Bot:** I don't know what the capital of Pennsyltucky is.
+> **Human:** What is the capital of Pennsyltucky?  
+> **Bot:** I don't know what the capital of Pennsyltucky is.
 
 Map files are simple key-value pairs in an array, and are written in the following format:
 
@@ -748,8 +748,8 @@ Pandorabots has some pre-built sets and maps that are not visible from the edito
 
 When humans have a conversation, we are able to remember the things that have been previously said.
 
-**Human 1:** Do you like coffee?  
-**Human 2:** Yes.
+> **Human 1:** Do you like coffee?  
+> **Human 2:** Yes.
 
 Human 1 knows that "Yes" is a response to their question, because they have said it in particular context.
 
@@ -780,10 +780,10 @@ In the example below, the second category is bound to a particular context. It w
 </category>
 ```
 
-**Human:** I should drink some coffee.  
-**Bot:** Do you like coffee?  
-**Human:** Yes.  
-**Bot:** Do you prefer dark or medium roast?
+> **Human:** I should drink some coffee.  
+> **Bot:** Do you like coffee?  
+> **Human:** Yes.  
+> **Bot:** Do you prefer dark or medium roast?
 
 ###### More on `<that>`
 
@@ -854,12 +854,12 @@ The concept is the same as an IF - THEN - ELSE statement found in most programmi
 
 Consider the following:
 
-**Human:** Today is Monday.  
-**Bot:** The start of the work week!  
-**Human: **Today is Tuesday.  
-**Bot: **Tuesday already?  
-**Human:** Today is Wednesday.  
-**Bot: **Humpday, we're halfway to the weekend!
+> **Human:** Today is Monday.  
+> **Bot:** The start of the work week!  
+> **Human: **Today is Tuesday.  
+> **Bot: **Tuesday already?  
+> **Human:** Today is Wednesday.  
+> **Bot: **Humpday, we're halfway to the weekend!
 
 The bot response is _conditioned_ on the day of the week. Using the &lt;condition&gt; tag within the template enables this with a single category:
 
@@ -1124,8 +1124,8 @@ YOU ARE <person><star/></person>
 </category>
 ```
 
-**Human: **I am waiting for you.  
-**Bot: **You are waiting for me.
+> **Human: **I am waiting for you.  
+> **Bot: **You are waiting for me.
 
 In this category above, the substitution file "person" has found a 2nd-person pronoun in the wildcard contents and converted it to a 1st-person pronoun when echoed in the template.
 
@@ -1152,8 +1152,8 @@ This means that punctuation is not "preserved" by simply echoing part of the use
 </category>
 ```
 
-**Human: **URL google.com  
-**Bot:** google dot com
+> **Human: **URL google.com  
+> **Bot:** google dot com
 
 To preserve punctuation found in the input we use `denormalize.substitution`. This file contains all of the words that punctuation marks are normalized to. From the previous example, we know that the string ".com" is normalized to "dot com". To reverse this substitution, we echo the user's input within the denormalize tags:
 
@@ -1166,8 +1166,8 @@ To preserve punctuation found in the input we use `denormalize.substitution`. Th
 </category>
 ```
 
-**Human: **URL google.com  
-**Bot:** google.com
+> **Human: **URL google.com  
+> **Bot:** google.com
 
 \#\#\#More relevant example using emoji?
 

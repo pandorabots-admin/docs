@@ -130,9 +130,6 @@ Chatlog data and monthly statistics are only available dating back the previous 
 ___
 ###Pricing
 
-**What is a "query"?**
-
-The Pandorabots Platform charges on a per _Interaction_ basis. An Interaction consists of both the user input to the bot _and_ the bot's output (i.e., two messages). This is also known a _Talk API Call_, or _Query_ for short. Essentially, our platform takes a user input, parses it using our NLP engine, and returns the output you specified to the end user. 
 
 **What is included in the Free Tier?**
 
@@ -141,6 +138,11 @@ The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, me
 **What is included in the Premium Tier?**
 
 The Premium Tier includes all the features of the Free Tier plus up to 20 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month. 
+
+**What is a "query"?**
+
+The Pandorabots Platform charges on a per _Interaction_ basis. An Interaction consists of both the user input to the bot _and_ the bot's output (i.e., two messages). This is also known a _Talk API Call_, or _Query_ for short. Essentially, our platform takes a user input, parses it using our NLP engine, and returns the output you specified to the end user. 
+
 
 **Why is a credit card required to access certain features?**
 

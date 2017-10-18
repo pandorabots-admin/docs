@@ -161,11 +161,11 @@ Provided that the predicate "he" is initialized to "Unknown," the categories exe
 
 ## TARGETING
 
-Robust chabots are created and shaped through a cyclical process of supervised learning called Targeting. Targeting is a cycle incorporating client, bot, and botmaster, wherein client inputs that find no complete match among the categories are logged by the bot and delivered as Targets the botmaster, who then creates suitable responses, starting with the most common queries. 
+Robust chabots are created and shaped through a cyclical process of supervised learning called Targeting. Targeting is a cycle incorporating client, bot, and botmaster, wherein client inputs that find no complete match among the categories are logged by the bot and delivered as Targets the botmaster, who then creates suitable responses, starting with the most common queries.
 
 The Targeting cycle produces a progressively more refined bot personality.
 
-The art of AIML writing is most apparent in creating default categories, which provide noncommittal replies to a wide range of inputs. Here is a real-life example:
+The art of AIML writing is most apparent in creating default categories, which provide noncommittal replies to a wide range of inputs. AIML does provide Learning features, as evidenced in the following example dialog:
 
 > User: Where do I find the webpage with Australopithecus?
 >
@@ -183,9 +183,9 @@ The art of AIML writing is most apparent in creating default categories, which p
 >
 > Alice: [http://www.ancientskulls.net/australopithecus.html](http://www.ancientskulls.net/australopithecus.html)
 
-This example is exactly the same as targeting when the botmaster is the teacher; in other words, it is an AIML interface to targeting. Of course this scenario raises many problems, such as how to weed out hackers and other garbage givers, which might mean only turning on the Learn function while in a restricted sandbox, though it is the free labor of many chatters the web that could help the bot grow wise quickly.
+While crowd-sourced learning is highly appealing, allowing clients to train your chatbot is also highly risky, because there is no way to weed out hackers and trolls who would corrupt the bot by teaching it inappropriate things \(as made famous by Microsoft Tay, the unsupervised learning bot who went "bad" on Twitter\). Therefore, we suggest restricting the Learn function to a trusted user group or development sandbox. 
 
-That is the crux of the learning problem in a nutshell. It all comes down to editing. Either the botmaster edits good quality replies to begin with, or if the bot is "open to the public" then the teacher has to edit out all the crappy answers supplied by all that "free" labor. Compared with a hypothetical learning machine capable of learning language like a child, the AIML targeting approach is more efficient and less risky from the perspective of a brand. 
+That is the crux of the learning problem in a nutshell. It all comes down to editing. Either the botmaster edits good quality replies to begin with, or if the bot is "open to the public" then the teacher has to edit out all the crappy answers supplied by all that "free" labor. Compared with a hypothetical learning machine capable of learning language like a child, the AIML targeting approach is more efficient and less risky from the perspective of a brand.
 
 ## CONTEXT
 

@@ -1,5 +1,9 @@
 # About The Pandorabots API
 
+###### Note: Currently, API access is only available by creating a separate account on [chatbots.io](/chatbots.io). By the end of 2017, you will be able to use the API in conjunction with the Pandorabots Platform UI available via [www.pandorabots.com](/www.pandorabots.com).
+
+---
+
 The Pandorabots API allows you to integrate our bot hosting service and natural language processing engine into your own application. The current offering allows you to create a bot, upload files, compile, talk to a bot \(in a variety of ways\), and delete a bot.
 
 ### Requirements {#reqs}

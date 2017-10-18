@@ -16,8 +16,8 @@
 
 ## AIML
 
-* [AIML: An Introduction](aiml/aiml-basics.md)
-* AIML Basics
+* [AIML: An Introduction ](aiml/aiml-basics.md)
+* [AIML Basics](aiml/aiml-basics.md)
 * [AIML Reference](aiml/reference.md)
   * [aiml](aiml/reference.md#aiml)
   * [bot](aiml/reference.md#bot-)

@@ -1,6 +1,6 @@
 # The Pandorabots CLI {#the-pandorabots-cli}
 
-While we already offer a number of tools for working with the Pandorabots API, we are proud to announce the newest member of our open-source arsenal: the [Pandorabots CLI](https://github.com/pandorabots/pb-cli). This tool is designed to let you manage and interact with your bots straight from the command line.
+While we offer a number of opensource SDKs and tools for working with the Pandorabots API, we highly recommend using the [Pandorabots CLI](https://github.com/pandorabots/pb-cli). This tool is designed to let you manage and interact with your bots straight from the command line.
 
 ## Why is this great? {#why-is-this-great}
 

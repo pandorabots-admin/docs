@@ -36,7 +36,7 @@ The danger of `<srai>` is that it permits the botmaster to create infinite loops
 
 ### \(1\). Symbolic Reduction
 
-Symbolic reduction refers to the process of simplifying complex grammatical forms into simpler ones. Usually, the atomic patterns in categories storing chatbot knowledge are stated in the simplest possible terms, for example we tend to prefer patterns like "WHO IS SOCRATES" to ones like "DO YOU KNOW WHO SOCRATES IS" when storing biographical information about Socrates. The simplest term of expressing the fundamental meaning of an utterance is often also known as the _Intent_. 
+Symbolic reduction refers to the process of simplifying complex grammatical forms into simpler ones. Usually, the atomic patterns in categories storing chatbot knowledge are stated in the simplest possible terms, for example we tend to prefer patterns like "WHO IS SOCRATES" to ones like "DO YOU KNOW WHO SOCRATES IS" when storing biographical information about Socrates. The simplest term of expressing the fundamental meaning of an utterance is often also known as the _Intent_.
 
 Many of the more complex forms reduce to simpler forms using AIML categories designed for symbolic reduction:
 
@@ -53,12 +53,14 @@ Whatever input matched this pattern, the portion bound to the wildcard `*` may b
 
 Many individual sentences may be reduced to two or more subsentences, and the reply formed by combining the replies to each. A sentence beginning with the word "Yes" for example, if it has more than one word, may be treated as the subsentence "Yes." plus whatever follows it.
 
-&lt;category&gt;  
-&lt;pattern&gt;YES \*&lt;/pattern&gt;  
-&lt;template&gt;&lt;srai&gt;YES&lt;/srai&gt;&lt;sr/&gt;&lt;/template&gt;  
-&lt;/category&gt;
+```
+<category>
+<pattern>YES *</pattern>
+<template><srai>YES</srai><sr/></template>
+</category>
+```
 
-The markup &lt;sr/&gt; is simply an abbreviation for &lt;srai&gt;&lt;star/&gt;&lt;/srai&gt;.
+The markup `<sr/>` is simply an abbreviation for `<srai><star/></srai>`.
 
 ### \(3\). Synonyms
 

@@ -83,5 +83,7 @@ This marks the end of the AIML document.
 
 ## Moving forward {#moving-forward}
 
-This tutorial is organized into sections, which will tackle lessons in increasing difficulty. By the end, you will have a solid foundation of the AIML language, as well as chatbot development!
+Your next stop should be [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) where you can master both AIML and Platform basics. 
+
+
 

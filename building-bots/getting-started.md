@@ -61,7 +61,7 @@ This line marks the beginning of our first [category](http://docs.pandorabots.co
 <pattern>HI</pattern>
 ```
 
-This is the category’s [pattern](http://docs.pandorabots.com/aiml/pattern)element. The pattern defines some input text. When you say something to the bot, it will evaluate all of its categories until it finds one whose pattern matches the input. In this example, our category will be matched when the user’s input is “HI”.
+This is the category’s [pattern](http://docs.pandorabots.com/aiml/pattern) element. The pattern defines some input text. When you say something to the bot, it will evaluate all of its categories until it finds one whose pattern matches the input. In this example, our category will be matched when the user’s input is “HI”.
 
 ```
 <template>Hello world!</template>

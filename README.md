@@ -18,5 +18,5 @@ The Pandorabots platform supports an open standard scripting language called _Ar
 
 **What is AIML?**
 
-AIML is XML-based and easy for anyone to learn, even if you aren't a programmer. Despite its inherent simplicity, the language powers the most complex conversational agents on the market to date, including the multi award-winning Mitsuku chatbot.
+AIML is XML-based and easy for anyone to learn, even if you aren't a programmer. Despite its deliberate simplicity, the language powers the most complex conversational agents on the market to date, including the multi award-winning Mitsuku chatbot.
 

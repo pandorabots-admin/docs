@@ -8,7 +8,7 @@ The network is made of up three distinct bot types, each of which takes on a dif
 * Comparison engine
 * Artist “expert”
 
-We’re going to take a look at how each of these bots work, as well as some of the AIML required for them to do so! Grab the code[here](https://github.com/pandorabots/concierge-network)to follow along.
+We’re going to take a look at how each of these bots work, as well as some of the AIML required for them to do so! Grab the code [here](https://github.com/pandorabots/concierge-network) to follow along.
 
 The following AIML elements are featured heavily in this tutorial:
 
@@ -20,17 +20,19 @@ The following AIML elements are featured heavily in this tutorial:
 
 Make sure you are familiar with the high level concepts via the AIML Reference before you begin.
 
-> **Note:**this music-oriented bot is just an example, but you can take these design patterns with you when building your own Concierge-style bot.
+> **Note: **this music-oriented bot is just an example, but you can take these design patterns with you when building your own Concierge-style bot.
 
 ## Architecture {#architecture}
 
-![](http://docs.pandorabots.com/images/architecture.png)The concierge bot network has a simple architecture that separates concerns by dividing tasks between the bots.
+![](http://docs.pandorabots.com/images/architecture.png)
 
-The_Personal bot_is the front-end for the network. This is the bot that your users will be talking to, and has the responsibility of storing information that your users share with it. This information can be reused later when making a recommendation.
+The concierge bot network has a simple architecture that separates concerns by dividing tasks between the bots.
 
-The_Comparison engine_is a bot that mimics a database which organizes musicians by genre. This allows the network to make a recommendation based on the user’s preference for a particular artist. We’ve given you a “pure AIML” solution in this example, but in reality you will probably want the power of a query language like SQL to fetch data from your database. It is not designed to be “talked” to - rather, it can be used as a utility by the personal bot in an`<sraix>`block.
+The\_Personal bot\_is the front-end for the network. This is the bot that your users will be talking to, and has the responsibility of storing information that your users share with it. This information can be reused later when making a recommendation.
 
-Finally, the_Artist expert_is a bot that is knowledgeable about a particular artist or musician. Again, this bot is not really designed to be talked to directly - it is just a bot that can return information that the Personal bot will share with the user.
+The\_Comparison engine\_is a bot that mimics a database which organizes musicians by genre. This allows the network to make a recommendation based on the user’s preference for a particular artist. We’ve given you a “pure AIML” solution in this example, but in reality you will probably want the power of a query language like SQL to fetch data from your database. It is not designed to be “talked” to - rather, it can be used as a utility by the personal bot in an`<sraix>`block.
+
+Finally, the\_Artist expert\_is a bot that is knowledgeable about a particular artist or musician. Again, this bot is not really designed to be talked to directly - it is just a bot that can return information that the Personal bot will share with the user.
 
 ## Comparison engine {#comparison-engine}
 
@@ -284,8 +286,5 @@ Bot: Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper ...
 
 ## Final notes {#final-notes}
 
-Hopefully you’ve already gotten your hands on the[code](https://github.com/pandorabots/concierge-network). You can deploy this network yourself, just make sure to follow the directions in the Readme file to properly route your`<sraix>`calls!
-
-  
-
+Hopefully you’ve already gotten your hands on the [code](https://github.com/pandorabots/concierge-network). You can deploy this network yourself, just make sure to follow the directions in the Readme file to properly route your`<sraix>`calls!
 

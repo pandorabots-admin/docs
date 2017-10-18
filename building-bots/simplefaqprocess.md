@@ -2,7 +2,7 @@
 
 A Frequently Asked Questions \(FAQ\) chatbot connected to a messaging platform or to your website, is a great use case for a Pandorabot. We’ve come up with an approach to build a quick FAQ chatbot. The purpose of this article is to step you through the thought process of this approach for a limited set of FAQs.
 
-This process assumes you understand basic AIML terminology such as[categories](http://pandorabots.github.io/aiml/category/),[symbolic reductions](http://pandorabots.github.io/aiml/srai/)and[wildcards](http://docs.pandorabots.com/tutorials/wildcards/).
+This process assumes you understand basic AIML terminology such as [categories](http://pandorabots.github.io/aiml/category/), [symbolic reductions](http://pandorabots.github.io/aiml/srai/) and [wildcards](http://docs.pandorabots.com/tutorials/wildcards/).
 
 ## Step 1: Gather your list of questions and answers {#step-1-gather-your-list-of-questions-and-answers}
 
@@ -55,7 +55,7 @@ Patterns must be stripped of punctuation and any other normalization that you ha
 
 ### Exact Match {#exact-match}
 
-If you have a list from chat history, you can just keep adding each question as a symbolic reduction \(using[srai](http://pandorabots.github.io/aiml/srai/)AIML tag\).
+If you have a list from chat history, you can just keep adding each question as a symbolic reduction \(using [srai](http://pandorabots.github.io/aiml/srai/) AIML tag\).
 
 Example AIML would look like:
 
@@ -80,7 +80,7 @@ This is simple but is not as flexible. This solution would not take into conside
 
 ### Wildcards & Keywords {#wildcards--keywords}
 
-Using[wildcards in AIML](http://docs.pandorabots.com/tutorials/wildcards/)pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
+Using [wildcards in AIML](http://docs.pandorabots.com/tutorials/wildcards/) pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
 
 ```
 <category>

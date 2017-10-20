@@ -103,6 +103,7 @@
   * [FAQ Bot](/building-bots/simplefaqprocess.md)
   * [Concierge Bot](/building-bots/build-a-concierge-bot.md)
 * [Quickstart](building-bots/quickstart.md)
+* [Quickstart \(OLD\)](building-bots/quickstart-old.md)
 
 ## DEPLOY & EXTEND
 

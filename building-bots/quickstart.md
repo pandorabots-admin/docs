@@ -15,30 +15,13 @@ Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scr
 > **Client:** Hi Bot!  
 > **Bot:** Hello world!
 
-In the next five minutes, you will learn how to create, edit, chat with, update, and publish a bot using this interface. 
+In the next five minutes, you will learn how to create, edit, chat with, update, and publish a bot using this interface.
 
 ---
 
 #### \(2\)
 
-#### Wildcards
-
-Wildcards allow your bot to respond to inputs containing certain keywords without having to write out all possible permutations of a phrase. In the following example, the "\*" wildcard matches one or more words, so if the user says "Hi there!" or "Hi robot!" or "Hi what's going on?" the template will still be returned:
-
-```
-<category>
-    <pattern>HI *</pattern>
-    <template>Hello, world!</template>
-</category>
-```
-
-There are four different types of wildcards you can learn more about later in[Docs](http://docs.pandorabots.com/tutorials/wildcards/)or Tutorials. For now, we're going to get you started with your first bot and give you a tour of some of the most useful features of the UI. Let's get started!
-
----
-
-#### \(3\)
-
-Create a new bot, name it, and select the language \(AIML can be written in any natural language\).
+First, create a new bot, name it, and select the language \(AIML can be written in any natural language\). You will have the option to add _Content_ like Small Talk, but for now, select the "Blank Bot" option.
 
 ---
 

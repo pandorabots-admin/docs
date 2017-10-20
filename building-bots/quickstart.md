@@ -71,7 +71,6 @@ The Talk Button allows you to talk to your bot as if you were the client. Open a
 
 #### \(10\)
 
-  
 Congratulations, you've just created your first category! Now, try adding a \* wildcard to the pattern after HI, allowing it to match phrases that start with the word "Hi". It should look like this:
 
 ```
@@ -101,6 +100,43 @@ Copy the following category into the file:
 ```
 
 The "\*" wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text. Save the file, then try typing anything other than "hi" to your bot.
+
+#### \(13\)
+
+With the UDC defined, your bot now has a sensible response to any input it does not have a specific answer to.
+
+However, we need to be able to see what inputs triggered the UDC if we want our bot to grow more intelligent. To do this, we need to learn about log review.
+
+#### \(14\)
+
+Go to the Logs Page.
+
+#### \(15\)
+
+Log review is a critical aspect of bot development. It allows you to identify inputs you did not anticipate and update your bot based on what people are actually saying. It’s impossible to invent a conversational bot in a vacuum, and important to update your bot on a regular basis.
+
+Unread conversations will appear in**bold**, and the colororangeindicates that the conversation contains at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
+
+Go ahead and click on the log item, which represents the earlier chats we had with your bot.
+
+#### \(16\)
+
+  
+This is the message history between your bot and the client. Interactions with orange borders highlight the input-output pair that triggered the UDC, and represent the highest priority log items to correct.
+
+Clicking "Show Metadata" will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
+
+Next up on the tour is the "Deploy" dashboard.
+
+#### \(17\)
+
+Go to Deploy page.
+
+#### \(18\)
+
+
+
+
 
 
 

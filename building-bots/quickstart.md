@@ -45,7 +45,7 @@ Use the File Menu to create a new AIML file called "greetings".
 
 #### \(8\)
 
-Copy the code for the following category into the text editor, making sure to insert it between the start and end &lt;aiml&gt; tags:
+Copy the code for the following category into the text editor, making sure to insert it between the start `<aiml>` and end `</aiml>` tags:
 
 ```
 <category>
@@ -54,7 +54,7 @@ Copy the code for the following category into the text editor, making sure to in
 </category>
 ```
 
-Once completed, save your file via the "File" dropdown menu.
+Once completed, save your file via the "File" drop-down menu.
 
 ---
 

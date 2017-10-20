@@ -33,7 +33,7 @@ The first stop of the tour is the _Editor,_ where you can create and edit AIML a
 
 #### \(6\)
 
-Welcome to the Edit page! We're going to walk you through creating your first AIML file as well as writing a few key categories that will allow you and others to talk to you bot.
+Welcome to the Editor! Here you will write your first AIML file and categories that will allow you and others to talk to you bot.
 
 ---
 

@@ -15,6 +15,8 @@ Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scr
 > **Client:** Hi Bot!  
 > **Bot:** Hello world!
 
+In the next five minutes, you will learn how to create, edit, chat with, update, and publish a bot using this interface. 
+
 ---
 
 #### \(2\)

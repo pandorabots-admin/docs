@@ -21,6 +21,8 @@ Closing tag          →    </category>
 
 In this example, if the user says “Hi!” \(in any form, patterns are case and punctuation insensitive\), your bot will respond with “Hello, world!”
 
+![](/assets/AIML Visual %281%29.png)
+
 ---
 
 #### \(2\)

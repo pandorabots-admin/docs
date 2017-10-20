@@ -21,13 +21,13 @@ In the next five minutes, you will learn how to create, edit, chat with, update,
 
 #### \(2\)
 
-First, create and name a new bot \(using 3-64 lowercase alphanumeric characters\). While you can write AIML in any language and add _Content_ libraries like Small Talk, for now please leave the default _Language_ `English` and _Content _`Blank Bot`.
+First, create and name a new bot \(using 3-64 lowercase alphanumeric characters\). While you can write AIML in any language and add _Content_ libraries like Small Talk, for simplicity please leave the default _Language_ `English` and _Content _`Blank Bot`.
 
 ---
 
 #### \(4\)
 
-The first stop of the tour is the _Editor,_ where you can create and edit AIML files, as well as the other major types of bot files. Please click on **Edit** beneath your Bot's Name to navigate to the Editor. 
+The first stop of the tour is the _Editor,_ where you can create and edit AIML files, as well as the other major types of bot files. Please click on **Edit** beneath your Bot's Name to navigate to the Editor.
 
 ---
 

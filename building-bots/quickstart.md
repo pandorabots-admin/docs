@@ -21,19 +21,13 @@ In the next five minutes, you will learn how to create, edit, chat with, update,
 
 #### \(2\)
 
-First, create and name a new bot \(using 3-64 lowercase alphanumeric characters\). While AIML can be written in most languages and _Content_ like Small Talk libraries can be added, for now we will leave the default _Language_ `English` and _Content _`Blank Bot`.
+First, create and name a new bot \(using 3-64 lowercase alphanumeric characters\). While you can write AIML in any language and add _Content_ libraries like Small Talk, for now please leave the default _Language_ `English` and _Content _`Blank Bot`.
 
 ---
 
 #### \(4\)
 
-The first stop of the tour is the Edit page, where you can create and edit AIML files, as well as the other major types of bot files.
-
----
-
-#### \(5\)
-
-Go to Edit Page
+The first stop of the tour is the _Editor,_ where you can create and edit AIML files, as well as the other major types of bot files. Please click on **Edit** beneath your Bot's Name to navigate to the Editor. 
 
 ---
 
@@ -66,7 +60,7 @@ Once completed, save your file via the "File" dropdown menu.
 
 #### \(9\)
 
-The Talk Button allows you to talk to your bot as if you were the client. Open a new chat and type “Hi” \(or “hi” or “HI”\) and you should receive the response you just coded, “Hello, world!”
+The _Chat Widget_ allows you to talk to your bot as if you were the client. Open a new chat and type “Hi” \(or “hi” or “HI”\) and you should receive the response you just coded, “Hello, world!”
 
 ---
 

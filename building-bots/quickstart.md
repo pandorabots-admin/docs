@@ -27,7 +27,7 @@ First, create and name a new bot \(using 3-64 lowercase alphanumeric characters\
 
 #### \(4\)
 
-The first stop of the tour is the _Editor,_ where you can create and edit AIML files, as well as the other major types of bot files. Please click on **Edit** beneath your Bot's Name to navigate to the Editor.
+The first stop of the tour is the _Editor,_ where you can create and edit AIML and other bot files. Please click on **Edit** beneath your Bot's Name to navigate to the Editor.
 
 ---
 

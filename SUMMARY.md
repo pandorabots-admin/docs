@@ -102,6 +102,7 @@
 * [Specific Use Cases](building-bots/tutorials-building-specific-types-of-bots.md)
   * [FAQ Bot](/building-bots/simplefaqprocess.md)
   * [Concierge Bot](/building-bots/build-a-concierge-bot.md)
+* [Quickstart](building-bots/quickstart.md)
 
 ## DEPLOY & EXTEND
 

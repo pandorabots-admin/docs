@@ -23,6 +23,10 @@ In this example, if the user says “Hi!” \(in any form, patterns are case and
 
 ![](/assets/AIML Visual %281%29.png)
 
+> **Client \(Input\):** Hi Bot!
+>
+> **Bot \(Output\):** Hello world!
+
 ---
 
 #### \(2\)

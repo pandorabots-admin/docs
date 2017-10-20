@@ -10,7 +10,7 @@
 
 Artificial Intelligence Markup Language \(AIML\) is an XML-based scripting for building chatbots that is easy for anyone to learn, even if you aren’t a programmer!
 
-AIML uses pattern matching to match an INPUT from the end-user chatting with your bot to the **pattern**, the text between the pattern tags. Once an input matches a pattern, an OUTPUT specified by the **template**, the text between the template tags, is produced. Together, pattern template pairs form a category: i.e., a rule for how your chatbot should respond to clients.
+AIML uses pattern matching to match an INPUT from the end-user chatting with your bot to the **pattern**, the text between the pattern tags. Once an input matches a pattern, an OUTPUT specified by the **template**, the text between the template tags, is produced. Together, pattern template pairs form a **category**: i.e., a rule for how your chatbot should respond to clients.
 
 ```
 Opening tag          →    <category> 

@@ -33,13 +33,13 @@ The first stop of the tour is the _Editor,_ where you can create and edit AIML a
 
 #### \(6\)
 
-Welcome to the Editor! Here you will write your first AIML file and categories that will allow you and others to talk to you bot.
+Welcome to the Editor! This is where you will write AIML files and categories that will allow you and others to talk to you bot.
 
 ---
 
 #### \(7\)
 
-Use the File Menu to create a new AIML file called "greetings"
+Use the File Menu to create a new AIML file called "greetings".
 
 ---
 

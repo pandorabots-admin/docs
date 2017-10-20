@@ -1,5 +1,7 @@
 # Quickstart
 
+###### Access the interactive Quickstart from the user icon drop-down menu, or follow the instructions below.
+
 ---
 
 #### \(1\)

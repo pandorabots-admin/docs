@@ -21,7 +21,7 @@ In the next five minutes, you will learn how to create, edit, chat with, update,
 
 #### \(2\)
 
-First, create a new bot name it \(using 3-64 lowercase alphanumeric characters\). While AIML can be written in most languages and _Content_ like Small Talk libraries can be added, for now we will leave the default _Language_ `English` and _Content _`Blank Bot`.
+First, create and name a new bot \(using 3-64 lowercase alphanumeric characters\). While AIML can be written in most languages and _Content_ like Small Talk libraries can be added, for now we will leave the default _Language_ `English` and _Content _`Blank Bot`.
 
 ---
 

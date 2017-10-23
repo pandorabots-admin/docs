@@ -150,7 +150,7 @@ Integrations provide an easy method to publish your bot on certain channels. Dev
 
 **\(19 - hover over "Add" button for Clubhouse\)**
 
-Click _Add_ for the Clubhouse Integration, fill out the requisite information, and then _Publish. _
+Click _Add_ for the Clubhouse Integration, fill out the requisite information, and then _Publish. \[Not sure user should publish since it is a boring Frankenzombie bot, maybe they should just go to the Clubhouse to see other bots, then go to Mybots page.\]_
 
 **\(20 - hover over Clubhouse - this wasn't visible because I had so many bots, maybe need to make clear you can minimize this by clicking on my bots; generally Clubhouse also has some responsive issues\)**
 

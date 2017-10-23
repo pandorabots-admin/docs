@@ -39,7 +39,7 @@ Welcome to the Editor! This is where you will write AIML files and categories th
 
 #### \(7\)
 
-Use the File Menu to create a new AIML file called "greetings".
+Use the File Menu to create a new AIML file called _greetings_.
 
 ---
 
@@ -60,13 +60,13 @@ Once completed, save your file via the "File" drop-down menu.
 
 #### \(9\)
 
-The _Chat Widget_ allows you to talk to your bot as if you were the client. Open a new chat and type “Hi” \(or “hi” or “HI”\) and you should receive the response you just coded, “Hello, world!”
+The _Chat Widget_ allows you to talk to your bot as if you were the client. Open a new chat and type _Hi_ \(or “hi” or “HI” since pattern matching is case-insensitive\) and you should receive the response you just coded, “Hello, world!”
 
 ---
 
 #### \(10\)
 
-Congratulations, you've just created your first category! Now, try adding a \* wildcard to the pattern after HI, allowing it to match phrases that start with the word "Hi". It should look like this:
+Congratulations, you've just created your first category! Now, try adding a \* wildcard to the pattern after HI, allowing it to match phrases that start with the word Hi. It should look like this:
 
 ```
 <category>

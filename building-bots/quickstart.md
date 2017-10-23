@@ -122,7 +122,7 @@ Log review is a critical aspect of bot development. It allows you to identify in
 
 Unread conversations will appear in **bold**, and the color orange indicates that the conversation contains at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
 
-Go ahead and click on the log item, which represents the earlier chats we had with your bot.
+Go ahead and click on the log item, which represents the earlier chats you had with your bot.
 
 ---
 

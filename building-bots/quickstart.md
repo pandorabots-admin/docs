@@ -118,9 +118,9 @@ Go to the Logs Page.
 
 #### \(15\)
 
-Log review is a critical aspect of bot development. It allows you to identify inputs you did not anticipate and update your bot based on what people are actually saying. It’s impossible to invent a conversational bot in a vacuum, and important to update your bot on a regular basis.
+Log review is a critical aspect of bot development. It allows you to identify inputs you did not anticipate and update your bot based on what people are actually saying. Bot development is an iterative process that requires continuous, regular development over time to improve the system.
 
-Unread conversations will appear in**bold**, and the colororangeindicates that the conversation contains at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
+Unread conversations will appear in **bold**, and the color orange indicates that the conversation contains at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
 
 Go ahead and click on the log item, which represents the earlier chats we had with your bot.
 

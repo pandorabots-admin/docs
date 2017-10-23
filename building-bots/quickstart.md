@@ -75,7 +75,7 @@ Congratulations, you've just created your first category! Now, try adding a \* w
 </category>
 ```
 
-Save your file, then type _Hi there robot!_ or any phrase beginning with _Hi. _All_ _should return "Hello, world!"
+Save your file, then type _Hi there robot!_ or any phrase beginning with _Hi. _All should return "Hello, world!"
 
 ---
 

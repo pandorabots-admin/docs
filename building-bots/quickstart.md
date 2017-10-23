@@ -66,7 +66,7 @@ The _Chat Widget_ allows you to talk to your bot as if you were the client. Open
 
 #### \(10\)
 
-Congratulations, you've just created your first category! Now, try adding a \* wildcard to the pattern after HI, allowing it to match phrases that start with the word Hi. It should look like this:
+Congratulations, you've just created your first category! Now, try adding a \* wildcard to the pattern after HI, allowing it to match phrases that start with the word _Hi_. It should look like this:
 
 ```
 <category>
@@ -75,7 +75,7 @@ Congratulations, you've just created your first category! Now, try adding a \* w
 </category>
 ```
 
-Save your file, then try typing "Hi there.", "Hi robot!", or "Hi, what's up?". With the new category, all three should return "Hello, world!".
+Save your file, then type _Hi there robot!_ \(or any phrase beginning with _Hi_\). With the new category, all three should return "Hello, world!".
 
 ---
 

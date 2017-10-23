@@ -152,13 +152,9 @@ Integrations provide an easy method to publish your bot on certain channels. Dev
 
 Click _Add_ for the Clubhouse Integration, fill out the requisite information, and then _Publish. _
 
-\(20 - hover over Clubhouse - this wasn't visible because I had so many bots, maybe need to make clear you can minimize this by clicking on my bots; generally Clubhouse also has some responsive issues\)
+**\(20 - hover over Clubhouse - this wasn't visible because I had so many bots, maybe need to make clear you can minimize this by clicking on my bots; generally Clubhouse also has some responsive issues\)**
 
-Let's go to the Clubhouse to check out our published bot. 
+Let's go to the Clubhouse to check out our published bot.
 
 \(21\)
-
-
-
-
 

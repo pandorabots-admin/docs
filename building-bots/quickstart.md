@@ -130,9 +130,9 @@ Go ahead and click on the log item, which represents the earlier chats you had w
 
 This is the message history between your bot and the client. Interactions with orange borders highlight the input-output pair that triggered the UDC, and represent the highest priority log items to correct.
 
-Clicking "Show Metadata" will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
+Clicking _Show Metadata_ will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
 
-Next up on the tour is the "Deploy" dashboard.
+Next up on the tour is the "Deploy" dashboard, which provides some easy methods to publish your bot and start collecting logs from actual clients. 
 
 ---
 

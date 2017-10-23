@@ -132,7 +132,7 @@ This is the message history between your bot and the client. Interactions with o
 
 Clicking _Show Metadata_ will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
 
-Next up on the tour is the "Deploy" dashboard, which provides some easy methods to publish your bot and start collecting logs from actual clients. 
+Next up on the tour is the "Deploy" dashboard, which provides some easy methods to publish your bot and start collecting logs from actual clients.
 
 ---
 
@@ -143,6 +143,22 @@ Go to Deploy page.
 ---
 
 #### \(18\)
+
+Integrations provide an easy method to publish your bot on certain channels. Developer users can also use the Pandorabots API to integrate their bot directly into any application. For now, we are going to publish our bot to an internal platform environment called the _Clubhouse_, where platform users can share their bots-in-progress to collect feedback and logs during development.
+
+---
+
+**\(19 - hover over "Add" button for Clubhouse\)**
+
+Click _Add_ for the Clubhouse Integration, fill out the requisite information, and then _Publish. _
+
+\(20 - hover over Clubhouse - this wasn't visible because I had so many bots, maybe need to make clear you can minimize this by clicking on my bots; generally Clubhouse also has some responsive issues\)
+
+Let's go to the Clubhouse to check out our published bot. 
+
+\(21\)
+
+
 
 
 

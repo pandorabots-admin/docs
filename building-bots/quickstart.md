@@ -156,5 +156,17 @@ Click _Add_ for the Clubhouse Integration, fill out the requisite information, a
 
 Let's go to the Clubhouse to check out our published bot.
 
-\(21\)
+\(2x\)
+
+Finally, let's return to the "My Bots" page.
+
+\(2x\)
+
+Here, key global statistics are displayed for each of your bots dating back 30 days. Selecting the name of each individual bot will display stats for that specific bot. 
+
+\(2x\)
+
+Congratulations! You've just learned the fundamental basics to developing AIML bots on the Pandorabots platform. From here, we recommend exploring the resources in the Help section, including the Docs and the Tutorial, [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md). 
+
+If you prefer to dive right in, try writing more categories, or creating a new bot with the "Small Talk" library, which will enable your bot to handle general chitchat right out of the box, and modifying the code. 
 

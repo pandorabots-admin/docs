@@ -19,25 +19,21 @@ In the next five minutes, you will learn how to create, edit, chat with, update,
 
 ---
 
-#### \(2\)
+#### \(2 - @+ Create Bot Button\)
 
 Create and name a new bot, leaving the default language _English_ and Content _Blank Bot_.
 
 ---
 
-#### \(4\)
+#### \(3 - @Editor\)
 
-The first stop of the tour is the _Editor,_ where you can create and edit AIML and other bot files. Please click on **Edit** beneath your Bot's Name to navigate to the Editor.
-
----
-
-#### \(6\)
-
-Welcome to the Editor! This is where you will write AIML files and categories that will allow you and others to talk to you bot.
+Our first stop is the _Editor,_ where you can create and edit AIML and other bot files. Click **Edit** beneath your Bot's Name to navigate to the Editor.
 
 ---
 
-#### \(7\)
+#### \(4 - @File Tab\)
+
+The Editor is where you will write AIML files and categories that will allow you and others to talk to you bot.
 
 Use the File Menu to create a new AIML file called _greetings_.
 
@@ -66,7 +62,7 @@ The _Chat Widget_ allows you to talk to your bot as if you were the client. Open
 
 #### \(10\)
 
-Congratulations, you've just created your first category! Now, try adding a \* wildcard to the pattern after HI, allowing it to match phrases that start with the word _Hi_. It should look like this:
+Congratulations on creating your first category! Now, add a `*` wildcard to the pattern after HI, which will enable matching phrases that start with _Hi_. It should look like this:
 
 ```
 <category>

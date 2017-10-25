@@ -106,35 +106,35 @@ Reviewing client inputs that trigger the UDC allows you to train your bot to gro
 
 ---
 
-#### \(14\)
+#### \(11\)
 
 Go to the Logs.
 
 ---
 
-#### \(15\)
+#### \(12\)
 
-Chat logs are available dating back 30 days, and you may download your log files at any time.
+Chat logs are displayed dating back 30 days and available for download.
 
 Unread conversations appear in **bold**. Orange conversations contain at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
 
-Click on the log item, which represents the earlier chats you had with your bot.
+Click on the log item to open your message history with the bot. 
 
 ---
 
-#### \(16\)
+#### \(13\)
 
-This is the message history between your bot and the client. Interactions with orange borders highlight the input-output pair that triggered the UDC, and represent the highest priority log items to correct.
+Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
 Clicking _Show Metadata_ will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
 
-Next up on the tour is the "Deploy" dashboard, which provides some easy methods to publish your bot and start collecting logs from actual clients.
+When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page. 
 
 ---
 
-#### \(17\)
+#### \(14 - @Deploy Page\)
 
-Go to Deploy page.
+Go to Deploy.
 
 ---
 

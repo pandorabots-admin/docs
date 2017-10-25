@@ -102,7 +102,7 @@ The `*` wildcard in the pattern will match any input of one or more words, meani
 
 With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific answer.
 
-Reviewing client inputs that trigger the UDC allows you to train your bot to grow more intelligent over time. Log review, accomplished via the Logs page, is a critical aspect of bot development, which is an iterative, continuous process.
+Reviewing client inputs that trigger the UDC allows you to train your bot to grow more intelligent over time. Log review, accomplished via the Logs page, is a critical aspect of bot development, which is a continuous, iterative process.
 
 ---
 

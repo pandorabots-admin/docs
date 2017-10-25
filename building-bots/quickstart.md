@@ -176,7 +176,7 @@ One more thing. There is a green indicator light next to your bot, meaning it is
 
 If this light turns red, your bot is _Uncompiled_, meaning something is broken. Clicking “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and saving \(or clicking “Compile” again\) will re-compile your bot.
 
-If your bot is deployed, a yellow light will appear when there are differences between the _Sandbox_ version of the bot you are editing, and the _Production_ version available to the general public. Clicking Publish will push saved changes live to production.
+If your bot is deployed, a yellow light will appear when there are differences between the _Sandbox_ version of the bot you are editing, and the _Production_ version available to the general public. Clicking Publish will push saved Sandbox changes live to production.
 
 ---
 

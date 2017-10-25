@@ -148,7 +148,7 @@ Integrations provide an easy method to launch your bot on various supported chan
 
 #### \(16\)
 
-Go to Clubhouse.
+Go to the Clubhouse.
 
 ---
 

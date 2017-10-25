@@ -55,13 +55,13 @@ From the Files tab drop-down you can accomplish the following:
 * Download a Zip File of your bot \(which we recommend doing frequently as a backup!\)
 * Upload bot files \(if, for example, you have been working from your local editor or have AIML files from another platform\)
 
-Access and open your files from the menu on the left. Selecting a file will open it in the text editor, which is an ACE editor optimized for XML editing \(since AIML is an XML-based language\). Formatting AIML with the incorrect syntax \(for example, forgetting a character in an opening/closing tag\) will cause an error alert to appear in the form of a red X next to problematic line of code, which will include an additional description of the error type on hover. 
+Access and open your files from the menu on the left. Selecting a file will open it in the text editor, which is an ACE editor optimized for XML editing \(since AIML is an XML-based language\). Formatting AIML with the incorrect syntax \(for example, forgetting a character in an opening/closing tag\) will cause an error alert to appear in the form of a red X next to problematic line of code, which will include an additional description of the error type on hover.
 
-Beneath the text editor, you can find a status bar full of helpful information such as whether and when the file was last saved/modified, and the files load order \(\#\#\#@TC load order has impact X\). 
+Beneath the text editor, you can find a status bar full of helpful information such as whether and when the file was last saved/modified, and the file load order \(\#\#\#@TC load order has impact X\).
 
 _Staging versus Production_
 
-A common best practice in computer programming is to have two versions of software when one of those versions is live for the public: a _Production_ version that is live, and a _Staging_ version that is in development where you can test \(and back out of!\) any changes. This way, if something goes wrong in the staging version of the software you are editing, your changes do not impact the production version and disrupt end-users. One great feature of bots is that you can instantly update them after making changes, but it is important to first verify that none of your changes are breaking changes by testing thoroughly. 
+A common best practice in computer programming is to have two versions of software when one of those versions is live for the public: a _Production_ version that is live, and a _Staging_ version that is in development where you can test \(and back out of!\) any changes. This way, if something goes wrong in the staging version of the software you are editing, your changes do not impact the production version and disrupt end-users. One great feature of bots is that you can instantly update them after making changes, but it is important to first verify that none of your changes are breaking changes by testing thoroughly.
 
 So, if you have a bot deployed on the platform that is live for the public, any changes you make to your bot using the Editor will only impact the staging or _Sandbox_ version of your bot. Once you have tested your bot, clicking _Publish_ in the upper-right hand corner of the editor will push your changes live to production. \(\#\#\#@TC Note: feature not currently available, or is Premium feature?\)
 
@@ -69,15 +69,30 @@ So, if you have a bot deployed on the platform that is live for the public, any 
 
 In the lower right hand corner of the interface, you may have noticed a circular chat icon. Clicking on this icon will allow you to chat with your bot as if you were the client from almost everywhere in the interface. This **Chat Widget **has several useful features that are vital for debugging and improving your bot.
 
-* Edit Icon
-* Advanced Alter
-* View MetaData
-* Trace
-* Reset Bot Memory
+* _Edit Icon_
+  Clicking the edit icon within the bot output chat bubble allows you to quickly specify a new bot response for a given input and save it to a specified aiml file.
+
+* _Advanced Alter_
+  Clicking the drop down next to "New Response" when the Alter Response modal is open will allow you to also define `that` and `topic` values for your new pattern-template pair. 
+
+* _Show Metadata_
+  Clicking Show Metadata beneath the bot response bubble will display some important information about the interaction, including the Pattern that matched, the values \(if any\) for `that` and `topic`, and a link to the file containing the pattern that was matched, which you can click on to go edit directly. 
+
+* _Show Trace_
+  Beneath the displayed Metadata, you will also find an option to run a _Trace_. This will open a modal showing the series of steps the input underwent during processing to find a match, which is incredibly helpful for debugging.
+
+* _Reset Bot Memory_
+  At the top of the Chat Widget next to your bot name, a refresh icon allows you to reset your bot's memory, which will clear any predicate values that have been set \(\#\#\#@TC ??\) and allow you to start fresh as if you were a brand new client. 
 
 #### Bot Log Review
 
-\#\#\#
+Reviewing chat logs and updating your bot frequently is a critical aspect of bot development. You can review logs by clicking "Logs" beneath your bot name. Chat logs are displayed dating back 30 days and available for download.
+
+Unread conversations appear in **bold**. Orange conversations contain at least one input that triggered the UDC. Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
+
+Clicking _Show Metadata _will reveal the same information about the interaction as doing so within the Chat Widget. You can also edit responses from here or by opening the linked file in the editor in the same manner as you can do within the Chat Widget.
+
+When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page.
 
 #### Bot Deployment
 
@@ -164,10 +179,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                          
+**&lt;pattern&gt;                                                                            
 **Matches what the user says.
 
-**&lt;template&gt;                                                                          
+**&lt;template&gt;                                                                            
 **What the bot replies.
 
 Code example:

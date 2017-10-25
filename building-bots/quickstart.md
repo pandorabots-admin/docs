@@ -39,7 +39,7 @@ Use the File Menu to create a new AIML file called _greetings_.
 
 ---
 
-#### \(8\)
+#### \(5\)
 
 Copy the code for the following category into the text editor, making sure to insert it between the start `<aiml>` and end `</aiml>` tags:
 
@@ -54,13 +54,13 @@ Once completed, save your file via the "File" drop-down menu.
 
 ---
 
-#### \(9\)
+#### \(6\)
 
 The _Chat Widget_ allows you to talk to your bot as if you were the client. Open a new chat and type _Hi_ \(or “hi” or “HI” since pattern matching is case-insensitive\) and you should receive the response you just coded, “Hello, world!”
 
 ---
 
-#### \(10\)
+#### \(7\)
 
 Congratulations on creating your first category! Now, add a `*` wildcard to the pattern after HI, which will enable matching any phrase that starts with _Hi_. It should look like this:
 
@@ -75,9 +75,9 @@ Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_
 
 ---
 
-#### \(11\)
+#### \(8\)
 
-Well done! Now it's time to define what's known as the Ultimate Default Category \(UDC\), which is what your bot will say to the client if it fails to find a match for the client's input.
+Next, we will define the Ultimate Default Category \(UDC\), which is how you bot will respond when it cannot find a match.
 
 First, create a new file called udc.aiml
 

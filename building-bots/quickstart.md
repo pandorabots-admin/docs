@@ -160,7 +160,7 @@ The Clubhouse lets you beta test your bot-in-progress in a botmaster-only enviro
 
 #### \(18 - @Botname\)
 
-The number of unread logs will be displayed next to your bot's name. Click on your bot's name to view other key usage stats.
+The number of unread logs will be displayed next to your bot's name. Click on your bot's name to view other key stats.
 
 ---
 

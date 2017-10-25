@@ -100,7 +100,7 @@ The `*` wildcard in the pattern will match any input of one or more words, meani
 
 #### \(13\)
 
-With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific, predefined answer.
+With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific answer.
 
 However, we need to be able to see what inputs triggered the UDC if we want our bot to grow more intelligent. To do this, we need to learn about log review.
 

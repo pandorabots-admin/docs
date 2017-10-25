@@ -83,7 +83,7 @@ First, create a new file called udc.aiml
 
 ---
 
-#### \(12\)
+#### \(9\)
 
 Copy the following category into the file:
 
@@ -98,23 +98,27 @@ The `*` wildcard in the pattern will match any input of one or more words, meani
 
 ---
 
-#### \(13\)
+#### \(10\)
 
 With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific answer.
 
-However, we need to be able to see what inputs triggered the UDC if we want our bot to grow more intelligent. To do this, we need to learn about log review.
+Reviewing client inputs that trigger the UDC allows you to train your bot to grow more intelligent over time. Log review, accomplished via the Logs page, is a critical aspect of bot development. 
 
 ---
 
 #### \(14\)
 
-Go to the Logs Page.
+Go to the Logs.
 
 ---
 
 #### \(15\)
 
-Log review is a critical aspect of bot development. It allows you to identify inputs you did not anticipate and update your bot based on what people are actually saying. Bot development is an iterative process that requires continuous, regular development over time to improve the system. Logs are only stored dating back 30 days, but you can download your logs any time from here.
+Chat logs are available dating back 30 days, and you may download your log files at any time. 
+
+
+
+Bot development is an iterative process that requires continuous, regular development over time to improve the system. 
 
 Unread conversations will appear in **bold**, and the color orange indicates that the conversation contains at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
 

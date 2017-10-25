@@ -118,7 +118,7 @@ Go to the Logs Page.
 
 #### \(15\)
 
-Log review is a critical aspect of bot development. It allows you to identify inputs you did not anticipate and update your bot based on what people are actually saying. Bot development is an iterative process that requires continuous, regular development over time to improve the system.
+Log review is a critical aspect of bot development. It allows you to identify inputs you did not anticipate and update your bot based on what people are actually saying. Bot development is an iterative process that requires continuous, regular development over time to improve the system. Logs are only stored dating back 30 days, but you can download your logs any time from here.
 
 Unread conversations will appear in **bold**, and the color orange indicates that the conversation contains at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
 
@@ -162,25 +162,25 @@ Go to Clubhouse.
 
 The Clubhouse is a botmaster only space where you can beta test your work in progress in a controlled environment, collect chatlogs to review and improve your bot, and pay back the favor by chatting with other people's bots.
 
-The final stop on our tour is the Stats page, accessed by clicking on your bot's name from the left hand nav bar.
+The number displayed next to your botname represents the number of unread logs, Click on your bot's name to view other key usage stats. 
 
 ---
 
 #### \(21\)
 
-Selecting your bot allows you to view usage statistics like total number of monthly interations, clients, sessions, and the average interactions per session.
-
-Selecting “My Bots” will display overall monthly interaction usage for all your bots, and chat logs dating back 30 days may be downloaded any time from the Logs page.
+Usage statistics like total number of monthly interactions, clients, sessions, and the average interactions per session will be displayed dating back 30 days. Selecting “My Bots” will display overall monthly interaction usage for all your bots.
 
 ---
 
 #### \(22\)
 
-One more thing. There is a green indicator light next to your bot, meaning that it is currently compiled. If your bot becomes uncompiled \(meaning something is broken!\), a red indicator light will appear, along with the menu item “Compile.”
+One more thing. There is a green indicator light next to your bot, meaning it is _Compiled_, i.e., functioning normally. 
+
+If your bot becomes uncompiled \(meaning something is broken!\), a red indicator light will appear, along with the menu item “Compile.”
 
 Clicking on “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and saving \(or clicking on “Compile”\) will re-compile your bot.
 
-A yellow light means that there are differences between your bot and the version on the production server, i.e. the one that the general public will be talking too via third-party channels.
+A yellow light means that there are differences between your bot and the version on the production server, i.e. the one that the general public will be talking to via third-party channels.
 
 ---
 

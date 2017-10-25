@@ -178,23 +178,15 @@ One more thing. There is a green indicator light next to your bot, meaning it is
 
 If this light turns red, your bot is _Uncompiled_, meaning something is broken. Clicking “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and saving \(or clicking “Compile” again\) will re-compile your bot.
 
-If your bot is deployed, a yellow light will appear when there are differences between the _Sandbox_ version of the bot you are editing, and the _Production_ version available to the general public. Clicking Publish will push saved changes live to production. 
+If your bot is deployed, a yellow light will appear when there are differences between the _Sandbox_ version of the bot you are editing, and the _Production_ version available to the general public. Clicking Publish will push saved changes live to production.
 
 ---
 
 #### \(23\)
 
-All set! For a deeper dive, please check out the [Tutorial](https://mk1pg.pandorabots.com/dash.html#) or visit the [Docs](https://mk1pg.pandorabots.com/dash.html#). Happy bot-making!
+Congratulations! You've just learned the fundamental basics to developing AIML bots on the Pandorabots platform. As a next step, we highly recommend the tutorial [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) and encourage you to explore additional resources in the Help section.
 
-\[Okay\]
+You can also return to the Editor and try writing more categories, or create a new bot with the "Small Talk" library, which will enable your bot to handle general chitchat right out of the box, and modifying the code.
 
-\(2x\)
-
-Here, key global statistics are displayed for each of your bots dating back 30 days. Selecting the name of each individual bot will display stats for that specific bot.
-
-\(2x\)
-
-Congratulations! You've just learned the fundamental basics to developing AIML bots on the Pandorabots platform. From here, we recommend exploring the resources in the Help section, including the Docs and the Tutorial, [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md).
-
-If you prefer to dive right in, try writing more categories, or creating a new bot with the "Small Talk" library, which will enable your bot to handle general chitchat right out of the box, and modifying the code.
+\[Return to Editor\] \[Bot Building Tutorial\] 
 

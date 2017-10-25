@@ -118,7 +118,7 @@ Chat logs are displayed dating back 30 days and available for download.
 
 Unread conversations appear in **bold**. Orange conversations contain at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
 
-Click on the log item to open your message history with the bot. 
+Click on the log item to open your message history with the bot.
 
 ---
 
@@ -128,7 +128,7 @@ Orange highlighted input-output pairs that triggered the UDC are the highest pri
 
 Clicking _Show Metadata_ will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
 
-When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page. 
+When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page.
 
 ---
 
@@ -140,11 +140,7 @@ Go to Deploy.
 
 #### \(18\)
 
-The Deploy Dashboard provides a variety of methods for publishing your chatbot.
-
-Developers may use the Pandorabots API to integrate their bot into any application.
-
-Integrations provide an easy way launch your bot on various supported channels, including popular voice and messaging apps, your webpage, or our internal platform development zone: the Pandorabots Clubhouse.
+There are a number of ways to make your bot public, including an API for developers and _Integrations_, which provide an easy method to launch your bot on various supported channels. These range from popular voice and messaging apps to webpages and Pandorabots' internal platform development zone: the Clubhouse.
 
 ---
 

@@ -160,7 +160,7 @@ Go to Clubhouse.
 
 #### \(20\)
 
-The Clubhouse is a botmaster only space where you can beta test your work in progress in a controlled environment, collect chatlogs to populate your logs and improve your bot, and pay back the favor by chatting with other user's bots.
+The Clubhouse is a botmaster only space where you can beta test your work in progress in a controlled environment, collect chatlogs to review and improve your bot, and pay back the favor by chatting with other people's bots.
 
 The final stop on our tour is the Stats page, accessed by clicking on your bot's name from the left hand nav bar.
 
@@ -189,10 +189,6 @@ A yellow light means that there are differences between your bot and the version
 All set! For a deeper dive, please check out the [Tutorial](https://mk1pg.pandorabots.com/dash.html#) or visit the [Docs](https://mk1pg.pandorabots.com/dash.html#). Happy bot-making!
 
 \[Okay\]
-
-
-
-
 
 \(2x\)
 

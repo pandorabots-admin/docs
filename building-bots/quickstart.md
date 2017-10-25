@@ -154,7 +154,7 @@ Go to the Clubhouse.
 
 #### \(17\)
 
-The Clubhouse lets you beta test your bot-in-progress in a botmaster-only environment. Here, you can collect chatlogs to review and improve your bot, and pay back the favor by chatting with other peoples' bots.
+The Clubhouse lets you beta test your bot-in-progress in a botmaster-only environment. Here, you can collect chatlogs to review and improve your bot, and pay back the favor by chatting with other people's bots.
 
 ---
 

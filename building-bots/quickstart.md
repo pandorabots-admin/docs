@@ -62,7 +62,7 @@ The _Chat Widget_ allows you to talk to your bot as if you were the client. Open
 
 #### \(10\)
 
-Congratulations on creating your first category! Now, add a `*` wildcard to the pattern after HI, which will enable matching phrases that start with _Hi_. It should look like this:
+Congratulations on creating your first category! Now, add a `*` wildcard to the pattern after HI, which will enable matching any phrase that starts with _Hi_. It should look like this:
 
 ```
 <category>
@@ -71,7 +71,7 @@ Congratulations on creating your first category! Now, add a `*` wildcard to the 
 </category>
 ```
 
-Save your file, then test out a few phrases that start with _Hi_, all of which should return "Hello, world!"
+Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_\) in the Chat Widget, which should return "Hello, world!"
 
 ---
 

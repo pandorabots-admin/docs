@@ -162,7 +162,7 @@ Go to Clubhouse.
 
 The Clubhouse is a botmaster only space where you can beta test your work in progress in a controlled environment, collect chatlogs to review and improve your bot, and pay back the favor by chatting with other people's bots.
 
-The number displayed next to your botname represents the number of unread logs, Click on your bot's name to view other key usage stats. 
+The number displayed next to your botname represents the number of unread logs, Click on your bot's name to view other key usage stats.
 
 ---
 
@@ -174,11 +174,9 @@ Usage statistics like total number of monthly interactions, clients, sessions, a
 
 #### \(22\)
 
-One more thing. There is a green indicator light next to your bot, meaning it is _Compiled_, i.e., functioning normally. 
+One more thing. There is a green indicator light next to your bot, meaning it is _Compiled_, i.e., functioning normally.
 
-If your bot becomes uncompiled \(meaning something is broken!\), a red indicator light will appear, along with the menu item “Compile.”
-
-Clicking on “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and saving \(or clicking on “Compile”\) will re-compile your bot.
+If this light turns red, your bot is _Uncompiled_, meaning something is broken. Clicking “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and saving \(or clicking “Compile” again\) will re-compile your bot.
 
 A yellow light means that there are differences between your bot and the version on the production server, i.e. the one that the general public will be talking to via third-party channels.
 

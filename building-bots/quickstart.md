@@ -144,29 +144,63 @@ Go to Deploy page.
 
 #### \(18\)
 
-Integrations provide an easy method to publish your bot on certain channels. Developer users can also use the Pandorabots API to integrate their bot directly into any application. For now, we are going to publish our bot to an internal platform environment called the _Clubhouse_, where platform users can share their bots-in-progress to collect feedback and logs during development.
+The Deploy Dashboard provides a variety of methods for publishing your chatbot.
+
+Developers may use the Pandorabots API to integrate their bot into any application.
+
+Integrations provide an easy way launch your bot on various supported channels, including popular voice and messaging apps, your webpage, or our internal platform development zone: the Pandorabots Clubhouse.
 
 ---
 
-**\(19 - hover over "Add" button for Clubhouse\)**
+#### \(19\)
 
-Click _Add_ for the Clubhouse Integration, fill out the requisite information, and then _Publish. \[Not sure user should publish since it is a boring Frankenzombie bot, maybe they should just go to the Clubhouse to see other bots, then go to Mybots page.\]_
+Go to Clubhouse.
 
-**\(20 - hover over Clubhouse - this wasn't visible because I had so many bots, maybe need to make clear you can minimize this by clicking on my bots; generally Clubhouse also has some responsive issues\)**
+---
 
-Let's go to the Clubhouse to check out our published bot.
+#### \(20\)
+
+The Clubhouse is a botmaster only space where you can beta test your work in progress in a controlled environment, collect chatlogs to populate your logs and improve your bot, and pay back the favor by chatting with other user's bots.
+
+The final stop on our tour is the Stats page, accessed by clicking on your bot's name from the left hand nav bar.
+
+---
+
+#### \(21\)
+
+Selecting your bot allows you to view usage statistics like total number of monthly interations, clients, sessions, and the average interactions per session.
+
+Selecting “My Bots” will display overall monthly interaction usage for all your bots, and chat logs dating back 30 days may be downloaded any time from the Logs page.
+
+---
+
+#### \(22\)
+
+One more thing. There is a green indicator light next to your bot, meaning that it is currently compiled. If your bot becomes uncompiled \(meaning something is broken!\), a red indicator light will appear, along with the menu item “Compile.”
+
+Clicking on “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and saving \(or clicking on “Compile”\) will re-compile your bot.
+
+A yellow light means that there are differences between your bot and the version on the production server, i.e. the one that the general public will be talking too via third-party channels.
+
+---
+
+#### \(23\)
+
+All set! For a deeper dive, please check out the [Tutorial](https://mk1pg.pandorabots.com/dash.html#) or visit the [Docs](https://mk1pg.pandorabots.com/dash.html#). Happy bot-making!
+
+\[Okay\]
+
+
+
+
 
 \(2x\)
 
-Finally, let's return to the "My Bots" page.
+Here, key global statistics are displayed for each of your bots dating back 30 days. Selecting the name of each individual bot will display stats for that specific bot.
 
 \(2x\)
 
-Here, key global statistics are displayed for each of your bots dating back 30 days. Selecting the name of each individual bot will display stats for that specific bot. 
+Congratulations! You've just learned the fundamental basics to developing AIML bots on the Pandorabots platform. From here, we recommend exploring the resources in the Help section, including the Docs and the Tutorial, [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md).
 
-\(2x\)
-
-Congratulations! You've just learned the fundamental basics to developing AIML bots on the Pandorabots platform. From here, we recommend exploring the resources in the Help section, including the Docs and the Tutorial, [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md). 
-
-If you prefer to dive right in, try writing more categories, or creating a new bot with the "Small Talk" library, which will enable your bot to handle general chitchat right out of the box, and modifying the code. 
+If you prefer to dive right in, try writing more categories, or creating a new bot with the "Small Talk" library, which will enable your bot to handle general chitchat right out of the box, and modifying the code.
 

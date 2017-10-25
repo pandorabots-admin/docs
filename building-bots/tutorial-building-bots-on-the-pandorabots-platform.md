@@ -32,13 +32,15 @@ The Pandorabots platform supports OAuth \(single sign-on\) via Google, Facebook,
 
 To create a new bot, use the "+" button next to **My Bots** on the left navigation panel. Note that AIML can be written in almost any natural language, and you can select the language for your bot from a drop-down upon creation. \(For Asian and other languages that require segmentation, Pandorabots offers a machine learning-based segmenter as a service; email us to learn more\).
 
-\#\#\#Selecting starter libraries like Rosie
+Content Libraries \(opensource AIML files\) may be available depending on the language selected. For example, adding the "Small Talk" Library \(also previously known as "Rosie"\) to your bot will enable basic chitchat right out of the gate. Adding Content Libraries can save you the hassle of reinventing the wheel by writing AIML categories to handle common things people say in conversation. However, you can always select "Blank Bot" if you prefer to build from scratch.
+
+If you have written a library and would like to open source it and see it featured for other developers, contact us!
 
 #### Bot Statistics
 
 Clicking on **My Bots **on the left navigation panel will display some key global statistics for all of your bots for the past 30 days. These include total _Interactions_, _Clients_, _Sessions_, and the average number of _Interactions/Session_. In the broader ecosystem, "Interactions/Session" is also sometimes known as _Turns per Conversation _\("_TPC_"\), and is a stat botmasters measure and reference to highlight client engagement with their chatbot.
 
-Clicking on the name of each individual bot will display the same four individual statistics for that specific bot.
+Clicking on the name of each individual bot will display the same individual statistics for that specific bot.
 
 Platform users who require more in-depth analytics can plug in additional third-party analytics engines of their choosing.
 
@@ -46,9 +48,22 @@ Platform users who require more in-depth analytics can plug in additional third-
 
 Selecting the name of an individual bot on the left navigation panel will open a drop-down menu consisting of several components, including: _Edit_, _Deploy_, _Logs_, and _Delete_. The **Editor **is your gateway to creating and maintaining your bot files.
 
-\#\#\#Download bot files
+From the Files tab drop-down you can accomplish the following:
 
-\#\#\#Staging v. Production
+* Create new files, including AIML files \(the primary type of bot files\), Sets, Maps, Substitutions, and Pdefaults
+* Save Files
+* Download a Zip File of your bot \(which we recommend doing frequently as a backup!\)
+* Upload bot files \(if, for example, you have been working from your local editor or have AIML files from another platform\)
+
+Access and open your files from the menu on the left. Selecting a file will open it in the text editor, which is an ACE editor optimized for XML editing \(since AIML is an XML-based language\). Formatting AIML with the incorrect syntax \(for example, forgetting a character in an opening/closing tag\) will cause an error alert to appear in the form of a red X next to problematic line of code, which will include an additional description of the error type on hover. 
+
+Beneath the text editor, you can find a status bar full of helpful information such as whether and when the file was last saved/modified, and the files load order \(\#\#\#@TC load order has impact X\). 
+
+_Staging versus Production_
+
+A common best practice in computer programming is to have two versions of software when one of those versions is live for the public: a _Production_ version that is live, and a _Staging_ version that is in development where you can test \(and back out of!\) any changes. This way, if something goes wrong in the staging version of the software you are editing, your changes do not impact the production version and disrupt end-users. One great feature of bots is that you can instantly update them after making changes, but it is important to first verify that none of your changes are breaking changes by testing thoroughly. 
+
+So, if you have a bot deployed on the platform that is live for the public, any changes you make to your bot using the Editor will only impact the staging or _Sandbox_ version of your bot. Once you have tested your bot, clicking _Publish_ in the upper-right hand corner of the editor will push your changes live to production. \(\#\#\#@TC Note: feature not currently available, or is Premium feature?\)
 
 #### Bot Training via the Chat Widget
 
@@ -70,7 +85,7 @@ The **Deployment Page**, accessible via the _Deploy_ link under each individual 
 
 Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/api-endpoints.md), [SDKs](/sdks.md), and more. You may locate your _Application ID _\(_"App ID"_\), which is the same as your username, and your _User Key_, by clicking on the "API Keys" button next to the "Custom Application" integration.
 
-\#\#\#_Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the _[_Free Tier_](/faq.md#pricing).
+\#\#\#_Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the _[_Free Tier_](/faq.md#pricing)_, which provides for unlimited Sandbox usage and up to 1,000 interactions / month. _
 
 #### The Clubhouse
 
@@ -149,10 +164,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                        
+**&lt;pattern&gt;                                                                          
 **Matches what the user says.
 
-**&lt;template&gt;                                                                        
+**&lt;template&gt;                                                                          
 **What the bot replies.
 
 Code example:

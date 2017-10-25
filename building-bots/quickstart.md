@@ -77,7 +77,7 @@ Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_
 
 #### \(8\)
 
-Next, we will define the Ultimate Default Category \(UDC\), which is how you bot will respond when it cannot find a match.
+Next, we need to define the Ultimate Default Category \(UDC\), which is how you bot will respond when it cannot find a match.
 
 First, create a new file called udc.aiml
 

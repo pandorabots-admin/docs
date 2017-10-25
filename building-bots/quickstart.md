@@ -158,19 +158,19 @@ The Clubhouse lets you beta test your bot-in-progress in a botmaster-only enviro
 
 ---
 
-#### \(18\)
+#### \(18 - @Botname\)
 
 The number of unread logs will be displayed next to your bot's name. Click on your bot's name to view other key usage stats.
 
 ---
 
-#### \(21\)
+#### \(19\)
 
 Usage statistics like total number of monthly interactions, clients, sessions, and the average interactions per session will be displayed dating back 30 days. Selecting “My Bots” will display overall monthly interaction usage for all your bots.
 
 ---
 
-#### \(22\)
+#### \(20\)
 
 One more thing. There is a green indicator light next to your bot, meaning it is _Compiled_, i.e., functioning normally.
 
@@ -180,7 +180,7 @@ If your bot is deployed, a yellow light will appear when there are differences b
 
 ---
 
-#### \(23\)
+#### \(21\)
 
 Congratulations! You've just learned the fundamental basics to developing AIML bots on the Pandorabots platform. As a next step, we highly recommend the [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) Tutorial, and encourage you to explore additional resources in the Help section.
 

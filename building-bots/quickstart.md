@@ -94,13 +94,13 @@ Copy the following category into the file:
 </category>
 ```
 
-The "\*" wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text. Save the file, then try typing anything other than "hi" to your bot.
+The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text. Save the file, then try typing anything other than "hi" to your bot.
 
 ---
 
 #### \(13\)
 
-With the UDC defined, your bot now has a sensible response to any input it does not have a specific answer to.
+With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific, predefined answer.
 
 However, we need to be able to see what inputs triggered the UDC if we want our bot to grow more intelligent. To do this, we need to learn about log review.
 

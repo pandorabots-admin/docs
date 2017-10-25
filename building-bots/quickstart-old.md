@@ -167,5 +167,51 @@ Go to Deploy page.
 
 #### \(18\)
 
+The Deploy dashboard displays a list of available integrations, which allow you to launch your bot on various supported third party platforms.
 
+Developer users may integrate bots directly into Custom Applications via API. Integrations are also available for easily deploying your bot to the Pandorabots Clubhouse, your own unique webpage, popular messaging platforms, and more!
+
+The next stop on our tour is the Clubhouse, accessed by clicking the link on the left hand nav bar.
+
+---
+
+#### \(19\)
+
+Go to Clubhouse.
+
+---
+
+#### \(20\)
+
+The Pandorabots clubhouse is a botmaster only space where you can chat with other user's bots. It's a great place to find inspiration and share your bot with others before it is ready to release to the wider world.
+
+Publishing your bot to the clubhouse is a great way to collect inputs from other user's and develop your bot's knowledge base, so be sure to regularly review your logs and pay back the favor to other botmasters by chatting with their bots.
+
+The final stop on our tour is the Stats page, accessed by clicking on your bot's name from the left hand nav bar.
+
+---
+
+#### \(21\)
+
+Selecting your bot allows you to view usage statistics like total number of monthly interations, clients, sessions, and the average interactions per session.
+
+Selecting “My Bots” will display overall monthly interaction usage for all your bots, and chat logs dating back 30 days may be downloaded any time from the Logs page.
+
+---
+
+#### \(22\)
+
+One more thing. There is a green indicator light next to your bot, meaning that it is currently compiled. If your bot becomes uncompiled \(meaning something is broken!\), a red indicator light will appear, along with the menu item “Compile.”
+
+Clicking on “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and saving \(or clicking on “Compile”\) will re-compile your bot.
+
+A yellow light means that there are differences between your bot and the version on the production server, i.e. the one that the general public will be talking too via third-party channels.
+
+---
+
+#### \(23\)
+
+All set! For a deeper dive, please check out the [Tutorial](https://mk1pg.pandorabots.com/dash.html#) or visit the [Docs](https://mk1pg.pandorabots.com/dash.html#). Happy bot-making!
+
+\[Okay\]
 

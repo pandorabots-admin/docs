@@ -184,7 +184,7 @@ If your bot is deployed, a yellow light will appear when there are differences b
 
 Congratulations! You've just learned the fundamental basics to developing AIML bots on the Pandorabots platform. As a next step, we highly recommend the tutorial [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md), and encourage you to explore additional resources in the Help section.
 
-Creating a new bot and adding the "Small Talk" library, which will enable your bot to handle basic chitchat, is also a good way to further familiarize yourself with AIML code.
+Creating a new bot and adding the "Small Talk" library, which will enable your bot to handle basic chitchat, is also a good way to further familiarize yourself with AIML code, or you can simply keep adding categories to your current bot via the Editor. 
 
 \[Return to Editor\] \[Bot Building Tutorial\]
 

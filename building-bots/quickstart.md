@@ -138,23 +138,29 @@ Go to Deploy.
 
 ---
 
-#### \(18\)
+#### \(15\)
 
-There are a number of ways to make your bot public, including an API for developers and _Integrations_, which provide an easy method to launch your bot on various supported channels. These range from popular voice and messaging apps to webpages and Pandorabots' internal platform development zone: the Clubhouse.
+There are a number of ways to make your bot public, including an API for developers and _Integrations. _
+
+Integrations provide an easy method to launch your bot on various supported channels. These range from popular voice and messaging apps, to webpages and Pandorabots' internal platform development zone: the Clubhouse.
 
 ---
 
-#### \(19\)
+#### \(16\)
 
 Go to Clubhouse.
 
 ---
 
-#### \(20\)
+#### \(17\)
 
-The Clubhouse is a botmaster only space where you can beta test your work in progress in a controlled environment, collect chatlogs to review and improve your bot, and pay back the favor by chatting with other people's bots.
+The Clubhouse lets you beta test your bot-in-progress in a botmaster-only environment. Here, you can collect chatlogs to review and improve your bot, and pay back the favor by chatting with other peoples' bots.
 
-The number displayed next to your botname represents the number of unread logs, Click on your bot's name to view other key usage stats.
+---
+
+#### \(18\)
+
+The number of unread logs will be displayed next to your bot's name. Click on your bot's name to view other key usage stats.
 
 ---
 

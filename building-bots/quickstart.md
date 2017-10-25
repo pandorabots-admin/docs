@@ -166,7 +166,7 @@ The number of unread logs will be displayed next to your bot's name. Click on yo
 
 #### \(19\)
 
-Usage statistics like total number of monthly interactions, clients, sessions, and the average interactions per session will be displayed dating back 30 days. Selecting “My Bots” will display overall monthly interaction usage for all your bots.
+Usage statistics like total number of monthly interactions, clients, sessions, and the average interactions per session are displayed dating back 30 days. Selecting “My Bots” will display these overall statistics for all your bots.
 
 ---
 

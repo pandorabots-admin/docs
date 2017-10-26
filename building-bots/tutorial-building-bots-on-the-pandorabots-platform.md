@@ -90,13 +90,13 @@ Reviewing chat logs and updating your bot frequently is a critical aspect of bot
 
 Unread conversations appear in **bold**. Orange conversations contain at least one input that triggered the UDC. Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
-Clicking \_Show Metadata \_will reveal the same information about the interaction as doing so within the Chat Widget. You can also edit responses from here or by opening the linked file in the editor in the same manner as you can do within the Chat Widget.
+Clicking _Show Metadata_ will reveal the same information about the interaction as doing so within the Chat Widget. You can also edit responses from here or by opening the linked file in the editor.
 
 When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page.
 
 #### Bot Deployment
 
-The **Deployment Page**, accessible via the _Deploy_ link under each individual bot name displayed on the left nav, lists a variety of _Integrations_. Integrations provide an easy method for deploying your bot to popular third party platforms and channels like Facebook Messenger and the Web. Supported Integrations are determined by a variety of factors including, but not limited to, technical feasibility, ecosystem demand, and platform partner relationships. If you wish to see support added for a channel that is not currently available, please email us at support@pandorabots.com and we'd be happy to consider your request.
+The **Deploy Page**, accessible via the _Deploy_ link under each individual bot name displayed on the left nav, lists a variety of _Integrations_. Integrations provide an easy method for deploying your bot to popular third party platforms and channels like Facebook Messenger and the Web. Supported Integrations are determined by a variety of factors including, but not limited to, technical feasibility, ecosystem demand, and platform partner relationships. If you wish to see support added for a channel that is not currently available, please email us at support@pandorabots.com and we'd be happy to consider your request.
 
 Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/api-endpoints.md), [SDKs](/sdks.md), and more. You may locate your _Application ID _\(_"App ID"_\), which is the same as your username, and your _User Key_, by clicking on the "API Keys" button next to the "Custom Application" integration.
 
@@ -104,7 +104,7 @@ Pandorabots also provides a RESTful API, meaning developer users can integrate t
 
 #### The Clubhouse
 
-The Deployment Page provides an option to publish your bot to **The Clubhouse**, which will make your bot available to chat with other platform users. In the Clubhouse, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs from other platform users to leverage for improving your bot prior to making it public, and to pay back the favor by chatting with their bots as well.
+The Deploy Page provides an option to publish your bot to **The Clubhouse**, which will make your bot available to chat with other platform users. In the Clubhouse, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs from other platform users to leverage for improving your bot prior to making it public, and to pay back the favor by chatting with their bots as well.
 
 ---
 
@@ -179,10 +179,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                              
+**&lt;pattern&gt;                                                                                
 **Matches what the user says.
 
-**&lt;template&gt;                                                                              
+**&lt;template&gt;                                                                                
 **What the bot replies.
 
 Code example:

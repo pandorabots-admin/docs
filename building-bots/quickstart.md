@@ -118,7 +118,7 @@ The `*` wildcard in the pattern will match any input of one or more words, meani
 
 ---
 
-#### Editing Response's via the Chat Widget
+#### Editing Bot Responses via the Chat Widget
 
 With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific answer.
 
@@ -152,7 +152,7 @@ Click on the log item to open your message history with the bot.
 
 ---
 
-#### Displaying and Understanding Metadata 
+#### Displaying and Understanding Metadata
 
 Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
@@ -204,7 +204,7 @@ The number of unread logs will be displayed next to your bot's name. Click on yo
 
 ---
 
-#### Global Bot Statistics 
+#### Global Bot Statistics
 
 Usage statistics like total number of monthly interactions, clients, sessions, and the average interactions per session are displayed dating back 30 days. Selecting “My Bots” will display these overall statistics for all your bots.
 

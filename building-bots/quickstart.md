@@ -230,5 +230,7 @@ Creating a new bot and adding the "Small Talk" library, which will enable your b
 
 ![](/assets/smalltalk.png)
 
-\[Return to Editor\] \[Bot Building Tutorial\]
+###### [&gt;&gt; Bot Building 101 Tutorial](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md)
+
+
 

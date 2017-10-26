@@ -14,15 +14,11 @@ Keep in mind that building a robust conversational agent in a _long term investm
 
 Pandorabots offers the widest possible range of solutions, from the free, DIY \(a.k.a. build it yourself\) platform offering to fully turnkey chatbot and application development \(available to larger enterprises\). This allows everyone, from individual hobbyists to big brands, to build a successful chatbot strategy based on internal resources available and outsource as needed.
 
-###### Open Standards Based, Open System
+###### Open Standards Based = Open System
 
-AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development. 
+AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development. We estimate that there are between 500,000 - 1,000,000 AIML developers worldwide, including the 250,000 on the Pandorabots platform, who also have a very international makeup, with robust communities in the US, Brazil and LatAm, India, Japan, and Europe. 
 
-
-
-Not a black box
-
-Extensible
+There are many, many advantages to working with an open standard, chief among them that the code is something you, the creator, owns and can run independent of our platform, and the system is open, not a black box.
 
 Machine learning based systems and APIs \(like Watson, api.ai, wit.ai, etc.\) are black boxes. In theory, the user can provide sample inputs, and the correct response, and the system can then identify inputs that are similar to the sample inputs and learn that these map to the same response. In reality, these systems are not effective without a large amount of training data, and it is not possible to debug the system when it returns the wrong answer.
 

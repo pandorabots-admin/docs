@@ -228,5 +228,7 @@ Congratulations! You've just learned the fundamental basics for building AIML bo
 
 Creating a new bot and adding the "Small Talk" library, which will enable your bot to handle basic chitchat, is also a good way to further familiarize yourself with AIML code, or you can simply keep adding categories to your current bot via the Editor.
 
+![](/assets/smalltalk.png)
+
 \[Return to Editor\] \[Bot Building Tutorial\]
 

@@ -10,7 +10,7 @@
 
 Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scripting language.**Inputs**from C_lients_\(people chatting with your_Bot_\) are pattern-matched to**outputs**defined by you, the_Botmaster_, in blocks of code called_Categories_.
 
-![](https://lkunze.gitbooks.io/pandorabots-api/content/assets/AIML%20Visual%20%281%29.png)
+![](https://lkunze.gitbooks.io/pandorabots-api/content/assets/AIML Visual %281%29.png)
 
 > **Client:**Hi Bot!  
 > **Bot:**Hello world!
@@ -21,13 +21,13 @@ In the next five minutes, you will learn how to create, edit, chat with, update,
 
 #### \(2 - @+ Create Bot Button\) {#2----create-bot-button}
 
-Create and name a new bot, leaving the default language_English_and Content_Blank Bot_.
+Create and name a new bot, leaving the default language_English\_and Content\_Blank Bot_.
 
 ---
 
 #### \(3 - @Editor\) {#3---editor}
 
-Our first stop is the_Editor,_where you can create and edit AIML and other bot files. Click**Edit**beneath your Bot's Name to navigate to the Editor.
+Our first stop is the\_Editor,\_where you can create and edit AIML and other bot files. Click**Edit**beneath your Bot's Name to navigate to the Editor.
 
 ---
 
@@ -56,7 +56,7 @@ Once completed, save your file via the "File" drop-down menu.
 
 #### \(6\) {#6}
 
-The_Chat Widget_allows you to talk to your bot as if you were the client. Open a new chat and type_Hi_\(or “hi” or “HI” since pattern matching is case-insensitive\) and you should receive the response you just coded, “Hello, world!”
+The_Chat Widget\_allows you to talk to your bot as if you were the client. Open a new chat and type\_Hi_\(or “hi” or “HI” since pattern matching is case-insensitive\) and you should receive the response you just coded, “Hello, world!”
 
 ---
 
@@ -102,6 +102,8 @@ The`*`wildcard in the pattern will match any input of one or more words, meaning
 
 With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific answer.
 
+You can edit your bot's response directly from within the Chat Widget. Click the edit icon inside the chat bubble and write a new response to whatever you just typed, then add it to the greetings.aiml file.
+
 Reviewing client inputs that trigger the UDC allows you to train your bot to grow more intelligent over time. Log review, accomplished via the Logs page, is a critical aspect of bot development, which is a continuous, iterative process.
 
 ---
@@ -126,7 +128,7 @@ Click on the log item to open your message history with the bot.
 
 Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
-Clicking_Show Metadata_will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
+Clicking\_Show Metadata\_will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
 
 When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page.
 
@@ -174,9 +176,9 @@ Usage statistics like total number of monthly interactions, clients, sessions, a
 
 One more thing. The green indicator light next to your bot means it is_Compiled_, i.e., functioning normally.
 
-If this turns red, your bot is_Uncompiled_, meaning something is broken. Clicking “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and clicking_save_or_compile_will re-compile your bot.
+If this turns red, your bot is_Uncompiled_, meaning something is broken. Clicking “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and clicking\_save\_or\_compile\_will re-compile your bot.
 
-If your bot is deployed, a yellow light will appear when there are differences between the_Sandbox_version of the bot you are editing, and the_Production_version available to the general public. Clicking_Publish_will push saved Sandbox changes live to production.
+If your bot is deployed, a yellow light will appear when there are differences between the\_Sandbox\_version of the bot you are editing, and the\_Production\_version available to the general public. Clicking\_Publish\_will push saved Sandbox changes live to production.
 
 ---
 

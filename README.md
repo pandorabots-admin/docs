@@ -27,7 +27,7 @@ The easiest way to get started with AIML is to [create a Pandorabots account](/w
 **Next Steps**
 
 * [Sign up Free!](/www.pandorabots.com)
-* [Why Pandorabots](/feature-comparison.md)
+* [Why Choose Pandorabots](/feature-comparison.md)
 
 
 

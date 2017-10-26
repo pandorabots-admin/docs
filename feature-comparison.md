@@ -16,9 +16,11 @@ Pandorabots offers the widest possible range of solutions, from the free, DIY \(
 
 ###### Open Standards Based = Open System
 
-AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development. We estimate that there are between 500,000 - 1,000,000 AIML developers worldwide, including the 250,000 on the Pandorabots platform, who also have a very international makeup, with robust communities in the US, Brazil and LatAm, India, Japan, and Europe. 
+AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development and our platform is the most popular implementation of the latest version of the standard, AIML 2.0. We estimate that there are between 500,000 - 1,000,000 AIML developers worldwide, including the 250,000 on the Pandorabots platform, who also have a very international makeup, with robust communities in the US, Brazil and LatAm, India, Japan, and Europe.
 
-There are many, many advantages to working with an open standard, chief among them that the code is something you, the creator, owns and can run independent of our platform, and the system is open, not a black box.
+There are many, many advantages to working with an open standard, chief among them that the code is something you, the creator, owns and can run independently of our platform. Mostly importantly the system is open, not a black box.
+
+**Drawbacks to Pure Machine-Learning Based \(or Classifier-Based\) Systems**
 
 Machine learning based systems and APIs \(like Watson, api.ai, wit.ai, etc.\) are black boxes. In theory, the user can provide sample inputs, and the correct response, and the system can then identify inputs that are similar to the sample inputs and learn that these map to the same response. In reality, these systems are not effective without a large amount of training data, and it is not possible to debug the system when it returns the wrong answer.
 
@@ -28,7 +30,7 @@ These ML-based systems have another problem: performance. Above approximately ~5
 
 The downside to Scripting Languages is that you do have to script a lot of input/output pairs \("rules"\). Fortunately Pandorabots provides base content in the form of libraries that spare you from reinventing the rules for common chitchat, and other tools that streamline bot development and make maintaining your bot easy and fun.
 
-###### 
+**Drawbacks **
 
 ###### Easy\(ish\) to Learn
 
@@ -36,5 +38,5 @@ Building a good bot is hard. You can't build anything good in 5 minutes. Trend t
 
 ###### Case Studies
 
-Before selecting your vendor, you should always ask for case studies. Most so-called chatbot platforms will have a couple of name-brand clients they can reference,
+Before selecting your vendor, you should always ask for case studies. Most so-called chatbot platforms will have a couple of name-brand clients they can reference, but fewer have referenceable customers for whom they have generated real business results. You can find some key customers and case studies on the Pandorabots homepage, with additional material available on request \(email info@pandorabots.com\). 
 

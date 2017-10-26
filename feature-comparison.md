@@ -16,7 +16,7 @@ Pandorabots offers the widest possible range of solutions, from the free, DIY \(
 
 ###### Open Standards Based = Open System
 
-AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development and our platform is the most popular implementation of the latest version of the standard, AIML 2.0. We estimate that there are between 500,000 - 1,000,000 AIML developers worldwide, including the 250,000 on the Pandorabots platform, who also have a very international makeup, with robust communities in the US, Brazil and LatAm, India, Japan, and Europe. AIML also underlies some major platform offerings from startups and very large organizations. 
+AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development and our platform is the most popular implementation of the latest version of the standard, AIML 2.0. We estimate that there are between 500,000 - 1,000,000 AIML developers worldwide, including the 250,000 on the Pandorabots platform, who also have a very international makeup, with robust communities in the US, Brazil and LatAm, India, Japan, and Europe. AIML also underlies some major platform offerings from very large organizations, and various startups.
 
 There are many, many advantages to working with an open standard, chief among them that the code is something you, the creator, owns and can run independently of our platform. Mostly importantly the system is open, not a black box.
 

@@ -1,6 +1,6 @@
 # Why Pandorabots
 
-Recently, there has been a tremendous amount of hype around chatbots, such that it has become difficult to filter the signal from the noise. Before you choose your chatbot vendor, it's important to understand the pros and cons to a variety of technical approaches to the very hard AI problem that is Natural Language Understanding, and what differentiates Pandorabots.
+Recently, there has been a tremendous amount of hype around chatbots, such that it has become difficult to filter the signal from the noise. Before you choose your chatbot vendor, it's important to understand the pros and cons to a variety of technical approaches to the very hard, unsolved AI problem that is Natural Language Understanding, and what differentiates Pandorabots.
 
 ###### Market Tested
 
@@ -32,9 +32,11 @@ The downside to Scripting Languages like AIML is that you do have to script a lo
 
 _Drawbacks to Drag-and-Drop Graphical User Interface Based Platforms_
 
-Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a Hello, World chatbot in "five minutes." While great for prototyping and SMBs with limited resources, most of these platforms are not production-ready solutions capable of generating a real business result.
+Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a Hello, World chatbot in "five minutes." While great for prototyping and SMBs with limited resources, most of these platforms are not production-ready solutions capable of generating a real business result. GUIs are quite restrictive and have the same black box problem as ML-based systems. At the end of the day, you can't see, download, alter, or even own your code. 
 
-###### 
+More importantly, you can't build anything worthwhile in five minutes. Building a got bot is _hard_. Bot building is an iterative process that requires constant updating and tuning based on what people are saying to your bot, as you build up real client data over time. For that reason, a CMS or dashboard that allows the botmaster to review logs and make frequent updates is critical.
+
+Most GUIs are abstraction layers on top of scripting languages. In many cases, that language is AIML! There are also a number of forks of AIML or languages that have been inspired as an "answer" to AIML including: Rivescript, Chatscript, Watson Dialog \(now deprecated\), and more. Most chatbot platforms on the market today that aren't offering an NLP API \(machine-learning based\) are abstraction layers on top of one of these scripting languages or a proprietary fork. 
 
 Building a good bot is hard. You can't build anything good in 5 minutes. Trend to button-based, but that is a stop gap.
 

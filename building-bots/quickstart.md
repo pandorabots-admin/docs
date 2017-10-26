@@ -23,11 +23,15 @@ In the next five minutes, you will learn how to create, edit, chat with, update,
 
 Create and name a new bot, leaving the default language _English_ and Content _Blank Bot_.
 
+![](/assets/createabot.png)
+
 ---
 
 #### \(3 - @Editor\)
 
 Our first stop is the _Editor,_ where you can create and edit AIML and other bot files. Click **Edit** beneath your Bot's Name to navigate to the Editor.
+
+![](/assets/editor.png)![](/assets/theeditor.png)
 
 ---
 
@@ -36,6 +40,8 @@ Our first stop is the _Editor,_ where you can create and edit AIML and other bot
 The Editor is where you will write AIML files and categories that will allow you and others to talk to you bot.
 
 Use the File Menu to create a new AIML file called _greetings_.
+
+![](/assets/filetab.png)![](/assets/greetings.png)
 
 ---
 
@@ -50,13 +56,19 @@ Copy the code for the following category into the text editor in between the sta
 </category>
 ```
 
+![](/assets/firstcat1.png)![](/assets/firstcat2.png)
+
 Once completed, save your file via the "File" drop-down menu.
+
+![](/assets/filesave.png)
 
 ---
 
 #### \(6\)
 
 The _Chat Widget_ allows you to talk to your bot as if you were the client. Open a new chat and type _Hi_ \(or “hi” or “HI” since pattern matching is case-insensitive\) and you should receive the response you just coded, “Hello, world!”
+
+![](/assets/chatwidget.png)
 
 ---
 

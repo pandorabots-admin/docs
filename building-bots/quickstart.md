@@ -124,7 +124,7 @@ With the UDC defined, your bot now has a fallback response to any input for whic
 
 You can edit your bot's response directly from within the Chat Widget. Click the edit icon inside the chat bubble and write a new response to whatever you just typed, then add it to the greetings.aiml file.
 
-![](/assets/wassupyo.png)
+![](/assets/wassupyo.png)![](/assets/yoyoyotest.png)
 
 Reviewing client inputs that trigger the UDC allows you to train your bot to grow more intelligent over time. Log review, accomplished via the Logs page, is a critical aspect of bot development, which is a continuous, iterative process.
 

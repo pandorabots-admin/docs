@@ -172,7 +172,11 @@ Go to Deploy.
 
 There are a number of ways to make your bot public, including an API for developers and _Integrations. _
 
+![](/assets/deploy.png)
+
 Integrations provide an easy method to launch your bot on various supported channels. These range from popular voice and messaging apps, to webpages and Pandorabots' internal platform development zone: the Clubhouse.
+
+![](/assets/publish.png)
 
 ---
 
@@ -186,17 +190,23 @@ Go to the Clubhouse.
 
 The Clubhouse lets you beta test your bot-in-progress in a botmaster-only environment. Here, you can collect chatlogs to review and improve your bot, and pay back the favor by chatting with other people's bots.
 
+![](/assets/clubhouse.png)
+
 ---
 
 #### \(18 - @Botname\)
 
 The number of unread logs will be displayed next to your bot's name. Click on your bot's name to view other key stats.
 
+![](/assets/stats.png)
+
 ---
 
 #### \(19\)
 
 Usage statistics like total number of monthly interactions, clients, sessions, and the average interactions per session are displayed dating back 30 days. Selecting “My Bots” will display these overall statistics for all your bots.
+
+![](/assets/mybotstats.png)
 
 ---
 
@@ -205,6 +215,8 @@ Usage statistics like total number of monthly interactions, clients, sessions, a
 One more thing. The green indicator light next to your bot means it is _Compiled_, i.e., functioning normally.
 
 If this turns red, your bot is _Uncompiled_, meaning something is broken. Clicking “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and clicking _save_ or _compile_ will re-compile your bot.
+
+![](/assets/uncompiled.png)![](/assets/fix.png)![](/assets/compiled.png)
 
 If your bot is deployed, a yellow light will appear when there are differences between the _Sandbox_ version of the bot you are editing, and the _Production_ version available to the general public. Clicking _Publish_ will push saved Sandbox changes live to production.
 

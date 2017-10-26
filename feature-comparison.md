@@ -4,7 +4,7 @@ Recently, there has been a tremendous amount of hype around chatbots, such that 
 
 #### Market Tested
 
-Pandorabots has been in business since 2008. Our visionary founders are "Original Gangsters" when it comes to chatbots, and the platform has survived several hype cycles \(yes, bots existed prior to 2015 when Facebook opened the Messenger platform - in fact, the technology originated back in the 1960s\). Over a quarter of a million developers and business - including top global brands - have registered for and used our platform since inception. It is a market-tested, production-ready and enterprise-ready solution that works.
+Pandorabots has been in business since 2008. Our visionary founders are "Original Gangsters" when it comes to chatbots, and the platform has survived several hype cycles \(yes, bots existed prior to 2015 when Facebook opened the Messenger platform - in fact, the technology originated back in the 1960s\). Over a quarter of a million developers and business - including top global brands - have registered for and used our platform since inception. It is a proven, market-tested, enterprise-grade solution that works in production.
 
 Back in 2015, Pandorabots was one of only a few chatbot platforms. Today, there are hundreds, but that number has peaked \(along with the hype cycle\) and will increasingly decrease, as startups fail to monetize or raise their next round, and get acquihired or shutter their offering. Building on a startup that isn't market tested is very risky!
 

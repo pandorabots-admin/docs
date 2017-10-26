@@ -4,8 +4,6 @@
 
 ---
 
-#### \(1\)
-
 #### AIML
 
 Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scripting language. **Inputs** from C_lients_ \(people chatting with your _Bot_\) are pattern-matched to **outputs** defined by you, the _Botmaster_, in blocks of code called _Categories_.
@@ -19,7 +17,7 @@ In the next five minutes, you will learn how to create, edit, chat with, update,
 
 ---
 
-#### \(2 - @+ Create Bot Button\)
+#### Bot Creation
 
 Create and name a new bot, leaving the default language _English_ and Content _Blank Bot_.
 
@@ -27,7 +25,7 @@ Create and name a new bot, leaving the default language _English_ and Content _B
 
 ---
 
-#### \(3 - @Editor\)
+#### Bot Editing
 
 Our first stop is the _Editor,_ where you can create and edit AIML and other bot files. Click **Edit** beneath your Bot's Name to navigate to the Editor.
 
@@ -35,7 +33,7 @@ Our first stop is the _Editor,_ where you can create and edit AIML and other bot
 
 ---
 
-#### \(4 - @File Tab\)
+#### Creating Categories
 
 The Editor is where you will write AIML files and categories that will allow you and others to talk to you bot.
 
@@ -45,7 +43,7 @@ Use the File Menu to create a new AIML file called _greetings_.
 
 ---
 
-#### \(5\)
+#### Hello, World!
 
 Copy the code for the following category into the text editor in between the start `<aiml>` and end `</aiml>` tags:
 
@@ -64,7 +62,7 @@ Once completed, save your file via the "File" drop-down menu.
 
 ---
 
-#### \(6\)
+#### Testing and Training via the Chat Widget
 
 The _Chat Widget_ allows you to talk to your bot as if you were the client. Open a new chat and type _Hi_ \(or “hi” or “HI” since pattern matching is case-insensitive\) and you should receive the response you just coded, “Hello, world!”
 
@@ -72,7 +70,7 @@ The _Chat Widget_ allows you to talk to your bot as if you were the client. Open
 
 ---
 
-#### \(7\)
+#### Wildcards
 
 Congratulations on creating your first category! Now, add a `*` wildcard to the pattern after HI, which will enable matching any phrase that starts with _Hi_. It should look like this:
 
@@ -91,7 +89,7 @@ Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_
 
 ---
 
-#### \(8\)
+#### Introducing the Ultimate Default Category
 
 Next, we need to define the Ultimate Default Category \(UDC\), which is how your bot will respond when it cannot find a match.
 
@@ -101,7 +99,7 @@ First, create a new file called udc.aiml
 
 ---
 
-#### \(9\)
+#### Defining the Ultimate Default Category
 
 Copy the following category into the file:
 
@@ -120,7 +118,7 @@ The `*` wildcard in the pattern will match any input of one or more words, meani
 
 ---
 
-#### \(10\)
+#### Editing Response's via the Chat Widget
 
 With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific answer.
 
@@ -132,7 +130,7 @@ Reviewing client inputs that trigger the UDC allows you to train your bot to gro
 
 ---
 
-#### \(11\)
+#### Log Review
 
 Go to the Logs.
 

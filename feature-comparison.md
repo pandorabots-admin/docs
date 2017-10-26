@@ -38,6 +38,12 @@ Ultimately, you can't build anything worthwhile in five minutes. Building a good
 
 Most GUIs are abstraction layers on top of scripting languages. In many cases, that language is AIML! There are also a number of forks of AIML or languages that have been inspired as an "answer" to AIML including: Rivescript, Chatscript, Watson Dialog \(now deprecated\), and more. Most chatbot platforms on the market today that aren't offering an NLP API \(machine-learning based\) are abstraction layers on top of one of these scripting languages or a proprietary fork. While Pandorabots is committed to making building bots as easy as possible \(without sacrificing quality!\) and will invest in further development of our own abstraction layer, we will always expose the layer below - the code - to you, the botmaster, so you can own and extend your project.
 
+#### Pricing
+
+Building a chatbot on the Pandorabots platform is 100% free. When you are ready to deploy your chatbot, i.e., make it available to the public, we require users to have a valid credit card on file, however you can still enjoy up to 1,000 chatbot interactions for free monthly. Above 1,000 interaction, a tiny fee of $0.002 will be charged per interaction. By default, a max monthly cap of 100,000 interactions is in place to guard against egregious charges in the event of unexpected popularity or spam. This monthly cap can be adjusted upon request. If your chatbot will exceed 100,000 interactions per month, you likely qualify for the Enterprise tier, which provides a flat fee factoring in your unique business needs. 
+
+This pricing model is consistent with industry standards for cloud services, and competitive with or significantly cheaper than other offerings.
+
 #### Case Studies
 
 When it doubt, you can always fallback on customer case studies. After all, in some sense, the underlying technology matters a lot less than what it can enable - the business result! In fact, before selecting your vendor, we recommend that you always ask for case studies. Most so-called chatbot platforms will have a couple of name-brand clients they can reference, but fewer have referenceable customers for whom they have generated real business results. You can find some key customers and case studies on the Pandorabots homepage, with additional material available on request \(email info@pandorabots.com\).

@@ -32,7 +32,7 @@ The downside to Scripting Languages like AIML is that you do have to script a lo
 
 _Drawbacks to Drag-and-Drop Graphical User Interface Based Platforms_
 
-Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a _Hello World_ chatbot in "five minutes" and easily publish it to a messaging channel. While great for prototyping and indie developers or small businesses with limited resources, most of these platforms are not production-ready solutions capable of generating a real business result. GUIs are quite restrictive and have the same black box problem as ML-based systems. At the end of the day, you can't see, download, alter, or even own your code.
+Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a _Hello World_ chatbot in "five minutes" and easily publish it to a messaging channel. While great for prototyping and indie developers or small businesses with limited resources and in-house developers, most of these platforms are not production-ready solutions capable of generating a real business result. GUIs are quite restrictive and have the same black box problem as ML-based systems. At the end of the day, you can't see, download, alter, or even own your code.
 
 Ultimately, you can't build anything worthwhile in five minutes. Building a got bot is _hard_. Bot building is an iterative process that requires constant updating and tuning based on what people are saying to your bot, as you build up real client data over time. For that reason, a CMS or dashboard that allows the botmaster to review logs and make frequent updates is critical.
 

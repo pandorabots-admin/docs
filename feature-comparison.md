@@ -34,11 +34,9 @@ _Drawbacks to Drag-and-Drop Graphical User Interface Based Platforms_
 
 Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a _Hello World_ chatbot in "five minutes" and easily publish it to a messaging channel. While great for prototyping and indie developers or small businesses with limited resources and in-house developers, most of these platforms are not production-ready solutions capable of generating a real business result. GUIs are quite restrictive and have the same black box problem as ML-based systems. At the end of the day, you can't see, download, alter, or even own your code.
 
-Ultimately, you can't build anything worthwhile in five minutes. Building a got bot is _hard_. Bot building is an iterative process that requires constant updating and tuning based on what people are saying to your bot, as you build up real client data over time. For that reason, a CMS or dashboard that allows the botmaster to review logs and make frequent updates is critical.
+Ultimately, you can't build anything worthwhile in five minutes. Building a good bot is _hard_. Bot building is an iterative process that requires constant updating and tuning based on what people are saying to your bot, as you build up real client data over time. For that reason, a CMS or dashboard that allows the botmaster to review logs and make frequent updates is critical. While the current trend may be toward button-based, rigid decision-tree like bots because they are easier to build, buttons are very much a stop gap en route to solving the unsolved problem: AI's ability to understand human language. With voice computing very much on the horizon, it's important to start investing in supporting actual natural language inputs/outputs in your chatbot app.
 
 Most GUIs are abstraction layers on top of scripting languages. In many cases, that language is AIML! There are also a number of forks of AIML or languages that have been inspired as an "answer" to AIML including: Rivescript, Chatscript, Watson Dialog \(now deprecated\), and more. Most chatbot platforms on the market today that aren't offering an NLP API \(machine-learning based\) are abstraction layers on top of one of these scripting languages or a proprietary fork.
-
-Building a good bot is hard. You can't build anything good in 5 minutes. Trend to button-based, but that is a stop gap.
 
 ###### Case Studies
 

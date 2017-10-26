@@ -16,7 +16,7 @@ Pandorabots offers the widest possible range of solutions, from the free, DIY \(
 
 ###### Open Standards Based = Open System
 
-AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development and our platform is the most popular implementation of the latest version of the standard, AIML 2.0. We estimate that there are between 500,000 - 1,000,000 AIML developers worldwide, including the 250,000 on the Pandorabots platform, who also have a very international makeup, with robust communities in the US, Brazil and LatAm, India, Japan, and Europe.
+AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development and our platform is the most popular implementation of the latest version of the standard, AIML 2.0. We estimate that there are between 500,000 - 1,000,000 AIML developers worldwide, including the 250,000 on the Pandorabots platform, who also have a very international makeup, with robust communities in the US, Brazil and LatAm, India, Japan, and Europe. AIML also underlies some major platform offerings from startups and very large organizations. 
 
 There are many, many advantages to working with an open standard, chief among them that the code is something you, the creator, owns and can run independently of our platform. Mostly importantly the system is open, not a black box.
 
@@ -32,11 +32,11 @@ The downside to Scripting Languages like AIML is that you do have to script a lo
 
 _Drawbacks to Drag-and-Drop Graphical User Interface Based Platforms_
 
-Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a Hello, World chatbot in "five minutes." While great for prototyping and SMBs with limited resources, most of these platforms are not production-ready solutions capable of generating a real business result. GUIs are quite restrictive and have the same black box problem as ML-based systems. At the end of the day, you can't see, download, alter, or even own your code. 
+Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a Hello, World chatbot in "five minutes." While great for prototyping and SMBs with limited resources, most of these platforms are not production-ready solutions capable of generating a real business result. GUIs are quite restrictive and have the same black box problem as ML-based systems. At the end of the day, you can't see, download, alter, or even own your code.
 
 More importantly, you can't build anything worthwhile in five minutes. Building a got bot is _hard_. Bot building is an iterative process that requires constant updating and tuning based on what people are saying to your bot, as you build up real client data over time. For that reason, a CMS or dashboard that allows the botmaster to review logs and make frequent updates is critical.
 
-Most GUIs are abstraction layers on top of scripting languages. In many cases, that language is AIML! There are also a number of forks of AIML or languages that have been inspired as an "answer" to AIML including: Rivescript, Chatscript, Watson Dialog \(now deprecated\), and more. Most chatbot platforms on the market today that aren't offering an NLP API \(machine-learning based\) are abstraction layers on top of one of these scripting languages or a proprietary fork. 
+Most GUIs are abstraction layers on top of scripting languages. In many cases, that language is AIML! There are also a number of forks of AIML or languages that have been inspired as an "answer" to AIML including: Rivescript, Chatscript, Watson Dialog \(now deprecated\), and more. Most chatbot platforms on the market today that aren't offering an NLP API \(machine-learning based\) are abstraction layers on top of one of these scripting languages or a proprietary fork.
 
 Building a good bot is hard. You can't build anything good in 5 minutes. Trend to button-based, but that is a stop gap.
 

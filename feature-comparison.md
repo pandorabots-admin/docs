@@ -28,11 +28,11 @@ When it comes to these systems, you, the user, do not own your data, and you do 
 
 These ML-based systems have another problem: performance. Above approximately ~500 defined intents, the systems begin to slow way down. By contrast, the response time for bots hosted on Pandorabots is always around ~300 milliseconds, even for bots that have ~300,000 intents defined. For finite domains, a botmaster may not need to define over 500 intents, but generally speaking robust chatbots have a lot more intents defined, and that number should only increase over time.
 
-The downside to Scripting Languages like AIML is that you do have to script a lot of input/output pairs \("rules"\). Fortunately Pandorabots provides base content in the form of libraries that spare you from reinventing the rules for common chitchat, and other tools that streamline bot development and make maintaining your bot easy and fun. We also have a number of machine learning tools available as part of our Professional Services offering that help streamline the bot development process if your organization has decent, usable datasets - please get in touch \(email info@pandorabots.com\) to learn more. 
+The downside to Scripting Languages like AIML is that you do have to script a lot of input/output pairs \("rules"\). Fortunately Pandorabots provides base content in the form of libraries that spare you from reinventing the rules for common chitchat, and other tools that streamline bot development and make maintaining your bot easy and fun. We also have a number of machine learning tools available as part of our Professional Services offering that help streamline the bot development process if your organization has decent, usable datasets - please get in touch \(email info@pandorabots.com\) to learn more.
 
 _Drawbacks to Drag-and-Drop Graphical User Interface Based Platforms_
 
-Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a Hello, World chatbot in "five minutes." While great for prototyping and SMBs with limited resources, most of these platforms are not production-ready solutions capable of generating a real business result. 
+Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a Hello, World chatbot in "five minutes." While great for prototyping and SMBs with limited resources, most of these platforms are not production-ready solutions capable of generating a real business result.
 
 ###### 
 
@@ -40,5 +40,5 @@ Building a good bot is hard. You can't build anything good in 5 minutes. Trend t
 
 ###### Case Studies
 
-When it doubt, you can always fallback on customer case studies. After all, technology in this sense doesn't have much value a priori - what matters is the RESULT! In fact, before selecting your vendor, we recommend that you always ask for case studies. Most so-called chatbot platforms will have a couple of name-brand clients they can reference, but fewer have referenceable customers for whom they have generated real business results. You can find some key customers and case studies on the Pandorabots homepage, with additional material available on request \(email info@pandorabots.com\).
+When it doubt, you can always fallback on customer case studies. After all, in some sense, the underlying technology matters a lot less than what it can enable - the business result! In fact, before selecting your vendor, we recommend that you always ask for case studies. Most so-called chatbot platforms will have a couple of name-brand clients they can reference, but fewer have referenceable customers for whom they have generated real business results. You can find some key customers and case studies on the Pandorabots homepage, with additional material available on request \(email info@pandorabots.com\).
 

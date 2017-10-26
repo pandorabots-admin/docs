@@ -69,20 +69,20 @@ So, if you have a bot deployed on the platform that is live for the public, any 
 
 In the lower right hand corner of the interface, you may have noticed a circular chat icon. Clicking on this icon will allow you to chat with your bot as if you were the client from almost everywhere in the interface. This **Chat Widget **has several useful features that are vital for debugging and improving your bot.
 
-* _Edit Icon_
+* _Edit Icon - _  
   Clicking the edit icon within the bot output chat bubble allows you to quickly specify a new bot response for a given input and save it to a specified aiml file.
 
-* _Advanced Alter_
-  Clicking the drop down next to "New Response" when the Alter Response modal is open will allow you to also define `that` and `topic` values for your new pattern-template pair. 
+* _Advanced Alter - _  
+  Clicking the drop down next to "New Response" when the Alter Response modal is open will allow you to also define `that` and `topic` values for your new pattern-template pair.
 
-* _Show Metadata_
-  Clicking Show Metadata beneath the bot response bubble will display some important information about the interaction, including the Pattern that matched, the values \(if any\) for `that` and `topic`, and a link to the file containing the pattern that was matched, which you can click on to go edit directly. 
+* _Show Metadata - _  
+  Clicking Show Metadata beneath the bot response bubble will display some important information about the interaction, including the Pattern that matched, the values \(if any\) for `that` and `topic`, and a link to the file containing the pattern that was matched, which you can click on to go edit directly.
 
-* _Show Trace_
+* _Show Trace - _  
   Beneath the displayed Metadata, you will also find an option to run a _Trace_. This will open a modal showing the series of steps the input underwent during processing to find a match, which is incredibly helpful for debugging.
 
-* _Reset Bot Memory_
-  At the top of the Chat Widget next to your bot name, a refresh icon allows you to reset your bot's memory, which will clear any predicate values that have been set \(\#\#\#@TC ??\) and allow you to start fresh as if you were a brand new client. 
+* _Reset Bot Memory - _  
+  At the top of the Chat Widget next to your bot name, a refresh icon allows you to reset your bot's memory, which will clear any predicate values that have been set \(\#\#\#@TC ??\) and allow you to start the conversation anew as if you were a brand new client.
 
 #### Bot Log Review
 
@@ -90,7 +90,7 @@ Reviewing chat logs and updating your bot frequently is a critical aspect of bot
 
 Unread conversations appear in **bold**. Orange conversations contain at least one input that triggered the UDC. Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
-Clicking _Show Metadata _will reveal the same information about the interaction as doing so within the Chat Widget. You can also edit responses from here or by opening the linked file in the editor in the same manner as you can do within the Chat Widget.
+Clicking \_Show Metadata \_will reveal the same information about the interaction as doing so within the Chat Widget. You can also edit responses from here or by opening the linked file in the editor in the same manner as you can do within the Chat Widget.
 
 When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page.
 
@@ -179,10 +179,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                            
+**&lt;pattern&gt;                                                                              
 **Matches what the user says.
 
-**&lt;template&gt;                                                                            
+**&lt;template&gt;                                                                              
 **What the bot replies.
 
 Code example:

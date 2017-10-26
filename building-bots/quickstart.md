@@ -83,7 +83,11 @@ Congratulations on creating your first category! Now, add a `*` wildcard to the 
 </category>
 ```
 
+![](/assets/star.png)
+
 Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_\) in the Chat Widget, which should return "Hello, world!"
+
+![](/assets/chatwidget2.png)
 
 ---
 
@@ -92,6 +96,8 @@ Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_
 Next, we need to define the Ultimate Default Category \(UDC\), which is how your bot will respond when it cannot find a match.
 
 First, create a new file called udc.aiml
+
+![](/assets/udc.png)
 
 ---
 
@@ -106,7 +112,11 @@ Copy the following category into the file:
 </category>
 ```
 
+![](/assets/udc2.png)
+
 The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text. Save the file, then try typing anything other than "hi" to your bot.
+
+![](/assets/udc3.png)
 
 ---
 
@@ -122,15 +132,21 @@ Reviewing client inputs that trigger the UDC allows you to train your bot to gro
 
 Go to the Logs.
 
+![](/assets/logs.png)
+
 ---
 
 #### \(12\)
 
 Chat logs are displayed dating back 30 days and available for download.
 
+![](/assets/logsdl.png)
+
 Unread conversations appear in **bold**. Orange conversations contain at least one input that triggered the UDC, meaning your bot did not have an answer for the client’s input.
 
 Click on the log item to open your message history with the bot.
+
+![](/assets/openlog.png)
 
 ---
 
@@ -139,6 +155,8 @@ Click on the log item to open your message history with the bot.
 Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
 Clicking _Show Metadata_ will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
+
+![](/assets/metadata.png)
 
 When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page.
 

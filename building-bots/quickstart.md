@@ -138,7 +138,7 @@ Go to the Logs.
 
 ---
 
-#### \(12\)
+#### Log Priority Ordering
 
 Chat logs are displayed dating back 30 days and available for download.
 
@@ -152,7 +152,7 @@ Click on the log item to open your message history with the bot.
 
 ---
 
-#### \(13\)
+#### Displaying and Understanding Metadata 
 
 Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
@@ -164,13 +164,13 @@ When you are ready to start collecting logs from actual clients, you can publish
 
 ---
 
-#### \(14 - @Deploy Page\)
+#### Bot Deployment
 
 Go to Deploy.
 
 ---
 
-#### \(15\)
+#### Integrations and the Pandorabots API
 
 There are a number of ways to make your bot public, including an API for developers and _Integrations. _
 
@@ -182,13 +182,13 @@ Integrations provide an easy method to launch your bot on various supported chan
 
 ---
 
-#### \(16\)
+#### The Clubhouse
 
 Go to the Clubhouse.
 
 ---
 
-#### \(17\)
+#### Collecting and Exchanging Logs in the Clubhouse
 
 The Clubhouse lets you beta test your bot-in-progress in a botmaster-only environment. Here, you can collect chatlogs to review and improve your bot, and pay back the favor by chatting with other people's bots.
 
@@ -196,7 +196,7 @@ The Clubhouse lets you beta test your bot-in-progress in a botmaster-only enviro
 
 ---
 
-#### \(18 - @Botname\)
+#### Individual Bot Statistics
 
 The number of unread logs will be displayed next to your bot's name. Click on your bot's name to view other key stats.
 
@@ -204,7 +204,7 @@ The number of unread logs will be displayed next to your bot's name. Click on yo
 
 ---
 
-#### \(19\)
+#### Global Bot Statistics 
 
 Usage statistics like total number of monthly interactions, clients, sessions, and the average interactions per session are displayed dating back 30 days. Selecting “My Bots” will display these overall statistics for all your bots.
 
@@ -212,7 +212,7 @@ Usage statistics like total number of monthly interactions, clients, sessions, a
 
 ---
 
-#### \(20\)
+#### Bot Indicator Lights
 
 One more thing. The green indicator light next to your bot means it is _Compiled_, i.e., functioning normally.
 
@@ -224,7 +224,7 @@ If your bot is deployed, a yellow light will appear when there are differences b
 
 ---
 
-#### \(21\)
+#### Next Steps
 
 Congratulations! You've just learned the fundamental basics for building AIML bots on the Pandorabots platform. As a next step, we highly recommend the tutorial [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md), and encourage you to explore additional resources in the Help section.
 

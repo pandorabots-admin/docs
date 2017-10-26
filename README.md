@@ -14,7 +14,7 @@ A chatbot \(or bot\) is a conversational software program designed to chat with 
 
 Chatbots can be deployed in a variety of channels including popular voice and messaging platforms. The use cases are virtually endless, from automating common customer service queries, to providing touch points along the customer journey, to optimizing internal IT processes, to learning applications like language and enterprise soft skills, to games, toys, entertainment, and more.
 
-Over 300,000 chatbots have been built on the Pandorabots platform to date. Our goal is to provide the tools you need to let your imagination and your bots run wild! We also provide Professional Services including custom chatbot development for top global brands and larger enterprises, but if you're reading this documentation should contain all the resources you need for a DIY bot.
+Over 300,000 chatbots have been built on the Pandorabots platform to date. Our goal is to provide the tools you need to let your imagination and your bots run wild! We also provide Professional Services including custom chatbot development for top global brands and larger enterprises, but this documentation should contain all the resources you need to build your own DIY bot.
 
 The Pandorabots platform supports an open standard scripting language called _Artificial Intelligence Markup Language_ \(_AIML\)_.
 

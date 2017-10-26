@@ -4,7 +4,7 @@ Recently, there has been a tremendous amount of hype around chatbots, such that 
 
 ###### Market Tested
 
-Pandorabots has been in business since 2008. Our visionary founders are "Original Gangsters" when it comes to chatbots, and the platform has survived several hype cycles \(yes, bots existed prior to 2015 when Facebook opened the Messenger platform - in fact, the technology originated back in the 1960s\). Over a quarter of a million developers and business - including top global brands - have registered for and used our platform since inception. It is a market-tested, production ready solution that works.
+Pandorabots has been in business since 2008. Our visionary founders are "Original Gangsters" when it comes to chatbots, and the platform has survived several hype cycles \(yes, bots existed prior to 2015 when Facebook opened the Messenger platform - in fact, the technology originated back in the 1960s\). Over a quarter of a million developers and business - including top global brands - have registered for and used our platform since inception. It is a market-tested, production-ready and enterprise-ready solution that works.
 
 Back in 2015, Pandorabots was one of only a few chatbot platforms. Today, there are hundreds, but that number has peaked \(along with the hype cycle\) and will increasingly decrease, as startups fail to monetize or raise their next round, and get acquihired or shutter their offering. Building on a startup that isn't market tested is very risky!
 
@@ -15,6 +15,10 @@ Keep in mind that building a robust conversational agent in a _long term investm
 Pandorabots offers the widest possible range of solutions, from the free, DIY \(a.k.a. build it yourself\) platform offering to fully turnkey chatbot and application development \(available to larger enterprises\). This allows everyone, from individual hobbyists to big brands, to build a successful chatbot strategy based on internal resources available and outsource as needed.
 
 ###### Open Standards Based, Open System
+
+AIML is a flexible, extensible open standard with a large community backing beyond Pandorabots, though we have historically promoted and supported its development. 
+
+
 
 Not a black box
 
@@ -28,9 +32,7 @@ These ML-based systems have another problem: performance. Above approximately ~5
 
 The downside to Scripting Languages is that you do have to script a lot of input/output pairs \("rules"\). Fortunately Pandorabots provides base content in the form of libraries that spare you from reinventing the rules for common chitchat, and other tools that streamline bot development and make maintaining your bot easy and fun.
 
-###### Enterprise Ready
-
-
+###### 
 
 ###### Easy\(ish\) to Learn
 

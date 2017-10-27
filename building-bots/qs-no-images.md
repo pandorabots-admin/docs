@@ -81,20 +81,15 @@ Now, try typing anything that **doesn't** start with _hi_ to your bot. No matter
 
 Inputs that do not have a response defined trigger what's known as the _Ultimate Default Category_ \(UDC\).
 
-Click _Show Metadata_ beneath your bot's last response and you will find some additional information about the interaction, including the pattern that matched and a link to the file containing that pattern. Click on the link _File: udc.aiml_.
+Click _Show Metadata_ beneath your bot's last response and you will find some additional information about the interaction, including the pattern that matched and a link to the file containing that pattern. Click on the _udc.aiml _link_._
 
 ---
 
 #### \(9\) {#9}
 
-All bots come preloaded with a few fundamental files, including the UDC so your bot always has a fallback response. The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text.
+All bots come preloaded with a few fundamental files, including the UDC so your bot always has a fallback response. 
 
-```
-<category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-</category>
-```
+The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text.
 
 You are free to edit the UDC template however you like, to provide customer service contact info, ask the client to rephrase their question, a humorous response, or whatever makes sense for your use case.
 

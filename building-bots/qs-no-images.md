@@ -27,7 +27,7 @@ Create and name a new bot, leaving the default language _English_ and Content _B
 
 #### \(3 - @Editor\) {#3---editor}
 
-Our first stop is the\_Editor,\_where you can create and edit AIML and other bot files. Click **Edit **beneath your Bot's Name to navigate to the Editor.
+Our first stop is the _Editor_, where you can create and edit AIML and other bot files. Click **Edit **beneath your Bot's Name to navigate to the Editor.
 
 ---
 
@@ -35,7 +35,7 @@ Our first stop is the\_Editor,\_where you can create and edit AIML and other bot
 
 The Editor is where you will write AIML files and categories that will allow you and others to talk to you bot.
 
-Use the File Menu to create a new AIML file called_greetings_.
+Use the File Menu to create a new AIML file called _greetings_.
 
 ---
 
@@ -94,7 +94,7 @@ Copy the following category into the file:
 </category>
 ```
 
-The`*`wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text. Save the file, then try typing anything other than "hi" to your bot.
+The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text. Save the file, then try typing anything other than "hi" to your bot.
 
 ---
 

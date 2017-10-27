@@ -8,7 +8,7 @@
 
 #### AIML {#aiml}
 
-Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scripting language.**Inputs**from C_lients_\(people chatting with your_Bot_\) are pattern-matched to**outputs**defined by you, the_Botmaster_, in blocks of code called_Categories_.
+Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scripting language. **Inputs **from C_lients _\(people chatting with your_Bot_\) are pattern-matched to **outputs **defined by you, the _Botmaster_, in blocks of code called _Categories_.
 
 ![](https://lkunze.gitbooks.io/pandorabots-api/content/assets/AIML Visual %281%29.png)
 
@@ -27,7 +27,7 @@ Create and name a new bot, leaving the default language_English\_and Content\_Bl
 
 #### \(3 - @Editor\) {#3---editor}
 
-Our first stop is the\_Editor,\_where you can create and edit AIML and other bot files. Click**Edit**beneath your Bot's Name to navigate to the Editor.
+Our first stop is the\_Editor,\_where you can create and edit AIML and other bot files. Click **Edit **beneath your Bot's Name to navigate to the Editor.
 
 ---
 
@@ -71,7 +71,7 @@ Congratulations on creating your first category! Now, add a`*`wildcard to the pa
 </category>
 ```
 
-Save your file, then test out any phrase that starts with hi \(e.g.,_Hi there!_\) in the Chat Widget, which should return "Hello, world!"
+Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_\) in the Chat Widget, which should return "Hello, world!"
 
 ---
 
@@ -142,7 +142,7 @@ Go to Deploy.
 
 #### \(15\) {#15}
 
-There are a number of ways to make your bot public, including an API for developers and_Integrations._
+There are a number of ways to make your bot public, including an API for developers and _Integrations._
 
 Integrations provide an easy method to launch your bot on various supported channels. These range from popular voice and messaging apps, to webpages and Pandorabots' internal platform development zone: the Clubhouse.
 

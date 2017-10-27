@@ -87,7 +87,7 @@ Click _Show Metadata_ beneath your bot's last response and you will find some ad
 
 #### \(9\) {#9}
 
-All bots come preloaded with a few fundamental files, including the UDC so your bot has a fallback response which does not have a specific answer. The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text.
+All bots come preloaded with a few fundamental files, including the UDC so your bot always has a fallback response. The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text.
 
 ```
 <category>

@@ -12,8 +12,8 @@ Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scr
 
 ![](https://lkunze.gitbooks.io/pandorabots-api/content/assets/AIML Visual %281%29.png)
 
-> **Client:**Hi Bot!  
-> **Bot:**Hello world!
+> **Client: **Hi Bot!  
+> **Bot: **Hello world!
 
 In the next five minutes, you will learn how to create, edit, chat with, update, and publish a bot using this interface.
 

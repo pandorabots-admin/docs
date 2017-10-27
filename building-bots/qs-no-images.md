@@ -174,7 +174,7 @@ Usage statistics like total number of monthly interactions, clients, sessions, a
 
 #### \(20\) {#20}
 
-One more thing. The green indicator light next to your bot means it is_Compiled_, i.e., functioning normally.
+One more thing. The green indicator light next to your bot means it is _Compiled_, i.e., functioning normally.
 
 If this turns red, your bot is _Uncompiled_, meaning something is broken. Clicking “Compile” will display compilation errors \(often caused by malformed AIML such as missing tags or syntax errors\). Fixing the errors and saving or compiling will re-compile your bot.
 

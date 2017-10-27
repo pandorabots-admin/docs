@@ -8,7 +8,7 @@
 
 #### AIML {#aiml}
 
-Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scripting language. **Inputs **from C_lients _\(people chatting with your_Bot_\) are pattern-matched to **outputs **defined by you, the _Botmaster_, in blocks of code called _Categories_.
+Artificial Intelligence Markup Language \(AIML\) is an easy-to-learn chatbot scripting language. **Inputs **from C_lients _\(people chatting with your _Bot_\) are pattern-matched to **outputs **defined by you, the _Botmaster_, in blocks of code called _Categories_.
 
 ![](https://lkunze.gitbooks.io/pandorabots-api/content/assets/AIML Visual %281%29.png)
 

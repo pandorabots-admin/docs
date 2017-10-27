@@ -75,19 +75,17 @@ Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_
 
 ---
 
-#### \(8\) {#8}
+#### \(8 - May want to break this into several new steps...\) {#8}
 
 Now, try typing anything that **doesn't** start with _hi_ to your bot. No matter what you say, if your bot fails to find a match for the input, it will return "I have no answer for that."
 
-Inputs that do not have a response defined trigger what's known as the _Ultimate Default Category_ \(UDC\). 
+Inputs that do not have a response defined trigger what's known as the _Ultimate Default Category_ \(UDC\).
 
-Click _Show Metadata_ beneath your bot's last resopnse
+Click _Show Metadata_ beneath your bot's last response and you will find some additional information about the interaction, including the pattern that matched and a link to the file that contains that pattern. Click on the link _File: udc.aiml_.
 
 ---
 
 #### \(9\) {#9}
-
-
 
 Copy the following category into the file:
 

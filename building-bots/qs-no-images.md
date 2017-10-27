@@ -99,7 +99,7 @@ You are free to edit the UDC template however you like: to provide customer serv
 
 You can also edit your bot's response directly from within the Chat Widget. Click the edit icon inside the chat bubble and write a new response to whatever you just typed, then add it to the appropriate aiml file.
 
-Reviewing client inputs that trigger the UDC allows you to train your bot to grow more intelligent over time. Log review, accomplished via the Logs page, is a critical aspect of bot development, which is a continuous, iterative process.
+Reviewing client inputs that trigger the UDC allows you to train your bot to grow more intelligent over time. Log review, accomplished via the Logs page, is a critical aspect of bot development.
 
 ---
 

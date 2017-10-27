@@ -56,7 +56,7 @@ Once completed, save your file via the "File" drop-down menu.
 
 #### \(6\) {#6}
 
-The_Chat Widget\_allows you to talk to your bot as if you were the client. Open a new chat and type\_Hi_\(or “hi” or “HI” since pattern matching is case-insensitive\) and you should receive the response you just coded, “Hello, world!”
+The _Chat Widget_ allows you to talk to your bot as if you were the client. Open a new chat and type _Hi_ \(or “hi” or “HI” since pattern matching is case-insensitive\) and you should receive the response you just coded, “Hello, world!”
 
 ---
 

@@ -87,7 +87,7 @@ Click _Show Metadata_ beneath your bot's last response and you will find some ad
 
 #### \(9\) {#9}
 
-Copy the following category into the file:
+All bots come pre-loaded with a few fundamental files, including the UDC so your bot has a fallback response which does not have a specific answer. The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text.
 
 ```
 <category>
@@ -96,15 +96,13 @@ Copy the following category into the file:
 </category>
 ```
 
-The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text. Save the file, then try typing anything other than "hi" to your bot.
+You are free to edit the UDC template however you like, such as providing customer service contact info.
 
 ---
 
 #### \(10\) {#10}
 
-With the UDC defined, your bot now has a fallback response to any input for which is does not have a specific answer.
-
-You can edit your bot's response directly from within the Chat Widget. Click the edit icon inside the chat bubble and write a new response to whatever you just typed, then add it to the greetings.aiml file.
+You can also edit your bot's response directly from within the Chat Widget. Click the edit icon inside the chat bubble and write a new response to whatever you just typed, then add it to the greetings.aiml file.
 
 Reviewing client inputs that trigger the UDC allows you to train your bot to grow more intelligent over time. Log review, accomplished via the Logs page, is a critical aspect of bot development, which is a continuous, iterative process.
 

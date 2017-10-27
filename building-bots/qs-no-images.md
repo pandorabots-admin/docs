@@ -139,7 +139,7 @@ Go to Deploy.
 
 There are a number of ways to make your bot public, including an API for developers and _Integrations._
 
-Integrations provide an easy method to launch your bot on various supported channels. These range from popular voice and messaging apps, to webpages and Pandorabots' internal platform development zone: the Clubhouse.
+Integrations provide an easy method to launch your bot on various supported channels. These range from popular voice and messaging apps, to webpages and Pandorabots' internal platform peer review environment: the Clubhouse.
 
 ---
 

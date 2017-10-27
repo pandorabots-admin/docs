@@ -81,7 +81,7 @@ Now, try typing anything that **doesn't** start with _hi_ to your bot. No matter
 
 Inputs that do not have a response defined trigger what's known as the _Ultimate Default Category_ \(UDC\).
 
-Click _Show Metadata_ beneath your bot's last response and you will find some additional information about the interaction, including the pattern that matched and a link to the file containing that pattern. Click on the _udc.aiml _link.
+Click _Show Metadata_ beneath your bot's last response and you will find some additional information about the interaction, including the pattern that matched and a link to the file containing that pattern. Click on the _udc.aiml_ link. 
 
 ---
 

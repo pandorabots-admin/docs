@@ -96,7 +96,7 @@ All bots come preloaded with a few fundamental files, including the UDC so your 
 </category>
 ```
 
-You are free to edit the UDC template however you like, to provide customer service contact info or a humorous response, or whatever makes sense for your use case.
+You are free to edit the UDC template however you like, to provide customer service contact info, ask the client to rephrase their question, a humorous response, or whatever makes sense for your use case.
 
 ---
 

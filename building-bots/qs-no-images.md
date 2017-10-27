@@ -128,7 +128,7 @@ Click on the log item to open your message history with the bot.
 
 Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
-Clicking\_Show Metadata\_will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
+Clicking _Show Metadata_ will reveal more information about the interaction, including a timestamp, the pattern that matched, the THAT \(the bot's memory of its previous output, the last sentence it uttered\), the TOPIC \(which can be defined so context persists\), and, finally, the file containing the category activated by the input.
 
 When you are ready to start collecting logs from actual clients, you can publish your bot via the Deploy page.
 

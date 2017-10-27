@@ -21,7 +21,7 @@ In the next five minutes, you will learn how to create, edit, chat with, update,
 
 #### \(2 - @+ Create Bot Button\) {#2----create-bot-button}
 
-Create and name a new bot, leaving the default language_English\_and Content\_Blank Bot_.
+Create and name a new bot, leaving the default language _English_ and Content _Blank Bot_.
 
 ---
 

@@ -101,20 +101,11 @@ Click _Show Metadata_ beneath your bot's last response and you will find some ad
 
 #### Defining the Ultimate Default Category
 
-Copy the following category into the file:
+All bots come preloaded with a few fundamental files, including the UDC so your bot always has a fallback response.
 
-```
-<category>
-    <pattern>*</pattern>
-    <template>I'm still in training and don't have an answer yet.</template>
-</category>
-```
+The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text.
 
-![](/assets/udc2.png)
-
-The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text. Save the file, then try typing anything other than "hi" to your bot.
-
-![](/assets/udc3.png)
+You are free to edit the UDC template however you like: to provide customer service contact info, ask the client to rephrase their question, apologize or crack a joke, or whatever makes sense for your use case.
 
 ---
 

@@ -100,7 +100,7 @@ The **Deploy Page**, accessible via the _Deploy_ link under each individual bot 
 
 Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/api-endpoints.md), [SDKs](/sdks.md), and more. You may locate your _Application ID _\(_"App ID"_\), which is the same as your username, and your _User Key_, by clicking on the "API Keys" button next to the "Custom Application" integration.
 
-\#\#\#_Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the _[_Free Tier_](/faq.md#pricing)_, which provides for unlimited Sandbox usage and up to 1,000 interactions / month. _
+_Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the _[_Free Tier_](/faq.md#pricing)_, which provides for unlimited Sandbox usage and up to 1,000 interactions / month. _
 
 #### The Clubhouse
 
@@ -179,10 +179,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                                
+**&lt;pattern&gt;                                                                                  
 **Matches what the user says.
 
-**&lt;template&gt;                                                                                
+**&lt;template&gt;                                                                                  
 **What the bot replies.
 
 Code example:
@@ -432,8 +432,6 @@ You can use a property to store your bot's age. Create a new property with the n
 > **Human:** How old are you?  
 > **Bot:** I am 8 years old.
 
-\#\#\#How to create a property file using NEW UI MISSING!
-
 ###### Setting Predicates
 
 Using a predicate variable, you can write a category that will store the name of the client. This category will store the client's name under a predicate called "name":
@@ -444,8 +442,6 @@ Using a predicate variable, you can write a category that will store the name of
 <template>Nice to meet you, <set name=“name”><star/></set></template>
 </category>
 ```
-
-\#\#\#Where client name is available on a Messaging Platform, should Pandorabots auto-set name predicate for client?
 
 Note how the user of the `*` wildcard and `<star/>` allows you to write a single category that will capture any name!
 
@@ -612,8 +608,6 @@ Are you a cowboy?
 ###### Sets
 
 An AIML Set is a list of unique text strings. You can create a set using the File drop-down in the Editor.
-
-\#\#\#Add image
 
 A set called "colors" might contain the following:
 
@@ -1097,11 +1091,7 @@ Retyping your original input after altering the bot response should return the n
 
 To reset the bot's memory, which will clear any predicates stored about the current conversation, click on the refresh icon next to your bot's name on the top bar of the chat widget.
 
-\#\#\#Show/Hide Predicate functionality is currently missing!!!
-
 ###### The Clubhouse and `<sraix>`
-
-\#\#\#Confirm we want to expose this feature - check how many use on current PG
 
 The `<sraix>` tag \(first introduced in the AIML 2.0 spec\) allows your bot to access the categories of another bot. The tag is very similar to `<srai>`, however, instead of searching your own bot for another category to match, it will search the bot you have specified in the attribute.
 
@@ -1124,7 +1114,7 @@ If coffeebot is able to form a match, your bot will return coffeebot's output as
 
 ###### Bot Libraries
 
-\#\#\#Using Rosie and Base Bot
+Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](//aiml/aiml-libraries/using-rosie.md) to learn more about how to leverage this Library. 
 
 ---
 

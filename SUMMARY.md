@@ -21,7 +21,6 @@
 * [AIML Libraries](aiml/aiml-libraries.md)
   * [AIML Standard Libraries](aiml/aiml-libraries/aiml-standard-libraries.md)
   * [Modifying the Rosie Chatbot](/aiml/aiml-libraries/using-rosie.md)
-  * Emoji\(!\)
 * [AIML Reference](aiml/reference.md)
   * [aiml](aiml/reference.md#aiml)
   * [bot](aiml/reference.md#bot-)

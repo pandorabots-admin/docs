@@ -91,11 +91,11 @@ Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_
 
 #### Introducing the Ultimate Default Category
 
-Next, we need to define the Ultimate Default Category \(UDC\), which is how your bot will respond when it cannot find a match.
+Now, try typing anything that **doesn't** start with _hi_ to your bot. No matter what you say, if your bot fails to find a match for the input, it will return "I have no answer for that."
 
-First, create a new file called udc.aiml
+Inputs that do not have a response defined trigger what's known as the _Ultimate Default Category_ \(UDC\).
 
-![](/assets/udc.png)
+Click _Show Metadata_ beneath your bot's last response and you will find some additional information about the interaction, including the pattern that matched and a link to the file containing that pattern. Click on the _udc.aiml_ link.
 
 ---
 

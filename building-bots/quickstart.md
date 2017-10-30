@@ -93,15 +93,21 @@ Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_
 
 Now, try typing anything that **doesn't** start with _hi_ to your bot. No matter what you say, if your bot fails to find a match for the input, it will return "I have no answer for that."
 
+![](/assets/noanswer)
+
 Inputs that do not have a response defined trigger what's known as the _Ultimate Default Category_ \(UDC\).
 
 Click _Show Metadata_ beneath your bot's last response and you will find some additional information about the interaction, including the pattern that matched and a link to the file containing that pattern. Click on the _udc.aiml_ link.
+
+![](/assets/showmeta)
 
 ---
 
 #### Defining the Ultimate Default Category
 
 All bots come preloaded with a few fundamental files, including the UDC so your bot always has a fallback response.
+
+![](/assets/udc)
 
 The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text.
 

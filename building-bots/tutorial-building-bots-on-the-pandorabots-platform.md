@@ -179,10 +179,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                                  
+**&lt;pattern&gt;                                                                                    
 **Matches what the user says.
 
-**&lt;template&gt;                                                                                  
+**&lt;template&gt;                                                                                    
 **What the bot replies.
 
 Code example:
@@ -1095,9 +1095,7 @@ To reset the bot's memory, which will clear any predicates stored about the curr
 
 The `<sraix>` tag \(first introduced in the AIML 2.0 spec\) allows your bot to access the categories of another bot. The tag is very similar to `<srai>`, however, instead of searching your own bot for another category to match, it will search the bot you have specified in the attribute.
 
-You can use `<sraix>` to leverage the knowledge bases' of other bots in the Clubhouse, specifying them based on their botid \(username/botname\). If you have published you bot to the Clubhouse, \#\#\#and your username is published\#\#\#,  other platform users may use `<sraix>` to link up with your bot.
-
-\#\#\#So the publish to clubhouse widget should have a opt-in or out saying whether you make your "botid" public meaning others can link up to your bot.
+You can use `<sraix>` to leverage the knowledge bases' of other bots in the Clubhouse, specifying them based on their botid \(username/botname\). If you have published your bot to the Clubhouse, and chosen to make your botid available,  other platform users may use `<sraix>` to link up with your bot.
 
 Why is this useful? Imagine another platform user has created a bot that is an expert about anything related to coffee botid: unXXXXXXXX/coffeebot\).
 
@@ -1114,7 +1112,7 @@ If coffeebot is able to form a match, your bot will return coffeebot's output as
 
 ###### Bot Libraries
 
-Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](//aiml/aiml-libraries/using-rosie.md) to learn more about how to leverage this Library. 
+Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](//aiml/aiml-libraries/using-rosie.md) to learn more about how to leverage this Library.
 
 ---
 

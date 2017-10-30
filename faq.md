@@ -102,7 +102,7 @@ The maximum file size for upload is 2MB.
 
 **What is the max number of concurrent queries?**
 
-There is no maximum number of concurrent requests imposed on the Free and Premium Tiers per se, but if you anticipate generating more than 200 requests per second, please let us know. Generally speaking, chatbots generating a high volume of messages qualify for the Enterprise Tier, which is designed to flexibly handle as many concurrent requests as may be required by you application. Please note that certain Messaging Platforms also enforce their own rate limits - visit their policies directly for more details.
+There is no maximum number of concurrent requests imposed on the Free and Premium Tiers per se, but if you anticipate generating more than 200 requests per second, please let us know. Generally speaking, chatbots generating a high volume of messages qualify for the Enterprise Tier, which is designed to flexibly handle as many concurrent requests as may be required by your application. Please note that certain Messaging Platforms also enforce their own rate limits - visit their policies directly for more details.
 
 **Why is the default max queries 100,000 per month?**
 

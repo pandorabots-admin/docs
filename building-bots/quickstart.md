@@ -99,7 +99,7 @@ Inputs that do not have a response defined trigger what's known as the _Ultimate
 
 Click _Show Metadata_ beneath your bot's last response and you will find some additional information about the interaction, including the pattern that matched and a link to the file containing that pattern. Click on the _udc.aiml_ link.
 
-![](/assets/showmeta)
+![](/assets/mdata.png)
 
 ---
 

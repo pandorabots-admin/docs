@@ -107,7 +107,7 @@ Click _Show Metadata_ beneath your bot's last response and you will find some ad
 
 All bots come preloaded with a few fundamental files, including the UDC so your bot always has a fallback response.
 
-![](/assets/udc)
+![](/assets/fallback.png)
 
 The `*` wildcard in the pattern will match any input of one or more words, meaning anything the client enters that doesn't have a category defined already will match and return the template text.
 

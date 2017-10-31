@@ -93,7 +93,7 @@ Save your file, then test out any phrase that starts with hi \(e.g., _Hi there!_
 
 Now, try typing anything that **doesn't** start with _hi_ to your bot. No matter what you say, if your bot fails to find a match for the input, it will return "I have no answer for that."
 
-![](/assets/noanswer)
+![](/assets/noanswer.png)
 
 Inputs that do not have a response defined trigger what's known as the _Ultimate Default Category_ \(UDC\).
 

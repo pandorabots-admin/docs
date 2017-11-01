@@ -2,7 +2,7 @@
 
 ###### The largest, most established, chatbot development and hosting platform.
 
-###### [&gt;&gt; Sign Up & Start Building for Free!](/www.pandorabots.com)
+###### [&gt;&gt; Sign Up & Start Building for Free!](https://pandorabots.com)
 
 ---
 

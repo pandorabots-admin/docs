@@ -20,7 +20,7 @@ The Pandorabots platform supports an open standard scripting language called _Ar
 
 **What is AIML?**
 
-AIML is XML-based and easy for anyone to learn, even if you aren't a programmer. Despite its deliberate simplicity, the language powers the most complex conversational agents on the market to date, including the multi award-winning [Mitsuku chatbot](https://en.wikipedia.org/wiki/Mitsuku), which can be tested on [Messenger](https://www.messenger.com/t/47719737069), Kik, Telegram, [Twitch](https://go.twitch.tv/mitsuku_irl), or the [web](http://www.mitsuku.com/).
+AIML is XML-based and easy for anyone to learn, even if you aren't a programmer. Despite its deliberate simplicity, the language powers the most complex conversational agents on the market to date, including the multi award-winning [Mitsuku chatbot](https://en.wikipedia.org/wiki/Mitsuku). Mitsuku is widely considered the best AI conversationalist and can be accessed on [Messenger](https://www.messenger.com/t/47719737069), Kik, Telegram, [Twitch](https://go.twitch.tv/mitsuku_irl), or the [web](http://www.mitsuku.com/).
 
 The easiest way to get started with AIML is to [create a Pandorabots account](https://www.pandorabots.com) and then spend five minutes on the interactive [Quickstart](/building-bots/quickstart.md), which will walk you through both chatbot development and user interface fundamentals. For a deeper dive, [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) is an excellent starting point, and there are a wealth of additional AIML resources in the AIML section.
 

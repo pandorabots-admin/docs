@@ -6,7 +6,7 @@
 
 ---
 
-Welcome to [Pandorabots](/www.pandorabots.com)! We offer an online web service for building and deploying _chatbots_.
+Welcome to [Pandorabots](https://www.pandorabots.com)! We offer an online web service for building and deploying _chatbots_.
 
 **What is a chatbot? **
 
@@ -22,11 +22,11 @@ The Pandorabots platform supports an open standard scripting language called _Ar
 
 AIML is XML-based and easy for anyone to learn, even if you aren't a programmer. Despite its deliberate simplicity, the language powers the most complex conversational agents on the market to date, including the multi award-winning [Mitsuku chatbot](/www.mitsuku.com).
 
-The easiest way to get started with AIML is to [create a Pandorabots account](/www.pandorabots.com) and then spend five minutes on the interactive [Quickstart](/building-bots/quickstart.md), which will walk you through both chatbot development and user interface fundamentals. For a deeper dive, [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) is an excellent starting point, and there are a wealth of additional AIML resources in the AIML section.
+The easiest way to get started with AIML is to [create a Pandorabots account](https://www.pandorabots.com) and then spend five minutes on the interactive [Quickstart](/building-bots/quickstart.md), which will walk you through both chatbot development and user interface fundamentals. For a deeper dive, [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) is an excellent starting point, and there are a wealth of additional AIML resources in the AIML section.
 
 **Next Steps**
 
-* [Sign up Free!](/www.pandorabots.com)
+* [Sign up Free!](https://pandorabots.com)
 * [Why Choose Pandorabots](/feature-comparison.md)
 
 

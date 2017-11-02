@@ -133,7 +133,7 @@ ___
 
 **What is included in the Free Tier?**
 
-The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.002 (USD) per query. Users who input a credit card will automatically have access to the Premium Tier. 
+The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.0025 (USD) per query. Users who input a credit card will automatically have access to the Premium Tier. 
 
 **What is included in the Premium Tier?**
 

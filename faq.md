@@ -6,7 +6,7 @@ ___
 
 **What is AIML?**
 
-Artificial Intelligence Markup Language (AIML) is a simple, XML-based scripting language and the open standard for writing chatbots. We recommend the taking *Quick Start* (accessible via the user icon drop-down menu) to learn AIML basics and [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) for a deeper dive.
+Artificial Intelligence Markup Language (AIML) is a simple, XML-based scripting language and the open standard for writing chatbots. We recommend the *Quick Start* to learn AIML basics and the *Tutorial* for a deeper dive.
 
 **What is the difference between AIML 1.0 and AIML 2.0?**
 
@@ -18,15 +18,20 @@ You can still access the AIML 1.0 platform [here](https://www.pandorabots.com/bo
 
 **How can I address common AIML related alerts / errors?**
 
-* Make sure that your bot is compiled without AIML compile errors. You can see your bot's compile status on Left Navigation Bar. 
+* Make sure that your bot is compiled without AIML compile errors. You can see your bot's compile status on Left Navigation Bar. If your bot is uncompiled, view the error message to see how to fix your AIML error. Sometimes the error is not known but a position number returned corresponds to the character position in the file where the compiler encountered the error. You must fix the error before you can talk to your bot.  
+ 
 
-* Next, take a look at your code. One common problem is having multiple categories with the same pattern. The AIML interpreter prioritizes categories from bottom to top, within each individual file as well as in the file list itself. If you do have duplicate patterns, the one appearing lowest in a file or in the files list will be matched first. You can fix this by removing the unwanted category. You can also debug your bot by using the trace feature found on the chat widget. Utilizing this feature allows you to see the series of categories that are engaged by a particular input, rather than just the bot's final response. 
+* Next, take a look at your code. One common problem is having multiple categories with the same pattern. The AIML interpreter prioritizes categories from bottom to top, within each individual file as well as in the file list itself, based on file load order. If you do have duplicate patterns, the one appearing lowest in a file or in the files list will be matched first. You can fix this by removing the unwanted category. You can also debug your bot by using the trace feature found on the chat widget. Utilizing this feature allows you to see the series of categories that are engaged by a particular input, rather than just the bot's final response. 
+
+* Even if the category you were expected to match is in a file last uploaded, it is possible that higher priority wildcards may also be matching a pattern that you aren't expected, or if topics are being used, the pattern isn't matching within the topic (or that) elements.
 
 * Another common problem involves inadvertently setting the bot off into an infinitely recursive loop. This occurs when a category reduces the input in such a way that it feeds back into itself. This type of recursion is allowed in AIML loops, but if no breakpoint exists, the loop will never end, and the bot will respond with "Too much recursion in AIML." You can fix this type of error by visiting the offending categories, and ensuring that any <srai> output will not match the same category. 
 
+* Finally, unexpected bot responses may be due to normalization. The Pandorabots platform performs pre-processing using the normal.substitution file (if applicable) to substitute end-user input. Normalization also applies to THAT tags. Make sure your pattern or that tags are normalized for pattern-matching if you are using normal.substitution file in your bot.
+
 **What AIML Libraries are available?**
 
-Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot) in addition to premium libraries and modules (like the Mitsuku Module) avaiable for an additional montly fee. Contact us to learn more. 
+Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot) in addition to premium libraries and modules (like the Mitsuku Module) available for an additional montly fee. Contact us to learn more. 
 
 **What tags are supported in AIML?**
 
@@ -102,7 +107,7 @@ The maximum file size for upload is 2MB.
 
 **What is the max number of concurrent queries?**
 
-There is no maximum number of concurrent requests imposed on the Free and Premium Tiers per se, but if you anticipate generating more than 200 requests per second, please let us know. Generally speaking, chatbots generating a high volume of messages qualify for the Enterprise Tier, which is designed to flexibly handle as many concurrent requests as may be required by your application. Please note that certain Messaging Platforms also enforce their own rate limits - visit their policies directly for more details.
+There is no maximum number of concurrent requests imposed on the Free and Premium Tiers per se, but if you anticipate generating more than 200 requests per second, please let us know. Generally speaking, chatbots generating a high volume of messages qualify for the Enterprise Tier, which is designed to flexibly handle as many concurrent requests as may be required by you application. Please note that certain Messaging Platforms also enforce their own rate limits - visit their policies directly for more details.
 
 **Why is the default max queries 100,000 per month?**
 
@@ -130,19 +135,17 @@ Chatlog data and monthly statistics are only available dating back the previous 
 ___
 ###Pricing
 
-
-**What is included in the Free Tier?**
-
-The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.0025 (USD) per query. Users who input a credit card will automatically have access to the Premium Tier. 
-
-**What is included in the Premium Tier?**
-
-The Premium Tier includes all the features of the Free Tier plus up to 20 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month. 
-
 **What is a "query"?**
 
 The Pandorabots Platform charges on a per _Interaction_ basis. An Interaction consists of both the user input to the bot _and_ the bot's output (i.e., two messages). This is also known a _Talk API Call_, or _Query_ for short. Essentially, our platform takes a user input, parses it using our NLP engine, and returns the output you specified to the end user. 
 
+**What is included in the Free Tier?**
+
+The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.002 (USD) per query. Users who input a credit card will automatically have access to the Premium Tier. 
+
+**What is included in the Premium Tier?**
+
+The Premium Tier includes all the features of the Free Tier plus up to 20 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month. 
 
 **Why is a credit card required to access certain features?**
 

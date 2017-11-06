@@ -17,7 +17,7 @@
 ## AIML
 
 * [AIML: An Introduction](aiml/aiml-basics.md)
-* AIML Basics
+* [AIML Basics](aiml/aiml-basics.md)
 * [AIML Reference](aiml/reference.md)
   * [aiml](aiml/reference.md#aiml)
   * [bot](aiml/reference.md#bot-)
@@ -66,7 +66,7 @@
   * [AIML Standard Libraries](aiml/aiml-libraries/aiml-standard-libraries.md)
   * [Modifying the Rosie Chatbot](/aiml/aiml-libraries/using-rosie.md)
   * Emoji\(!\)
-* Core Concept Deep Dives
+* [Core Concept Deep Dives](aiml/core-concept-deep-dives.md)
   * [Predicates](/aiml/predicates.md)
   * [Substitutions & Sentence Splitting](/aiml/substitutions-and-sentence-splitting.md)
   * [Wildcards](/aiml/wildcards.md)

@@ -18,15 +18,20 @@ You can still access the AIML 1.0 platform [here](https://www.pandorabots.com/bo
 
 **How can I address common AIML related alerts / errors?**
 
-* Make sure that your bot is compiled without AIML compile errors. You can see your bot's compile status on Left Navigation Bar. 
+* Make sure that your bot is compiled without AIML compile errors. You can see your bot's compile status on Left Navigation Bar. If your bot is uncompiled, view the error message to see how to fix your AIML error. Sometimes the error is not known but a position number returned corresponds to the character position in the file where the compiler encountered the error. You must fix the error before you can talk to your bot.  
+ 
 
-* Next, take a look at your code. One common problem is having multiple categories with the same pattern. The AIML interpreter prioritizes categories from bottom to top, within each individual file as well as in the file list itself. If you do have duplicate patterns, the one appearing lowest in a file or in the files list will be matched first. You can fix this by removing the unwanted category. You can also debug your bot by using the trace feature found on the chat widget. Utilizing this feature allows you to see the series of categories that are engaged by a particular input, rather than just the bot's final response. 
+* Next, take a look at your code. One common problem is having multiple categories with the same pattern. The AIML interpreter prioritizes categories from bottom to top, within each individual file as well as in the file list itself, based on file load order. If you do have duplicate patterns, the one appearing lowest in a file or in the files list will be matched first. You can fix this by removing the unwanted category. You can also debug your bot by using the trace feature found on the chat widget. Utilizing this feature allows you to see the series of categories that are engaged by a particular input, rather than just the bot's final response. 
+
+* Even if the category you were expected to match is in a file last uploaded, it is possible that higher priority wildcards may also be matching a pattern that you aren't expected, or if topics are being used, the pattern isn't matching within the topic (or that) elements.
 
 * Another common problem involves inadvertently setting the bot off into an infinitely recursive loop. This occurs when a category reduces the input in such a way that it feeds back into itself. This type of recursion is allowed in AIML loops, but if no breakpoint exists, the loop will never end, and the bot will respond with "Too much recursion in AIML." You can fix this type of error by visiting the offending categories, and ensuring that any <srai> output will not match the same category. 
 
+* Finally, unexpected bot responses may be due to normalization. The Pandorabots platform performs pre-processing using the normal.substitution file (if applicable) to substitute end-user input. Normalization also applies to THAT tags. Make sure your pattern or that tags are normalized for pattern-matching if you are using normal.substitution file in your bot.
+
 **What AIML Libraries are available?**
 
-Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot) in addition to premium libraries and modules (like the Mitsuku Module) avaiable for an additional montly fee. Contact us to learn more. 
+Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot) in addition to premium libraries and modules (like the Mitsuku Module) available for an additional montly fee. Contact us to learn more. 
 
 **What tags are supported in AIML?**
 

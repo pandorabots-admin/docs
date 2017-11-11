@@ -111,7 +111,7 @@ There is no maximum number of concurrent requests imposed on the Free and Premiu
 
 **Why is the default max queries 100,000 per month?**
 
-The default exists for two reasons: (1) To protect any platform users whose bots experience a sudden, unanticipated surge in popularity from paying more than $199/month; and (2) Because any entity that anticipates more monthly traffic likely qualifies for the Enterprise Tier. You may contact us via email at support@pandorabots.com to request adjustments to your monthly maximum messages, and learn more about which plan is right for you. 
+The default exists for two reasons: (1) To protect any platform users whose bots experience a sudden, unanticipated surge in popularity from paying more than $225/month; and (2) Because any entity that anticipates more monthly traffic likely qualifies for the Enterprise Tier. You may contact us via email at support@pandorabots.com to request adjustments to your monthly maximum messages, and learn more about which plan is right for you. 
 
 **How can I adjust my max monthly limit?**
 

@@ -1,6 +1,9 @@
 {
-    "plugins": [ "theme-api", "expandable-chapters" ],
+    "plugins": [ "theme-api", "expandable-chapters", "ga" ],
     "pluginsConfig": {
+        "ga": {
+            "token": "UA-49503515-7"
+        },
         "expandable-chapters":{},
         "theme-api": {
             "languages": [

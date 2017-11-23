@@ -1,5 +1,5 @@
 {
-    "plugins": [ "theme-api", "expandable-chapters", "ga" ],
+    "plugins": [ "theme-api", "expandable-chapters", "ga", "swagger" ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-49503515-7"

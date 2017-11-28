@@ -22,9 +22,7 @@ Make sure you are familiar with the high level concepts via the AIML Reference b
 
 > **Note: **this music-oriented bot is just an example, but you can take these design patterns with you when building your own Concierge-style bot.
 
-## Architecture {#architecture}
-
-![](http://docs.pandorabots.com/images/architecture.png)
+## Architecture![](/assets/concierge.png)
 
 The concierge bot network has a simple architecture that separates concerns by dividing tasks between the bots.
 

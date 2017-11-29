@@ -18,7 +18,7 @@
 ul.summary li:nth-child(-n+2) {
     display: none;
 }
-ul.summary > li:nth-last-of-type(-n+2) {
+ul.summary > li:nth-last-child(-n+2) {
     background: none;
 }
     

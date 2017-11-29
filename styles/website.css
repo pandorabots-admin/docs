@@ -10,8 +10,13 @@
 .custom-link {
     display: none;
 }
-a {
+.markdown-section a {
     color: #7c4dff;
+}
+.book-summary ul.summary li.active>a {
+    color: #7c4dff;
+    background: 0 0;
+    text-decoration: none;
 }
 
 

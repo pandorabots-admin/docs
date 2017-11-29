@@ -7,9 +7,6 @@
 .gitbook-link {
     display: none;
 }
-.custom-link {
-    display: none;
-}
 .markdown-section a {
     color: #7c4dff;
 }
@@ -18,6 +15,10 @@
     background: 0 0;
     text-decoration: none;
 }
-
-
+ul.summary li:nth-child(-n+2) {
+    display: none;
+}
+ul.summary > li:nth-last-of-type(-n+2) {
+    background: none;
+}
     

@@ -18,9 +18,9 @@
 
 * [AIML: An Introduction ](aiml/aiml-basics.md)
 * [AIML Fundamentals](aiml/aiml-fundamentals.md)
-* [AIML Libraries](aiml/aiml-libraries.md)
-  * [AIML Standard Libraries](aiml/aiml-libraries/aiml-standard-libraries.md)
-  * [Modifying the Rosie Chatbot](/aiml/aiml-libraries/using-rosie.md)
+* [AIML Libraries](aiml-libraries.md)
+  * [AIML Standard Libraries](aiml-libraries.md#aiml-standard-library)
+  * [Modifying the Rosie Chatbot](aiml-libraries.md#using-rosie)
 * [AIML Reference](aiml/reference.md)
   * [aiml](aiml/reference.md#aiml)
   * [bot](aiml/reference.md#bot-)

@@ -1,5 +1,5 @@
 #Modules
-######_Code examples for integrating your bot with various third party services._
+######_Plug-and-play modules for extending your bot's capabilities._
 
 ___
 

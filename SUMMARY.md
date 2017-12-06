@@ -98,9 +98,9 @@
 
 * [Hello World](/building-bots/getting-started.md)
 * [Bot Building 101](building-bots/tutorial-building-bots-on-the-pandorabots-platform.md)
-* [Specific Use Cases](building-bots/tutorials-building-specific-types-of-bots.md)
-  * [FAQ Bot](/building-bots/simplefaqprocess.md)
-  * [Concierge Bot](/building-bots/build-a-concierge-bot.md)
+* [Specific Use Cases](specific-use-cases.md)
+  * [FAQ Bot](specific-use-cases.md#faq)
+  * [Concierge Bot](specific-use-cases.md#concierge)
 * [Quickstart](building-bots/quickstart.md)
 
 ## DEPLOY & EXTEND

@@ -113,7 +113,7 @@
   * [Telegram](integrations.md#telegram)
   * [Twilio](integrations.md#twilio)
   * [Twitter](integrations.md#twitter)
-* [Modules](integrations/modules.md)
-  * [OpenWeather](/modules/OpenWeather.md)
-  * [Mitsuku](/modules/Mitsuku.md)
+* [Modules](modules.md)
+  * [OpenWeather](modules.md#open-weather)
+  * [Mitsuku](modules.md#mitsuku)
 

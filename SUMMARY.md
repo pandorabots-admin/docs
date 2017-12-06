@@ -122,7 +122,7 @@
   * [Browser](integrations.md#browser)
   * [Firebase](integrations.md#firebase)
   * [Mustache Templating Engine](integrations.md#mustache)
-  * [Slack](/integrations/putting-your-bot-on-slack.md)
+  * [Slack](integrations.md#slack)
   * [Telegram](integrations.md#telegram)
   * [Twilio](integrations.md#twilio)
   * [Twitter](integrations.md#twitter)

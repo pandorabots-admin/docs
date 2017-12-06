@@ -179,10 +179,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                                      
+**&lt;pattern&gt;                                                                                          
 **Matches what the user says.
 
-**&lt;template&gt;                                                                                      
+**&lt;template&gt;                                                                                          
 **What the bot replies.
 
 Code example:
@@ -483,7 +483,7 @@ We will revisit local variables in more detail in the section on "Context."
 
 ---
 
-#### Recursion and Reduction
+#### Recursion and Reduction {#recursion-and-reduction}
 
 ###### What is Recursion?
 
@@ -603,7 +603,7 @@ Are you a cowboy?
 
 ---
 
-#### Sets and Maps
+#### Sets and Maps {#sets-and-maps}
 
 ###### Sets
 
@@ -766,7 +766,7 @@ Pandorabots has some pre-built sets and maps that are not visible from the edito
 
 ---
 
-#### Context
+#### Context {#context}
 
 ###### What is Context?
 
@@ -1018,7 +1018,7 @@ When the second `<li>` has looped enough time for "count" to equal 8, the first 
 
 ---
 
-#### Learning
+#### Learning {#learning}
 
 ###### What is Learning?
 
@@ -1068,7 +1068,7 @@ We can now reference the words captured by the wildcard in our new category.
 
 ---
 
-#### Revisiting Key Platform Components
+#### Revisiting Key Platform Components {#revisiting-key-platform-components}
 
 ###### The Chat Widget
 
@@ -1116,7 +1116,7 @@ Bot Libraries are opensource AIML files that provide some base content you can b
 
 ---
 
-## Additional AIML Features
+## Additional AIML Features {#additional-aiml-features}
 
 #### List Processing
 

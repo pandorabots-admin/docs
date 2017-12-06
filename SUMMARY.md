@@ -105,15 +105,14 @@
 
 ## DEPLOY & EXTEND
 
-* [Integrations](integrations/integrations.md)
-  * [Browser](integrations/integrations/browser-integration.md)
-  * [Firebase](/integrations/tracking-your-bots-conversations.md)
-  * [Hubot](/integrations/connecting-your-bot-to-hubot.md)
-  * [Mustache Templating Engine](/integrations/dynamicdata.md)
+* [Integrations](integrations.md)
+  * [Browser](integrations.md#browser)
+  * [Firebase](integrations.md#firebase)
+  * [Mustache Templating Engine](integrations.md#mustache)
   * [Slack](/integrations/putting-your-bot-on-slack.md)
-  * [Telegram](/integrations/telegram-integration.md)
-  * [Twilio](/integrations/connecting-a-bot-to-sms-via-twilio.md)
-  * [Twitter](/integrations/putting-your-bot-on-twitter.md)
+  * [Telegram](integrations.md#telegram)
+  * [Twilio](integrations.md#twilio)
+  * [Twitter](integrations.md#twitter)
 * [Modules](integrations/modules.md)
   * [OpenWeather](/modules/OpenWeather.md)
   * [Mitsuku](/modules/Mitsuku.md)

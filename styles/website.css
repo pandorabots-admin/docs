@@ -15,3 +15,9 @@ color: #7c4dff;
 background: 0 0;
 text-decoration: none;
 }
+ul.summary > :nth-child(-n+2) {
+display: none;
+}
+ul.summary > :nth-last-child(-n+2) {
+display: none;
+}

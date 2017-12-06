@@ -91,8 +91,8 @@
 * [API Explorer](api-explore.md)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
-* Related Articles
-  * [End-User Management with A-Talk API](/managing-end-users-with-a-talk.md)
+* [Related Articles](related-articles.md)
+  * [End-User Management with A-Talk API](related-articles.md#manage-end-users)
 
 ## BUILDING BOTS
 

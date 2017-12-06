@@ -1,6 +1,6 @@
 # AIML Libraries
 
-###### Standard libraries for performing various utilities like basic math, string, and boolean functions, and more.
+###### _Standard libraries for performing various utilities like basic math, string, and boolean functions, and more._
 
 ---
 

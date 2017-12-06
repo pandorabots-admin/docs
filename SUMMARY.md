@@ -65,10 +65,10 @@
   * [topic](aiml/reference.md#topic)
   * [topicstar](aiml/reference.md#topicstar)
   * [uppercase](aiml/reference.md#uppercase)
-* [Core Concept Deep Dives](aiml/core-concept-deep-dives.md)
-  * [Predicates](/aiml/predicates.md)
-  * [Substitutions & Sentence Splitting](/aiml/substitutions-and-sentence-splitting.md)
-  * [Wildcards](/aiml/wildcards.md)
+* [Core Concept Deep Dives](core-concepts.md)
+  * [Predicates](core-concepts.md#predicates)
+  * [Substitutions & Sentence Splitting](core-concepts.md#substitutions)
+  * [Wildcards](core-concepts.md#wildcards)
 
 ## API REFERENCE
 

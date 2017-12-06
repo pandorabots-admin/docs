@@ -7,4 +7,9 @@
 .gitbook-link {
     display: none;
 }
-    
+ul.summary li:nth-child(-n+2) {
+display: none;
+}
+ul.summary > li:nth-last-child(-n+2) {
+display: none;
+}

@@ -88,7 +88,6 @@
   * [Talk to a bot](api-endpoints.md#posttalkappidbotname)
   * [Debug a bot conversation](api-endpoints.md#debug-a-bot-conversation)
   * [Anonymous talk](api-endpoints.md#postatalkappidbotname)
-* [API Explorer](api-explore.md)
 * [Command Line Interface](command-line-interface.md)
 * [SDKs](sdks.md)
 * [Related Articles](related-articles.md)

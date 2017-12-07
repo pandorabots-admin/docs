@@ -1,5 +1,5 @@
 #Modules
-######_Plug-and-play modules for extending your bot's capabilities._
+######Plug-and-play modules for extending your bot's capabilities.
 
 ___
 

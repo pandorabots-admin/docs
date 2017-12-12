@@ -45,7 +45,7 @@ In this week's tutorial, we'll be revisiting [Firebase](https://firebase.com), t
 
 ## The code
 
-In our previous post on [Bot Possession](http://blog.pandorabots.com/bot-possession/), we explored Firebase as a tool to generate different types of events that would cause our interfaces to respond in different ways. In this post, we'll be using it more like a traditional database, with the added benefit of a responsive interface to track new conversations in real time.
+In our previous post on [Bot Possession](https://medium.com/pandorabots-blog/bot-possession-a-customer-service-solution-18fced1a6080), we explored Firebase as a tool to generate different types of events that would cause our interfaces to respond in different ways. In this post, we'll be using it more like a traditional database, with the added benefit of a responsive interface to track new conversations in real time.
 
 **Setup**
 

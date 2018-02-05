@@ -1112,7 +1112,7 @@ If coffeebot is able to form a match, your bot will return coffeebot's output as
 
 ###### Bot Libraries
 
-Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](//aiml/aiml-libraries/using-rosie.md) to learn more about how to leverage this Library.
+Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](https://www.pandorabots.com/docs/aiml-libraries.html#using-rosie) to learn more about how to leverage this Library.
 
 ---
 

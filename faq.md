@@ -135,17 +135,17 @@ Chatlog data and monthly statistics are only available dating back the previous 
 ___
 ###Pricing
 
-**What is a "query"?**
+**What is a "message"?**
 
-The Pandorabots Platform charges on a per _Interaction_ basis. An Interaction consists of both the user input to the bot _and_ the bot's output (i.e., two messages). This is also known a _Talk API Call_, or _Query_ for short. Essentially, our platform takes a user input, parses it using our NLP engine, and returns the output you specified to the end user. 
+A "message" is one input/output interaction between a client (the person chatting with your bot) and your deployed production bot. Any messages between exchanged with your staging bot during development within the Sandbox are free of charge, as is all other usage of the Sandbox to develop your bot.
 
 **What is included in the Free Tier?**
 
-The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.002 (USD) per query. Users who input a credit card will automatically have access to the Premium Tier. 
+The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.0025 (USD) per query. Users who input a credit card will automatically have access to the Premium Tier. 
 
 **What is included in the Premium Tier?**
 
-The Premium Tier includes all the features of the Free Tier plus up to 20 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month. 
+The Premium Tier includes all the features of the Free Tier plus up to 10 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month. 
 
 **Why is a credit card required to access certain features?**
 

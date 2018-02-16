@@ -57,13 +57,13 @@ From the Files tab drop-down you can accomplish the following:
 
 Access and open your files from the menu on the left. Selecting a file will open it in the text editor, which is an ACE editor optimized for XML editing \(since AIML is an XML-based language\). Formatting AIML with the incorrect syntax \(for example, forgetting a character in an opening/closing tag\) will cause an error alert to appear in the form of a red X next to problematic line of code, which will include an additional description of the error type on hover.
 
-Beneath the text editor, you can find a status bar full of helpful information such as whether and when the file was last saved/modified, and the file load order \(\#\#\#@TC load order has impact X\).
+Beneath the text editor, you can find a status bar full of helpful information such as whether and when the file was last saved/modified, and the file load order.
 
 _Staging versus Production_
 
 A common best practice in computer programming is to have two versions of software when one of those versions is live for the public: a _Production_ version that is live, and a _Staging_ version that is in development where you can test \(and back out of!\) any changes. This way, if something goes wrong in the staging version of the software you are editing, your changes do not impact the production version and disrupt end-users. One great feature of bots is that you can instantly update them after making changes, but it is important to first verify that none of your changes are breaking changes by testing thoroughly.
 
-So, if you have a bot deployed on the platform that is live for the public, any changes you make to your bot using the Editor will only impact the staging or _Sandbox_ version of your bot. Once you have tested your bot, clicking _Publish_ in the upper-right hand corner of the editor will push your changes live to production. \(\#\#\#@TC Note: feature not currently available, or is Premium feature?\)
+So, if you have a bot deployed on the platform that is live for the public, any changes you make to your bot using the Editor will only impact the staging or _Sandbox_ version of your bot. Once you have tested your bot, clicking _Publish_ in the upper-right hand corner of the editor will push your changes live to production. 
 
 #### Bot Training via the Chat Widget
 

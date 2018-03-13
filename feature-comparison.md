@@ -8,7 +8,7 @@ Pandorabots has been in business since 2008. Our visionary founders are "Origina
 
 Back in 2015, Pandorabots was one of only a few chatbot platforms. Today, there are hundreds, but that number has peaked \(along with the hype cycle\) and will increasingly decrease, as startups fail to monetize or raise their next round, and get acquihired or shutter their offering. Building on a startup that isn't market tested is very risky!
 
-Keep in mind that building a robust conversational agent in a _long term investment_. Even if you have a ton of training data such that machine learning methods may be effective, machine learning \(and deep learning and other AI buzz words\) aren't a silver bullet when it comes to Natural Language Processing. It is important to deploy a chatbot early, collect data, and constantly improve the system - and for this reason, it is important to select a vendor that has been around and will be around for a while.
+Keep in mind that building a robust conversational agent is a _long term investment_. Even if you have a ton of training data such that machine learning methods may be effective, machine learning \(and deep learning and other AI buzz words\) aren't a silver bullet when it comes to Natural Language Processing. It is important to deploy a chatbot early, collect data, and constantly improve the system - and for this reason, it is important to select a vendor that has been around and will be around for a while.
 
 #### Breadth and Depth of Experience
 

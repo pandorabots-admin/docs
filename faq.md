@@ -153,7 +153,7 @@ The paywall barrier to making your bot publicly available is part of an effort t
 
 **When will Pandorabots charge my credit card?**
 
-Billing typically occurs on the 7th day of each month. 
+Our billing cycle is monthly using UTC time. Charges are typically made on the 7th of each month for the previous monthly charges.
 
 **How do I track monthly charges and access invoices?**
 

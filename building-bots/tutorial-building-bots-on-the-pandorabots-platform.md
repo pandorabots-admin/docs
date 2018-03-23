@@ -63,7 +63,7 @@ _Staging versus Production_
 
 A common best practice in computer programming is to have two versions of software when one of those versions is live for the public: a _Production_ version that is live, and a _Staging_ version that is in development where you can test \(and back out of!\) any changes. This way, if something goes wrong in the staging version of the software you are editing, your changes do not impact the production version and disrupt end-users. One great feature of bots is that you can instantly update them after making changes, but it is important to first verify that none of your changes are breaking changes by testing thoroughly.
 
-So, if you have a bot deployed on the platform that is live for the public, any changes you make to your bot using the Editor will only impact the staging or _Sandbox_ version of your bot. Once you have tested your bot, clicking _Publish_ in the upper-right hand corner of the editor will push your changes live to production. 
+So, if you have a bot deployed on the platform that is live for the public, any changes you make to your bot using the Editor will only impact the staging or _Sandbox_ version of your bot. Once you have tested your bot, clicking _Publish_ in the upper-right hand corner of the editor will push your changes live to production.
 
 #### Bot Training via the Chat Widget
 
@@ -81,8 +81,8 @@ In the lower right hand corner of the interface, you may have noticed a circular
 * _Show Trace - _  
   Beneath the displayed Metadata, you will also find an option to run a _Trace_. This will open a modal showing the series of steps the input underwent during processing to find a match, which is incredibly helpful for debugging.
 
-* _Reset Bot Memory - _  
-  At the top of the Chat Widget next to your bot name, a refresh icon allows you to reset your bot's memory, which will clear any predicate values that have been set \(\#\#\#@TC ??\) and allow you to start the conversation anew as if you were a brand new client.
+* _Show Predicates - _  
+  At the top of the Chat Widget next to your bot name, a menu icon allows you to manage predicates as well as to reset your bot's memory \(which will clear any predicate values that have been set and allow you to start the conversation anew as if you were a brand new client\).
 
 #### Bot Log Review
 
@@ -179,10 +179,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                                          
+**&lt;pattern&gt;                                                                                            
 **Matches what the user says.
 
-**&lt;template&gt;                                                                                          
+**&lt;template&gt;                                                                                            
 **What the bot replies.
 
 Code example:

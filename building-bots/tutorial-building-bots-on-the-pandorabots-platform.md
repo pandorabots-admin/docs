@@ -102,9 +102,9 @@ Pandorabots also provides a RESTful API, meaning developer users can integrate t
 
 _Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the _[_Free Tier_](/faq.md#pricing)_, which provides for unlimited Sandbox usage and up to 1,000 interactions / month. _
 
-#### The Clubhouse
+#### The Internal Bot Directory
 
-The Deploy Page provides an option to publish your bot to **The Clubhouse**, which will make your bot available to chat with other platform users. In the Clubhouse, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs from other platform users to leverage for improving your bot prior to making it public, and to pay back the favor by chatting with their bots as well.
+The Deploy Page provides an option to publish your bot to **The Internal Bot Directory**, which will make your bot available to chat with other platform users. In the Directory, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs from other platform users to leverage for improving your bot prior to making it public, and to pay back the favor by chatting with their bots as well.
 
 ---
 
@@ -179,10 +179,10 @@ Generally, the more categories you have, the more robust your chatbot will be.
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                                            
+**&lt;pattern&gt;                                                                                              
 **Matches what the user says.
 
-**&lt;template&gt;                                                                                            
+**&lt;template&gt;                                                                                              
 **What the bot replies.
 
 Code example:
@@ -1091,15 +1091,15 @@ Retyping your original input after altering the bot response should return the n
 
 To reset the bot's memory, which will clear any predicates stored about the current conversation, click on the refresh icon next to your bot's name on the top bar of the chat widget.
 
-###### The Clubhouse and `<sraix>`
+###### The Directory and `<sraix>`
 
 The `<sraix>` tag \(first introduced in the AIML 2.0 spec\) allows your bot to access the categories of another bot. The tag is very similar to `<srai>`, however, instead of searching your own bot for another category to match, it will search the bot you have specified in the attribute.
 
-You can use `<sraix>` to leverage the knowledge bases' of other bots in the Clubhouse, specifying them based on their botid \(username/botname\). If you have published your bot to the Clubhouse, and chosen to make your botid available,  other platform users may use `<sraix>` to link up with your bot.
+You can use `<sraix>` to leverage the knowledge bases' of other bots in the Directory, specifying them based on their botid \(username/botname\). If you have published your bot to the Directory, and chosen to make your botid available,  other platform users may use `<sraix>` to link up with your bot.
 
 Why is this useful? Imagine another platform user has created a bot that is an expert about anything related to coffee botid: unXXXXXXXX/coffeebot\).
 
-If this bot has been published to the Clubhouse, your bot can access its expertise \(contained in its AIML categories\) by sending it any input that relates to coffee:
+If this bot has been published to the Directory, your bot can access its expertise \(contained in its AIML categories\) by sending it any input that relates to coffee:
 
 ```
 <category>

@@ -13,6 +13,7 @@ Specifies the AIML version that the document is written in.
     <aiml version="2.0">
     <!-- AIML code goes here -->
     </aiml>
+    
 ### &lt;bot /&gt;
 
 The *bot element* is used to recall custom bot properties defined in the `.properties` file. These variables are accessible to all users of the bot.
@@ -28,6 +29,37 @@ Specifies the name of the property being recalled. If no property exists under t
       <pattern>WHAT IS YOUR NAME</pattern>
       <template>My name is <bot name="name" /></template>
     </category>
+
+### &lt;button /&gt;
+
+The *button tag* is a rich media element used to offer users quick tap options during a conversation. They currently come in two varieties - *postback* buttons, which are used to send messages back to your bot, and *url* buttons, which function like links.
+
+#### Attributes
+
+Both types of button take a *text* attribute, and an additional *postback* or *url* can be included to define the button's role. If the *button* tag is wrapped directly around text instead of attribute tags, the value will be applied as both the *text* and the *postback*.
+
+`text` (optional)  
+Specifies the visible text that appears on the button itself.
+
+`postback` (optional)
+Specifies the message that the bot receives when the button is clicked. The user doesn't see this part of the message, which allows you to trigger secret categories using postbacks.
+
+`url` (optional)
+Specifies the url to take the user to when the button is clicked.
+
+#### Usage
+
+    <button>
+      <text>Tell Me More</text>
+      <postback>xmoreabout foo</postback>
+    </button>
+
+    <button>
+      <text>Visit Us</text>
+      <url>https://home.pandorabots.com</url>
+    </button>
+
+    
 ### &lt;category&gt;
 
 The *category element* delimits a base unit of knowledge in an AIML-based chatbot. In a very broad sense, a single category accepts an input, and returns an output.
@@ -40,6 +72,7 @@ All AIML elements (with the exception of the AIML root element and the topic ele
     <pattern>HI</pattern>
     <template>Hello world!</template>
     </category>
+    
 ### &lt;condition&gt;
 
 The *condition element* is used to create an IF-THEN-ELSE type of control flow within a bot's response. This is done by checking the value of a variable, and returning a response depending on that value.
@@ -102,8 +135,8 @@ Specifies the format of the returned date. This can be written like arguments to
     <pattern>WHAT IS THE DATE</pattern>
     <template>Today is <date format="%B %d, %Y" /></template>
     </category>
+    
 ### &lt;denormalize&gt;
-
 
 The *denormalize element* attempts to match its contents against the names of properties found in `denormal.substitution`. If a match is found, the denormalize element and its contents will be replaced by the property's value.
 
@@ -130,7 +163,8 @@ This punctuation can be re-inserted by using the denormalize element:
 
 >**Input:** Say pandorabots.com  
 **Output:** pandorabots.com
-### &lt;eval&gt;
+
+#### &lt;eval&gt;
 
 The *eval element* is used to reference variables found in an outer category from within a nested category. This allows you to echo wildcard contents from an outer category from within a learn category.
 
@@ -156,6 +190,7 @@ Anything found within an eval element will be evaluated first, before the new ca
 
 >**Input:** What color is the sky?  
 **Output:** The sky is blue.
+
 ### &lt;explode&gt;
 
 The *explode element* is used to break a single word in to multiple words, by inserting spaces in between each character.
@@ -169,6 +204,7 @@ The *explode element* is used to break a single word in to multiple words, by in
 
 >**Input:** Explode coffee  
 **Output:** c o f f e e
+
 ### &lt;first&gt;
 
 The *first element* returns the first word found in its contents. This is an implementation of list processing in AIML.
@@ -182,6 +218,7 @@ The *first element* returns the first word found in its contents. This is an imp
 
 >**Input:** First a b c d  
 **Output: a**
+
 ### &lt;formal&gt;
 
 The *formal element* returns its contents with each word capitalized.
@@ -195,6 +232,7 @@ The *formal element* returns its contents with each word capitalized.
 
 >**Input:** Formal george washington  
 **Output:** George Washington
+
 ### &lt;gender&gt;
 
 The *gender element* attempts to match its contents against the names of properties found in `gender.substitution`. If a match is found, the gender element and its contents will be replaced by the property's value.
@@ -210,6 +248,7 @@ The `gender.substitution` file contains properties whose names and values contai
 
 >**Input:** Does it belong to her?  
 **Output:** No, it belongs to him
+
 ### &lt;get /&gt;
 
 The *get element* is used to return the value stored in a variable.
@@ -256,6 +295,7 @@ To avoid returning the value of `default-get`, you can use a condition element t
       </condition>
     </template>
     </category>
+    
 ### &lt;id /&gt;
 
 The *id element* returns the current `botid`, along with the `client_name` of whoever has issued the input. `botid` is the same as `app_id/botname`.
@@ -272,6 +312,7 @@ the app_id "Daniel" and botname "test":
 
 >**Input:** TEST ID  
 **Output:** -playground-daniel/test/daniel
+
 ### &lt;input /&gt;
 
 The *input element* returns the entire user's input. This is distinct from the star element, which returns only contents captured by a wildcard in the matched pattern.
@@ -285,6 +326,7 @@ The *input element* returns the entire user's input. This is distinct from the s
 
 >**Input:** Stop repeating me  
 **Output:** Stop repeating me
+
 ### &lt;interval&gt;
 
 The *interval element* is used in conjunction with the date element to calculate the difference between two different times/dates.
@@ -321,6 +363,7 @@ To calculate the difference between the current date and the bot's birthdate, ma
     </category>
 
 The style element specifies that the interval should be returned in years.
+
 ### &lt;learn&gt;
 
 The *learn element* allows the user to generate new category blocks from within a conversation. This powerful introduced in AIML 2.0 allows users to actually teach the bot new information.
@@ -346,6 +389,7 @@ Categories generated by the learn element are stored in memory, and are only acc
 **Output:** I will remember that you like coffee.  
 **Input:** What do I like?  
 **Output:** You like coffee
+
 ### &lt;li&gt;
 
 The *list item element* can be a child of both `<condition>` and `<random>`. It allows you to attach mulitple responses, each of which is chosen under certain circumstances.
@@ -400,6 +444,7 @@ This makes it possible to vary the values of attributes using XML expressions, f
       </condition>
     </template>
     </category>
+    
 ### &lt;loop /&gt;
 
 The *loop element* is used to iterate over a set of list item elements that are contained in a condition block.
@@ -434,6 +479,7 @@ This example takes advantage of the built in set `number`, which verifies am inp
 Before the condition block, the `count` predicate is initialized with the value `0`. If the user input was `Count to 0`, then the first list item will be returned (echoing the number found in the input).
 
 Otherwise, the second item will be returned, and the `count` predicate is reset as the successive integer to the one found in the input. The loop element will run the condition again, and will continue to return the second list item until the predicate count matches the value of `<star />`.
+
 ### &lt;lowercase&gt;
 
 The *lowercase element* transforms all letters in its contents to lowercase.
@@ -447,6 +493,7 @@ The *lowercase element* transforms all letters in its contents to lowercase.
 
 >**Input:** A B C  
 **Output:** a b c
+
 ### &lt;map&gt;
 
 The *map element* is used to reference a `.map` file, which attempts to match the map element's contents to one of its own properties, returning the property's value. Maps are data structures that provide key-value pairs.
@@ -494,6 +541,7 @@ Like sets, we can include a "default" category when the wildcard contents does n
 Map files are simple string array, such as: 
 
     [[“Texas”, "Austin"],[“California”, "Sacramento"]]  
+    
 ### &lt;normalize&gt;
 
 The *normalize element* attempts to match the contents within the tags against the name of the properties found in ‘normal.substitution’.  If a match if found, the *normalize element* will replace the matching elements with the properties value.  
@@ -630,6 +678,20 @@ For the [UDC](http://docs.pandorabots.com/tutorials/wildcards/), each time this 
 
 If the user's input is "HI", then one of the list item elements will be returned to the user at random.
 
+### &lt;reply&gt;
+
+The *reply tag* is a rich media element with a *text* attribute and a *postback* attribute, similar to a postback button.
+
+The difference is that replies look and feel more like suggested responses than buttons, and are useful for letting your users quickly tap their way through a conversation.
+
+
+
+#### Usage
+    <reply>
+        <text>yes</text>
+        <postback>xsayyesto foo</postback>
+    </reply>
+
 ### &lt;aiml&gt;
 
 The *AIML root element* delimits a block of AIML code. All other elements must be descendents of the root element.
@@ -645,6 +707,7 @@ Specifies the AIML version that the document is written in.
     <aiml version="2.0">
     <!-- AIML code goes here -->
     </aiml>
+    
 ### &lt;bot /&gt;
 
 The *bot element* is used to recall custom bot properties defined in the `.properties` file. These variables are accessible to all users of the bot.
@@ -660,6 +723,7 @@ Specifies the name of the property being recalled. If no property exists under t
       <pattern>WHAT IS YOUR NAME</pattern>
       <template>My name is <bot name="name" /></template>
     </category>
+    
 ### &lt;category&gt;
 
 The *category element* delimits a base unit of knowledge in an AIML-based chatbot. In a very broad sense, a single category accepts an input, and returns an output.
@@ -672,6 +736,7 @@ All AIML elements (with the exception of the AIML root element and the topic ele
     <pattern>HI</pattern>
     <template>Hello world!</template>
     </category>
+    
 ### &lt;condition&gt;
 
 The *condition element* is used to create an IF-THEN-ELSE type of control flow within a bot's response. This is done by checking the value of a variable, and returning a response depending on that value.
@@ -734,6 +799,7 @@ Specifies the format of the returned date. This can be written like arguments to
     <pattern>WHAT IS THE DATE</pattern>
     <template>Today is <date format="%B %d, %Y" /></template>
     </category>
+    
 ### &lt;denormalize&gt;
 
 
@@ -762,6 +828,7 @@ This punctuation can be re-inserted by using the denormalize element:
 
 >**Input:** Say pandorabots.com  
 **Output:** pandorabots.com
+
 ### &lt;eval&gt;
 
 The *eval element* is used to reference variables found in an outer category from within a nested category. This allows you to echo wildcard contents from an outer category from within a learn category.
@@ -788,6 +855,7 @@ Anything found within an eval element will be evaluated first, before the new ca
 
 >**Input:** What color is the sky?  
 **Output:** The sky is blue.
+
 ### &lt;explode&gt;
 
 The *explode element* is used to break a single word in to multiple words, by inserting spaces in between each character.
@@ -801,6 +869,7 @@ The *explode element* is used to break a single word in to multiple words, by in
 
 >**Input:** Explode coffee  
 **Output:** c o f f e e
+
 ### &lt;first&gt;
 
 The *first element* returns the first word found in its contents. This is an implementation of list processing in AIML.
@@ -814,6 +883,7 @@ The *first element* returns the first word found in its contents. This is an imp
 
 >**Input:** First a b c d  
 **Output: a**
+
 ### &lt;formal&gt;
 
 The *formal element* returns its contents with each word capitalized.
@@ -827,6 +897,7 @@ The *formal element* returns its contents with each word capitalized.
 
 >**Input:** Formal george washington  
 **Output:** George Washington
+
 ### &lt;gender&gt;
 
 The *gender element* attempts to match its contents against the names of properties found in `gender.substitution`. If a match is found, the gender element and its contents will be replaced by the property's value.
@@ -842,6 +913,7 @@ The `gender.substitution` file contains properties whose names and values contai
 
 >**Input:** Does it belong to her?  
 **Output:** No, it belongs to him
+
 ### &lt;get /&gt;
 
 The *get element* is used to return the value stored in a variable.
@@ -888,6 +960,7 @@ To avoid returning the value of `default-get`, you can use a condition element t
       </condition>
     </template>
     </category>
+    
 ### &lt;id /&gt;
 
 The *id element* returns the current `botid`, along with the `client_name` of whoever has issued the input. `botid` is the same as `app_id/botname`.
@@ -904,6 +977,7 @@ the app_id "Daniel" and botname "test":
 
 >**Input:** TEST ID  
 **Output:** -playground-daniel/test/daniel
+
 ### &lt;input /&gt;
 
 The *input element* returns the entire user's input. This is distinct from the star element, which returns only contents captured by a wildcard in the matched pattern.
@@ -917,6 +991,7 @@ The *input element* returns the entire user's input. This is distinct from the s
 
 >**Input:** Stop repeating me  
 **Output:** Stop repeating me
+
 ### &lt;interval&gt;
 
 The *interval element* is used in conjunction with the date element to calculate the difference between two different times/dates.
@@ -953,6 +1028,7 @@ To calculate the difference between the current date and the bot's birthdate, ma
     </category>
 
 The style element specifies that the interval should be returned in years.
+
 ### &lt;learn&gt;
 
 The *learn element* allows the user to generate new category blocks from within a conversation. This powerful introduced in AIML 2.0 allows users to actually teach the bot new information.
@@ -978,6 +1054,7 @@ Categories generated by the learn element are stored in memory, and are only acc
 **Output:** I will remember that you like coffee.  
 **Input:** What do I like?  
 **Output:** You like coffee
+
 ### &lt;li&gt;
 
 The *list item element* can be a child of both `<condition>` and `<random>`. It allows you to attach mulitple responses, each of which is chosen under certain circumstances.
@@ -1032,6 +1109,7 @@ This makes it possible to vary the values of attributes using XML expressions, f
       </condition>
     </template>
     </category>
+    
 ### &lt;loop /&gt;
 
 The *loop element* is used to iterate over a set of list item elements that are contained in a condition block.
@@ -1066,6 +1144,7 @@ This example takes advantage of the built in set `number`, which verifies am inp
 Before the condition block, the `count` predicate is initialized with the value `0`. If the user input was `Count to 0`, then the first list item will be returned (echoing the number found in the input).
 
 Otherwise, the second item will be returned, and the `count` predicate is reset as the successive integer to the one found in the input. The loop element will run the condition again, and will continue to return the second list item until the predicate count matches the value of `<star />`.
+
 ### &lt;lowercase&gt;
 
 The *lowercase element* transforms all letters in its contents to lowercase.
@@ -1079,6 +1158,7 @@ The *lowercase element* transforms all letters in its contents to lowercase.
 
 >**Input:** A B C  
 **Output:** a b c
+
 ### &lt;map&gt;
 
 The *map element* is used to reference a `.map` file, which attempts to match the map element's contents to one of its own properties, returning the property's value. Maps are data structures that provide key-value pairs.
@@ -1126,6 +1206,7 @@ Like sets, we can include a "default" category when the wildcard contents does n
 Map files are simple string array, such as: 
 
     [[“Texas”, "Austin"],[“California”, "Sacramento"]]  
+    
 ### &lt;normalize&gt;
 
 The *normalize element* attempts to match the contents within the tags against the name of the properties found in ‘normal.substitution’.  If a match if found, the *normalize element* will replace the matching elements with the properties value.  
@@ -1190,6 +1271,7 @@ Specifies the historical index of the user's input to recall. `index="0"` refers
 **Output:** Hi there!  
 **Input:** What did I just say?  
 **Output:** Hi
+
 ### &lt;response /&gt;
 
 The *response element* returns the bot's response specified by its historical index value.
@@ -1210,6 +1292,7 @@ Specifies the historical index of the bot response to recall. `index="0"` refers
 **Output:** Hi there!  
 **Input:** What did you just say?  
 **Output:** Hi there!
+
 ### &lt;rest&gt;
 
 The *rest element* is a list processing tag that returns the contents of the element while omitting the first word.
@@ -1223,6 +1306,7 @@ The *rest element* is a list processing tag that returns the contents of the ele
 
 >**Input:** Rest A B C D  
 **Output:** B C D
+
 ### &lt;sentence&gt;
 
 The *sentence element* capitalizes the first word of its contents, as if the contents were the beginning of a sentence.
@@ -1236,7 +1320,9 @@ The *sentence element* capitalizes the first word of its contents, as if the con
 
 >**Input:** a b c  
 **Output:** A b c
+
 ### &lt;set&gt;
+
 The *set element* is used differently depending upon if it is in the pattern or the template.
 
 ### SET USED IN PATTERN
@@ -1320,6 +1406,7 @@ The name attribute specifies a name for the predicate you will set. The predicat
 Note that there is no way to remove a predicate once it has been set to a value. You can overwrite it to a blank value such as:
 
     <set name="username"></set>
+    
 ### &lt;size /&gt;
 
 The *size element* returns the number of category blocks contained in the current bot.
@@ -1335,6 +1422,7 @@ If your bot has 1000 categories:
 
 >**Input:** test size  
 **Output:** 1000
+
 ### &lt;sr /&gt;
 
 The *sr element* is shorthand for `<srai><star /></srai>`. Because this is one of the most often-used combinations of elements, AIML allows you to write as a shortened version.
@@ -1352,6 +1440,7 @@ Use anywhere you'd like to reduce an input with a single wildcard to the wildcar
       <pattern>FAVORITE *</pattern>
       <template><sr/></template>
     </category>
+    
 ### &lt;srai&gt;
 
 The *srai element* allows your bot to recursively call categories after transforming the user's input. So you can define a template that calls another category. The acronym "srai" has no official meaning, but is sometimes defined as *symbolic reduction* or *symbolic recursion*.
@@ -1492,6 +1581,7 @@ Bot: Once more?  "I am a fish".
 In this particular case, you might not want pronoun transformation; it's just included as an example for illustration.
 
 Why reduce a complex sentence structure to simpler forms? These 4 categories can respond to a large number of inputs, not just the example, and can make a bot's response seem more human-like.
+
 ### &lt;sraix &gt;
 
 The *sraix element* allows a bot to call categories that exist within another bot, and return response as if it was its own. This allows the creation of many bots, each with a specific purpose, that may connect with each other to form a sort of bot network.
@@ -1521,6 +1611,7 @@ So when talking to djf/olimpia, the following is possible:
 
 >**Input:** What is foo?  
 **Output:** Foo is bar.  
+
 ### &lt;star /&gt;
 
 The *star element* is used to echo portions of the user's input that were captured by wildcards.
@@ -1539,6 +1630,7 @@ Specifies which wildcard to echo (used when multiple wildcard are present). If n
 
 >**Input:** My favorite color is blue  
 **Output:** Your favorite color is blue
+
 ### &lt;template&gt;
 
 The *template element* is the portion of category that defines its return value. It can contain a variety of other elements: some which return text directly to the user, and some which cause recursion and trigger new categories. Every category must contain a template block.
@@ -1549,6 +1641,7 @@ The *template element* is the portion of category that defines its return value.
     <pattern>HI</pattern>
     <template>Hello there!</template>
     </category>
+    
 ### &lt;that&gt;
 
 The *that element* is an optional child of the category element that is used to establish the context of the pattern. The bot is able to remember the last sentence it has said, and is defined as the value of "that".
@@ -1566,7 +1659,6 @@ For these reasons, we recommend you write the contents of the `<that>` tags like
 Also note:  
 * `<that>` tags can contain wildcards!
 * Values for *that* variables are only within the scope of an active conversation. After some amount of idle time, the bot flushes context from memory.
-
 
 #### Usage
 
@@ -1603,6 +1695,7 @@ In this example below, it shows how to use the normalized version in your *that 
     </category>
     
 Tip: Remember when crafting your `<that>` tag, use only the _last_ sentence of your bot's response! That is why the `that` tag in the category above only has the normalized "DO NOT YOU AGREE" and does not include the previous sentence of "IT IS A CIVILIZED DRINK".
+
 ### &lt;thatstar /&gt;
 
 The *thatstar element* is used to echo wildcard contents found inside of `<that>` tags.
@@ -1627,6 +1720,7 @@ Specifies the index of the wildcard to echo. If no index is specified, defaults 
 **Output:** What do you like best about coffee?
 
 This type of category is useful for dealing with pronoun resolution (*anaphora*). If the user inputs the word "it", you can implement a that element and a thatstar element to keep a reference to the original noun in question.
+
 ### &lt;think&gt;
 
 The *think element* allows your bot to set predicates without actually displaying the contents of a set element to the user. This is sometimes referred to as "silently" setting a predicate.
@@ -1657,6 +1751,7 @@ You can use the think tag to set the `name` predicate, without actually repeatin
 
 >**Input:** My name is Daniel  
 **Output:** I will remember your name
+
 ### &lt;topic&gt;
 
 The *topic element* allows you to contextualize categories according to the value of a built-in 
@@ -1722,6 +1817,7 @@ Values for topic variables are only within the scope of an active conversation.
 layout: aiml
 title: topicstar
 ---
+
 ### &lt;topicstar&gt;
 
 The *topicstar element* will either return the current topic if used outside of a *topic element* or the *wildcard element* when inside a *topic element*.  The *topicstar element* can also use index like the *star element* can, though this will return as the default case for empty predicates if no wildcards are present.

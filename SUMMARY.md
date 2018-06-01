@@ -24,6 +24,7 @@
 * [AIML Reference](aiml/reference.md)
   * [aiml](aiml/reference.md#aiml)
   * [bot](aiml/reference.md#bot-)
+  * [button](aiml/button.md)
   * [category](aiml/reference.md#category)
   * [condition](aiml/reference.md#condition)
   * [date](aiml/reference.md#date-)

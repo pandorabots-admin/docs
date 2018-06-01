@@ -79,6 +79,7 @@ Provide the *url* where your menu image is hosted.
 One or more *button* tags to offer your users response options.
 
 #### Usage
+```
   <card>
     <title>Card Menu</title>
     <subtitle>Describe a card</subtitle>
@@ -88,6 +89,7 @@ One or more *button* tags to offer your users response options.
       <postback>xlearnmoreabout cards</postback>
     </button>
   </card>
+```
 
 ### &lt;carousel&gt;
 
@@ -98,6 +100,7 @@ A *carousel tag* wraps around some number of *card* elements to create a tap-thr
 At least two cards - the carousel will display them one at a time, and allow your users to tap through them.
 
 #### Usage
+```
   <carousel>
     <card>
       <title>Robots</title>
@@ -112,6 +115,7 @@ At least two cards - the carousel will display them one at a time, and allow you
       <button>Tell Me More</button>
     </card>
   </carousel>
+```
 
 ### &lt;category&gt;
 

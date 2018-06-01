@@ -59,6 +59,57 @@ Specifies the url to take the user to when the button is clicked.
       <url>https://home.pandorabots.com</url>
     </button>
 
+
+### &lt;cards&gt;
+
+A *card tag* wraps around several other tags - an *image* tag, some number of *button* tags, and a *title* and *subtitle*. The result is a menu containing all of these rich media elements!
+
+#### Attributes
+
+`title` (required)
+The bold text that appears at the top of your menu - describe what your user is seeing.
+`subtitle` (optional)
+Lighter text used to provide more information to your users.
+`image` (required)
+Provide the *url* where your menu image is hosted.
+`button` (required)
+One or more *button* tags to offer your users response options.
+
+### Usage
+  <card>
+    <title>Card Menu</title>
+    <subtitle>Describe a card</subtitle>
+    <image>https://url.for.image</image>
+    <button>
+      <text>Learn More</text>
+      <postback>xlearnmoreabout cards</postback>
+    </button>
+  </card>
+
+### &lt;carousel&gt;
+
+A *carousel tag* wraps around some number of *card* elements to create a tap-through menu organized into different categories.
+
+#### Attributes
+`card` (required)
+At least two cards - the carousel will display them one at a time, and allow your users to tap through them.
+
+### Usage
+  <carousel>
+    <card>
+      <title>Robots</title>
+      <subtitle>Made of metal</subtitle>
+      <image>https://url.for.image</image>
+      <button>Tell Me More</button>
+    </card>
+    <card>
+      <title>Humans</title>
+      <subtitle>Made of carbon</subtitle>
+      <image>https://url.for.image</image>
+      <button>Tell Me More</button>
+    </card>
+  </carousel>
+
 ### &lt;category&gt;
 
 The *category element* delimits a base unit of knowledge in an AIML-based chatbot. In a very broad sense, a single category accepts an input, and returns an output.
@@ -134,6 +185,14 @@ Specifies the format of the returned date. This can be written like arguments to
     <pattern>WHAT IS THE DATE</pattern>
     <template>Today is <date format="%B %d, %Y" /></template>
     </category>
+
+
+### &lt;delay&gt;
+
+A *delay tag* is useful for introducing a pause between different parts of a response for easier reading, or to simulate the time it would take a human to read and type a response. They're easy to use - just wrap the tag around the number of seconds you want your bot response to wait.
+
+### Usage
+  <delay>3</delay>
 
 ### &lt;denormalize&gt;
 
@@ -251,7 +310,7 @@ The `gender.substitution` file contains properties whose names and values contai
 
 ### &lt;image /&gt;
 
-The *image tag* allows your bot to send back image responses. It's simple to use - simply wrap the tag around the *url* of the image.
+The *image tag* allows your bot to send back image responses. It's simple to use - just wrap the tag around the *url* of the image.
 
 #### Usage
   <image>https://url.for.image</image>
@@ -893,6 +952,14 @@ If your bot has 1000 categories:
 >**Input:** test size  
 **Output:** 1000
 
+### &lt;split /&gt;
+A *split tag* does just what it says - splits a bot response into multiple parts. The split message will be displayed to your user as separate messages, which can be combined with a *delay* tag to space out long responses.
+
+### Usage
+  Some text
+  <split/>
+  More text
+
 ### &lt;sr /&gt;
 
 The *sr element* is shorthand for `<srai><star /></srai>`. Because this is one of the most often-used combinations of elements, AIML allows you to write as a shortened version.
@@ -1336,3 +1403,10 @@ The *uppercase element* transforms all letters in its contents to uppercase.
 
 >**Input:** a b c  
 **Output:** A B C
+
+### &lt;video /&gt;
+
+The *video tag* allows your bot to send back video responses. It's simple to use - simply wrap the tag around the *url* of the video.
+
+#### Usage
+  <video>https://url.for.video</video>

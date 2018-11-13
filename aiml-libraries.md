@@ -47,7 +47,7 @@ In Syntax column, replace {} with actual values. See Example column for input/ou
 
 ---
 
-### Using Rosie {#using-rosie}
+### Using Rosie (AKA Small Talk) {#using-rosie}
 
 _**Update:**_ _We will occasionally push changes to the Rosie repository to improve the existing content. We highly suggest that you watch the project on _[_Github_](https://github.com/pandorabots/rosie)_ to keep track of future updates._
 
@@ -55,7 +55,7 @@ _Unless otherwise noted, future updates to Rosie will be placed in **z\_update.a
 
 Original platform users may be wondering where they can access pre-written AIML \(like Dr. Wallace’s ALICE bot\) to use as base content for their bot. We provide such open-source AIML content to save users the hassle of “reinventing the wheel”  by recreating basic functionality.
 
-Enter [Rosie](https://github.com/pandorabots/rosie): she’s free to download, a fork of the ALICE 2.0 project, and optimized for use on the Pandorabots 2.0 platform. This post will show you how to start building a custom chatbot on top of the Rosie “brain.”
+Enter [Rosie](https://github.com/pandorabots/rosie): she’s free to download, a fork of the ALICE 2.0 project, and optimized for use on the Pandorabots Platform. These files are automatically uploaded into your bot when you select the Small Talk content option. This post will show you how to start building a custom chatbot on top of the Rosie “brain.”
 
 Before beginning, be sure to read the [Build a Bot Tutorial](https://playground.pandorabots.com/en/tutorial/) on the Pandorabots [Playground](https://playground.pandorabots.com/en/).
 

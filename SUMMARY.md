@@ -20,7 +20,7 @@
 * [AIML Fundamentals](aiml/aiml-fundamentals.md)
 * [AIML Libraries](aiml-libraries.md)
   * [AIML Standard Libraries](aiml-libraries.md#aiml-standard-library)
-  * [Modifying the Rosie Chatbot](aiml-libraries.md#using-rosie)
+  * [Modifying Small Talk files](aiml-libraries.md#using-rosie)
 * [AIML Reference](aiml/reference.md)
   * [aiml](aiml/reference.md#aiml)
   * [bot](aiml/reference.md#bot-)

@@ -107,11 +107,11 @@ The maximum file size for upload is 2MB.
 
 **What is the max number of concurrent queries?**
 
-There is no maximum number of concurrent requests imposed on the Free and Premium Tiers per se, but if you anticipate generating more than 200 requests per second, please let us know. Generally speaking, chatbots generating a high volume of messages qualify for the Enterprise Tier, which is designed to flexibly handle as many concurrent requests as may be required by you application. Please note that certain Messaging Platforms also enforce their own rate limits - visit their policies directly for more details.
+There is no maximum number of concurrent requests imposed on the Free and Developer Tiers per se, but if you anticipate generating more than 200 requests per second, please let us know. Generally speaking, chatbots generating a high volume of messages qualify for the Enterprise Tier, which is designed to flexibly handle as many concurrent requests as may be required by you application. Please note that certain Messaging Platforms also enforce their own rate limits - visit their policies directly for more details.
 
 **Why is the default max queries 100,000 per month?**
 
-The default exists for two reasons: (1) To protect any platform users whose bots experience a sudden, unanticipated surge in popularity from paying more than $225/month; and (2) Because any entity that anticipates more monthly traffic likely qualifies for the Enterprise Tier. You may contact us via email at support@pandorabots.com to request adjustments to your monthly maximum messages, and learn more about which plan is right for you. 
+The default exists for two reasons: (1) To protect any platform users whose bots experience a sudden, unanticipated surge in popularity from paying more than $225/month; and (2) Because any entity that anticipates more monthly traffic likely qualifies for the Enterprise Tier. You may contact us via email at support@pandorabots.com to request adjustments to your monthly maximum messages, and learn more about which plan is right for you.
 
 **How can I adjust my max monthly limit?**
 
@@ -123,11 +123,11 @@ The average bot response time is 0.3 seconds (300 milliseconds). Exceptionally l
 
 **What is the average uptime for the system?**
 
-We strive for service level uptimes of at least 99.5% for all users. However, only the Enterprise Tier guarantees uptime levels of 99.5% or higher. 
+We strive for service level uptimes of at least 99.5% for all users. However, only the Enterprise Tier guarantees uptime levels of 99.5% or higher.
 
 **Is there a limit to how many bots I can create?**
 
-The Free Tier allows up to 2 bots; the Premium Tier allows up to 10 bots; and the Enterprise Tier includes a custom configuration to accommodate the number of bots required by your application.
+The Free Tier allows up to 2 bots; the Developer Tier allows up to 10 bots; and the Enterprise Tier includes a custom configuration to accommodate the number of bots required by your application.
 
 **Where are my chatlogs from last month?**
 
@@ -141,11 +141,11 @@ A "message" is one input/output interaction between a client (the person chattin
 
 **What is included in the Free Tier?**
 
-The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.0025 (USD) per query. Users who input a credit card will automatically have access to the Premium Tier. 
+The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.0025 (USD) per query. Users who input a credit card will automatically have access to the Developer Tier.
 
-**What is included in the Premium Tier?**
+**What is included in the Developer Tier?**
 
-The Premium Tier includes all the features of the Free Tier plus up to 10 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month. 
+The Developer Tier includes all the features of the Free Tier plus up to 10 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month.
 
 **Why is a credit card required to access certain features?**
 

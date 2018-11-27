@@ -38,4 +38,25 @@ a:hover, a:active, a.active {
   &__content {
     padding: 30px;
   }
+
+  .tipue_search_wrapper {
+    display: flex;
+    align-items: center;
+
+    .tipue_search_icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .tipue_search_right {
+      margin-bottom: 10px;
+      margin-left: 8px;
+    }
+  }
+  
+  #tipue_search_content {
+    .tipue_search_spinner {
+      display: none !important;
+    }
+  }
 }

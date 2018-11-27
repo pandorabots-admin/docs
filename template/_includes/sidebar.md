@@ -1,8 +1,10 @@
-<div class="pb-docs__navbar">
+<div markdown="1" class="pb-docs__navbar">
+
+{% include search.html %}
 ## PLATFORM OVERVIEW
 
 * [About Pandorabots](/)
-* [Feature Comparison ](/feature-comparison/)
+* [Feature Comparison](/feature-comparison/)
 * [FAQ](/faq/)
   * [AIML](/faq#aiml)
   * [API](/faq#api)
@@ -136,5 +138,4 @@
 * [Modules](/modules/)
   * [OpenWeather](/modules#open-weather)
   * [Mitsuku](/modules#mitsuku)
-
 </div>

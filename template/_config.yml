@@ -26,8 +26,12 @@ url: "https://docs.pandorabots.com" # the base hostname & protocol for your site
 markdown: kramdown
 
 kramdown:
-  parse_block_html: true
+  # parse_block_html: true
   parse_span_html: true
+
+tipue_search:
+  include:
+    pages: true
 
 theme: minima
 plugins:

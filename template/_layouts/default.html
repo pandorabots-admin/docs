@@ -1,13 +1,31 @@
+---
+tipue_search_active: true
+---
+
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8"/>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    {% if page.tipue_search_active or layout.tipue_search_active %}
+      <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/normalize.css" | relative_url }}">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="{{ "/assets/tipuesearch/tipuesearch_content.js" | relative_url }}"></script>
+      <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/tipuesearch.css" | relative_url }}">
+      <script src="{{ "/assets/tipuesearch/tipuesearch_set.js" | relative_url }}"></script>
+      <script src="{{ "/assets/tipuesearch/tipuesearch.min.js" | relative_url }}"></script>
+    {% endif %}
   </head>
   <body>
     <div class="pb-docs">
-      {{ content }}
+        {{ content }}
     </div>
+
+    <script>
+      $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch();
+      });
+    </script>
   </body>
 </html>

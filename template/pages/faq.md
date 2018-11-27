@@ -4,7 +4,7 @@ layout: default
 ---
 
 {% include sidebar.md %}
-<div class="pb-docs__content">
+<div markdown="1" class="pb-docs__content">
 
 
 # Frequently Asked Questions

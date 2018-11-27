@@ -49,6 +49,10 @@ code {
     overflow-y: scroll;
     padding: 30px;
 
+    pre.highlight > code {
+      display: block;
+    }
+
     a {
       color: #7C4DFF;
       text-decoration: none;

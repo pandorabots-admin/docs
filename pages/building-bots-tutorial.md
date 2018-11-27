@@ -150,12 +150,12 @@ You can customize which punctuation marks determine the end of a sentence by mod
 
 Create a new AIML files under the Files drop-down within the Editor. When selecting your new files, you'll notice that the Editor comes pre-populated with some code:
 
-```
+~~~
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 <!-- insert your AIML categories here -->
 </aiml>
-```
+~~~
 
 ###### XML Primer
 
@@ -165,15 +165,15 @@ It is written using "tags" \(code\) and text, which should be familiar to anyone
 
 Some tags comes in pairs, with some context \(text and/or other tags\) appearing between, for example:
 
-```
+~~~
 <template>Some string goes here</template>
-```
+~~~
 
 Other tags are "self-closing" and do not require a partner or an inner string, for example:
 
-```
+~~~
 <get name=“age” />
-```
+~~~
 
 ###### The AIML File
 
@@ -195,12 +195,12 @@ Let's take a closer look at the fundamental components of a category: the patter
 
 Code example:
 
-```
+~~~
 <category>
 <pattern>HI</pattern>
 <template>Hello world!</template>
 </category>
-```
+~~~
 
 The above code would result in the following exchange between your bot and the client:
 
@@ -230,15 +230,15 @@ The bot will search through all of its categories to form a match with the user 
 
 **WRONG:**
 
-```
+~~~
 <pattern>What is your name?</pattern>
-```
+~~~
 
 **  CORRECT:**
 
-```
+~~~
 <pattern>WHAT IS YOUR NAME</pattern>
-```
+~~~
 
 ###### HTML Markup
 
@@ -250,13 +250,13 @@ You can also use HTML to include images and hyperlinks that lead to other websit
 
 For example, the &lt;br/&gt; HTML tag allows you to insert line breaks in the text.
 
-```
+~~~
 <category>
 <pattern>WHO ARE YOU</pattern>
 <template>I am a bot.<br/> I live in a computer.
 </template>
 </category>
-```
+~~~
 
 > **Human: **Who are you?  
 > **Bot:** I am a bot.  
@@ -268,18 +268,18 @@ What if the user input does not match any of the patterns you have defined?
 
 The _Ultimate Default Category \(UDC\)_ is used by the bot to provide an answer if no other suitable category can be matched. The \* in this case will match anything undefined.
 
-```
+~~~
 <category>
 <pattern>*</pattern>
 <template>I have no answer for that.</template>
 </category>
-```
+~~~
 
 ###### Randomized Responses
 
 You can use the **&lt;random&gt; **tag to provide many different responses for the same input pattern. This is especially useful in the UDC because it can provide some variation to the default answer.
 
-```
+~~~
 <category>
 <pattern>*</pattern>
 <template>
@@ -290,7 +290,7 @@ You can use the **&lt;random&gt; **tag to provide many different responses for t
 </random>
 </template>
 </category>
-```
+~~~
 
 In the above example, each time a category is matched, the bot will pick one of the list elements \(&lt;li&gt;\) at random as it's response.
 
@@ -308,9 +308,9 @@ Wildcards are used to capture many inputs using only a single category.
 
 The `*` symbol is able to capture **1 or more words** in the user input.
 
-```
+~~~
 <pattern>HELLO *</pattern>
-```
+~~~
 
 This pattern would match all of the following inputs:
 
@@ -324,9 +324,9 @@ This pattern would **NOT** match the word "Hello" by itself, because there must 
 
 The `^` symbol is also a wildcard, however, it can capture 0 or more words.
 
-```
+~~~
 <pattern>HELLO ^</pattern>
-```
+~~~
 
 ** ** This pattern would match all of the following inputs:
 
@@ -355,9 +355,9 @@ There are two other wildcards, `_` and `#`. These wildcards take the highest pri
 
 Even if the input forms an exact match with a pattern, the match can be overridden by a pattern containing one of these wildcards.
 
-```
+~~~
 <pattern>HELLO _</pattern>
-```
+~~~
 
 If the input is "Hello there", the pattern above will form a match even if `<pattern>HELLO THERE</pattern>` has been defined.
 
@@ -391,12 +391,12 @@ All of the bot's AIML categories are loaded into a structure called the _Graphma
 
 You can "echo" the words captured by the wildcard from within the template using the &lt;star/&gt; tag. For example:
 
-```
+~~~
 <category>
 <pattern>MY NAME IS *</pattern>
 <template>Hello, <star/>.</template>
 </category>
-```
+~~~
 
 > **Human:** My name is Daniel.  
 > **Bot:** Hello, Daniel.
@@ -405,12 +405,12 @@ You can "echo" the words captured by the wildcard from within the template using
 
 You can have more than one wildcard per pattern. You can also echo multiple wildcards in your pattern by using `<star index="x"/>`, where **x** corresponds to the index number \(position in the sentence\) of the wildcard:
 
-```
+~~~
 <category>
 <pattern>MY NAME IS * AND I AM * YEARS OLD</pattern>
 <template>Hi <star/>. I am also <star index=“2”/> years old!</template>
 </category>
-```
+~~~
 
 ---
 
@@ -430,12 +430,12 @@ AIML has variables as well. These can be used to store information about your bo
 
 You can use a property to store your bot's age. Create a new property with the name "age" and the value "8". Then, insert this category:
 
-```
+~~~
 <category>
 <pattern>HOW OLD ARE YOU</pattern>
 <template>I am <bot name=“age”/> years old.</template>
 </category>
-```
+~~~
 
 > **Human:** How old are you?  
 > **Bot:** I am 8 years old.
@@ -444,12 +444,12 @@ You can use a property to store your bot's age. Create a new property with the n
 
 Using a predicate variable, you can write a category that will store the name of the client. This category will store the client's name under a predicate called "name":
 
-```
+~~~
 <category>
 <pattern>MY NAME IS *</pattern>
 <template>Nice to meet you, <set name=“name”><star/></set></template>
 </category>
-```
+~~~
 
 Note how the user of the `*` wildcard and `<star/>` allows you to write a single category that will capture any name!
 
@@ -457,12 +457,12 @@ Note how the user of the `*` wildcard and `<star/>` allows you to write a single
 
 Once you have set a predicate, it can be recalled elsewhere in your AIML.
 
-```
+~~~
 <category>
 <pattern>WHAT IS MY NAME</pattern>
 <template>Your name is <get name=“name”/>.</template>
 </category>
-```
+~~~
 
 If you have set the predicate using the category in the previous example above, this will now recall the value of the predicate called "name".
 
@@ -477,7 +477,7 @@ In combination, the previous two examples would enable the following conversatio
 
 Local variables work almost exactly like predicates, but their scope is limited to a single category. These are different than predicates, which can be recalled at any time during the conversation. For example:
 
-```
+~~~
 <category>
 <pattern>THE APPLE IS *</pattern>
 <template>
@@ -485,7 +485,7 @@ Local variables work almost exactly like predicates, but their scope is limited 
 I like <get var= “color”> apples.
 </template>
 </category>
-```
+~~~
 
 We will revisit local variables in more detail in the section on "Context."
 
@@ -511,12 +511,12 @@ About half of the categories in a bot use recursion in some way.
 
 The `<srai>` tag tells the bot to look for another category:
 
-```
+~~~
 <category>
 <pattern>HELLO</pattern>
 <template><srai>HI</srai></template>
 </category>
-```
+~~~
 
 If this category is matched \(i.e., the input is "Hello"\), the bot will recurse. Before returning some text, it will first look for a different category that matches HI.
 
@@ -524,7 +524,7 @@ If this category is matched \(i.e., the input is "Hello"\), the bot will recurse
 
 The &lt;srai&gt; tag effectively translates the input that matches the categories below to "Hi", contained in the terminal category.
 
-```
+~~~
 <category>
 <pattern>HELLO</pattern>
 <template><srai>HI</srai></template>
@@ -546,7 +546,7 @@ The &lt;srai&gt; tag effectively translates the input that matches the categorie
 <pattern>HI</pattern>
 <template>Hi, how are you?</template>
 </category>
-```
+~~~
 
 The pattern in the terminal category is also commonly known as the _**Intent**_**, which is the canonical form of what the words being used fundamentally mean**. In this case, `<srai>` is the method for specifying that Hello, Hi There, and Howdy, all mean the same thing as "Hi" \(which we humans generally intend as a Greeting\). Much of the work in bot development involves capturing all the different way we humans say the same thing insofar as it relates to your domain, which is why it is so important to regularly review your chatlogs and continously improve your bot over time.
 
@@ -554,23 +554,23 @@ The pattern in the terminal category is also commonly known as the _**Intent**_*
 
 People are bad at spelling and typing, which may cause your bot to fail when trying to find a match. You can use &lt;srai&gt; to account for common spelling mistakes:
 
-```
+~~~
 <category>
 <pattern>HOW R U</pattern>
 <template><srai>HOW ARE YOU</srai></template>
 </category>
-```
+~~~
 
 ###### Synonyms
 
 You can also use `<srai>` in conjunction with wildcards to define synonymous words or phrases:
 
-```
+~~~
 <category>
 <pattern>_ DAD *</pattern>
 <template><srai><star/> FATHER <star index=“2”/></srai></template>
 </category>
-```
+~~~
 
 Anytime the user input contains the word "dad", the bot will replace it with "father" and recuse using the same input.
 
@@ -586,12 +586,12 @@ _NOTE: once a word has been defined as a synonym, you cannot use it in patterns.
 
 We can also use `<srai>` to remove unnecessary words from the input.
 
-```
+~~~
 <category>
 <pattern>I SEE NOW THAT YOU ARE *</pattern>
 <template><srai>YOU ARE <star/></srai></template>
 </category>
-```
+~~~
 
 Reductions make writing AIML and adding to your bot a far more enjoyable process. The more reductions you have, the better your bot will be at providing relevant matches.
 
@@ -599,7 +599,7 @@ Reductions make writing AIML and adding to your bot a far more enjoyable process
 
 The previous examples of `<srai>` have directly returned no text of their own. You template, however, can return both text and `<srai>` tags.
 
-```
+~~~
 <category>
 <pattern>HOWDY</pattern>
 <template>
@@ -607,7 +607,7 @@ The previous examples of `<srai>` have directly returned no text of their own. Y
 Are you a cowboy?
 </template>
 </category>
-```
+~~~
 
 ---
 
@@ -648,16 +648,16 @@ The set functions like a wildcard. It captures one or more words found in the us
 
 The name of the relevant set file is placed between the `<set>` tags.
 
-```
+~~~
 <category>
 <pattern>IS <set>colors</set> A COLOR</pattern>
 <template>Yes, <star/> is a color.</template>
 </category>
-```
+~~~
 
 If the input contained a string not found in the set, then that pattern would not form a match. To account for this possibility, we can provide a default answer using a `*` wildcard.
 
-```
+~~~
 <category>
 <pattern>IS <set>colors</set> A COLOR</pattern>
 <template>Yes, <star/> is a color.</template>
@@ -667,7 +667,7 @@ If the input contained a string not found in the set, then that pattern would no
 <pattern>IS * A COLOR</pattern>
 <template>No, <star/> is not a color.</template>
 </category>
-```
+~~~
 
 The first category will match if the input contains a string found in the set.
 
@@ -679,18 +679,18 @@ Sets take precedence over \* and ^, but can be overridden by `_`, `#`, and an ex
 
 The input captured by the `<set>` tags can be echoed using the `<star/>` tag, just like a wildcard can be echoed.
 
-```
+~~~
 <category>
 <pattern>IS <set>colors</set> A COLOR</pattern>
 <template>Yes, <star/> is my favorite color!</template>
 </category>
-```
+~~~
 
 Set files are a simple string array and are written in the following format:
 
-```
+~~~
 [[ "Austin" ], ["Baltimore"], [ "Chicago" ], [ "Dallas"]]
-```
+~~~
 
 ###### Maps
 
@@ -723,14 +723,14 @@ Consider the following conversation:
 
 We can enable this conversation with a single category, one set, and one map:
 
-```
+~~~
 <category>
 <pattern>WHAT IS THE CAPITAL OF <set>states</set></pattern>
 <template>
 <map name=“statecapitals”><star/></map> is the capital of <star/>
 </template>
 </category>
-```
+~~~
 
 Feel free to try creating the set and map files we discussed, and then add this category to your AIML. Your bot will now be able to relay the capital of the states listed in your set and map.
 
@@ -738,23 +738,23 @@ Feel free to try creating the set and map files we discussed, and then add this 
 
 Like sets, we can include a "default" category when the wildcard contents do not match an item in the map.
 
-```
+~~~
 <category>
 <pattern>WHAT IS THE CAPITAL OF *</pattern>
 <template>
 I don’t know what the capital of <star/> is.
 </template>
 </category>
-```
+~~~
 
 > **Human:** What is the capital of Pennsyltucky?  
 > **Bot:** I don't know what the capital of Pennsyltucky is.
 
 Map files are simple key-value pairs in an array, and are written in the following format:
 
-```
+~~~
 [["Texas" , "Austin"], ["California" , "Sacramento"]]
-```
+~~~
 
 ###### Built-in Sets and Maps
 
@@ -799,7 +799,7 @@ This allows you to have many duplicate patterns which, depending on the previous
 
 In the example below, the second category is bound to a particular context. It will only be matched _if_ the last sentence the bot said was "Do you like coffee?".
 
-```
+~~~
 <category>
 <pattern>^ COFFEE ^</pattern>
 <template>Do you like coffee?</template>
@@ -810,7 +810,7 @@ In the example below, the second category is bound to a particular context. It w
 <that>DO YOU LIKE COFFEE</that>
 <template>Do you prefer dark or medium roast?</template>
 </category>
-```
+~~~
 
 > **Human:** I should drink some coffee.  
 > **Bot:** Do you like coffee?  
@@ -839,18 +839,18 @@ There is a built-in predicate variable called `topic`. Categories can be grouped
 
 First, you need a category that sets the topic predicate. The following example would set the topic to "coffee":
 
-```
+~~~
 <category>
 <pattern>CAN WE TALK ABOUT COFFEE</pattern>
 <template>Do you like <set name=“topic”>coffee</set>?</template>
 </category>
-```
+~~~
 
 **Step 2:**
 
 Now, you can group together categories within the coffee topic. \_Note that `<topic>` tags appear outside the categories. \_In AIML 2.0, `<topic>` can appear inside the category, like `<that>`.
 
-```
+~~~
 <topic name= “coffee”>
 
 <category>
@@ -864,7 +864,7 @@ Now, you can group together categories within the coffee topic. \_Note that `<to
 </category>
 
 </topic>
-```
+~~~
 
 The patterns above will _only match if_ the topic has been set to "coffee." If no category within the topic tags forms a match with the input, the input will match a category with no topic specified.
 
@@ -895,19 +895,19 @@ Consider the following:
 
 The bot response is _conditioned_ on the day of the week. Using the &lt;condition&gt; tag within the template enables this with a single category:
 
-```
+~~~
 <condition name=“today”>
 <li value=“Monday”>...</li>
 <li value=“Tuesday”>...</li>
 <li value =“Wednesday”>...</li>
 </condition>
-```
+~~~
 
 The opening tag specifies the name of a predicate to check for; _if_ the value of the predicate matches the value of any list element \(`<li>`\), \_then \_the text of that element will be returned.
 
 Altogether, the category for this test case would look like this:
 
-```
+~~~
 <category>
 <pattern>TODAY IS *</pattern>
 <template>
@@ -921,7 +921,7 @@ Altogether, the category for this test case would look like this:
 </condition>
 </template>
 </category>
-```
+~~~
 
 The final list element \(the one without a value attribute\) will be returned if none of the other conditions are met.
 
@@ -929,7 +929,7 @@ The final list element \(the one without a value attribute\) will be returned if
 
 You can also use conditionals to check the status of a predicate, i.e., whether or not it has been set.
 
-```
+~~~
 <category>
 <pattern>WHAT IS MY NAME</pattern>
 <template>
@@ -939,7 +939,7 @@ You can also use conditionals to check the status of a predicate, i.e., whether 
 </condition>
 </template>
 </category>
-```
+~~~
 
 If the "name" predicate has been set to anything \(denoted by the asterisk\), the first list element will return; if it has not been set, then the second list element will return.
 
@@ -947,7 +947,7 @@ If the "name" predicate has been set to anything \(denoted by the asterisk\), th
 
 In AIML 2.0, any given value given by an XML attribute may also be expressed using a subtag of the same name. For example, `<li value="X">` may also be written as `<li><value>X</value>`. This makes it possible to vary the values of attributes using XML expressions, for example:
 
-```
+~~~
 <category>
 <pattern>IS * EQUAL TO *</pattern>
 <template>
@@ -958,7 +958,7 @@ In AIML 2.0, any given value given by an XML attribute may also be expressed usi
 </condition>
 </template>
 </category>
-```
+~~~
 
 ###### Loops
 
@@ -973,44 +973,44 @@ We will be using the "number" set and the "successor" map to establish the relat
 
 First, set up the pattern:
 
-```
+~~~
 <pattern>COUNT TO <set>number</set></pattern>
-```
+~~~
 
 Next, you'll want to set a local variable in your template. The variable starts your count at 0. As we loop over our list elements, this count will change:
 
-```
+~~~
 <think><set var=“count”>0</set></think>
-```
+~~~
 
 Next, we need to set up a condition whose list elements are dependent on the value of the variable "count":
 
-```
+~~~
 <condition var=“count”>
-```
+~~~
 
 Then, we create an empty list element whose value is `<star/>`. This element will be returned when the value of "count" reaches the number specified in the input:
 
-```
+~~~
 <li><value><star/></value></li>
-```
+~~~
 
 Our second list element will contain the loop. Using the "successor" map, we can simultaneously change the value of count, and add it to the bot's response:
 
-```
+~~~
 <li>
 <set name="count">
 <map><name>successor</name><get var="count"/></map>
 </set>
 <loop/>
 </li>
-```
+~~~
 
 This resets the value of “count” to the corresponding number of its current value, found in the “successor” map. It will then add the successive value to the bot’s response. Finally, `<loop/>` tells it to return the list element again, however this time, with the new value of “count”.
 
 Altogether, the above components form the following code:
 
-```
+~~~
 <category>
 <pattern>COUNT TO <set>number</set></pattern>
 <template><think><set var="count">0</set>
@@ -1020,7 +1020,7 @@ Altogether, the above components form the following code:
 <li><set var="count"><map><name>successor</name><get name="count"/></map></set> <loop/></li>
 </condition></template>
 </category>
-```
+~~~
 
 When the second `<li>` has looped enough time for "count" to equal 8, the first list item will be returned and the loop will terminate. The bot will then respond to all of the text returned by the second list item \(notice that when the "count" variable is reset, there is no `<think>` tag\).
 
@@ -1042,7 +1042,7 @@ Categories learned using `<learnf>` will be written to a new AIML file and can b
 
 When the category below is matched, the bot will now have access to the category found within the &lt;learn&gt; tags:
 
-```
+~~~
 <category>
 <pattern>THE SKY IS BLUE</pattern>
 <template>I will remember that the sky is blue
@@ -1054,11 +1054,11 @@ When the category below is matched, the bot will now have access to the category
 </learn>
 </template>
 </category>
-```
+~~~
 
 Learning involves _nested_ categories. To access variables defined in the outer category from the inner category, we use the `<eval>` tags. Anything found within the &lt;eval&gt; tags will be evaluated FIRST, before the new category is actually created. This allows us to use `<star/>`within the `<learn>` tags to access parts of the input matched by the outer category.
 
-```
+~~~
 <category>
 <pattern>THE * IS BLUE</pattern>
 <template>I will remember that the <star/> is blue
@@ -1070,7 +1070,7 @@ Learning involves _nested_ categories. To access variables defined in the outer 
 </learn>
 </template>
 </category>
-```
+~~~
 
 We can now reference the words captured by the wildcard in our new category.
 
@@ -1109,12 +1109,12 @@ Why is this useful? Imagine another platform user has created a bot that is an e
 
 If this bot has been published to the Directory, your bot can access its expertise \(contained in its AIML categories\) by sending it any input that relates to coffee:
 
-```
+~~~
 <category>
 <pattern>I LIKE COFFEE</pattern>
 <template><sraix bot=“johndoe/coffeebot”>COFFEE</sraix></template>
 </category>
-```
+~~~
 
 If coffeebot is able to form a match, your bot will return coffeebot's output as if it were its own output to the client.
 
@@ -1141,14 +1141,14 @@ Note that a "word" in AIML is separated from other words using a space. These ta
 
 Substitutions are used to "normalize" interactions that involve pronounces, punctuation, gender, etc. You can call a substitution by using the file's name within a tag, for example: `person.substitution` = `<person>`.
 
-```
+~~~
 <category>
 <pattern>I AM *</pattern>
 <template>
 YOU ARE <person><star/></person>
 </template>
 </category>
-```
+~~~
 
 > **Human: **I am waiting for you.  
 > **Bot: **You are waiting for me.
@@ -1171,26 +1171,26 @@ Earlier in the tutorial, we introduced the concept of input pre-processing or "n
 
 This means that punctuation is not "preserved" by simply echoing part of the user's input, for example:
 
-```
+~~~
 <category>
 <pattern>URL *</pattern>
 <template><star/></template>
 </category>
-```
+~~~
 
 > **Human: **URL google.com  
 > **Bot:** google dot com
 
 To preserve punctuation found in the input we use `denormalize.substitution`. This file contains all of the words that punctuation marks are normalized to. From the previous example, we know that the string ".com" is normalized to "dot com". To reverse this substitution, we echo the user's input within the denormalize tags:
 
-```
+~~~
 <category>
 <pattern>URL *</pattern>
 <template>
 <denormalize><star/></denormalize>
 </template>
 </category>
-```
+~~~
 
 > **Human: **URL google.com  
 > **Bot:** google.com
@@ -1209,7 +1209,7 @@ You can return the current date in the format of your choice, specified like the
 
 You can use `<interval>`, `<from>` and `<to>`, and `<style>` to calculate the internal between two dates \(in this case, the bot's birthdate property and today's date\):
 
-```
+~~~
 <category>
 <pattern>AGE IN YEARS</pattern>
 <template><interval format="%B %d, %Y">
@@ -1218,7 +1218,7 @@ You can use `<interval>`, `<from>` and `<to>`, and `<style>` to calculate the in
 <to><date format="%B %d, %Y" /></to>
 </interval></template>
 </category>
-```
+~~~
 
 ---
 

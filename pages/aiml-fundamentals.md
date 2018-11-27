@@ -48,12 +48,12 @@ Symbolic reduction refers to the process of simplifying complex grammatical form
 
 Many of the more complex forms reduce to simpler forms using AIML categories designed for symbolic reduction:
 
-```
+~~~
 <category>
 <pattern>DO YOU KNOW WHO * IS</pattern>
 <template><srai>WHO IS <star/></srai></template>
 </category>
-```
+~~~
 
 Whatever input matched this pattern, the portion bound to the wildcard `*` may be inserted into the reply with the markup `<star/>`. This category reduces any input of the form "Do you know who X is?" to "Who is X?"
 
@@ -61,12 +61,12 @@ Whatever input matched this pattern, the portion bound to the wildcard `*` may b
 
 Many individual sentences may be reduced to two or more subsentences, and the reply formed by combining the replies to each. A sentence beginning with the word "Yes" for example, if it has more than one word, may be treated as the subsentence "Yes." plus whatever follows it.
 
-```
+~~~
 <category>
 <pattern>YES *</pattern>
 <template><srai>YES</srai><sr/></template>
 </category>
-```
+~~~
 
 The markup `<sr/>` is simply an abbreviation for `<srai><star/></srai>`.
 
@@ -74,7 +74,7 @@ The markup `<sr/>` is simply an abbreviation for `<srai><star/></srai>`.
 
 AIML does not permit more than one pattern per category. Synonyms are perhaps the most common application of `<srai>`. Many ways to say the same thing reduce to one category, which contains the reply:
 
-```
+~~~
 <category>
 <pattern>HELLO</pattern>
 <template>Hi there!</template>
@@ -99,20 +99,20 @@ AIML does not permit more than one pattern per category. Synonyms are perhaps th
 <pattern>HOLA</pattern>
 <template><srai>HELLO</srai></template>
 </category>
-```
+~~~
 
 ### \(4\). Spelling and Grammar correction
 
 The single most common client spelling mistake is the use of "your" when "you’re" or "you are" is intended. Not every occurrence of "your" however should be turned into "you’re." A small amount of grammatical context is usually necessary to catch this error:
 
-```
+~~~
 <category>
 <pattern>YOUR A *</pattern>
 <template>I think you mean "you’re" or "you are" not "your."
 <srai>YOU ARE A <star/></srai>
 </template>
 </category>
-```
+~~~
 
 Here the bot both corrects the client input and acts as a language tutor.
 
@@ -120,7 +120,7 @@ Here the bot both corrects the client input and acts as a language tutor.
 
 Frequently we would like to write an AIML template which is activated by the appearance of a keyword anywhere in the input sentence. The general format of four AIML categories is illustrated by this example borrowed from ELIZA:
 
-```
+~~~
 <category>
 <pattern>MOTHER</pattern>
 <template> Tell me more about your family. </template>
@@ -140,7 +140,7 @@ Frequently we would like to write an AIML template which is activated by the app
 <pattern>_ MOTHER *</pattern>
 <template><srai>MOTHER</srai></template>
 </category>
-```
+~~~
 
 The first category both detects the keyword when it appears by itself, and provides the generic response. The second category detects the keyword as the suffix of a sentence. The third detects it as the prefix of an input sentence, and finally the last category detects the keyword as an infix. Each of the last three categories uses `<srai>` to link to the first, so that all four cases produce the same reply, but it needs to be written and stored only once.
 
@@ -148,7 +148,7 @@ The first category both detects the keyword when it appears by itself, and provi
 
 It is possible to write conditional branches in AIML, using only the `<srai>` tag. Consider three categories:
 
-```
+~~~
 <category>
 <pattern>WHO IS HE</pattern>
 <template><srai>WHOISHE <get name="he"/></srai></template>
@@ -163,7 +163,7 @@ It is possible to write conditional branches in AIML, using only the `<srai>` ta
 <pattern>WHOISHE UNKNOWN</pattern>
 <template>I don’t know who he is.</template>
 </category>
-```
+~~~
 
 Provided that the predicate "he" is initialized to "Unknown," the categories execute a conditional branch depending on whether "he" has been set. As a convenience to the botmaster, AIML also provides the equivalent function through the `<condition>` tag.
 
@@ -209,19 +209,19 @@ The keyword "that" in AIML refers to the robot’s previous utterance. Specifica
 
 In AIML the syntax `<that>...</that>` encloses a pattern that matches the robot’s previous utterance. A common application of `<that>` is found in yes-no questions:
 
-```
+~~~
 <category>
 <pattern>YES</pattern>
 <that>DO YOU LIKE MOVIES</that>
 <template>What is your favorite movie?</template>
 </category>
-```
+~~~
 
 This category is activated when the client says YES. The chatbot must determine what they are saying "yes" to. If the chatbot asked, "Do you like movies?," this category matches, and the response, "What is your favorite movie?," continues the conversation along the same lines.
 
 Another sample application of `<that>` are categories that enable the robot to respond to knock-knock jokes:
 
-```
+~~~
 <category>
 <pattern>KNOCK KNOCK</pattern>
 <template>Who is there?</template>
@@ -238,7 +238,7 @@ Another sample application of `<that>` are categories that enable the robot to r
 <that>* WHO</that>
 <template>Ha ha very funny, <get name="name"/>.</template>
 </category>
-```
+~~~
 
 > C: Knock knock.
 >
@@ -274,7 +274,7 @@ The first part of the path to match is the input. If more than one category have
 
 In terms of design, you should never use `<that>` unless you have written two categories with the same `<pattern>`, and never use `<topic>` unless you write two categories with the same `<pattern>` and `<that>`. Still, one of the most useful applications for `<topic>` is to create subject-dependent lines like:
 
-```
+~~~
 <topic name="CARS">
 
 <category>
@@ -287,7 +287,7 @@ In terms of design, you should never use `<that>` unless you have written two ca
 <li>My favorite car is one with a driver.</li>
 </random>
 </template>
-```
+~~~
 
 Considering the vast size of the set of things people could say that are grammatically correct or semantically meaningful, the number of things people actually do say is surprisingly small. In his book _How the Mind Works_, Stephen Pinker wrote:
 

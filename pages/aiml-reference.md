@@ -93,7 +93,7 @@ Provide the *url* where your menu image is hosted.
 One or more *button* tags to offer your users response options.
 
 #### Usage
-```
+~~~
   <card>
     <title>Card Menu</title>
     <subtitle>Describe a card</subtitle>
@@ -103,7 +103,7 @@ One or more *button* tags to offer your users response options.
       <postback>xlearnmoreabout cards</postback>
     </button>
   </card>
-```
+~~~
 
 ### &lt;carousel&gt;
 {: #carousel}
@@ -115,7 +115,7 @@ A *carousel tag* wraps around some number of *card* elements to create a tap-thr
 At least two cards - the carousel will display them one at a time, and allow your users to tap through them.
 
 #### Usage
-```
+~~~
   <carousel>
     <card>
       <title>Robots</title>
@@ -130,7 +130,7 @@ At least two cards - the carousel will display them one at a time, and allow you
       <button>Tell Me More</button>
     </card>
   </carousel>
-```
+~~~
 
 ### &lt;category&gt;
 {: #category}
@@ -218,9 +218,9 @@ Specifies the format of the returned date. This can be written like arguments to
 A *delay tag* is useful for introducing a pause between different parts of a response for easier reading, or to simulate the time it would take a human to read and type a response. They're easy to use - just wrap the tag around the number of seconds you want your bot response to wait.
 
 #### Usage
-```
+~~~
   <delay>3</delay>
-```
+~~~
 
 ### &lt;denormalize&gt;
 {: #denormalize}
@@ -348,9 +348,9 @@ The `gender.substitution` file contains properties whose names and values contai
 The *image tag* allows your bot to send back image responses. It's simple to use - just wrap the tag around the *url* of the image.
 
 #### Usage
-```
+~~~
   <image>https://url.for.image</image>
-```
+~~~
 
 ### &lt;interval&gt;
 {: #interval}
@@ -1017,11 +1017,11 @@ If your bot has 1000 categories:
 A *split tag* does just what it says - splits a bot response into multiple parts. The split message will be displayed to your user as separate messages, which can be combined with a *delay* tag to space out long responses.
 
 #### Usage
-```
+~~~
   Some text
   <split/>
   More text
-```
+~~~
 
 ### &lt;sr /&gt;
 {: #sr}
@@ -1484,9 +1484,9 @@ The *uppercase element* transforms all letters in its contents to uppercase.
 The *video tag* allows your bot to send back video responses. It's simple to use - just wrap the tag around the *url* of the video.
 
 #### Usage
-```    
+~~~    
   <video>https://url.for.video</video>
-```
+~~~
 
 
 </div>

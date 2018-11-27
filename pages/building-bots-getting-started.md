@@ -28,7 +28,7 @@ AIML is an acronym for “artificial intelligence markup language,” and is the
 
 Let’s begin with everyone’s favorite lesson when learning a new programming language. Create a file called`main.aiml`and paste in the following text:
 
-```
+~~~
 <?xml version="1.0" encoding="utf-8" ?>
 <aiml version="2.0">
 
@@ -38,7 +38,7 @@ Let’s begin with everyone’s favorite lesson when learning a new programming 
 </category>
 
 </aiml>
-```
+~~~
 
 Add this file to your bot, compile it, and now try talking to it:
 
@@ -47,45 +47,45 @@ Add this file to your bot, compile it, and now try talking to it:
 
 Let’s break down the file, line by line, to better understand the structure of an AIML file:
 
-```
+~~~
 <?xml version="1.0" encoding="utf-8" ?>
-```
+~~~
 
 This line declares your file as an XML document. While this is unecessary from the point of view of the Pandorabots platform, it actually enables features in your text editor that can be of great help during AIML development. You don’t have to take advantage of this, but we generally suggest that you include the declaration.
 
-```
+~~~
 <aiml version="2.0">
-```
+~~~
 
 This line declares the file as an AIML document. This line is required by the compiler. All of your AIML code will appear between this and the final line, which marks the end of the AIML document.
 
-```
+~~~
 <category>
-```
+~~~
 
 This line marks the beginning of our first [category](http://docs.pandorabots.com/aiml/category), which is the base unit of code in an AIML based chatbot. Each category defines an input \([pattern](http://docs.pandorabots.com/aiml/pattern)\) and an output \([template](http://docs.pandorabots.com/aiml/template)\).
 
-```
+~~~
 <pattern>HI</pattern>
-```
+~~~
 
 This is the category’s [pattern](http://docs.pandorabots.com/aiml/pattern) element. The pattern defines some input text. When you say something to the bot, it will evaluate all of its categories until it finds one whose pattern matches the input. In this example, our category will be matched when the user’s input is “HI”.
 
-```
+~~~
 <template>Hello world!</template>
-```
+~~~
 
 The template defines an action that the bot should take when a category has been matched. In this example, the action to return the text “Hello world!” to the person speaking with the bot.
 
-```
+~~~
 </category>
-```
+~~~
 
 This marks the end of our category. You can insert new categories below this, as long as they appear before the closing AIML tag.
 
-```
+~~~
 </aiml>
-```
+~~~
 
 This marks the end of the AIML document.
 

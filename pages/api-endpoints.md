@@ -20,9 +20,9 @@ Retrieve a list of your application's bots. Response returns JSON object with in
 
 Returns a 401 error code for invalid app\_ID or user\_key, or if applicable, invalid referrer.
 
-```
+~~~
 curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -45,9 +45,9 @@ If there is already a bot under the same app\_id and botname, a 409 error is ret
 
 Creating more bots than your plan allows or using an invalid app\_id or user\_key \(or if applicable referrer filter\) returns a 401 error.
 
-```
+~~~
 curl -v  -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -69,9 +69,9 @@ Delete a bot on the Pandorabots server.
 
 Deleting a bot that does not exist returns a 412 error. Invalid botname will return a 400 error. Invalid app\_id, user\_key, or referrer filter will return a 401 error.
 
-```
+~~~
 curl -v  -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -95,9 +95,9 @@ Returns a 404 error code for bot not found. Returns a 401 error code for invalid
 
 The`return=zip`option may not behave as expected using Active Docs 1.2
 
-```
+~~~
 curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -132,15 +132,15 @@ If the request is malformed because the file name is invalid or malformed JSON f
 
 If Active Doc spec is not working with this API, please use the following curl command examples:
 
-```
+~~~
 curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/file/foobot.aiml?user_key=USER_KEY'
   --data-binary @/home/foo/foobot.aiml
-```
+~~~
 
-```
+~~~
 curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/set/colors?user_key=USER_KEY'
   --data-binary @/home/foo/colors.set
-```
+~~~
 
 #### Parameters
 
@@ -173,10 +173,10 @@ For malformed JSON in non-AIML files, a 400 error is returned. For malformed fil
 
 If Active Doc spec is not working with this API, please use the following curl command examples:
 
-```
+~~~
 curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/properties?user_key=USER_KEY'
   --data-binary @/home/foo/foobot.properties
-```
+~~~
 
 #### Parameters
 
@@ -200,9 +200,9 @@ Delete an AIML, set, map or substitution bot file
 
 For malformed file-kind, a 404 error is returned. For invalid file or botname, a 412 error is returned.
 
-```
+~~~
 curl -v -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILENAME?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -226,9 +226,9 @@ Delete pdefaults or properties bot file.
 
 For malformed file-kind, a 404 error is returned. For invalid botname, a 412 error is returned.
 
-```
+~~~
 curl -v -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -251,9 +251,9 @@ Retrieve an AIML, set, map or substitution bot file.
 
 For malformed file-kind, a 404 error is returned. For invalid filename or botname, a 400 error is returned. For unknown bot or file, a 412 error is returned.
 
-```
+~~~
 curl -v -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILENAME?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -277,9 +277,9 @@ Retrieve pdefaults or properties bot file.
 
 For malformed file-kind, a 404 error is returned. For invalid botname, a 400 error is returned. For unknown bot or file, a 412 error is returned.
 
-```
+~~~
 curl -v -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -304,9 +304,9 @@ Compiling the bot makes its most recent version available for talk. A 400 error 
 
 You can see any thrown errors in the results field of the returned JSON object:
 
-```
+~~~
 curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/verify?user_key=USER_KEY'
-```
+~~~
 
 #### Parameters
 
@@ -334,9 +334,9 @@ Malformed requests such as exceeding size of input or invalid clientname returns
 
 The response array will contain one element \(response\) for each sentence you input to the bot. You can configure which characters delimit a new sentence in the input by modifying the sentence-splitters property in your bot's property file.
 
-```
+~~~
 curl -v  -X POST 'https://aiaas.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USER_KEY&input=INPUT'
-```
+~~~
 
 #### Parameters
 
@@ -362,9 +362,9 @@ Use these tools to test/debug/trace bot categories.
 
 Malformed requests such as exceeding size of input or invalid clientname returns 400 error code. Error code 412 is returned if the bot is not compiled or does not exist.
 
-```
+~~~
 curl -v  -X POST 'https://aiaas.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USER_KEY&input=INPUT'
-```
+~~~
 
 #### Parameters
 
@@ -399,9 +399,9 @@ aiaas-XXX-user-nnnn, where XXX is your app\_ID and nnnn is numeric starting with
 
 Malformed requests such as exceeding size of input or unknown end-user client\_name returns 400 error code. Error code 412 is returned if the bot is not compiled or does not exist. Error code 429 is returned if your application has reached maximum plan API call limit.
 
-```
+~~~
 curl -v  -X POST 'https://aiaas.pandorabots.com/atalk/APP_ID/BOTNAME?user_key=USER_KEY&input=INPUT'
-```
+~~~
 
 #### Parameters
 

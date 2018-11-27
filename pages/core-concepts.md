@@ -33,12 +33,12 @@ In programming, a variable is a symbol whose value can be changed; AIML has vari
 
 For example, you can use a property to store your bot's age. Create a new property with the name "age" and the value "8" in your bot's properties file\*\*. Then insert this category:
 
-```
+~~~
 <category>
 <pattern>HOW OLD ARE YOU</pattern>
 <template>I am <bot name="age" /> years old.</template>
 </category>
-```
+~~~
 
 _Human_: How old are you?  
 _Bot_ : I am 8 years old.
@@ -51,23 +51,23 @@ Since this is a bot property, any client entering in this input will receive the
 
 Using a predicate variable, you can write a category that will store, for example, the name of your client. This category will store the client's name under a predicate called "name":
 
-```
+~~~
 <category>
 <pattern>MY NAME IS *</pattern>
 <template>Nice to meet you, <set name="name"><star /></set></template>
 </category>
-```
+~~~
 
 Note how the user of the \* wildcard and `<star />` tag allows you to write a single category that will capture any name!
 
 Once you have set a predicate, it can be recalled elsewhere in your AIML.
 
-```
+~~~
 <category>
 <pattern>WHAT IS MY NAME</pattern>
 <template>Your name is <get name="name" />.</template>
 </category>
-```
+~~~
 
 If you have set the predicate using the previous category, this will now recall the value of the predicate "name". If the predicate has **not** been set, then your bot will return the `default-get` value specified in your bot properties file. For example, in Rosie, it is set to "unknown".
 
@@ -85,7 +85,7 @@ Local variables work almost exactly like predicates, but their scope is limited 
 
 Let's say you don't want your bot to return "Your name is unknown." in the case of a client asking without actually telling the bot their name. You can introduce the `<condition>` tag using a local variable called `checkname`, such as:
 
-```
+~~~
 <category>
 <pattern>WHAT IS MY NAME</pattern>
 <template>
@@ -96,7 +96,7 @@ Let's say you don't want your bot to return "Your name is unknown." in the case 
    </condition>
 </template>
 </category>
-```
+~~~
 
 Set the local variable to the value of the predicate `name` and use the `<condition>` tag to control the bot response. Once this interaction has been completed, `checkname` will no longer have a value associated with it.
 
@@ -134,12 +134,12 @@ Substitution files look a lot like map files, but serve a different function. Th
 Input: I am waiting for you.  
 Output: You are waiting for me.
 
-```
+~~~
 <category>
 <pattern>I AM *</pattern>
 <template>You are <person><star/></person></template>
 </category>
-```
+~~~
 
 The person tags found in the template denote that the bot should look for any words in the contained string that match one of the keys found in person.substitution. In this case, the contained string echoed by `<star/>` is "am waiting for you", and the word "you" can be found as a key in the person.substitution file. The bot will replace "you" with the value defined in the substitution file \("me"\), and return the modified response.
 
@@ -152,12 +152,12 @@ This file contains substitutions between first and second person pronouns. The a
 Input: You are waiting for me.  
 Output: I am waiting for you.
 
-```
+~~~
 <category>
 <pattern>YOU ARE *</pattern>
 <template>I am <person><star/></person></template>
 </category>
-```
+~~~
 
 **person2.substitution**
 
@@ -166,12 +166,12 @@ This file is similar to person.substitution, but contains a few transformations 
 Input: Give the password to me.  
 Output: User has asked me to give the password to him or her.
 
-```
+~~~
 <category>
 <pattern>GIVE THE * TO *</pattern>
 <template>User has asked me to give the <star/> to <person2><star index="2"/></person2></template>
 </category>
-```
+~~~
 
 **gender.substitution**
 
@@ -180,12 +180,12 @@ Transforms gender pronouns to the opposite gender. Also rarely used, but potenti
 Input: Does it belong to him?  
 Bot: No, it belongs to her.
 
-```
+~~~
 <category>
 <pattern>DOES IT BELONG TO *</pattern>
 <template>No, it belongs to <gender><star/></gender></template>
 </category>
-```
+~~~
 
 **normal.substitution**
 
@@ -194,12 +194,12 @@ The normal.substitution file functions a bit differently than the others, in tha
 Input: Say pandorabots.com.  
 Output: pandorabots dot com
 
-```
+~~~
 <category>
 <pattern>SAY *</pattern>
 <template><star/></template>
 </category>
-```
+~~~
 
 This simple category allows us to see the AIML preprocessor at work. The normal.substitution file defines the key ".com" with the value "dot com". By echoing the wildcard contents, we can see the "normalized" input string that matched the pattern. Try out some additional inputs to see other normalizations in action:
 
@@ -225,12 +225,12 @@ This file will "correct" normalizations done to your input, so that echoed input
 Input: Take me to pandorabots.com.  
 Template: Redirecting to pandorabots.com
 
-```
+~~~
 <category>
 <pattern>TAKE ME TO *</pattern>
 <template>Redirecting to <denormalize><star/></denormalize></template.
 </category>
-```
+~~~
 
 Without the denormalize tag, `<star/>` would have returned "pandorabots dot com" as in the previous example. Instead, we are substituting the string "dot" with a period, as the input was originally typed.
 
@@ -252,7 +252,7 @@ If you want to change your bot to support different sentence splitters, you will
 Input: Hello; My name is Charles.  
 Output: Hello. Nice to meet you, Charles.
 
-```
+~~~
 <category>
 <pattern>Hello</pattern>
 <template>Hello.</template>
@@ -262,7 +262,7 @@ Output: Hello. Nice to meet you, Charles.
 <pattern>My name is *</pattern>
 <template>Nice to meet you, <set name="myname"><star/></set>.</template>
 </category>
-```
+~~~
 
 First, update your bot property to add the semicolon to the "sentence-splitters" property  
 In the Playground Editor:
@@ -271,7 +271,7 @@ In the Playground Editor:
 
 Or, if you are updating the file in a text editor before uploading, add it to the JSON list item for "sentence-splitters".
 
-```
+~~~
 [["name", "testbot"],
 ["default-get", "unknown"],
 ["default-property", "unknown"],
@@ -279,7 +279,7 @@ Or, if you are updating the file in a text editor before uploading, add it to th
 ["sentence-splitters", ".!?。？！;"],
 ["learn-filename", "pand_learn.aiml"],
 ["max-learn-file-size", "1000000"]]
-```
+~~~
 
 You will also need to update normal.substitution to reflect this addition. By default, normal.substitution replaces the semicolon with a single space. This substitution pair needs to be deleted in order for the semicolon to be identified as a sentence delimiter in our system.
 
@@ -293,12 +293,12 @@ Substitutions are especially handy if you have connected your bot to messaging s
 
 The Ultimate Default Category \(UDC\) is used by the bot to provide an answer if no other suitable category can be matched.
 
-```
+~~~
 <category>
 <pattern>*</pattern>
 <template>I have no answer for that.</template>
 </category>
-```
+~~~
 
 We use an asterisk `*` in the pattern to capture the user's input. This symbol in AIML is known as a wildcard.
 
@@ -308,9 +308,9 @@ Wildcards are used to capture many inputs using only a single category. There ar
 
 The `*` symbol is able to capture one \(1\) or more words in the user input
 
-```
+~~~
 <pattern>HELLO *</pattern>
-```
+~~~
 
 This pattern would match all of the following inputs:
 
@@ -325,9 +325,9 @@ But **not** the word "Hello" by itself, because there must be at least one word 
 
 The `^` symbol is also a wildcard, however, it can capture 0 or more words.
 
-```
+~~~
 <pattern>HELLO ^</pattern>
-```
+~~~
 
 This pattern would match all of the following inputs:
 
@@ -388,11 +388,11 @@ This example shows the matching priority for all four wildcards, along with a pa
 Sometimes there is an exact match that we would like to take highest priority, overriding the `_` and `#` wildcards.  
 We can use the $ sign to signify that a pattern will be matched first given a particular word.
 
-```
+~~~
 <pattern>$WHO IS MIKE</pattern>
 :
 <pattern>_ MIKE</pattern>
-```
+~~~
 
 The first pattern matches "Who is Mike?" while the second pattern matches all other inputs ending with "Mike".
 
@@ -412,10 +412,10 @@ You can have more than one wildcard per pattern. You can echo multiple wildcards
 pattern by using `<star index="x" />`, where x corresponds to the index number \(position in  
 the sentence\) of the wildcard. Not including the index assumes the first wildcard. For example:
 
-```
+~~~
 <category>
 <pattern>MY NAME IS * AND I AM * YEARS OLD</pattern>
 <template>Hi <star/>. I am also <star index="2" /> years old!</template>
 </category>
-```
+~~~
 </div>

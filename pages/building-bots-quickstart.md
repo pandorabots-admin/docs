@@ -55,12 +55,12 @@ Use the File Menu to create a new AIML file called _greetings_.
 
 Copy the code for the following category into the text editor in between the start `<aiml>` and end `</aiml>` tags:
 
-```
+~~~
 <category>
     <pattern>HI</pattern>
     <template>Hello, world!</template>
 </category>
-```
+~~~
 
 ![](/assets/firstcat1.png)![](/assets/firstcat2.png)
 
@@ -82,12 +82,12 @@ The _Chat Widget_ allows you to talk to your bot as if you were the client. Open
 
 Congratulations on creating your first category! Now, add a `*` wildcard to the pattern after HI, which will enable matching any phrase that starts with _Hi_. It should look like this:
 
-```
+~~~
 <category>
     <pattern>HI *</pattern>
     <template>Hello, world!</template>
 </category>
-```
+~~~
 
 ![](/assets/star.png)
 

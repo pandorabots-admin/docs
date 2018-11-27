@@ -77,34 +77,34 @@ A property is a variable that is global to all users of a bot. Generally, proper
 
 These two files contain categories that actually implement the variables you have defined in the properties file. For example, Rosie comes preloaded with a property named “job”, and the property is integrated in a category found in bot\_profile.aiml:
 
-```
+~~~
 <category><pattern>JOB</pattern>
 <template>I am a full-time <bot name="job"/>.</template>
 </category>
-```
+~~~
 
 Now, when the JOB pattern is matched, the category will give a response that contains whatever value you have assigned the “job” property in the rosie.properties file.
 
 Most of the fun in bot development is not only picking out custom property values for your bot, but also customizing the templates in which these values are returned. For example, I might edit the above category to add a little more flair to my bot:
 
-```
+~~~
 <category><pattern>JOB</pattern>
 <template>By day, I am a <bot name="job"/>. At night, I crawl the internet looking for pictures of cats wearing funny hats.</template>
 </category>
-```
+~~~
 
 ## Client information \(client\_profile.aiml\)
 
 Pandorabots are amazing because of their uncanny ability to remember personal information about the people talking to them. These pieces of information are stored as predicate variables, which are local to the particular client. The client\_profile.aiml file contains mostly categories designed to both set and recall these predicates in the course of conversation:
 
-```
+~~~
 <category><pattern>I AM FROM *</pattern>
 <template>Is that where you live now?  <think><set name="birthplace"><star/></set></think></template>
 </category>
 <category><pattern>MY BIRTHPLACE</pattern>
 <template><get name="birthplace"/></template>
 </category>
-```
+~~~
 
 This is another great file to customize, by changing the existing templates, or by adding new categories that set new predicates about your user.
 
@@ -112,22 +112,22 @@ This is another great file to customize, by changing the existing templates, or 
 
 The ultimate default category \(UDC\) is designed to give a response when your bot was unable to match the user’s input with any other category. If your bot is in its beginning stages of development, the UDC will be an indispensable tool.
 
-```
+~~~
 <category><pattern>*</pattern>
 <template>I didn’t understand that!</template>
 </category>
-```
+~~~
 
 You can customize this file by changing the default list elements in the UDC template, or by adding your own additional list elements.
 
 The that.aiml file is included mostly as an example of what can be done with context in AIML using the `<that>` tag. The `<that>` tag is used to attach a category to the previous answer given by a bot; in other words, a category with a `<that>` tag can only be matched if the the previous response matches the contents of `<that>`. For example:
 
-```
+~~~
 <category><pattern>YES</pattern>
 <that>IS IT A NICE PLACE</that>
 <template>What do you like best about it?</template>
 </category>
-```
+~~~
 
 Out of context, the input “yes” could be referring to anything. This category’s `<that>` tag, however, places the yes in the context of the bot’s previous response \(IT IS A NICE PLACE\).
 
@@ -141,7 +141,7 @@ The configuration file is designed with the application developer in mind. It al
 
 Think about it this way: let’s say I have a category that displays a picture of a cat when activated. What if there is no screen interface for my bot? You can use the “env” predicate in categories whose response depends on the condition of the client’s environment. Here’s an example from bot\_profile.aiml:
 
-```
+~~~
 <category><pattern>PIC</pattern>
 <template>
 <condition name="env">
@@ -150,17 +150,17 @@ Think about it this way: let’s say I have a category that displays a picture o
 </condition>
 </template>
 </category>
-```
+~~~
 
 The default value of the “env” predicate is “browser”. If the value of “env” is browser, the bot will respond with the first list item. If the “env” predicate is set to anything else, the second list item will serve as the response.
 
 You can use the categories found in config.aiml to set these types of predicates. You can then write AIML categories whose response is dependent on the value of these predicates:
 
-```
+~~~
 <category><pattern>XSET ENV *</pattern>
 <template>Environment is <set name="env"><star/></set></template>
 </category>
-```
+~~~
 
 ## Utilities \(date.aiml, dialog.aiml, roman.aiml, utilities.aiml\)
 
@@ -185,7 +185,7 @@ The reason these inputs are able to match our JOB category is because Rosie is c
 
 The bulk of Rosie \(and ALICE\) is made up of these reduction categories. For example, here are some categories from reductions1.aiml:
 
-```
+~~~
 <category><pattern>WHAT COUNTRY AM I *</pattern>
 <template><srai>MY COUNTRY </srai></template>
 </category>
@@ -198,7 +198,7 @@ The bulk of Rosie \(and ALICE\) is made up of these reduction categories. For ex
 <category><pattern>WHAT COUNTRY IS THIS</pattern>
 <template><srai>MY COUNTRY </srai></template>
 </category>
-```
+~~~
 
 These categories reduce similar inputs to the simple pattern MY COUNTRY. You can modify the bot’s response to all four of these patterns by finding the MY COUNTRY category and changing the contents of its template.
 

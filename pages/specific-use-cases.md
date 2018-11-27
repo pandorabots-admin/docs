@@ -44,21 +44,21 @@ In the example above, you have one answer and at least 6 different ways to ask t
 
 You can pick one question as your canonical form, and build the base category:
 
-```
+~~~
 <category>
   <pattern>HOW DO I SIGN UP</pattern>
   <template>Go to fabcompany.com/services and click the SIGN UP button in the middle of the page.</template>
 </category>
-```
+~~~
 
 Alternatively, we recommend using a naming convention with business name/department and type of question, such as FABSERVICESSIGNUP.
 
-```
+~~~
 <category>
   <pattern>FABSERVICESSIGNUP</pattern>
   <template>Go to fabcompany.com/services and click the SIGN UP button in the middle of the page.</template>
 </category>
-```
+~~~
 
 ## Step 3: Develop Symbolic Reductions {#step-3-develop-symbolic-reductions}
 
@@ -73,7 +73,7 @@ If you have a list from chat history, you can just keep adding each question as 
 
 Example AIML would look like:
 
-```
+~~~
 <category>
   <pattern>HOW DO I SIGN UP FOR YOUR SERVICES</pattern>
   <template><srai>FABSERVICESSIGNUP</srai></template>
@@ -88,7 +88,7 @@ Example AIML would look like:
 </category>
      :
      :
-```
+~~~
 
 This is simple but is not as flexible. This solution would not take into consideration typos or unconventional phrasing.
 
@@ -96,7 +96,7 @@ This is simple but is not as flexible. This solution would not take into conside
 
 Using [wildcards in AIML](http://docs.pandorabots.com/tutorials/wildcards/) pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
 
-```
+~~~
 <category>
   <pattern>_ SIGN UP _</pattern>
   <template><srai>FABSERVICESSIGNUP</srai></template>
@@ -106,11 +106,11 @@ Using [wildcards in AIML](http://docs.pandorabots.com/tutorials/wildcards/) patt
   <pattern>_ SIGNUP _</pattern>
   <template><srai>FABSERVICESSIGNUP</srai></template>
 </category>
-```
+~~~
 
 These reductions would apply to all 6 of the original questions. You could even add reductions that addresses a very common misspelling of your keyword\(s\). For instance, the word “sign” is commonly misspelled as “sing” and “sigh”
 
-```
+~~~
 <category>
   <pattern>_ SING UP _</pattern>
   <template><srai>FABSERVICESSIGNUP</srai></template>
@@ -119,7 +119,7 @@ These reductions would apply to all 6 of the original questions. You could even 
   <pattern>_ SIGH UP _</pattern>
   <template><srai>FABSERVICESSIGNUP</srai></template>
 </category>
-```
+~~~
 
 The limitations of this approach is that it requires some human analysis, and too few words in the reduction can be less accurate. For instance, if someone inputs “I did sign up and hate it!”, the chatbot’s response would not work well if using the FABSERVICESIGNUP canonical form.
 
@@ -183,38 +183,38 @@ Let’s first take a look at the comparison engine so that we can have a little 
 
 The first pattern is XSIMILAR \*, which accepts the name of an artist in the wildcard. It will return the name of another artist that makes music in the same genre as the artist who was provided. For example:
 
-```
+~~~
 Input: XSIMILAR Kendrick Lamar  
 Output: Kanye West
-```
+~~~
 
 > **Note:**the X prefix in some patterns is used to indicate that a pattern is intended to be a “private” category - in other words, these categories are used by the bot and it is not expected the user will ever type something like XSIMILAR. You may create your own private categories in this vein, and may use anything in the place of X \(say, your initials\), so long as the text is highly unlikely to appear in a user input.
 
 The second pattern is XRANDOM \* BLOCK ^, which accepts the name of a genre, and returns a random artist from that genre. The BLOCK ^ portion is designed so that you may optionally block an artist from being selected.
 
-```
+~~~
 Input: XRANDOM hiphop BLOCK Tyga
 Output: Iggy Azalea
-```
+~~~
 
 You’ll also notice the use of the`<set>`tags in the pattern of these categories. Each set file \(classical.set, edm.set, etc.\) is just a grouping of artists by genre. To add more artists to the comparison engine, just find the correct set and add their name to the end!
 
 This bot is really a “utility” - in other words, it’s not meant to be contacted directly by your user. Instead, it is to be used via`<sraix>`in another bot. Careful placement in the template of your calling bot can yield seamless insertion of the output of the utility bot:
 
-```
+~~~
 <category>
   <pattern>I LIKE TO LISTEN TO DRAKE</pattern>
   <template>
     If you like Drake, you might also like <sraix bot="djf/musiccat">XSIMILAR DRAKE</sraix>
   </template>
 </category>
-```
+~~~
 
 ## Artist expert {#artist-expert}
 
 As an example of an “expert” bot, we’ve also included a bot that has some information specific to an artist. Drakebot only has 2 categories:
 
-```
+~~~
 <category>
   <pattern>XBIO</pattern>
   <template>
@@ -240,18 +240,18 @@ As an example of an “expert” bot, we’ve also included a bot that has some 
     </random>
   </template>
 </category>
-```
+~~~
 
 The first category is an example of how you might return some biographical information about the artist in question. The second category is an example of how you might store additional information about an artist like their playlist - here, the category is designed to return the name of a random song. You could build on this by including a link to the song on a streaming service, which might actually play the song when you click.
 
 This bot is also a utility - rather than talking to it directly, we can use`<sraix>`to call its private categories and insert its responses into another bot:
 
-```
+~~~
 <category>
   <pattern>TELL ME ABOUT DRAKE</pattern>
   <template><sraix bot="djf/drakebot">XBIO</sraix></template>
 </category>
-```
+~~~
 
 ## Personal bot {#personal-bot}
 
@@ -259,12 +259,12 @@ Now that we’ve explained some of the bots in our network, let’s take a look 
 
 This bot also contains many_reductions_, which are categories that attempt to “reduce” or parse what the user has said into something the bot might understand.
 
-```
+~~~
 <category>
   <pattern>HELLO THERE</pattern>
 <template><srai>HI</srai></template>
 </category>
-```
+~~~
 
 In this reduction, the pattern HELLO THERE does not return any text of its own, but instead uses`<srai>`to insert the return value of a different category \(HI\). We won’t be sharing all of these in the tutorial because that would make it far too long, but you can check them out in the code on Github.
 
@@ -278,7 +278,7 @@ The personal bot is made up of a number of AIML files:
 
 ### main.aiml {#mainaiml}
 
-```
+~~~
 <!-- UDC - catches inputs that don't match elsewhere -->
 <category>
   <pattern>*</pattern>
@@ -301,7 +301,7 @@ The personal bot is made up of a number of AIML files:
     </random>
   </template>
 </category>
-```
+~~~
 
 The goal of the Personal bot is to get some information from the user so that it can make a recommendation about what they should listen to. You’ll notice that the first two categories both end with`<srai>XPROMPT</srai>`, which is a design pattern we use to try and direct the conversation. You can use this all over your AIML codebase to “tack on” the bot’s question to the end of an output.
 
@@ -309,7 +309,7 @@ The goal of the Personal bot is to get some information from the user so that it
 
 The personal bot also features a file recommend.aiml, which makes a recommendation to the user based on their favorite artist.
 
-```
+~~~
 <category>
   <pattern>WHAT SHOULD I LISTEN TO</pattern>
   <template>
@@ -319,11 +319,11 @@ The personal bot also features a file recommend.aiml, which makes a recommendati
     </condition>
   </template>
 </category>
-```
+~~~
 
 The bot relies on a predicate`favoriteartist`to make the recommendation. In the first category, the`<condition>`block runs a check on the existence of this predicate - if doesn’t exist, the bot will ask the user for that info. If it does exist, then the bot can move on the the`XREC`category to make the recommendation.
 
-```
+~~~
 <category>
   <pattern>XREC</pattern>
   <template>
@@ -332,28 +332,28 @@ The bot relies on a predicate`favoriteartist`to make the recommendation. In the 
     Want to hear a track?
   </template>
 </category>
-```
+~~~
 
 It is at this point that the personal bot reaches out to another bot in its network. In this case, it is sending the user’s`favoriteartist`to the comparison engine bot, and inserting that bot’s response into its own. From the user’s perspective, there is only one bot, but in reality the two work together to form the network’s response.
 
-```
+~~~
 User: What should I listen to?
 Bot: Tell me one of your favorite artists.
 User: Ed Sheeran.
 Bot: If you like Ed Sheeran, you might also Sam Smith. Want to hear a track?
-```
+~~~
 
 ### mood.aiml {#moodaiml}
 
 The categories in this file are designed to give the user a recommendation based on their current mood.
 
-```
+~~~
  <category>
   <pattern>HAPPY</pattern>
   <that>HOW ARE YOU FEELING</that>
   <template>Glad to hear it! You should listen to some <sraix bot="djf/musiccat">XRANDOM POP BLOCK</sraix> to complement your mood.</template>
 </category>
-```
+~~~
 
 All of these categories follow a similar model where the pattern is a different mood, and the response calls out to the comparison engine bot to get a random artist from a specific genre. If you remember our XPROMPT category, it will either return “What are you up to right now” or “How are you feeling?” - we use the`<that>`tag to ensure this category will only match if the latter was the last response given by the bot.
 
@@ -361,19 +361,19 @@ All of these categories follow a similar model where the pattern is a different 
 
 This file is similar to the mood component, except it attempts to make a recommendation based on the user’s current activity. This could be working, exercising, sleeping, etc. Depending on what the user is doing, the personal bot will again reach out to the comparison engine to get a random artist from a specified genre:
 
-```
+~~~
 <category>
   <pattern>WORKING</pattern>
   <that>WHAT ARE YOU UP TO RIGHT NOW</that>
   <template>I find <sraix bot="djf/musiccat">XRANDOM CLASSICAL BLOCK</sraix> to be great background music when I am working.</template>
 </category>
-```
+~~~
 
 ## artists.aiml {#artistsaiml}
 
 The categories in this file are designed for interfacing with the artist expert.
 
-```
+~~~
 <category>
     <pattern>TELL ME ABOUT *</pattern>
     <template><srai>XBIO <star/></srai></template>
@@ -397,35 +397,35 @@ The categories in this file are designed for interfacing with the artist expert.
     <sraix><bot><bot name="app-id"/>/<map name="artists"><thatstar/></map></bot>REC</sraix> - <formal><thatstar/></formal>
   </template>
 </category>
-```
+~~~
 
 Take a close look at the`<think>`tag in XBIO \*:
 
-```
+~~~
 <think><set var="artist"><map name="artists"><star/></map></set></think>
-```
+~~~
 
 This block of AIML sets a local variable whose value comes from the artists.map file, which is a sort of registry for all the artists expert bots in the network. This registry associates the artist’s name with the name of the artist expert bot.
 
-```
+~~~
 [
   ["Drake", "djf/drakebot"]
 ]
-```
+~~~
 
 Right now we only have one expert bot in the network, but the idea is that the bot might know about some artists, and might not know about others. In the case that the bot does not have access to an expert bot, the first`<li>`will be returned:
 
-```
+~~~
 User: Tell me about Taylor Swift
 Bot: I don't know much about that artist.
-```
+~~~
 
 But if we have registered the artist bot in artists.map, then the second`<li>`will be returned and the bot will contact the artist bot for an answer.
 
-```
+~~~
 User: Tell me about Drake
 Bot: Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper ...
-```
+~~~
 
 ## Final notes {#final-notes}
 

@@ -22,9 +22,9 @@ In order to connect to the Pandorabots API, you have to register for a plan and 
 
 You should include your user key as a URL parameter to each API call that you make:
 
-```
+~~~
   user_key=USER-KEY
-```
+~~~
 
 Your Application ID is required in the path of your request. This can be found on your application's page. You may have multiple bots under the same`app_id`.
 

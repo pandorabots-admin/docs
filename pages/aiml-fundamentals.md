@@ -10,13 +10,13 @@ layout: default
 
 AIML, or Artificial Intelligence Mark-up Language enables people to input knowledge into chatbots.
 
-AIML, describes a class of data objects called AIML objects and partially describes the behavior of computer programs that process them. AIML objects are made up of units called **topics **and **categories**, which contain either parsed or unparsed data.
+AIML, describes a class of data objects called AIML objects and partially describes the behavior of computer programs that process them. AIML objects are made up of units called **topics** and **categories**, which contain either parsed or unparsed data.
 
 Parsed data is made up of characters, some of which form character data, and some of which form AIML elements. AIML elements encapsulate the stimulus-response knowledge contained in the document. Character data within these elements is sometimes parsed by an AIML interpreter, and sometimes left unparsed for later processing by a Responder.
 
 ## CATEGORIES
 
-The basic unit of knowledge in AIML is called a category. Each category consists of an input question, an output answer, and an optional context. The question, or stimulus, is called the pattern. The answer, or response, is called the template. The two primary types of optional context are called "that" and"topic." The AIML pattern language is simple, consisting only of words, spaces, and wildcard symbols like `_`and `*`. The words may consist of letters and numerals, but no other characters. The pattern language is case invariant. Words are separated by a single space, and the wildcard characters function like words.
+The basic unit of knowledge in AIML is called a category. Each category consists of an input question, an output answer, and an optional context. The question, or stimulus, is called the pattern. The answer, or response, is called the template. The two primary types of optional context are called "that" and"topic." The AIML pattern language is simple, consisting only of words, spaces, and wildcard symbols like `_` and `*`. The words may consist of letters and numerals, but no other characters. The pattern language is case invariant. Words are separated by a single space, and the wildcard characters function like words.
 
 The first versions of AIML allowed only one wild card character per pattern. The current AIML standard permits multiple wildcards in each pattern, but the language is designed to be as simple as possible for the task at hand, simpler even than regular expressions. The template is the AIML response or reply. In its simplest form, the template consists of only plain, unmarked text.
 

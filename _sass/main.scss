@@ -53,6 +53,12 @@ code {
       display: block;
     }
 
+    blockquote {
+      border-left: 1px solid #eee;
+      padding-left: 20px;
+      font-style: italic;
+    }
+
     a {
       color: #7C4DFF;
       text-decoration: none;

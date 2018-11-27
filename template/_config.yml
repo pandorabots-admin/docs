@@ -28,6 +28,7 @@ markdown: kramdown
 kramdown:
   # parse_block_html: true
   parse_span_html: true
+  auto_ids: false
 
 tipue_search:
   include:

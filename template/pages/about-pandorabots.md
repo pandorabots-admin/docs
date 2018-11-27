@@ -16,7 +16,7 @@ layout: default
 
 Welcome to [Pandorabots](https://www.pandorabots.com)! We offer an online web service for building and deploying _chatbots_.
 
-**What is a chatbot? **
+**What is a chatbot?**
 
 A chatbot \(or bot\) is a conversational software program designed to chat with humans via voice or text.
 

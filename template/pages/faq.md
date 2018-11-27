@@ -12,6 +12,7 @@ layout: default
 ###### _Can't find the answer to your question below? Email us at support@pandorabots.com_
 ___
 ### AIML
+{: #aiml}
 
 **What is AIML?**
 
@@ -47,6 +48,7 @@ Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot)
 Please visit the AIML Reference section of the _Pandorabots Documentation_ for a full ist of supported tags.
 ___
 ### API
+{: #api}
 
 **What is an API alert?**
 
@@ -69,6 +71,7 @@ You may find your app ID under the "Custom Application" Integration on the Deplo
 The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for any motivated self-starter eager to study the documentation!
 ___
 ### Bots
+{: #bots}
 
 **How do I create a bot?**
 
@@ -95,6 +98,7 @@ There is a green indicator light next to your bot, meaning that it is currently 
 AIML can be written in almost any natural language. Segmentation is required for some languages - please contact us to learn more about our machine learning based segementer and other language-specific tools.
 ___
 ### Integrations
+{: #integrations}
 
 **What Integrations are available?**
 
@@ -109,6 +113,7 @@ Supported Integrations are determined by a variety of factors including, but not
 Yes, Pandorabots can develop and provide custom integrations for Enterprise Tier platform users. All other users are welcome to roll their own and integrate bots hosted on the platform into their application using our RESTful API.
 ___
 ### Limits
+{: #limits}
 
 **What is the max file size I can upload?**
 
@@ -143,6 +148,7 @@ The Free Tier allows up to 2 bots; the Developer Tier allows up to 10 bots; and 
 Chatlog data and monthly statistics are only available dating back the previous 30 days. You may download your logs at any time from the Logs page. If you require longer or custom storage, dashboards, or analytics, please contact us to inquire about the Enterprise Tier.
 ___
 ### Pricing
+{: #pricing}
 
 **What is a "message"?**
 
@@ -178,6 +184,7 @@ Visit the Account Page to update (or delete) your credit card and other personal
 ___
 
 ### Privacy, Security & Legal
+{: #privacy}
 
 **Is the Pandorabots Platform HIPPA compliant?**
 
@@ -199,6 +206,7 @@ As a general policy, we recommend routinely backing up your bot files. You may d
 
 ___
 ### User Interface
+{: #interface}
 
 **What is the Editor?**
 

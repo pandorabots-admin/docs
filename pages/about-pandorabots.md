@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /about/ | relative_url
 layout: default
 ---
 

@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /about/
 layout: default
 ---
 

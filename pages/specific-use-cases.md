@@ -94,7 +94,7 @@ This is simple but is not as flexible. This solution would not take into conside
 
 ### Wildcards & Keywords {#wildcards--keywords}
 
-Using [wildcards in AIML](/dox/building-bots/#wildcards) pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
+Using [wildcards in AIML](/dox/building-bots/tutorial/#bat-wildcards) pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
 
 ~~~
 <category>

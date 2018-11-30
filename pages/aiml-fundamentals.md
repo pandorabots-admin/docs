@@ -295,13 +295,13 @@ Considering the vast size of the set of things people could say that are grammat
 
 Fortunately for chat robot programmers, Pinker’s calculations are way off. Our data indicate that the number of choices for the "first word" is more than ten, but it is only about two thousand. Specifically, about 2,000 words cover 95% of all the first words input to bots hosted on Pandorabots. The number of choices for the second word is only about two. To be sure, there are some first words \("I" and "You" for example\) that have many possible second words, but the overall average is just under two words. The average branching factor decreases with each successive word.
 
-![](/assets/graphmaster.png)
+![](/assets/img/graphmaster.png)
 
-![](/assets/import.png)
+![](/assets/img/import.png)
 
 No other theory of natural language processing can better explain or reproduce the results within our territory. You don’t need a complex theory of learning, neural nets, or cognitive models to explain how to chat within the limits of A.L.I.C.E.’s categories. Our stimulus-response model is as good a theory as any other for these cases, and certainly the simplest. If there is any room left for "higher" natural language theories, it lies outside the map of the A.L.I.C.E. brain.
 
-![](/assets/spiral.png)
+![](/assets/img/spiral.png)
 
 Academics are fond of concocting riddles and linguistic paradoxes that supposedly show how difficult the natural language problem is. "John saw the mountains flying over Zurich" or "Fruit flies like a banana" reveal the ambiguity of language and the limits of an A.L.I.C.E.-style approach \(though not these particular examples, of course, A.L.I.C.E. already knows about them\). In the years to come we will only advance the frontier further. The basic outline of the spiral graph may look much the same, for we have found all of the "big trees" from "A \*" to "YOUR \*". These trees may become bigger, but unless language itself changes we won’t find any more big trees \(except of course in foreign languages\). The work of those seeking to explain natural language in terms of something more complex than stimulus response will take place beyond our frontier, increasingly in the hinterlands occupied by only the rarest forms of language. Our territory of language already contains the highest population of sentences that people use. Expanding the borders even more we will continue to absorb the stragglers outside, until the very last human critic cannot think of one sentence to "fool" A.L.I.C.E..
 

@@ -197,7 +197,7 @@ curl -v -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/properties?user_k
 ---
 
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}/{filename}**
-{: #delete-bot}
+{: #delete-file}
 
 ###### _Delete a bot file \(AIML, set, map, substitution\)_
 
@@ -277,7 +277,7 @@ curl -v -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILENAM
 ---
 
 ### **GET/bot/{app\_id}/{botname}/{file-kind}**
-{: #delete-bot}
+{: #retrieve-properties}
 
 ###### _Retrieve a bot file \(pdefaults, properties\)_
 

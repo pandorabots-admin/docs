@@ -25,7 +25,7 @@ Previously, you had the option to pass in a `client_name` to identify your end-u
 The Anonymous Talk API is similar to the Talk to Bot API in that to start a talk interaction with your bot with a brand new end-user, at minimum you will need your application ID \(`APP_ID`\), user key \(`USER_KEY`\), bot name \(`BOTNAME`\), and input message to your bot \(`INPUT`\). A sample cURL command would be:
 
 ~~~
-curl -v -X POST 'https://aiaas.pandorabots.com/atalk/APP_ID/BOTNAME?user_key=USER_KEY&input=INPUT'
+curl -v -X POST 'https://api.pandorabots.com/atalk/APP_ID/BOTNAME?user_key=USER_KEY&input=INPUT'
 ~~~
 
 Sending the HTTP request without the client\_name parameter will indicate to AIaaS that you are requesting a new end-user account. The HTTP response will return a JSON object such as:

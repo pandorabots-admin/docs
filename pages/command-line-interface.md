@@ -15,7 +15,7 @@ While we offer a number of opensource SDKs and tools for working with the Pandor
 Of course, you could use an HTTP client like cURL to talk to the API. For example, to upload a file via cURL:
 
 ~~~
-$ curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/file/example.aiml?user_key=USER_KEY'
+$ curl -v -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/file/example.aiml?user_key=USER_KEY'
   --data-binary @/home/mybot/example.aiml
 ~~~
 

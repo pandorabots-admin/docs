@@ -13,6 +13,7 @@ layout: default
 ---
 
 ## Core Concepts
+{: #core-concepts}
 
 Bot Development consists of a relationship between the following three entities:
 
@@ -31,6 +32,7 @@ Experienced AIML writers may choose to use their favorite text editor instead of
 ---
 
 ## Platform Components
+{: #platform-components}
 
 #### Log In
 
@@ -117,6 +119,7 @@ The Deploy Page provides an option to publish your bot to **The Internal Bot Dir
 ---
 
 ## Basic AIML Training
+{: #basic-aiml-training}
 
 #### Input Pre-Processing
 
@@ -145,6 +148,7 @@ You can customize which punctuation marks determine the end of a sentence by mod
 ---
 
 #### Categories
+{: #bat-categories}
 
 ###### The AIML File
 
@@ -297,6 +301,7 @@ In the above example, each time a category is matched, the bot will pick one of 
 ---
 
 #### Wildcards
+{: #bat-wildcards}
 
 ###### Wildcard Basics
 
@@ -415,6 +420,7 @@ You can have more than one wildcard per pattern. You can also echo multiple wild
 ---
 
 #### Variables
+{: #bat-variables}
 
 ###### What are Variables?
 

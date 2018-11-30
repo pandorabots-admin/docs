@@ -11,6 +11,7 @@ layout: default
 ---
 
 ### **GET/bot/{app\_id}**
+{: #get-bot}
 
 ###### _List of bots_
 
@@ -34,6 +35,7 @@ curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID?user_key=USER_KEY'
 ---
 
 ### **PUT/bot/{app\_id}/{botname}**
+{: #put-bot}
 
 ###### _Create a bot_
 
@@ -60,6 +62,7 @@ curl -v  -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_
 ---
 
 ### **DELETE/bot/{app\_id}/{botname}**
+{: #delete-bot}
 
 ###### _Delete a bot_
 
@@ -84,6 +87,7 @@ curl -v  -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=US
 ---
 
 ### **GET/bot/{app\_id}/{botname}**
+{: #get-files}
 
 ###### _List of bot files_
 
@@ -111,6 +115,7 @@ curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_
 ---
 
 ### **PUT/bot/{app\_id}/{botname}/{file-kind}/{filename}**
+{: #upload-file}
 
 ###### _Upload a bot file \(AIML, set, substitution, map\)_
 
@@ -156,6 +161,7 @@ curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/set/colors?user
 ---
 
 ### **PUT/bot/{app\_id}/{botname}/{file-kind}**
+{: #upload-properties}
 
 ###### _Upload a bot file \(pdefaults, properties\)_
 
@@ -191,6 +197,7 @@ curl -v -X PUT 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/properties?user
 ---
 
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}/{filename}**
+{: #delete-bot}
 
 ###### _Delete a bot file \(AIML, set, map, substitution\)_
 
@@ -217,6 +224,7 @@ curl -v -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FI
 ---
 
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}**
+{: #delete-properties}
 
 ###### _Delete a bot file \(pdefaults, properties\)_
 
@@ -242,6 +250,7 @@ curl -v -X DELETE 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?us
 ---
 
 ### **GET/bot/{app\_id}/{botname}/{file-kind}/{filename}**
+{: #retrieve-file}
 
 ###### _Retrieve a bot file \(AIML, set, map, substitution\)_
 
@@ -268,6 +277,7 @@ curl -v -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILEN
 ---
 
 ### **GET/bot/{app\_id}/{botname}/{file-kind}**
+{: #delete-bot}
 
 ###### _Retrieve a bot file \(pdefaults, properties\)_
 
@@ -293,6 +303,7 @@ curl -v -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?user_
 ---
 
 ### **GET/bot/{app\_id}/{botname}/verify**
+{: #compile-bot}
 
 ###### _Compile a bot_
 
@@ -319,6 +330,7 @@ curl -v  -X GET 'https://aiaas.pandorabots.com/bot/APP_ID/BOTNAME/verify?user_ke
 ---
 
 ### **POST/talk/{app\_id}/{botname}**
+{: #talk-to-bot}
 
 ###### _Talk to a bot_
 
@@ -353,6 +365,7 @@ curl -v  -X POST 'https://aiaas.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USE
 ---
 
 ### **POST/talk/{app\_id}/{botname}**
+{: #debug-bot}
 
 ###### _Debug a bot conversation_
 
@@ -387,6 +400,7 @@ curl -v  -X POST 'https://aiaas.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USE
 ---
 
 ### **POST/atalk/{app\_id}/{botname}**
+{: #atalk-to-bot}
 
 ###### _Anonymous Talk_
 

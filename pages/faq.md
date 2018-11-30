@@ -9,27 +9,26 @@ layout: default
 
 # Frequently Asked Questions
 
-###### _Can't find the answer to your question below? Email us at support@pandorabots.com_
+#### _Can't find the answer to your question below? Email us at support@pandorabots.com_
 ___
 ### AIML
 {: #aiml}
 
 **What is AIML?**
 
-Artificial Intelligence Markup Language (AIML) is a simple, XML-based scripting language and the open standard for writing chatbots. We recommend taking the *Quick Start* (accessible via the user icon drop-down menu) to learn AIML basics and [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md) for a deeper dive.
+Artificial Intelligence Markup Language (AIML) is a simple, XML-based scripting language and the open standard for writing chatbots. We recommend taking the *Quick Start* (accessible via the user icon drop-down menu) to learn AIML basics and [Bot Building 101](/dox/building-bots/tutorial/) for a deeper dive.
 
 **What is the difference between AIML 1.0 and AIML 2.0?**
 
-The AIML 2.0 specification introduces a number of new features to the language that dramatically improve the natural language processing power of chatbots. The current Pandorabots AIML interpreter is backwards compatible with AIML 1.0, so platform users can make full use of any AIML 1.x bot files. However, it does not currently support Javascript. For more details, please read Dr. Richard Wallace's full [AIML 2.0 specification](https://docs.google.com/a/pandorabots.com/document/d/1wNT25hJRyupcG51aO89UcQEiG-HkXRXusukADpFnDs4/pub).
+The AIML 2.0 specification introduces a number of new features to the language that dramatically improve the natural language processing power of chatbots. The current Pandorabots AIML interpreter is backwards compatible with AIML 1.0, so platform users can make full use of any AIML 1.x bot files. However, it does not currently support Javascript. For more details, please read Dr. Richard Wallace's full [AIML 2.0 specification](http://aiml.foundation).
 
 **What happened to the AIML 1.0 platform?**
 
-You can still access the AIML 1.0 platform [here](https://www.pandorabots.com/botmaster/en/home). However, it is no longer supported as of 2015 and all existing users will be eventually upgraded to the 2.0 service. We encourage you to upgrade and note that the current platform is backwards compatbile with AIML 1.0 so you can easily upgrade by uploading your files.
+You can still access the AIML 1.0 platform [here](https://www.pandorabots.com/botmaster/en/home). However, it is no longer supported as of 2015 and all existing users will be eventually upgraded to the 2.0 service. We encourage you to upgrade and note that the current platform is backwards compatible with AIML 1.0 so you can easily upgrade by uploading your files.
 
 **How can I address common AIML related alerts / errors?**
 
 * Make sure that your bot is compiled without AIML compile errors. You can see your bot's compile status on Left Navigation Bar. If your bot is uncompiled, view the error message to see how to fix your AIML error. Sometimes the error is not known but a position number returned corresponds to the character position in the file where the compiler encountered the error. You must fix the error before you can talk to your bot.  
-
 
 * Next, take a look at your code. One common problem is having multiple categories with the same pattern. The AIML interpreter prioritizes categories from bottom to top, within each individual file as well as in the file list itself, based on file load order. If you do have duplicate patterns, the one appearing lowest in a file or in the files list will be matched first. You can fix this by removing the unwanted category. You can also debug your bot by using the trace feature found on the chat widget. Utilizing this feature allows you to see the series of categories that are engaged by a particular input, rather than just the bot's final response.
 
@@ -95,7 +94,7 @@ There is a green indicator light next to your bot, meaning that it is currently 
 
 **Can I create a bot in any language?**
 
-AIML can be written in almost any natural language. Segmentation is required for some languages - please contact us to learn more about our machine learning based segementer and other language-specific tools.
+AIML can be written in almost any natural language. Segmentation is required for some languages - please contact us to learn more about our machine learning based segmenter and other language-specific tools.
 ___
 ### Integrations
 {: #integrations}
@@ -186,9 +185,9 @@ ___
 ### Privacy, Security & Legal
 {: #privacy}
 
-**Is the Pandorabots Platform HIPPA compliant?**
+**Is the Pandorabots Platform HIPAA compliant?**
 
-The Pandorabots platform is not HIPPA compliant by default, but higher levels of security and compliance are available at the Enterprise Tier. Please contact us for further details.
+The Pandorabots platform is not HIPAA compliant by default, but higher levels of security and compliance are available at the Enterprise Tier. Please contact us for further details.
 
 **How is my data used and stored?**
 
@@ -227,10 +226,6 @@ Integrations, accessible via the Deploy Page, are easy methods for publishing yo
 **What is the Clubhouse?**
 
 The Clubhouse is a place where you can publish your bot-in-progress for other users to talk to, and chat with their bots as well. It's a great way to exchange logs and feedback and foster the community!
-
-**What is the Directory?**
-
-The Directory is similar to the Clubhouse except that instead of making your bot available exclusively to other platform users, it allows you to list your bot for the general public to discover and chat with via [directory.pandorabots.com](/directory.pandorabots.com).
 
 **What are Libraries?**
 

@@ -668,7 +668,7 @@ The *program element* returns the name and version number of the AIML interprete
 
 #### Usage
 
-Using this element on the [Playground](https://playground.pandorabots.com):
+Using this element on the [Pandorabots Platform](https://home.pandorabots.com):
 
     <category>
     <pattern>PROGRAM</pattern>
@@ -792,7 +792,7 @@ The *id element* returns the current `botid`, along with the `client_name` of wh
 
 #### Usage
 
-Here is an example of using the `<id/>` tag on the Playground, inside of a bot with
+Here is an example of using the `<id/>` tag on the Pandorabots Platform, inside of a bot with
 the app_id "Daniel" and botname "test":
 
     <category>
@@ -1192,7 +1192,7 @@ The *sraix element* allows a bot to call categories that exist within another bo
 #### Attributes
 
 `bot` (required)  
-Specifies the bot to call out to, defined by the `botid`. On the Pandorabots Playground, the `botid` is equivalent to `username/botname`. On the Developer Portal, it is defined as `app_id/botname`.
+Specifies the bot to call out to, defined by the `botid`. On the Pandorabots Platform, the `botid` is equivalent to `username/botname`. On the Developer Portal, it is defined as `app_id/botname`.
 
 #### Usage
 

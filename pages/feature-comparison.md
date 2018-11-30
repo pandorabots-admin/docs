@@ -28,7 +28,7 @@ AIML is a flexible, extensible open standard with a large community backing beyo
 
 There are many, many advantages to working with an open standard, chief among them that the code is something you, the creator, own and can run independently of our platform. Most importantly: the system is open - not a black box.
 
-###### _Drawbacks to Pure Machine-Learning Based \(or Classifier-Based\) Systems_
+#### _Drawbacks to Pure Machine-Learning Based \(or Classifier-Based\) Systems_
 
 Machine learning based systems and APIs \(like Watson, api.ai, wit.ai, etc.\) are black boxes. In theory, the user can provide sample inputs, and the correct response, and the system can then identify inputs that are similar to the sample inputs and learn that these map to the same response. In reality, these systems are not effective without a large amount of training data, and it is not possible to debug the system when it returns the wrong answer. These systems also typically fail to provide any dialog management components. The art of conversation is far more complicated than distilling a single utterance down to it's single intent \(e.g., _I want to book a flight from New York to LA_\) and determining what action to take within your application \(_Search Flights_\).
 
@@ -38,7 +38,7 @@ These ML-based systems have another problem: performance. Above approximately ~5
 
 The downside to Scripting Languages like AIML is that you do have to script a lot of input/output pairs \("rules"\). Fortunately Pandorabots provides base content in the form of libraries that spare you from reinventing the rules for common chitchat, and other tools that streamline bot development and make maintaining your bot easy and fun. We also have a number of machine learning tools available as part of our Professional Services offering that help streamline the bot development process if your organization has decent, usable datasets - please get in touch \(email info@pandorabots.com\) to learn more.
 
-###### _Drawbacks to Drag-and-Drop Graphical User Interface Based Platforms_
+#### _Drawbacks to Drag-and-Drop Graphical User Interface Based Platforms_
 
 Platforms that provide a drag-and-drop or flowchart-like interface \(GUI\) are pretty awesome insofar as they enable hobbyists to get up and running with a _Hello World_ chatbot in "five minutes" and easily publish it to a messaging channel. While great for prototyping and indie developers or small businesses with limited resources and in-house developers, most of these platforms are not production-ready solutions capable of generating a real business result. GUIs are quite restrictive and have the same black box problem as ML-based systems. At the end of the day, you can't see, download, alter, or even own your code.
 

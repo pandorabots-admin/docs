@@ -8,7 +8,7 @@ layout: default
 
 # Building Bots on the Pandorabots Platform
 
-###### A tutorial for writing bots using the AIML 2.0 scripting language and the Pandorabots User Interface
+#### A tutorial for writing bots using the AIML 2.0 scripting language and the Pandorabots User Interface
 
 ---
 
@@ -17,15 +17,15 @@ layout: default
 
 Bot Development consists of a relationship between the following three entities:
 
-* _**chatbot\(n.\) **or** bot\(n.\)**_** - **a computer program designed to simulate conversation with a human end-user via voice or textual inputs
+* _**chatbot\(n.\)**_ or _**bot\(n.\)**_ - a computer program designed to simulate conversation with a human end-user via voice or textual inputs
 
-* _**botmaster\(n.\)**_** - **a person who creates, develops, and maintains the code and content that make up a chatbot
+* _**botmaster\(n.\)**_ - a person who creates, develops, and maintains the code and content that make up a chatbot
 
-* _**client\(n.\) **_**- **a person chatting with a bot
+* _**client\(n.\)**_ - a person chatting with a bot
 
 The Pandorabots Platform is a feature-rich user interface designed to help you, the botmaster, create AIML-based chatbots.
 
-* _**AIML\(n.\) **_**- **Artificial Intelligence Markup Language: the simple open standard language in which Pandorabots are written
+* _**AIML\(n.\)**_ - Artificial Intelligence Markup Language: the simple open standard language in which Pandorabots are written
 
 Experienced AIML writers may choose to use their favorite text editor instead of this UI, but many find the features in this UI indispensable for bot creation, deployment, and maintenance.
 
@@ -48,7 +48,7 @@ If you have written a library and would like to open source it and see it featur
 
 #### Bot Statistics
 
-Clicking on **My Bots **on the left navigation panel will display some key global statistics for all of your bots for the past 30 days. These include total _Interactions_, _Clients_, _Sessions_, and the average number of _Interactions/Session_. In the broader ecosystem, "Interactions/Session" is also sometimes known as _Turns per Conversation _\("_TPC_"\), and is a stat botmasters measure and reference to highlight client engagement with their chatbot.
+Clicking on **My Bots** on the left navigation panel will display some key global statistics for all of your bots for the past 30 days. These include total _Interactions_, _Clients_, _Sessions_, and the average number of _Interactions/Session_. In the broader ecosystem, "Interactions/Session" is also sometimes known as _Turns per Conversation _\("_TPC_"\), and is a stat botmasters measure and reference to highlight client engagement with their chatbot.
 
 Clicking on the name of each individual bot will display the same individual statistics for that specific bot.
 
@@ -56,7 +56,7 @@ Platform users who require more in-depth analytics can plug in additional third-
 
 #### Bot Editing
 
-Selecting the name of an individual bot on the left navigation panel will open a drop-down menu consisting of several components, including: _Edit_, _Deploy_, _Logs_, and _Delete_. The **Editor **is your gateway to creating and maintaining your bot files.
+Selecting the name of an individual bot on the left navigation panel will open a drop-down menu consisting of several components, including: _Edit_, _Deploy_, _Logs_, and _Delete_. The **Editor** is your gateway to creating and maintaining your bot files.
 
 From the Files tab drop-down you can accomplish the following:
 
@@ -77,21 +77,21 @@ So, if you have a bot deployed on the platform that is live for the public, any 
 
 #### Bot Training via the Chat Widget
 
-In the lower right hand corner of the interface, you may have noticed a circular chat icon. Clicking on this icon will allow you to chat with your bot as if you were the client from almost everywhere in the interface. This **Chat Widget **has several useful features that are vital for debugging and improving your bot.
+In the lower right hand corner of the interface, you may have noticed a circular chat icon. Clicking on this icon will allow you to chat with your bot as if you were the client from almost everywhere in the interface. This **Chat Widget** has several useful features that are vital for debugging and improving your bot.
 
-* _Edit Icon - _  
+* _Edit Icon_ -  
   Clicking the edit icon within the bot output chat bubble allows you to quickly specify a new bot response for a given input and save it to a specified aiml file.
 
-* _Advanced Alter - _  
+* _Advanced Alter_ -   
   Clicking the drop down next to "New Response" when the Alter Response modal is open will allow you to also define `that` and `topic` values for your new pattern-template pair.
 
-* _Show Metadata - _  
+* _Show Metadata_ -   
   Clicking Show Metadata beneath the bot response bubble will display some important information about the interaction, including the Pattern that matched, the values \(if any\) for `that` and `topic`, and a link to the file containing the pattern that was matched, which you can click on to go edit directly.
 
-* _Show Trace - _  
+* _Show Trace_ -  
   Beneath the displayed Metadata, you will also find an option to run a _Trace_. This will open a modal showing the series of steps the input underwent during processing to find a match, which is incredibly helpful for debugging.
 
-* _Show Predicates - _  
+* _Show Predicates_ -  
   At the top of the Chat Widget next to your bot name, a menu icon allows you to manage predicates as well as to reset your bot's memory \(which will clear any predicate values that have been set and allow you to start the conversation anew as if you were a brand new client\).
 
 #### Bot Log Review
@@ -108,9 +108,9 @@ When you are ready to start collecting logs from actual clients, you can publish
 
 The **Deploy Page**, accessible via the _Deploy_ link under each individual bot name displayed on the left nav, lists a variety of _Integrations_. Integrations provide an easy method for deploying your bot to popular third party platforms and channels like Facebook Messenger and the Web. Supported Integrations are determined by a variety of factors including, but not limited to, technical feasibility, ecosystem demand, and platform partner relationships. If you wish to see support added for a channel that is not currently available, please email us at support@pandorabots.com and we'd be happy to consider your request.
 
-Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/api-endpoints.md), [SDKs](/sdks.md), and more. You may locate your _Application ID _\(_"App ID"_\), which is the same as your username, and your _User Key_, by clicking on the "API Keys" button next to the "Custom Application" integration.
+Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/dox/api-endpoints/), [SDKs](/dox/sdks/), and more. You may locate your _Application ID_ \(_"App ID"_\), which is the same as your username, and your _User Key_, by clicking on the "API Keys" button next to the "Custom Application" integration.
 
-_Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the _[_Free Tier_](/faq.md#pricing)_, which provides for unlimited Sandbox usage and up to 1,000 interactions / month. _
+_Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the [Free Tier](/faq.md#pricing), which provides for unlimited Sandbox usage and up to 1,000 interactions / month._
 
 #### The Internal Bot Directory
 
@@ -123,7 +123,7 @@ The Deploy Page provides an option to publish your bot to **The Internal Bot Dir
 
 #### Input Pre-Processing
 
-###### Normalization
+#### Normalization
 
 Corrects some spelling errors and colloquialisms \(e.g. "wanna" --&gt;"want to"\)
 
@@ -137,7 +137,7 @@ We refer to the above substitution steps as Normalization.
 
 These substitutions are contained in a substitution file called normal.substitution.
 
-###### Sentence Splitting
+#### Sentence Splitting
 
 Normalization also splits sentences based on predefined punctuation characters ".", "!", and "?". It also removes these punctuation marks once the sentences have been split, leaving the inputs punctuation-free.
 
@@ -150,7 +150,7 @@ You can customize which punctuation marks determine the end of a sentence by mod
 #### Categories
 {: #bat-categories}
 
-###### The AIML File
+#### The AIML File
 
 Create a new AIML files under the Files drop-down within the Editor. When selecting your new files, you'll notice that the Editor comes pre-populated with some code:
 
@@ -161,7 +161,7 @@ Create a new AIML files under the Files drop-down within the Editor. When select
 </aiml>
 ~~~
 
-###### XML Primer
+#### XML Primer
 
 AIML is an extension of a standard called XML.
 
@@ -179,7 +179,7 @@ Other tags are "self-closing" and do not require a partner or an inner string, f
 <get name=“age” />
 ~~~
 
-###### The AIML File
+#### The AIML File
 
 A category is the basic unit of knowledge in AIML.
 
@@ -187,15 +187,13 @@ A category always contains an input _pattern_ and a response _template_. Categor
 
 Generally, the more categories you have, the more robust your chatbot will be.
 
-###### Hello World Example
+#### Hello World Example
 
 Let's take a closer look at the fundamental components of a category: the pattern and template.
 
-**&lt;pattern&gt;                                                                                              
-**Matches what the user says.
+* **&lt;pattern&gt;** - Matches what the user says.
 
-**&lt;template&gt;                                                                                              
-**What the bot replies.
+* **&lt;template&gt;** - What the bot replies.
 
 Code example:
 
@@ -209,9 +207,9 @@ Code example:
 The above code would result in the following exchange between your bot and the client:
 
 > **Human:** Hi  
-> **Bot: **Hello world!
+> **Bot:** Hello world!
 
-###### Explaining the "tags"
+#### Explaining the "tags"
 
 **&lt;category&gt;**  
 Delineates the beginning and end of a category, which is a unit of knowledge for your bot.
@@ -226,7 +224,7 @@ Defines the bot's response to the matched pattern. Case does matter in the templ
 **&lt;/category&gt;**  
 Marks the end of the category.
 
-###### Pattern Matching
+#### Pattern Matching
 
 The bot will search through all of its categories to form a match with the user input.
 
@@ -244,7 +242,7 @@ The bot will search through all of its categories to form a match with the user 
 <pattern>WHAT IS YOUR NAME</pattern>
 ~~~
 
-###### HTML Markup
+#### HTML Markup
 
 HTML is also an extension of XML.
 
@@ -262,11 +260,11 @@ For example, the &lt;br/&gt; HTML tag allows you to insert line breaks in the te
 </category>
 ~~~
 
-> **Human: **Who are you?  
+> **Human:** Who are you?  
 > **Bot:** I am a bot.  
 >         I live in a computer.
 
-###### The Ultimate Default Category \(UDC\)
+#### The Ultimate Default Category \(UDC\)
 
 What if the user input does not match any of the patterns you have defined?
 
@@ -279,9 +277,9 @@ The _Ultimate Default Category \(UDC\)_ is used by the bot to provide an answer 
 </category>
 ~~~
 
-###### Randomized Responses
+#### Randomized Responses
 
-You can use the **&lt;random&gt; **tag to provide many different responses for the same input pattern. This is especially useful in the UDC because it can provide some variation to the default answer.
+You can use the **&lt;random&gt;** tag to provide many different responses for the same input pattern. This is especially useful in the UDC because it can provide some variation to the default answer.
 
 ~~~
 <category>
@@ -300,16 +298,16 @@ In the above example, each time a category is matched, the bot will pick one of 
 
 ---
 
-#### Wildcards
+### Wildcards
 {: #bat-wildcards}
 
-###### Wildcard Basics
+#### Wildcard Basics
 
 In the UDC, we used an asterisk \(\*\) in the pattern to capture the user’s input. This symbol, in AIML, is known as a _wildcard_.
 
 Wildcards are used to capture many inputs using only a single category.
 
-###### The `*` Wildcard
+#### The `*` Wildcard
 
 The `*` symbol is able to capture **1 or more words** in the user input.
 
@@ -325,7 +323,7 @@ This pattern would match all of the following inputs:
 
 This pattern would **NOT** match the word "Hello" by itself, because there must be at least one word captured by the `*` to form a match.
 
-###### The `^` Wildcard
+#### The `^` Wildcard
 
 The `^` symbol is also a wildcard, however, it can capture 0 or more words.
 
@@ -340,21 +338,21 @@ The `^` symbol is also a wildcard, however, it can capture 0 or more words.
 * Hello Daniel.
 * Hello my good friend.
 
-###### Matching Priority
+#### Matching Priority
 
-What if both `HELLO *`** **and `HELLO ^`** **exist? Which one will form a match?
+What if both `HELLO *` **and** `HELLO ^` exist? Which one will form a match?
 
 Wildcards are ranked in order of priority, so that certain patterns will take precedence over others.
 
 The ^ has a higher priority, so if the input is "Hello there", then `HELLO ^` would be matched first.
 
-###### Exact Matches
+#### Exact Matches
 
 If a pattern forms an exact match with the input, the exact match category will take precedence over any containing the `^` or `*` wildcards that it could potentially match.
 
 So, if the input is "Hello there", and the pattern `HELLO THERE` exists, it will match before the other wildcard patterns `HELLO ^` and `HELLO *`.
 
-###### The `_` and `#` Wildcards
+#### The `_` and `#` Wildcards
 
 There are two other wildcards, `_` and `#`. These wildcards take the highest priority when matching.
 
@@ -370,15 +368,15 @@ The `_` wildcard is a "1 or more" wildcard, like `*`
 
 The `#` wildcard is a "0 or more" wildcard, like `^`
 
-###### Wildcard Matching Priority
+#### Wildcard Matching Priority
 
 The graphic below shows the matching priority for all four wildcards, along with a pattern that contains an exact match:
 
-#### `HELLO #`**  &gt;  **`HELLO _`**  &gt;  **`HELLO THERE`**  &gt;  **`HELLO ^`**  &gt;  **`HELLO *`
+#### **`HELLO #`**  &gt;  **`HELLO _`**  &gt;  **`HELLO THERE`**  &gt;  **`HELLO ^`**  &gt;  **`HELLO *`**
 
 **IMPORTANT!** Be very careful when using `#` and `_`, because they will override all other patterns you may wish to match!
 
-###### Highest Priority Matching
+#### Highest Priority Matching
 
 Sometimes, there is an exact match that we would like to take highest priority, overriding the `_` or `#` wildcards. we can use the `$` sign to signify that a pattern will be matched first given a particular word.
 
@@ -386,13 +384,13 @@ For example, `<pattern>$WHO IS MIKE</pattern>` matches "Who is Mike?", and `<pat
 
 Note that `$` is _not_ a wildcard. It is a marker that says "for this particular word\(s\) - "WHO" in the example above - override the category that would have been otherwise matched.
 
-###### Visualizing Matching Priority
+#### Visualizing Matching Priority
 
 All of the bot's AIML categories are loaded into a structure called the _Graphmaster._ The order in which patterns take matching priority can be visualized in the Graphmaster:
 
-###### ![](https://lh6.googleusercontent.com/w2kudeyyH0OxdGIzXMi6ZBllQvCseFVcr03RKvu1pp9h5ybUZY8Rx3p04Nybc4ZHcwoREc3P-Q90-l8Qeh-UiurJoxuzWm0y2kgPnEruHxZbySFXpUWq7W-Ik9XTdNtO4xJRmTG5klc)
+##### ![](https://lh6.googleusercontent.com/w2kudeyyH0OxdGIzXMi6ZBllQvCseFVcr03RKvu1pp9h5ybUZY8Rx3p04Nybc4ZHcwoREc3P-Q90-l8Qeh-UiurJoxuzWm0y2kgPnEruHxZbySFXpUWq7W-Ik9XTdNtO4xJRmTG5klc)
 
-###### "Echoing" Wildcards
+#### "Echoing" Wildcards
 
 You can "echo" the words captured by the wildcard from within the template using the &lt;star/&gt; tag. For example:
 
@@ -406,7 +404,7 @@ You can "echo" the words captured by the wildcard from within the template using
 > **Human:** My name is Daniel.  
 > **Bot:** Hello, Daniel.
 
-###### Multiple Wildcards
+#### Multiple Wildcards
 
 You can have more than one wildcard per pattern. You can also echo multiple wildcards in your pattern by using `<star index="x"/>`, where **x** corresponds to the index number \(position in the sentence\) of the wildcard:
 
@@ -419,10 +417,10 @@ You can have more than one wildcard per pattern. You can also echo multiple wild
 
 ---
 
-#### Variables
+### Variables
 {: #bat-variables}
 
-###### What are Variables?
+#### What are Variables?
 
 In computer programming, a variable is a symbol whose value can be changed.
 
@@ -432,7 +430,7 @@ AIML has variables as well. These can be used to store information about your bo
 * **Predicates**: global variables for the bot. These are usually set by the client during conversation when a template is activated.
 * **Local Variables:** the same as predicates except their scope is limited to one category.
 
-###### Using Properties
+#### Using Properties
 
 You can use a property to store your bot's age. Create a new property with the name "age" and the value "8". Then, insert this category:
 
@@ -446,7 +444,7 @@ You can use a property to store your bot's age. Create a new property with the n
 > **Human:** How old are you?  
 > **Bot:** I am 8 years old.
 
-###### Setting Predicates
+#### Setting Predicates
 
 Using a predicate variable, you can write a category that will store the name of the client. This category will store the client's name under a predicate called "name":
 
@@ -459,7 +457,7 @@ Using a predicate variable, you can write a category that will store the name of
 
 Note how the user of the `*` wildcard and `<star/>` allows you to write a single category that will capture any name!
 
-###### Recalling Predicates
+#### Recalling Predicates
 
 Once you have set a predicate, it can be recalled elsewhere in your AIML.
 
@@ -479,7 +477,7 @@ In combination, the previous two examples would enable the following conversatio
 > **Human:** What is my name?  
 > **Bot:** Your name is Daniel.
 
-###### Using `var`
+#### Using `var`
 
 Local variables work almost exactly like predicates, but their scope is limited to a single category. These are different than predicates, which can be recalled at any time during the conversation. For example:
 
@@ -499,7 +497,7 @@ We will revisit local variables in more detail in the section on "Context."
 
 #### Recursion and Reduction {#recursion-and-reduction}
 
-###### What is Recursion?
+#### What is Recursion?
 
 In AIML, you can define a template that calls another category.
 
@@ -513,7 +511,7 @@ This has a wide range of uses:
 
 About half of the categories in a bot use recursion in some way.
 
-###### The `<srai>` Tag
+#### The `<srai>` Tag
 
 The `<srai>` tag tells the bot to look for another category:
 
@@ -526,7 +524,7 @@ The `<srai>` tag tells the bot to look for another category:
 
 If this category is matched \(i.e., the input is "Hello"\), the bot will recurse. Before returning some text, it will first look for a different category that matches HI.
 
-###### Using `<srai>`
+#### Using `<srai>`
 
 The &lt;srai&gt; tag effectively translates the input that matches the categories below to "Hi", contained in the terminal category.
 
@@ -556,7 +554,7 @@ The &lt;srai&gt; tag effectively translates the input that matches the categorie
 
 The pattern in the terminal category is also commonly known as the _**Intent**_**, which is the canonical form of what the words being used fundamentally mean**. In this case, `<srai>` is the method for specifying that Hello, Hi There, and Howdy, all mean the same thing as "Hi" \(which we humans generally intend as a Greeting\). Much of the work in bot development involves capturing all the different way we humans say the same thing insofar as it relates to your domain, which is why it is so important to regularly review your chatlogs and continously improve your bot over time.
 
-###### Common Misspellings & Colloquial Expressions
+#### Common Misspellings & Colloquial Expressions
 
 People are bad at spelling and typing, which may cause your bot to fail when trying to find a match. You can use &lt;srai&gt; to account for common spelling mistakes:
 
@@ -567,7 +565,7 @@ People are bad at spelling and typing, which may cause your bot to fail when try
 </category>
 ~~~
 
-###### Synonyms
+#### Synonyms
 
 You can also use `<srai>` in conjunction with wildcards to define synonymous words or phrases:
 
@@ -580,7 +578,7 @@ You can also use `<srai>` in conjunction with wildcards to define synonymous wor
 
 Anytime the user input contains the word "dad", the bot will replace it with "father" and recuse using the same input.
 
-###### Why Synonyms?
+#### Why Synonyms?
 
 Thesaurus.com lists 52 synonyms for the word “good”. To account for this, you would need 52 additional categories for every one that contains the word “good”.
 
@@ -588,7 +586,7 @@ If your bot has 100 patterns that contain the word “good”, that’s 5200 add
 
 _NOTE: once a word has been defined as a synonym, you cannot use it in patterns. The leading underscore \`_\` ensures that the bot translates the synonym before doing anything else.\_
 
-###### Reduction
+#### Reduction
 
 We can also use `<srai>` to remove unnecessary words from the input.
 
@@ -601,7 +599,7 @@ We can also use `<srai>` to remove unnecessary words from the input.
 
 Reductions make writing AIML and adding to your bot a far more enjoyable process. The more reductions you have, the better your bot will be at providing relevant matches.
 
-###### Returning Text and Recursing
+#### Returning Text and Recursing
 
 The previous examples of `<srai>` have directly returned no text of their own. You template, however, can return both text and `<srai>` tags.
 
@@ -619,7 +617,7 @@ Are you a cowboy?
 
 #### Sets and Maps {#sets-and-maps}
 
-###### Sets
+#### Sets
 
 An AIML Set is a list of unique text strings. You can create a set using the File drop-down in the Editor.
 
@@ -648,7 +646,7 @@ Instead of giving each color its own category, we can create a set that contains
 
 This category will only be matched _if_ the user's input does, in fact, contain one of the colors in the set. If the user's input does not contain one of the colors listed in the set, the category will not be matched.
 
-###### How Sets Work
+#### How Sets Work
 
 The set functions like a wildcard. It captures one or more words found in the user's input.
 
@@ -679,7 +677,7 @@ The first category will match if the input contains a string found in the set.
 
 The second category will match if the input contains a string NOT found in the set.
 
-###### More on Sets
+#### More on Sets
 
 Sets take precedence over \* and ^, but can be overridden by `_`, `#`, and an exact word match.
 
@@ -698,7 +696,7 @@ Set files are a simple string array and are written in the following format:
 [[ "Austin" ], ["Baltimore"], [ "Chicago" ], [ "Dallas"]]
 ~~~
 
-###### Maps
+#### Maps
 
 A map is a list of key-value pairs used to form associations between words. You can create a map using the Files drop-down in the editor.
 
@@ -716,7 +714,7 @@ Maps are accessed from within the template. They are used in conjunction with a 
 * Texas
 * ...
 
-###### Maps: Test Case
+#### Maps: Test Case
 
 Consider the following conversation:
 
@@ -740,7 +738,7 @@ We can enable this conversation with a single category, one set, and one map:
 
 Feel free to try creating the set and map files we discussed, and then add this category to your AIML. Your bot will now be able to relay the capital of the states listed in your set and map.
 
-###### More on Maps
+#### More on Maps
 
 Like sets, we can include a "default" category when the wildcard contents do not match an item in the map.
 
@@ -762,7 +760,7 @@ Map files are simple key-value pairs in an array, and are written in the followi
 [["Texas" , "Austin"], ["California" , "Sacramento"]]
 ~~~
 
-###### Built-in Sets and Maps
+#### Built-in Sets and Maps
 
 Pandorabots has some pre-built sets and maps that are not visible from the editor.
 
@@ -782,7 +780,7 @@ Pandorabots has some pre-built sets and maps that are not visible from the edito
 
 #### Context {#context}
 
-###### What is Context?
+#### What is Context?
 
 When humans have a conversation, we are able to remember the things that have been previously said.
 
@@ -793,7 +791,7 @@ Human 1 knows that "Yes" is a response to their question, because they have said
 
 There are several features in AIML that allow you to provide context within your category.
 
-###### The`<that>` Tag
+#### The`<that>` Tag
 
 The &lt;that&gt; tag, which sits between the pattern and template, enables the bot to remember that last sentence it uttered.
 
@@ -801,7 +799,7 @@ A category containing a `<that>` statement will ONLY be matched if the contents 
 
 This allows you to have many duplicate patterns which, depending on the previous response, will trigger different templates.
 
-###### Using `<that>`
+#### Using `<that>`
 
 In the example below, the second category is bound to a particular context. It will only be matched _if_ the last sentence the bot said was "Do you like coffee?".
 
@@ -823,7 +821,7 @@ In the example below, the second category is bound to a particular context. It w
 > **Human:** Yes.  
 > **Bot:** Do you prefer dark or medium roast?
 
-###### More on `<that>`
+#### More on `<that>`
 
 The previous sentence stated by your bot will be stripped of punctuation when read by a category referencing if with `<that>` tags.
 
@@ -833,13 +831,13 @@ For these reasons, you must write the contents of your `<that>` tags like you wr
 
 Note: `<that>` tags can also contain wildcards! Values for `<that>` variables are only valid within the scope of the active conversation.
 
-###### Topic
+#### Topic
 
 There is a built-in predicate variable called `topic`. Categories can be grouped together based on different values for `topic`. These categories can only be matched if the topic predicate has been set to a certain value.
 
 `Topic` allows your bot to keep context for longer than one interaction \(the function of the `<that>`tag\). This can also be used to write duplicate patterns whose templates vary depending on the context of the conversation.
 
-###### Using Topic
+#### Using Topic
 
 **Step 1:**
 
@@ -874,21 +872,19 @@ Now, you can group together categories within the coffee topic. \_Note that `<to
 
 The patterns above will _only match if_ the topic has been set to "coffee." If no category within the topic tags forms a match with the input, the input will match a category with no topic specified.
 
-**\#\#\#\(By default, that = topic = \*\) &lt;set name="topic"&gt;&lt;/set&gt; --&gt; topic="unknown"**
-
-###### More on `<topic>`
+#### More on `<topic>`
 
 The default value of topic is `*`. If you set a topic with no value \(i.e., `<set name="topic"></set>`\) the value will be "unknown."
 
 Values for topic variables are only within the scope of an active conversation.
 
-###### Conditionals
+#### Conditionals
 
 The values of predicates and local variables provide a third type of context in AIML. Using the `<condition>` tag, a bot can respond differently to the same input depending on the value of a predicate or local variable.
 
 The concept is the same as an IF - THEN - ELSE statement found in most programming languages.
 
-###### Conditionals: Test Case I
+#### Conditionals: Test Case I
 
 Consider the following:
 
@@ -931,7 +927,7 @@ Altogether, the category for this test case would look like this:
 
 The final list element \(the one without a value attribute\) will be returned if none of the other conditions are met.
 
-###### Conditionals: Test Case II
+#### Conditionals: Test Case II
 
 You can also use conditionals to check the status of a predicate, i.e., whether or not it has been set.
 
@@ -949,7 +945,7 @@ You can also use conditionals to check the status of a predicate, i.e., whether 
 
 If the "name" predicate has been set to anything \(denoted by the asterisk\), the first list element will return; if it has not been set, then the second list element will return.
 
-###### Attributes v. Tags
+#### Attributes v. Tags
 
 In AIML 2.0, any given value given by an XML attribute may also be expressed using a subtag of the same name. For example, `<li value="X">` may also be written as `<li><value>X</value>`. This makes it possible to vary the values of attributes using XML expressions, for example:
 
@@ -966,7 +962,7 @@ In AIML 2.0, any given value given by an XML attribute may also be expressed usi
 </category>
 ~~~
 
-###### Loops
+#### Loops
 
 Loops are used in programming to iterate an action or function over a series of values, until a particular state has been reached. In AIML, we can loop over list elements in a condition until a certain value has been reached, at which point the loop will terminate and the bot will give a response.
 
@@ -1034,7 +1030,7 @@ When the second `<li>` has looped enough time for "count" to equal 8, the first 
 
 #### Learning {#learning}
 
-###### What is Learning?
+#### What is Learning?
 
 AIML 2.0 has features that allow your clients to teach the bot new information.
 
@@ -1044,7 +1040,7 @@ Categories learned using `<learn>` will only be accessible to that particular co
 
 Categories learned using `<learnf>` will be written to a new AIML file and can be accessed by anyone talking with your bot. \(Careful! Your clients may teach the bot naughty things, so use `<learnf>` with extreme caution.\)
 
-###### How Learning Works
+#### How Learning Works
 
 When the category below is matched, the bot will now have access to the category found within the &lt;learn&gt; tags:
 
@@ -1084,7 +1080,7 @@ We can now reference the words captured by the wildcard in our new category.
 
 #### Revisiting Key Platform Components {#revisiting-key-platform-components}
 
-###### The Chat Widget
+#### The Chat Widget
 
 In addition to allowing you to converse with your bot as if you were the end-user, the Chat Widget also displays some vital information about each interaction and allows you to train your chatbot by making changes to the AIML within the interface.
 
@@ -1105,7 +1101,7 @@ Retyping your original input after altering the bot response should return the n
 
 To reset the bot's memory, which will clear any predicates stored about the current conversation, click on the refresh icon next to your bot's name on the top bar of the chat widget.
 
-###### The Directory and `<sraix>`
+#### The Directory and `<sraix>`
 
 The `<sraix>` tag \(first introduced in the AIML 2.0 spec\) allows your bot to access the categories of another bot. The tag is very similar to `<srai>`, however, instead of searching your own bot for another category to match, it will search the bot you have specified in the attribute.
 
@@ -1124,9 +1120,9 @@ If this bot has been published to the Directory, your bot can access its experti
 
 If coffeebot is able to form a match, your bot will return coffeebot's output as if it were its own output to the client.
 
-###### Bot Libraries
+#### Bot Libraries
 
-Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](https://www.pandorabots.com/docs/aiml-libraries.html#using-rosie) to learn more about how to leverage this Library.
+Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](/dox/aiml-libraries/#using-rosie) to learn more about how to leverage this Library.
 
 ---
 
@@ -1156,14 +1152,14 @@ YOU ARE <person><star/></person>
 </category>
 ~~~
 
-> **Human: **I am waiting for you.  
-> **Bot: **You are waiting for me.
+> **Human:** I am waiting for you.  
+> **Bot:** You are waiting for me.
 
 In this category above, the substitution file "person" has found a 2nd-person pronoun in the wildcard contents and converted it to a 1st-person pronoun when echoed in the template.
 
 This works in reverse as well.
 
-###### Pronoun-based Substitutions
+#### Pronoun-based Substitutions
 
 The example above made use of the file `person.substitution`, which is used to transform pronouns between first and second person.
 
@@ -1184,7 +1180,7 @@ This means that punctuation is not "preserved" by simply echoing part of the use
 </category>
 ~~~
 
-> **Human: **URL google.com  
+> **Human:** URL google.com  
 > **Bot:** google dot com
 
 To preserve punctuation found in the input we use `denormalize.substitution`. This file contains all of the words that punctuation marks are normalized to. From the previous example, we know that the string ".com" is normalized to "dot com". To reverse this substitution, we echo the user's input within the denormalize tags:
@@ -1198,12 +1194,12 @@ To preserve punctuation found in the input we use `denormalize.substitution`. Th
 </category>
 ~~~
 
-> **Human: **URL google.com  
+> **Human:** URL google.com  
 > **Bot:** google.com
 
 \#\#\#More relevant example using emoji?
 
-###### The Default Substitutions Files
+#### The Default Substitutions Files
 
 Substitutions are available to you via the substitution files provided by default. We strongly suggest that you _**do not remove**_ any of these substitutions. The contents of these files will only become applicable if you reference them in your template, so you should keep them in tact in case you wish to use any of the operations. You may also add to or update your substitution files.
 
@@ -1234,17 +1230,17 @@ Congratulations! If you've made it this far, we hope you are well on your way to
 
 After a period of initial development, you may find yourself wanting to share your bot with the world by unleashing it on popular messaging or voice channels. There are a number of different ways to make bots built on the Pandorabots Platform public.
 
-###### Downloading your Bot Files
+#### Downloading your Bot Files
 
 You may download your bot files at any time via the Files tab in the Editor, and we recommend making frequent, regular backups. Since AIML is an open-standard, there are a number of opensource packages, including some interpreters, you can use. Pandorabots is one of the few platforms that is an open system \(not a black box\) and therefore actually exposes your code to you and allows you to download it and make full use of it elsewhere.
 
 Of course, writing your own interpreter or attempting to make use of opensource projects with little or deprecated support can be incredibly challenging and time consuming, which is why Pandorabots offers its state-of-the-art interpreter as a service and provides API access to its hosting platform and SDKs
 
-###### Using the Pandorabots API
+#### Using the Pandorabots API
 
 If you are a developer or have one on staff, you may use the Pandorabots API to integrate your chatbot into any application. Visit the API Reference section to learn more.
 
-###### Using the Turnkey Platform Integrations
+#### Using the Turnkey Platform Integrations
 
 The easiest way to make your bots available to the public \(in a few simple steps!\) is via the Deploy Page, accessible from the menu that appears whenever an individual bot is selected. Simply navigate to the interface and follow the instructions listed for each available Integration you wish to use.
 

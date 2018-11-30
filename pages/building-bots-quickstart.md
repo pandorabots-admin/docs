@@ -8,7 +8,7 @@ layout: default
 
 # Quickstart
 
-###### Access the interactive Quickstart from the user icon drop-down menu, or follow the instructions below.
+#### Access the interactive Quickstart from the user icon drop-down menu, or follow the instructions below.
 
 ---
 
@@ -175,7 +175,7 @@ Go to Deploy.
 
 #### Integrations and the Pandorabots API
 
-There are a number of ways to make your bot public, including an API for developers and _Integrations. _
+There are a number of ways to make your bot public, including an API for developers and _Integrations._
 
 ![](/assets/deploy.png)
 
@@ -229,12 +229,12 @@ If your bot is deployed, a yellow light will appear when there are differences b
 
 #### Next Steps
 
-Congratulations! You've just learned the fundamental basics for building AIML bots on the Pandorabots platform. As a next step, we highly recommend the tutorial [Bot Building 101](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md), and encourage you to explore additional resources in the Help section.
+Congratulations! You've just learned the fundamental basics for building AIML bots on the Pandorabots platform. As a next step, we highly recommend the tutorial [Bot Building 101](/dox/building-bots/#tutorial), and encourage you to explore additional resources in the Help section.
 
 Creating a new bot and adding the "Small Talk" library, which will enable your bot to handle basic chitchat, is also a good way to further familiarize yourself with AIML code, or you can simply keep adding categories to your current bot via the Editor.
 
 ![](/assets/smalltalk.png)
 
-###### [&gt;&gt; Bot Building 101 Tutorial](/building-bots/tutorial-building-bots-on-the-pandorabots-platform.md)
+#### [&gt;&gt; Bot Building 101 Tutorial](/dox/building-bots/#tutorial)
 
 </div>

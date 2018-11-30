@@ -98,16 +98,16 @@
   * [Anonymous talk](/dox/api-endpoints/#atalk-to-bot)
 * [Command Line Interface](/dox/command-line-interface/)
 * [SDKs](/dox/sdks/)
-* [Related Articles](/dox/related-articles)
+* [Related Articles](/dox/related-articles/)
   * [End-User Management with A-Talk API](/dox/related-articles/#manage-end-users)
 
 ## BUILDING BOTS
 
 * [Hello World](/dox/building-bots/)
-* [Bot Building 101](/dox/building-bots/tutorial)
+* [Bot Building 101](/dox/building-bots/tutorial/)
   * [Core Concepts](/dox/building-bots/tutorial/#core-concepts)
   * [Platform Components](/dox/building-bots/tutorial/#platform-components)
-  * [Basic AIML Training](/dox/building-bots/#basic-aiml-training)
+  * [Basic AIML Training](/dox/building-bots/tutorial/#basic-aiml-training)
     * [Categories](/dox/building-bots/tutorial/#bat-categories)
     * [Wildcards](/dox/building-bots/tutorial/#bat-wildcards)
     * [Variables](/dox/building-bots/tutorial/#bat-variables)

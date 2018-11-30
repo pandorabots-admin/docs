@@ -8,7 +8,7 @@ layout: default
 
 # Related Articles
 
-###### _Further resources for working with the Pandorabots API._
+#### _Further resources for working with the Pandorabots API._
 
 ---
 

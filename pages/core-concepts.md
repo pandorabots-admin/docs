@@ -8,7 +8,7 @@ layout: default
 
 # Core Concept Deep Dives
 
-###### _A closer look at how to leverage some key concepts in AIML._
+#### _A closer look at how to leverage some key concepts in AIML._
 
 ---
 
@@ -103,7 +103,7 @@ Set the local variable to the value of the predicate `name` and use the `<condit
 ### AIML Reference links
 
 For more about the AIML tags used in this tutorial, please see the following AIML references:  
- [condition](http://docs.pandorabots.com/aiml/condition/)   \|   [get](http://docs.pandorabots.com/aiml/get/)   \|  [li](http://docs.pandorabots.com/aiml/li/)  \|  [set](http://docs.pandorabots.com/aiml/set/)  \|  [think](http://docs.pandorabots.com/aiml/think)
+ [condition](/dox/aiml-reference/#condition)   \|   [get](/dox/aiml-reference/#get)   \|  [li](/dox/aiml-reference/#li)  \|  [set](/dox/aiml-reference/#set/)  \|  [think](/dox/aiml-reference/#think)
 
 # API
 
@@ -121,7 +121,7 @@ As long as the end-user is in an active conversation, all predicates that were s
 
 If you want your bot to retain conversational elements long term, regardless if they are anonymous users, or known end-users, this can be achieved by requesting a Pandorabots generated client\_name with the anonymous talk API.
 
-Please review this article about [Anonymous Talk API](http://docs.pandorabots.com/articles/managing-end-users-with-a-talk/) for more details.
+Please review this article about [Anonymous Talk API](/dox/related-articles/#managing-end-users) for more details.
 
 ---
 

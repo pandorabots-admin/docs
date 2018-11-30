@@ -31,9 +31,9 @@ The CLI offers an easy and slick interface for doing all the things you’ll nee
 
 ## Installation {#installation}
 
-The CLI itself is written in Javascript, so you’ll need to setup node.js on your machine before you can install it. Luckily, node.js offers a number of[installers](http://nodejs.org/download/)for OS X and Windows users to make this very easy. You can also download binaries for Linux, or build yourself from the source code.
+The CLI itself is written in Javascript, so you’ll need to setup node.js on your machine before you can install it. Luckily, node.js offers a number of [installers](http://nodejs.org/download/) for OS X and Windows users to make this very easy. You can also download binaries for Linux, or build yourself from the source code.
 
-Node.js comes prepackaged with[npm](http://npmjs.org/), which is a Javascript package manager that has an extremely vibrant community of modules and users. You can install the CLI using the`npm`command:
+Node.js comes prepackaged with [npm](http://npmjs.org/), which is a Javascript package manager that has an extremely vibrant community of modules and users. You can install the CLI using the`npm`command:
 
 ~~~
 $ npm install -g pb-cli

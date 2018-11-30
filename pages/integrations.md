@@ -8,7 +8,7 @@ layout: default
 
 # Integrations
 
-###### _Code examples for integrating your bot with various third party services._
+#### _Code examples for integrating your bot with various third party services._
 
 ---
 
@@ -359,7 +359,7 @@ mybot> hubot pb hello
 Hi there!
 ~~~
 
-This response is just an example; your bot may have different responses depending on what categories it contains, and you can [program your bot](https://playground.pandorabots.com/en/) to know anything from company inside jokes to FAQs, etc.
+This response is just an example; your bot may have different responses depending on what categories it contains, and you can program your bot to know anything from company inside jokes to FAQs, etc.
 
 ## Deploy to Heroku
 
@@ -523,7 +523,7 @@ Wouldn't it be cool if you could put your Pandorabot on Twitter? People from all
 
 This blog post walks you through the process of putting your Pandorabot on Twitter. Upon completion of the steps outlined here, your bot will have a dedicated profile on Twitter, and you will have an application that is able to automatically tweet any user that has tweeted your bot. Think of it as using Twitter as a giant chat interface, one that is able to connect a vast amount of new users to your bot. Whatever someone says to your bot’s profile on Twitter will be interpreted, just as it is on the Pandorabots platform, and your bot will then tweet back. Let’s get started!
 
-_This tutorial assumes you have a Pandorabot. If you don't though, don't worry, it is quite easy to build one. Just follow our _[_Build a Bot Tutorial_](https://playground.pandorabots.com/en/tutorial/)_. Also required is the **user\_key** you received when you initially deployed your bot. It can be found on your Pandorabots Apllication's page in the _[_Developer Console_](https://developer.pandorabots.com/)_. For more information on deploying your bot to our server, please see our _[_previous blog post_](http://blog.pandorabots.com/basic-bot-deployment/)_ on the subject._
+_This tutorial assumes you have a Pandorabot. If you don't though, don't worry, it is quite easy to build one. Just follow our [Build a Bot Tutorial](/dox/bot-building/tutorial/). Abuildinglso required is the **user\_key** you received when you initially deployed your bot. It can be found on your Pandorabots Application's page in the [Developer Console](https://developer.pandorabots.com/). For more information on deploying your bot to our server, please see our [previous blog post](http://blog.pandorabots.com/basic-bot-deployment/) on the subject._
 
 ## First Steps
 
@@ -573,7 +573,7 @@ consumer_secret = 'INSERT CONSUMER SECRET HERE'
 
 To test your program, log onto your twitter account and tweet at your bot “Hey there @your\_bots\_twitter\_name”. Then run the Python program from the command line via the command `python twitter_bot.py` and see your bot tweet back! To run the program continuously, constantly monitoring for and responding to new tweets, run `python twitter_bot.py --continuous true`.
 
-###### Next Steps
+#### Next Steps
 
 Congratulations! You have created a basic program that tweets back at users using your bot's brain. However, this is just the beginning of what you can do. You could make your bot tweet at twitter users whose tweets contain certain keywords, or make your bot comment on whatever current events are trending. The possibilities are endless! We encourage you to modify this code and come up with new and exciting ways to use your Pandorabot on Twitter. Happy coding!
 

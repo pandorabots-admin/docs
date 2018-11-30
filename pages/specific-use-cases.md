@@ -8,7 +8,7 @@ layout: default
 
 # Specific Use Cases
 
-###### _Example AIML and guidance for building bots for specific use cases._
+#### _Example AIML and guidance for building bots for specific use cases._
 
 ---
 
@@ -16,7 +16,7 @@ layout: default
 
 A Frequently Asked Questions \(FAQ\) chatbot connected to a messaging platform or to your website, is a great use case for a Pandorabot. We’ve come up with an approach to build a quick FAQ chatbot. The purpose of this article is to step you through the thought process of this approach for a limited set of FAQs.
 
-This process assumes you understand basic AIML terminology such as [categories](http://pandorabots.github.io/aiml/category/), [symbolic reductions](http://pandorabots.github.io/aiml/srai/) and [wildcards](http://docs.pandorabots.com/tutorials/wildcards/).
+This process assumes you understand basic AIML terminology such as [categories](/dox/aiml-reference/#category), [symbolic reductions](/dox/aiml-reference/#srai) and [wildcards](/dox/aiml-reference/#wildcards).
 
 ## Step 1: Gather your list of questions and answers {#step-1-gather-your-list-of-questions-and-answers}
 
@@ -69,7 +69,7 @@ Patterns must be stripped of punctuation and any other normalization that you ha
 
 ### Exact Match {#exact-match}
 
-If you have a list from chat history, you can just keep adding each question as a symbolic reduction \(using [srai](http://pandorabots.github.io/aiml/srai/) AIML tag\).
+If you have a list from chat history, you can just keep adding each question as a symbolic reduction \(using [srai](/dox/aiml-reference/#srai) AIML tag\).
 
 Example AIML would look like:
 
@@ -94,7 +94,7 @@ This is simple but is not as flexible. This solution would not take into conside
 
 ### Wildcards & Keywords {#wildcards--keywords}
 
-Using [wildcards in AIML](http://docs.pandorabots.com/tutorials/wildcards/) pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
+Using [wildcards in AIML](/dox/building-bots/#wildcards) pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
 
 ~~~
 <category>
@@ -157,15 +157,15 @@ We’re going to take a look at how each of these bots work, as well as some of 
 
 The following AIML elements are featured heavily in this tutorial:
 
-* [`<srai>`](http://docs.pandorabots.com/aiml/srai)
-* [`<sraix>`](http://docs.pandorabots.com/aiml/sraix)
-* [`<condition>`](http://docs.pandorabots.com/aiml/condition)
-* [`<that>`](http://docs.pandorabots.com/aiml/that)
-* [`<formal>`](http://docs.pandorabots.com/aiml/formal)
+* [`<srai>`](/dox/aiml-refrence/#srai)
+* [`<sraix>`](/dox/aiml-refrence/#sraix)
+* [`<condition>`](/dox/aiml-refrence/#condition)
+* [`<that>`](/dox/aiml-refrence/#that)
+* [`<formal>`](/dox/aiml-refrence/#formal)
 
 Make sure you are familiar with the high level concepts via the AIML Reference before you begin.
 
-> **Note: **this music-oriented bot is just an example, but you can take these design patterns with you when building your own Concierge-style bot.
+> **Note:** this music-oriented bot is just an example, but you can take these design patterns with you when building your own Concierge-style bot.
 
 ## Architecture![](/assets/concierge.png)
 
@@ -188,7 +188,7 @@ Input: XSIMILAR Kendrick Lamar
 Output: Kanye West
 ~~~
 
-> **Note:**the X prefix in some patterns is used to indicate that a pattern is intended to be a “private” category - in other words, these categories are used by the bot and it is not expected the user will ever type something like XSIMILAR. You may create your own private categories in this vein, and may use anything in the place of X \(say, your initials\), so long as the text is highly unlikely to appear in a user input.
+> **Note:** the X prefix in some patterns is used to indicate that a pattern is intended to be a “private” category - in other words, these categories are used by the bot and it is not expected the user will ever type something like XSIMILAR. You may create your own private categories in this vein, and may use anything in the place of X \(say, your initials\), so long as the text is highly unlikely to appear in a user input.
 
 The second pattern is XRANDOM \* BLOCK ^, which accepts the name of a genre, and returns a random artist from that genre. The BLOCK ^ portion is designed so that you may optionally block an artist from being selected.
 

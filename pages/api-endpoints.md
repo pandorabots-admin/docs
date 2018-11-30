@@ -13,7 +13,7 @@ layout: default
 ### **GET/bot/{app\_id}**
 {: #get-bot}
 
-###### _List of bots_
+#### _List of bots_
 
 ### Implementation Notes
 
@@ -37,7 +37,7 @@ curl -v  -X GET 'https://api.pandorabots.com/bot/APP_ID?user_key=USER_KEY'
 ### **PUT/bot/{app\_id}/{botname}**
 {: #put-bot}
 
-###### _Create a bot_
+#### _Create a bot_
 
 #### Implementation Notes
 
@@ -64,7 +64,7 @@ curl -v  -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_KE
 ### **DELETE/bot/{app\_id}/{botname}**
 {: #delete-bot}
 
-###### _Delete a bot_
+#### _Delete a bot_
 
 #### Implementation Notes
 
@@ -89,7 +89,7 @@ curl -v  -X DELETE 'https://api.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER
 ### **GET/bot/{app\_id}/{botname}**
 {: #get-files}
 
-###### _List of bot files_
+#### _List of bot files_
 
 #### Implementation Notes
 
@@ -117,7 +117,7 @@ curl -v  -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_KE
 ### **PUT/bot/{app\_id}/{botname}/{file-kind}/{filename}**
 {: #upload-file}
 
-###### _Upload a bot file \(AIML, set, substitution, map\)_
+#### _Upload a bot file \(AIML, set, substitution, map\)_
 
 #### Implementation Notes
 
@@ -163,7 +163,7 @@ curl -v -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/set/colors?user_k
 ### **PUT/bot/{app\_id}/{botname}/{file-kind}**
 {: #upload-properties}
 
-###### _Upload a bot file \(pdefaults, properties\)_
+#### _Upload a bot file \(pdefaults, properties\)_
 
 #### Implementation Notes
 
@@ -199,7 +199,7 @@ curl -v -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/properties?user_k
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}/{filename}**
 {: #delete-file}
 
-###### _Delete a bot file \(AIML, set, map, substitution\)_
+#### _Delete a bot file \(AIML, set, map, substitution\)_
 
 #### Implementation Notes
 
@@ -226,7 +226,7 @@ curl -v -X DELETE 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILE
 ### **DELETE/bot/{app\_id}/{botname}/{file-kind}**
 {: #delete-properties}
 
-###### _Delete a bot file \(pdefaults, properties\)_
+#### _Delete a bot file \(pdefaults, properties\)_
 
 #### Implementation Notes
 
@@ -252,7 +252,7 @@ curl -v -X DELETE 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?user
 ### **GET/bot/{app\_id}/{botname}/{file-kind}/{filename}**
 {: #retrieve-file}
 
-###### _Retrieve a bot file \(AIML, set, map, substitution\)_
+#### _Retrieve a bot file \(AIML, set, map, substitution\)_
 
 #### Implementation Notes
 
@@ -279,7 +279,7 @@ curl -v -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILENAM
 ### **GET/bot/{app\_id}/{botname}/{file-kind}**
 {: #retrieve-properties}
 
-###### _Retrieve a bot file \(pdefaults, properties\)_
+#### _Retrieve a bot file \(pdefaults, properties\)_
 
 #### Implementation Notes
 
@@ -305,7 +305,7 @@ curl -v -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?user_ke
 ### **GET/bot/{app\_id}/{botname}/verify**
 {: #compile-bot}
 
-###### _Compile a bot_
+#### _Compile a bot_
 
 #### Implementation Notes
 
@@ -332,7 +332,7 @@ curl -v  -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/verify?user_key=
 ### **POST/talk/{app\_id}/{botname}**
 {: #talk-to-bot}
 
-###### _Talk to a bot_
+#### _Talk to a bot_
 
 #### Implementation Notes
 
@@ -367,7 +367,7 @@ curl -v  -X POST 'https://api.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USER_
 ### **POST/talk/{app\_id}/{botname}**
 {: #debug-bot}
 
-###### _Debug a bot conversation_
+#### _Debug a bot conversation_
 
 #### Implementation Notes
 
@@ -402,7 +402,7 @@ curl -v  -X POST 'https://api.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USER_
 ### **POST/atalk/{app\_id}/{botname}**
 {: #atalk-to-bot}
 
-###### _Anonymous Talk_
+#### _Anonymous Talk_
 
 #### Implementation Notes
 

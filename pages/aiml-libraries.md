@@ -8,7 +8,7 @@ layout: default
 
 # AIML Libraries
 
-###### _Standard libraries for performing various utilities like basic math, string, and boolean functions, and more._
+#### _Standard libraries for performing various utilities like basic math, string, and boolean functions, and more._
 
 ---
 
@@ -64,8 +64,6 @@ _Unless otherwise noted, future updates to Rosie will be placed in **z\_update.a
 Original platform users may be wondering where they can access pre-written AIML \(like Dr. Wallace’s ALICE bot\) to use as base content for their bot. We provide such open-source AIML content to save users the hassle of “reinventing the wheel”  by recreating basic functionality.
 
 Enter [Rosie](https://github.com/pandorabots/rosie): she’s free to download, a fork of the ALICE 2.0 project, and optimized for use on the Pandorabots Platform. These files are automatically uploaded into your bot when you select the Small Talk content option. This post will show you how to start building a custom chatbot on top of the Rosie “brain.”
-
-Before beginning, be sure to read the [Build a Bot Tutorial](https://playground.pandorabots.com/en/tutorial/) on the Pandorabots [Playground](https://playground.pandorabots.com/en/).
 
 Here are the different files you’ll find in Rosie:
 
@@ -210,8 +208,8 @@ Finally, Rosie contains a large number of set and map files that were inherited 
 
 ## Substitutions
 
-Rosie comes preloaded with all the same substitution files found when you create a new bot on the [Playground](https://playground.pandorabots.com/en/).
+Rosie comes preloaded with all the same substitution files found when you create a new bot on the [Pandorabots Platform](https://home.pandorabots.com).
 
-Start using Rosie now by downloading the [github files](https://github.com/pandorabots/rosie) and uploading them to a bot on the [Playground IDE](https://playground.pandorabots.com/en/).
+Start using Rosie now by downloading the [github files](https://github.com/pandorabots/rosie) and uploading them to a bot on the [Pandorabots Platform](https://home.pandorabots.com).
 
 </div>

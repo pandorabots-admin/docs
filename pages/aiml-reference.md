@@ -474,6 +474,7 @@ This makes it possible to vary the values of attributes using XML expressions, f
     </category>
 
 ### &lt;loop /&gt;
+{: #loop}
 
 The *loop element* is used to iterate over a set of list item elements that are contained in a condition block.
 

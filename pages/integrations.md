@@ -144,7 +144,7 @@ The importance of your bot's talk logs in the bot development process goes back 
 
 > Zipf's law states that given some corpus of natural language utterances, the frequency of any word is inversely proportional to its rank in the frequency table. Thus the most frequent word will occur approximately twice as often as the second most frequent word, three times as often as the third most frequent word, etc.
 >
-> * _\[Wikipedia\]\(_[http://en.wikipedia.org/wiki/Zipf's\_law](http://en.wikipedia.org/wiki/Zipf's_law)_\)_
+> * \[_Wikipedia_\]\(http://en.wikipedia.org/wiki/Zipf's_law\)
 
 Dr. Richard Wallace, the creator of Alicebot and inventor of AIML, discerned that this applied not only to individual words, but to phrases as well. This distribution pattern led to a key insight in chatbot development. By writing patterns and content to capture only the most common inputs being used, the developer could actually account for the majority of potential inputs.
 

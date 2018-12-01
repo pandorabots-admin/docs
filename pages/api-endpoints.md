@@ -10,7 +10,7 @@ layout: default
 
 ---
 
-### **GET/bot/{app\_id}**
+### **GET** _/bot/{app\_id}_
 {: #get-bot}
 
 #### _List of bots_
@@ -34,7 +34,7 @@ curl -v  -X GET 'https://api.pandorabots.com/bot/APP_ID?user_key=USER_KEY'
 
 ---
 
-### **PUT/bot/{app\_id}/{botname}**
+### **PUT** _/bot/{app\_id}/{botname}_
 {: #put-bot}
 
 #### _Create a bot_
@@ -61,7 +61,7 @@ curl -v  -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_KE
 
 ---
 
-### **DELETE/bot/{app\_id}/{botname}**
+### **DELETE** _/bot/{app\_id}/{botname}_
 {: #delete-bot}
 
 #### _Delete a bot_
@@ -86,7 +86,7 @@ curl -v  -X DELETE 'https://api.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER
 
 ---
 
-### **GET/bot/{app\_id}/{botname}**
+### **GET** _/bot/{app\_id}/{botname}_
 {: #get-files}
 
 #### _List of bot files_
@@ -114,7 +114,7 @@ curl -v  -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_KE
 
 ---
 
-### **PUT/bot/{app\_id}/{botname}/{file-kind}/{filename}**
+### **PUT** _/bot/{app\_id}/{botname}/{file-kind}/{filename}_
 {: #upload-file}
 
 #### _Upload a bot file \(AIML, set, substitution, map\)_
@@ -123,13 +123,13 @@ curl -v  -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME?user_key=USER_KE
 
 Upload bot personality files to your bot. Files must be named with only lowercase letters and numbers with one of the following extensions:
 
-**AIML: **Extention - .aiml, file-kind - file
+**AIML:** Extension - .aiml, file-kind - file
 
-**Sets: **Extension - .set, file-kind - set
+**Sets:** Extension - .set, file-kind - set
 
-**Maps: **Extension - .map, file-kind - map
+**Maps:** Extension - .map, file-kind - map
 
-**Substitutions: **Extension - .substitution, file-kind - substitution
+**Substitutions:** Extension - .substitution, file-kind - substitution
 
 The system will overwrite existing files with the file being uploaded.
 
@@ -160,7 +160,7 @@ curl -v -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/set/colors?user_k
 
 ---
 
-### **PUT/bot/{app\_id}/{botname}/{file-kind}**
+### **PUT** _/bot/{app\_id}/{botname}/{file-kind}_
 {: #upload-properties}
 
 #### _Upload a bot file \(pdefaults, properties\)_
@@ -169,9 +169,9 @@ curl -v -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/set/colors?user_k
 
 Upload bot personality files to your bot. Files must be named with only lowercase letters and numbers with one of the following extensions:
 
-**Properties: **Extension - .properties, file-kind - properties, No filename required in path
+**Properties:** Extension - .properties, file-kind - properties, No filename required in path
 
-**Predicate defaults: **Extension - .pdefaults, file-kind - pdefaults, No filename required in path
+**Predicate defaults:** Extension - .pdefaults, file-kind - pdefaults, No filename required in path
 
 The system will overwrite existing files with the file being uploaded.
 
@@ -196,7 +196,7 @@ curl -v -X PUT 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/properties?user_k
 
 ---
 
-### **DELETE/bot/{app\_id}/{botname}/{file-kind}/{filename}**
+### **DELETE** _/bot/{app\_id}/{botname}/{file-kind}/{filename}_
 {: #delete-file}
 
 #### _Delete a bot file \(AIML, set, map, substitution\)_
@@ -223,7 +223,7 @@ curl -v -X DELETE 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILE
 
 ---
 
-### **DELETE/bot/{app\_id}/{botname}/{file-kind}**
+### **DELETE** _/bot/{app\_id}/{botname}/{file-kind}_
 {: #delete-properties}
 
 #### _Delete a bot file \(pdefaults, properties\)_
@@ -249,7 +249,7 @@ curl -v -X DELETE 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?user
 
 ---
 
-### **GET/bot/{app\_id}/{botname}/{file-kind}/{filename}**
+### **GET** _/bot/{app\_id}/{botname}/{file-kind}/{filename}_
 {: #retrieve-file}
 
 #### _Retrieve a bot file \(AIML, set, map, substitution\)_
@@ -276,7 +276,7 @@ curl -v -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND/FILENAM
 
 ---
 
-### **GET/bot/{app\_id}/{botname}/{file-kind}**
+### **GET** _/bot/{app\_id}/{botname}/{file-kind}_
 {: #retrieve-properties}
 
 #### _Retrieve a bot file \(pdefaults, properties\)_
@@ -302,7 +302,7 @@ curl -v -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/FILE-KIND?user_ke
 
 ---
 
-### **GET/bot/{app\_id}/{botname}/verify**
+### **GET** _/bot/{app\_id}/{botname}/verify_
 {: #compile-bot}
 
 #### _Compile a bot_
@@ -329,7 +329,7 @@ curl -v  -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/verify?user_key=
 
 ---
 
-### **POST/talk/{app\_id}/{botname}**
+### **POST** _/talk/{app\_id}/{botname}_
 {: #talk-to-bot}
 
 #### _Talk to a bot_
@@ -364,7 +364,7 @@ curl -v  -X POST 'https://api.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USER_
 
 ---
 
-### **POST/talk/{app\_id}/{botname}**
+### **POST** _/talk/{app\_id}/{botname}_
 {: #debug-bot}
 
 #### _Debug a bot conversation_
@@ -399,7 +399,7 @@ curl -v  -X POST 'https://api.pandorabots.com/talk/APP_ID/BOTNAME?user_key=USER_
 
 ---
 
-### **POST/atalk/{app\_id}/{botname}**
+### **POST** _/atalk/{app\_id}/{botname}_
 {: #atalk-to-bot}
 
 #### _Anonymous Talk_

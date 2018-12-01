@@ -139,7 +139,7 @@ Add all your categories to your Pandorabot, compile and start training your bot 
 ## TIPS TO STREAMLINE THIS PROCESS {#tips-to-streamline-this-process}
 
 Using a spreadsheet to automate building categories with AIML tags can make this process easier:  
-![](/assets/img/csv.png)
+![](/dox/assets/img/csv.png)
 
 ---
 
@@ -167,7 +167,7 @@ Make sure you are familiar with the high level concepts via the AIML Reference b
 
 > **Note:** this music-oriented bot is just an example, but you can take these design patterns with you when building your own Concierge-style bot.
 
-## Architecture![](/assets/img/concierge.png)
+## Architecture![](/dox/assets/img/concierge.png)
 
 The concierge bot network has a simple architecture that separates concerns by dividing tasks between the bots.
 

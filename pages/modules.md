@@ -17,7 +17,7 @@ Certain dynamic information like the weather may be difficult or impossible to h
 
 The OpenWeather Bot is a utility bot module that allows you to access [OpenWeatherMap.org](http://www.openweathermap.org/api) current weather information through their Weather API. *To request alpha access, email info at pandorabots dot com and include your [AIaaS](https://developer.pandorabots.com/) account name and application ID.*
 
-Before getting started, familiarize yourself with the `<sraix>` [element](/dox/aiml-reference/#sraix), and sign up for your own [free (or paid) plan](http://openweathermap.org/appid)  at OpenWeatherMap.org.
+Before getting started, familiarize yourself with the `<sraix>` [element](/docs/aiml-reference/#sraix), and sign up for your own [free (or paid) plan](http://openweathermap.org/appid)  at OpenWeatherMap.org.
 
 Note: when using utility bot modules to access third party APIs, in addition to needing an account with that service provider you should familiarize yourself with any rate or other limitations. Some third-party services may cause additional latency in bot responses.
 
@@ -249,7 +249,7 @@ This category will now capture all responses returned by the module. You can the
 
 ## Predicates
 
-For information on getting and setting predicates in your own bot, please take a look at our [tutorial](/dox/building-bots/tutorial/) on the subject.
+For information on getting and setting predicates in your own bot, please take a look at our [tutorial](/docs/building-bots/tutorial/) on the subject.
 
 Predicates can be stored in either your own bot or in Mitsuku, however, the two bots will not have direct access to each other’s variables. This prevents a bot from “leaking” information about its user to other bots. All variables will be resolved locally in a bot before a string is passed to another bot via `<sraix>`.
 

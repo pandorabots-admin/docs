@@ -16,7 +16,7 @@ layout: default
 
 A Frequently Asked Questions \(FAQ\) chatbot connected to a messaging platform or to your website, is a great use case for a Pandorabot. We’ve come up with an approach to build a quick FAQ chatbot. The purpose of this article is to step you through the thought process of this approach for a limited set of FAQs.
 
-This process assumes you understand basic AIML terminology such as [categories](/dox/aiml-reference/#category), [symbolic reductions](/dox/aiml-reference/#srai) and [wildcards](/dox/aiml-reference/#wildcards).
+This process assumes you understand basic AIML terminology such as [categories](/docs/aiml-reference/#category), [symbolic reductions](/docs/aiml-reference/#srai) and [wildcards](/docs/aiml-reference/#wildcards).
 
 ## Step 1: Gather your list of questions and answers {#step-1-gather-your-list-of-questions-and-answers}
 
@@ -69,7 +69,7 @@ Patterns must be stripped of punctuation and any other normalization that you ha
 
 ### Exact Match {#exact-match}
 
-If you have a list from chat history, you can just keep adding each question as a symbolic reduction \(using [srai](/dox/aiml-reference/#srai) AIML tag\).
+If you have a list from chat history, you can just keep adding each question as a symbolic reduction \(using [srai](/docs/aiml-reference/#srai) AIML tag\).
 
 Example AIML would look like:
 
@@ -94,7 +94,7 @@ This is simple but is not as flexible. This solution would not take into conside
 
 ### Wildcards & Keywords {#wildcards--keywords}
 
-Using [wildcards in AIML](/dox/building-bots/tutorial/#bat-wildcards) pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
+Using [wildcards in AIML](/docs/building-bots/tutorial/#bat-wildcards) pattern matching for your symbolic reductions can be more flexible. Start by identifying common words \(i.e. keywords\) in all your questions with the same answers. For example:
 
 ~~~
 <category>
@@ -139,7 +139,7 @@ Add all your categories to your Pandorabot, compile and start training your bot 
 ## TIPS TO STREAMLINE THIS PROCESS {#tips-to-streamline-this-process}
 
 Using a spreadsheet to automate building categories with AIML tags can make this process easier:  
-![](/dox/assets/img/csv.png)
+![](/docs/assets/img/csv.png)
 
 ---
 
@@ -157,17 +157,17 @@ We’re going to take a look at how each of these bots work, as well as some of 
 
 The following AIML elements are featured heavily in this tutorial:
 
-* [`<srai>`](/dox/aiml-refrence/#srai)
-* [`<sraix>`](/dox/aiml-refrence/#sraix)
-* [`<condition>`](/dox/aiml-refrence/#condition)
-* [`<that>`](/dox/aiml-refrence/#that)
-* [`<formal>`](/dox/aiml-refrence/#formal)
+* [`<srai>`](/docs/aiml-refrence/#srai)
+* [`<sraix>`](/docs/aiml-refrence/#sraix)
+* [`<condition>`](/docs/aiml-refrence/#condition)
+* [`<that>`](/docs/aiml-refrence/#that)
+* [`<formal>`](/docs/aiml-refrence/#formal)
 
 Make sure you are familiar with the high level concepts via the AIML Reference before you begin.
 
 > **Note:** this music-oriented bot is just an example, but you can take these design patterns with you when building your own Concierge-style bot.
 
-## Architecture![](/dox/assets/img/concierge.png)
+## Architecture![](/docs/assets/img/concierge.png)
 
 The concierge bot network has a simple architecture that separates concerns by dividing tasks between the bots.
 

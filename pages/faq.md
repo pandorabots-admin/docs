@@ -16,7 +16,7 @@ ___
 
 **What is AIML?**
 
-Artificial Intelligence Markup Language (AIML) is a simple, XML-based scripting language and the open standard for writing chatbots. We recommend taking the *Quick Start* (accessible via the user icon drop-down menu) to learn AIML basics and [Bot Building 101](/dox/building-bots/tutorial/) for a deeper dive.
+Artificial Intelligence Markup Language (AIML) is a simple, XML-based scripting language and the open standard for writing chatbots. We recommend taking the *Quick Start* (accessible via the user icon drop-down menu) to learn AIML basics and [Bot Building 101](/docs/building-bots/tutorial/) for a deeper dive.
 
 **What is the difference between AIML 1.0 and AIML 2.0?**
 

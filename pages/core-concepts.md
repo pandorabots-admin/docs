@@ -103,7 +103,7 @@ Set the local variable to the value of the predicate `name` and use the `<condit
 ### AIML Reference links
 
 For more about the AIML tags used in this tutorial, please see the following AIML references:  
- [condition](/dox/aiml-reference/#condition)   \|   [get](/dox/aiml-reference/#get)   \|  [li](/dox/aiml-reference/#li)  \|  [set](/dox/aiml-reference/#set/)  \|  [think](/dox/aiml-reference/#think)
+ [condition](/docs/aiml-reference/#condition)   \|   [get](/docs/aiml-reference/#get)   \|  [li](/docs/aiml-reference/#li)  \|  [set](/docs/aiml-reference/#set/)  \|  [think](/docs/aiml-reference/#think)
 
 # API
 
@@ -121,7 +121,7 @@ As long as the end-user is in an active conversation, all predicates that were s
 
 If you want your bot to retain conversational elements long term, regardless if they are anonymous users, or known end-users, this can be achieved by requesting a Pandorabots generated client\_name with the anonymous talk API.
 
-Please review this article about [Anonymous Talk API](/dox/related-articles/#managing-end-users) for more details.
+Please review this article about [Anonymous Talk API](/docs/related-articles/#managing-end-users) for more details.
 
 ---
 

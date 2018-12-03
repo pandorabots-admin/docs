@@ -108,7 +108,7 @@ When you are ready to start collecting logs from actual clients, you can publish
 
 The **Deploy Page**, accessible via the _Deploy_ link under each individual bot name displayed on the left nav, lists a variety of _Integrations_. Integrations provide an easy method for deploying your bot to popular third party platforms and channels like Facebook Messenger and the Web. Supported Integrations are determined by a variety of factors including, but not limited to, technical feasibility, ecosystem demand, and platform partner relationships. If you wish to see support added for a channel that is not currently available, please email us at support@pandorabots.com and we'd be happy to consider your request.
 
-Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/dox/api-endpoints/), [SDKs](/dox/sdks/), and more. You may locate your _Application ID_ \(_"App ID"_\), which is the same as your username, and your _User Key_, by clicking on the "API Keys" button next to the "Custom Application" integration.
+Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/docs/api-endpoints/), [SDKs](/docs/sdks/), and more. You may locate your _Application ID_ \(_"App ID"_\), which is the same as your username, and your _User Key_, by clicking on the "API Keys" button next to the "Custom Application" integration.
 
 _Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the [Free Tier](/faq.md#pricing), which provides for unlimited Sandbox usage and up to 1,000 interactions / month._
 
@@ -1122,7 +1122,7 @@ If coffeebot is able to form a match, your bot will return coffeebot's output as
 
 #### Bot Libraries
 
-Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](/dox/aiml-libraries/#using-rosie) to learn more about how to leverage this Library.
+Bot Libraries are opensource AIML files that provide some base content you can build on as an alternative to building a Blank Bot from scratch. Currently, you can add the Small Talk library to English language bots. Please visit the [Rosie Tutorial](/docs/aiml-libraries/#using-rosie) to learn more about how to leverage this Library.
 
 ---
 
@@ -1254,7 +1254,7 @@ Visit the Logs page for your bot to review conversation logs, and make updates b
 
 Frequently updating your bot to account for all the possible things a human might say in conversation may seem like a daunting task. However, you may rest assured that in reality - and especially with regard to a particular domain - people actually tend to say the same thing in conversation most of the time. This phenomenon is known as Zipf's Law, which explains a curve that represents the frequency at which words appear in human language.
 
-![](https://lh6.googleusercontent.com/5XdBtnlDoXq8xZNK8ZyboB9sp2P3_D9_ZsEB0IbARA7rPYh6AVsvG1C5mUtcnDX-uTJsYAjzxNMYOuIzS4gOCFJqW6geKMPYtSgyV0ZuDO4zy2LVxR-UyW2r3XoQSM9ta_-r8jOhXPY)
+![](https://lh6.googleusercontent.com/5XdBtnldocsq8xZNK8ZyboB9sp2P3_D9_ZsEB0IbARA7rPYh6AVsvG1C5mUtcnDX-uTJsYAjzxNMYOuIzS4gOCFJqW6geKMPYtSgyV0ZuDO4zy2LVxR-UyW2r3XoQSM9ta_-r8jOhXPY)
 
 As you can see, there is a word that occurs most frequently, followed by another word that occurs next most frequently, followed by a third word that occurs less frequently and so on. For a given body of text, it doesn't matter whether you break the text into letters, words, phrases, or sentences: the same distribution will always appear for natural languages.
 

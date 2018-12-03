@@ -63,13 +63,13 @@ This line declares the file as an AIML document. This line is required by the co
 <category>
 ~~~
 
-This line marks the beginning of our first [category](/dox/aiml-reference/#category), which is the base unit of code in an AIML based chatbot. Each category defines an input \([pattern](/dox/aiml-referemce/#pattern)\) and an output \([template](/dox/aiml-referemce/#template)\).
+This line marks the beginning of our first [category](/docs/aiml-reference/#category), which is the base unit of code in an AIML based chatbot. Each category defines an input \([pattern](/docs/aiml-referemce/#pattern)\) and an output \([template](/docs/aiml-referemce/#template)\).
 
 ~~~
 <pattern>HI</pattern>
 ~~~
 
-This is the category’s [pattern](/dox/aiml-reference/#pattern) element. The pattern defines some input text. When you say something to the bot, it will evaluate all of its categories until it finds one whose pattern matches the input. In this example, our category will be matched when the user’s input is “HI”.
+This is the category’s [pattern](/docs/aiml-reference/#pattern) element. The pattern defines some input text. When you say something to the bot, it will evaluate all of its categories until it finds one whose pattern matches the input. In this example, our category will be matched when the user’s input is “HI”.
 
 ~~~
 <template>Hello world!</template>

@@ -890,10 +890,10 @@ Consider the following:
 
 > **Human:** Today is Monday.  
 > **Bot:** The start of the work week!  
-> **Human: **Today is Tuesday.  
-> **Bot: **Tuesday already?  
+> **Human:** Today is Tuesday.  
+> **Bot:** Tuesday already?  
 > **Human:** Today is Wednesday.  
-> **Bot: **Humpday, we're halfway to the weekend!
+> **Bot:** Humpday, we're halfway to the weekend!
 
 The bot response is _conditioned_ on the day of the week. Using the &lt;condition&gt; tag within the template enables this with a single category:
 

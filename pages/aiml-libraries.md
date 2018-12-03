@@ -1,4 +1,4 @@
-:** ---
+---
 permalink: /aiml-libraries/
 layout: default
 ---

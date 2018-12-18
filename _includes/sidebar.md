@@ -7,10 +7,18 @@
   <ul>
     {% assign subsections = section.docs | sort:"order_number" %}
     {% for subsection in subsections %}
-      <li>
+      <li id="{{subsection.title}}-collapse">
         {% if subsection.content.size > 1 %}
+          {% capture page_url %}
+            {{"/docs" | append: page.url}}
+          {% endcapture %}
+          {% if page_url contains subsection.url %}
+            {% assign collapse_class = "pb-docs__navbar__collapse__items pb-docs__navbar__collapse__items--active" %}
+          {% else %}
+            {% assign collapse_class = "pb-docs__navbar__collapse__items" %}
+          {% endif %}
           <a class="pb-docs__navbar__item pb-docs__navbar__collapse__toggle" href="{{subsection.url}}">{{subsection.title}}</a>
-          <ul markdown="1" class="pb-docs__navbar__collapse__items">
+          <ul markdown="1" class="{{collapse_class}}">
             {{subsection.content}}
           </ul>
         {% else %}

@@ -1,6 +1,7 @@
 ---
 title: Bot Building 101
 permalink: /docs/building-bots/tutorial/
+url: /building-bots/tutorial/
 order_number: 2
 ---
 * [Core Concepts](/docs/building-bots/tutorial/#core-concepts)

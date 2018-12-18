@@ -1,6 +1,7 @@
 ---
 title: FAQ
 permalink: /docs/faq/
+url: /faq/
 order_number: 3
 ---
 * [AIML](/docs/faq/#aiml)

@@ -1,6 +1,7 @@
 ---
 title: API Endpoints
 permalink: /docs/api-endpoints/
+url: /api-endpoints/
 order_number: 2
 ---
 * [List of bots](/docs/api-endpoints/#get-bot)

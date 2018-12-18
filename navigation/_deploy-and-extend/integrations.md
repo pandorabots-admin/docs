@@ -1,6 +1,7 @@
 ---
 title: Integrations
 permalink: /docs/integrations/
+url: /integrations/
 order_number: 1
 ---
 * [Browser](/docs/integrations/#browser)

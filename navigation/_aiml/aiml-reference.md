@@ -1,6 +1,7 @@
 ---
 title: AIML Reference
 permalink: /docs/aiml-reference/
+url: /aiml-reference/
 order_number: 4
 ---
 * [aiml](/docs/aiml-reference/#aiml)

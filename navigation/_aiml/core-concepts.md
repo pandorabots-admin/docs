@@ -1,6 +1,7 @@
 ---
 title: Core Concept Deep Dives
 permalink: /docs/core-concepts/
+url: /core-concepts/
 order_number: 5
 ---
 * [Predicates](/docs/core-concepts/#predicates)

@@ -1,140 +1,23 @@
 <div markdown="1" class="pb-docs__navbar">
+  {% include search.html %}
 
-{% include search.html %}
-## PLATFORM OVERVIEW
-
-* [About Pandorabots](/docs/)
-* [Feature Comparison](/docs/feature-comparison/)
-* [FAQ](/docs/faq/)
-  * [AIML](/docs/faq/#aiml)
-  * [API](/docs/faq/#api)
-  * [Bots](/docs/faq/#bots)
-  * [Integrations](/docs/faq/#integrations)
-  * [Limits](/docs/faq/#limits)
-  * [Pricing](/docs/faq/#pricing)
-  * [Privacy, Security & Legal](/docs/faq/#privacy)
-  * [User Interface](/docs/faq/#interface)
-
-## AIML
-
-* [AIML: An Introduction ](/docs/aiml-basics/)
-* [AIML Fundamentals](/docs/aiml-fundamentals/)
-* [AIML Libraries](/docs/aiml-libraries/)
-  * [AIML Standard Libraries](/docs/aiml-libraries/#aiml-standard-library)
-  * [Modifying Small Talk files](/docs/aiml-libraries/#using-rosie)
-* [AIML Reference](/docs/aiml-reference/)
-  * [aiml](/docs/aiml-reference/#aiml)
-  * [bot](/docs/aiml-reference/#bot)
-  * [button](/docs/aiml-reference/#button)
-  * [card](/docs/aiml-reference/#card)
-  * [carousel](/docs/aiml-reference/#carousel)
-  * [category](/docs/aiml-reference/#category)
-  * [condition](/docs/aiml-reference/#condition)
-  * [date](/docs/aiml-reference/#date)
-  * [delay](/docs/aiml-reference/#delay)
-  * [denormalize](/docs/aiml-reference/#denormalize)
-  * [eval](/docs/aiml-reference/#eval)
-  * [explode](/docs/aiml-reference/#explode)
-  * [first](/docs/aiml-reference/#first)
-  * [formal](/docs/aiml-reference/#formal)
-  * [gender](/docs/aiml-reference/#gender)
-  * [get](/docs/aiml-reference/#get)
-  * [id](/docs/aiml-reference/#id)
-  * [image](/docs/aiml-reference/#image)
-  * [input](/docs/aiml-reference/#input)
-  * [interval](/docs/aiml-reference/#interval)
-  * [learn](/docs/aiml-reference/#learn)
-  * [li](/docs/aiml-reference/#li)
-  * [loop](/docs/aiml-reference/#loop)
-  * [lowercase](/docs/aiml-reference/#lowercase)
-  * [map](/docs/aiml-reference/#map)
-  * [normalize](/docs/aiml-reference/#normalize)
-  * [pattern](/docs/aiml-reference/#pattern)
-  * [person](/docs/aiml-reference/#person)
-  * [person2](/docs/aiml-reference/#person2)
-  * [program](/docs/aiml-reference/#program)
-  * [random](/docs/aiml-reference/#random)
-  * [reply](/docs/aiml-reference/#reply)
-  * [response](/docs/aiml-reference/#response)
-  * [rest](/docs/aiml-reference/#rest)
-  * [sentence](/docs/aiml-reference/#sentence)
-  * [set](/docs/aiml-reference/#set)
-  * [size](/docs/aiml-reference/#size)
-  * [split](/docs/aiml-reference/#split)
-  * [sr](/docs/aiml-reference/#sr)
-  * [srai](/docs/aiml-reference/#srai)
-  * [sraix](/docs/aiml-reference/#sraix)
-  * [star](/docs/aiml-reference/#star)
-  * [template](/docs/aiml-reference/#template)
-  * [that](/docs/aiml-reference/#that)
-  * [thatstar](/docs/aiml-reference/#thatstar)
-  * [think](/docs/aiml-reference/#think)
-  * [topic](/docs/aiml-reference/#topic)
-  * [topicstar](/docs/aiml-reference/#topicstar)
-  * [uppercase](/docs/aiml-reference/#uppercase)
-  * [video](/docs/aiml-reference/#video)
-* [Core Concept Deep Dives](/docs/core-concepts/)
-  * [Predicates](/docs/core-concepts/#predicates)
-  * [Substitutions & Sentence Splitting](/docs/core-concepts/#substitutions)
-  * [Wildcards](/docs/core-concepts/#wildcards)
-
-## API REFERENCE
-
-* [API Basics](/docs/api-basics/)
-* [API Endpoints](/docs/api-endpoints/)
-  * [List of bots](/docs/api-endpoints/#get-bot)
-  * [Create a bot](/docs/api-endpoints/#put-bot)
-  * [Delete a bot](/docs/api-endpoints/#delete-bot)
-  * [List of bot files](/docs/api-endpoints/#get-files)
-  * [Upload a bot file \(AIML, set, substitution, map\)](/docs/api-endpoints/#upload-file)
-  * [Upload a bot file \(pdefaults, properties\)](/docs/api-endpoints/#upload-properties)
-  * [Delete a bot file \(AIML, set, map, substitution\)](/docs/api-endpoints/#delete-file)
-  * [Delete a bot file \(pdefaults, properties\)](/docs/api-endpoints/#delete-properties)
-  * [Retrieve a bot file \(AIML, set, map, substitution\)](/docs/api-endpoints/#retrieve-file)
-  * [Retrieve a bot file \(pdefaults, properties\)](/docs/api-endpoints/#retrieve-properties)
-  * [Compile a bot](/docs/api-endpoints/#compile-bot)
-  * [Talk to a bot](/docs/api-endpoints/#talk-to-bot)
-  * [Debug a bot conversation](/docs/api-endpoints/#debug-bot)
-  * [Anonymous talk](/docs/api-endpoints/#atalk-to-bot)
-* [Command Line Interface](/docs/command-line-interface/)
-* [SDKs](/docs/sdks/)
-* [Related Articles](/docs/related-articles/)
-  * [End-User Management with A-Talk API](/docs/related-articles/#manage-end-users)
-
-## BUILDING BOTS
-
-* [Hello World](/docs/building-bots/)
-* [Bot Building 101](/docs/building-bots/tutorial/)
-  * [Core Concepts](/docs/building-bots/tutorial/#core-concepts)
-  * [Platform Components](/docs/building-bots/tutorial/#platform-components)
-  * [Basic AIML Training](/docs/building-bots/tutorial/#basic-aiml-training)
-    * [Categories](/docs/building-bots/tutorial/#bat-categories)
-    * [Wildcards](/docs/building-bots/tutorial/#bat-wildcards)
-    * [Variables](/docs/building-bots/tutorial/#bat-variables)
-    * [Recursion and Reduction](/docs/building-bots/tutorial/#recursion-and-reduction)
-    * [Sets and Maps](/docs/building-bots/tutorial/#sets-and-maps)
-    * [Context](/docs/building-bots/tutorial/#context)
-    * [Learning](/docs/building-bots/tutorial/#learning)
-    * [Revisiting Key Platform Components](/docs/building-bots/tutorial/#revisiting-key-platform-components)
-  * [Additional AIML Features](/docs/building-bots/tutorial/#additional-aiml-features)
-  * [Next Steps: Deploying Your Bot](/docs/building-bots/tutorial/#next-steps)
-  * [Updating your Bot](/docs/building-bots/tutorial/#updating-your-bot)
-* [Specific Use Cases](/docs/building-bots/use-cases/)
-  * [FAQ Bot](/docs/building-bots/use-cases/#faq)
-  * [Concierge Bot](/docs/building-bots/use-cases/#concierge)
-* [Quickstart](/docs/building-bots/quickstart/)
-
-## DEPLOY & EXTEND
-
-* [Integrations](/docs/integrations/)
-  * [Browser](/docs/integrations/#browser)
-  * [Firebase](/docs/integrations/#firebase)
-  * [Mustache Templating Engine](/docs/integrations/#mustache)
-  * [Slack](/docs/integrations/#slack)
-  * [Telegram](/docs/integrations/#telegram)
-  * [Twilio](/docs/integrations/#twilio)
-  * [Twitter](/docs/integrations/#twitter)
-* [Modules](/docs/modules/)
-  * [OpenWeather](/docs/modules/#open-weather)
-  * [Mitsuku](/docs/modules/#mitsuku)
+  {% assign nav_sections = site.collections | sort:"order_number" %}
+  {% for section in nav_sections %}
+  <h2>{{section.title}}</h2>
+  <ul>
+    {% assign subsections = section.docs | sort:"order_number" %}
+    {% for subsection in subsections %}
+      <li>
+        {% if subsection.content.size > 1 %}
+          <a class="pb-docs__navbar__item pb-docs__navbar__collapse__toggle" href="{{subsection.url}}">{{subsection.title}}</a>
+          <ul markdown="1" class="pb-docs__navbar__collapse__items">
+            {{subsection.content}}
+          </ul>
+        {% else %}
+          <a class="pb-docs__navbar__item" href="{{subsection.url}}">{{subsection.title}}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
 </div>

@@ -7,7 +7,7 @@
   <ul>
     {% assign subsections = section.docs | sort:"order_number" %}
     {% for subsection in subsections %}
-      <li id="{{subsection.title}}-collapse">
+      <li class="pb-collapse" id="{{subsection.title}}-collapse">
         {% if subsection.content.size > 1 %}
           {% capture page_url %}
             {{"/docs" | append: page.url}}

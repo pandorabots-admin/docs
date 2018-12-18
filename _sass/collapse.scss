@@ -4,6 +4,10 @@
     display: none;
     &--active {
       display: block;
+
+      > li > ul > li > ul {
+        padding-left: 30px !important;
+      }
     }
   }
 }

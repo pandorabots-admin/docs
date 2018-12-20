@@ -32,8 +32,49 @@ tipue_search_active: true
     </div>
 
     <script>
+      function indexByRegex(string, regex, startpos = 0) {
+        let match = string.substring(startpos).match(regex)
+
+        let index = string.substring(startpos).search(regex)
+        index = (index >= 0) ? (index + (startpos || 0)) : index
+
+        return {
+          index,
+          match
+        }
+      }
+
+      function restoreSpacing(item) {
+        if(item == '<' || item == '>') {
+          return ''
+        } else {
+          return item
+        }
+      }
+
       $(document).ready(function() {
         $('#tipue_search_input').tipuesearch();
+        if(window.location.search.includes('?search=')) {
+          let searchQuery = (window.location.search.split('&')[0] || '').split(/[\?\=]/)
+          searchQuery = searchQuery[searchQuery.length - 1]
+
+          if(searchQuery) {
+            let pageContent = document.querySelector('.pb-docs__content')
+
+            let regex = new RegExp(`([\\s\\n])(${searchQuery})([\\s\\n])`, 'i')
+
+            let result = indexByRegex(pageContent.innerHTML, regex)
+            let resultLocation = result.index
+            if(resultLocation < 0) return null
+
+            let before = pageContent.innerHTML.substr(0, resultLocation)
+            let offset = (resultLocation + searchQuery.length + 1)
+            let after = pageContent.innerHTML.substr(offset, pageContent.innerHTML.length)
+
+            pageContent.innerHTML = before + restoreSpacing(result.match[1]) + '<span id="search-result">' + result.match[2] + '</span>' + restoreSpacing(result.match[3]) + after
+            pageContent.scrollTop = document.querySelector('.pb-docs__content #search-result').offsetTop - 30
+          }
+        }
       });
     </script>
   </body>

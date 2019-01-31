@@ -37,6 +37,7 @@ tipue_search:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-target-blank
 
 collections_dir: navigation
 collections:

@@ -10,11 +10,11 @@ layout: default
 
 #### The largest, most established, chatbot development and hosting platform.
 
-#### [&gt;&gt; Sign Up & Start Building for Free!](https://pandorabots.com)
+#### [&gt;&gt; Sign Up & Start Building for Free!](https://pandorabots.com){:target="_blank"}
 
 ---
 
-Welcome to [Pandorabots](https://www.pandorabots.com)! We offer an online web service for building and deploying _chatbots_.
+Welcome to [Pandorabots](https://www.pandorabots.com){:target="_blank"}! We offer an online web service for building and deploying _chatbots_.
 
 **What is a chatbot?**
 
@@ -28,13 +28,13 @@ The Pandorabots platform supports an open standard scripting language called _Ar
 
 **What is AIML?**
 
-AIML is XML-based and easy for anyone to learn, even if you aren't a programmer. Despite its deliberate simplicity, the language powers the most complex conversational agents on the market to date, including the multi award-winning [Mitsuku chatbot](https://en.wikipedia.org/wiki/Mitsuku). Mitsuku is widely considered the best AI conversationalist and can be accessed on [Messenger](https://www.messenger.com/t/47719737069), Kik, Telegram, [Twitch](https://go.twitch.tv/mitsuku_irl), or the [web](http://www.mitsuku.com/).
+AIML is XML-based and easy for anyone to learn, even if you aren't a programmer. Despite its deliberate simplicity, the language powers the most complex conversational agents on the market to date, including the multi award-winning [Mitsuku chatbot](https://en.wikipedia.org/wiki/Mitsuku){:target="_blank"}. Mitsuku is widely considered the best AI conversationalist and can be accessed on [Messenger](https://www.messenger.com/t/47719737069), Kik, Telegram, [Twitch](https://go.twitch.tv/mitsuku_irl){:target="_blank"}, or the [web](http://www.pandorabots.com/mitsuku){:target="_blank"}.
 
-The easiest way to get started with AIML is to [create a Pandorabots account](https://www.pandorabots.com) and then spend five minutes on the interactive [Quickstart](/docs/building-bots/quickstart/), which will walk you through both chatbot development and user interface fundamentals. For a deeper dive, [Bot Building 101](/docs/building-bots/tutorial/) is an excellent starting point, and there are a wealth of additional AIML resources in the AIML section.
+The easiest way to get started with AIML is to [create a Pandorabots account](https://www.pandorabots.com){:target="_blank"} and then spend five minutes on the interactive [Quickstart](/docs/building-bots/quickstart/), which will walk you through both chatbot development and user interface fundamentals. For a deeper dive, [Bot Building 101](/docs/building-bots/tutorial/) is an excellent starting point, and there are a wealth of additional AIML resources in the AIML section.
 
 **Next Steps**
 
-* [Sign up Free!](https://pandorabots.com)
+* [Sign up Free!](https://pandorabots.com){:target="_blank"}
 * [Why Choose Pandorabots](/docs/feature-comparison/)
 
 </div>

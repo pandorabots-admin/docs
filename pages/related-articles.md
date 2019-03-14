@@ -14,21 +14,21 @@ layout: default
 
 ## "Managing" End-Users with Anonymous Talk API {#manage-end-users}
 
-If you've developed your bot to remember conversational elements, and you'd like to have it remember them  past an active session with your end-users but don't want to maintain any kind of end-user management, the new Anonymous Talk API can solve that issue!
+If you've developed your bot to remember conversational elements, and you'd like to have it remember them  past an active session with your end-users but don't want to maintain any kind of end-user management, the Anonymous Talk API can solve that issue!
 
-This API will allow you to request creation of an end-user client\_name on the AIaaS platform that will maintain persistent predicates for anonymous end-users talking to your bot\(s\), without you having to maintain end-user profiles on your website or application.
+This API will allow you to request creation of an end-user client\_name on the Pandorabots platform that will maintain persistent predicates for anonymous end-users talking to your bot\(s\), without you having to maintain end-user profiles on your website or application.
 
-Previously, you had the option to pass in a `client_name` to identify your end-users. This would allow predicates to persist throughout a given chat session, but eventually fall out of the bot's memory. By using a `client_name` retrieved from the Anonymous Talk API, your end-user's predicates will persist beyond this limited scope.
+Previously, you had the option to pass in a `client_name` to identify your end-users. This would allow predicates to persist throughout an active conversation, but eventually be cleared out of memory after a idle period. By using a `client_name` retrieved from the Anonymous Talk API, your end-user's predicates will persist beyond this limited scope.
 
 ### Getting Started
 
-The Anonymous Talk API is similar to the Talk to Bot API in that to start a talk interaction with your bot with a brand new end-user, at minimum you will need your application ID \(`APP_ID`\), user key \(`USER_KEY`\), bot name \(`BOTNAME`\), and input message to your bot \(`INPUT`\). A sample cURL command would be:
+The Anonymous Talk API is similar to the Talk to Bot API in that to start a talk interaction with your bot with a brand new end-user. A sample cURL command using the public botkey would be:
 
 ~~~
-curl -v -X POST 'https://api.pandorabots.com/atalk/APP_ID/BOTNAME?user_key=USER_KEY&input=INPUT'
+curl -v -X POST 'https://api.pandorabots.com/atalk?botkey=BOTKEY&input=INPUT'
 ~~~
 
-Sending the HTTP request without the client\_name parameter will indicate to AIaaS that you are requesting a new end-user account. The HTTP response will return a JSON object such as:
+Sending the HTTP request without the client\_name parameter will indicate that you are requesting a new end-user account. The HTTP response will return a JSON object such as:
 
 ~~~
 { "status": "ok",  
@@ -42,7 +42,7 @@ where `<OUTPUT>` is the bot response to the input received, `<SESSION_ID>` is a 
 
 ### Continuing the Conversation
 
-Once an anonymous end-user `client_name` has been provided, your application should use this client\_name in subsequent talk interactions \(either Anonymous Talk or Talk to Bot API will work\). Any predicates created in conversation with your bot will be associated with this new `client_name` and will persist indefinitely until overwritten.
+Once an anonymous end-user `client_name` has been provided, your application should use this client\_name in subsequent talk interactions \(either Anonymous Talk or Talk to Bot API will work\). Any predicates created in conversation with your bot will be associated with this new Pandorabots generated `client_name` and will persist indefinitely until overwritten.
 
 Your application can save this `client_name` as an anonymous end-user either in a cookie, as a local variable in your application, or other mechanisms developed in your application.
 

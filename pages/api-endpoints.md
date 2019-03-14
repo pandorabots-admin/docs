@@ -369,7 +369,7 @@ curl -v  -X POST 'https://api.pandorabots.com/talk?botkey=BOTKEY&input=INPUT'
 
 ---
 
-### **POST** _/atalk/{app\_id}/{botname}_
+### **POST** _/atalk_
 {: #atalk-to-bot-public}
 
 #### _Anonymous Talk (Public Botkey)_

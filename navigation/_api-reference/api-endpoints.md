@@ -15,6 +15,5 @@ order_number: 2
 * [Retrieve a bot file \(AIML, set, map, substitution\)](/docs/api-endpoints/#retrieve-file)
 * [Retrieve a bot file \(pdefaults, properties\)](/docs/api-endpoints/#retrieve-properties)
 * [Compile a bot](/docs/api-endpoints/#compile-bot)
-* [Talk to a bot](/docs/api-endpoints/#talk-to-bot)
-* [Debug a bot conversation](/docs/api-endpoints/#debug-bot)
-* [Anonymous talk](/docs/api-endpoints/#atalk-to-bot)
+* [Talk to a bot](/docs/api-endpoints/#talk-to-bot-public)
+* [Anonymous talk](/docs/api-endpoints/#atalk-to-bot-public)

@@ -183,13 +183,13 @@ The art of AIML writing is most apparent in creating default categories, which p
 >
 > Alice: How would you answer "Where do I find the webpage with Australopithecus?"
 >
-> User: I would say: "[http://www.ancientskulls.net/australopithecus.html](http://www.ancientskulls.net/australopithecus.html)"
+> User: I would say: "[http://www.ancientskulls.net/australopithecus.html](http://www.ancientskulls.net/australopithecus.html){:target="_blank"}"
 >
 > Alice: Thanks, human. Try asking me again.
 >
 > User: Where do I find the webpage with Australopithecus?
 >
-> Alice: [http://www.ancientskulls.net/australopithecus.html](http://www.ancientskulls.net/australopithecus.html)
+> Alice: [http://www.ancientskulls.net/australopithecus.html](http://www.ancientskulls.net/australopithecus.html){:target="_blank"}
 
 While crowd-sourced learning is highly appealing, allowing clients to train your chatbot is also highly risky, because there is no way to weed out hackers and trolls who would corrupt the bot by teaching it inappropriate things \(as made famous by Microsoft Tay, the unsupervised learning bot who went "bad" on Twitter\). Therefore, we suggest restricting the Learn function to a trusted user group or development sandbox.
 

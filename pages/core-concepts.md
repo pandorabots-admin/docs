@@ -69,7 +69,7 @@ Once you have set a predicate, it can be recalled elsewhere in your AIML.
 </category>
 ~~~
 
-If you have set the predicate using the previous category, this will now recall the value of the predicate "name". If the predicate has **not** been set, then your bot will return the `default-get` value specified in your bot properties file. For example, in Rosie, it is set to "unknown".
+If you have set the predicate using the previous category, this will now recall the value of the predicate "name". If the predicate has **not** been set, then your bot will return the `default-get` value specified in your bot properties file. For example, by default it is set to "unknown".
 
 The categories you have just written would enable a conversation like the one below:
 
@@ -127,7 +127,7 @@ Please review this article about [Anonymous Talk API](/docs/related-articles/#ma
 
 # Substitutions and sentence splitting {#substitutions}
 
-One new feature that was introduced in AIML 2.0 is the substitution file. These files are used to modify text strings being passed through your bot in such a way that both the AIML interpreter and your client can parse their meanings.
+One feature that was introduced in AIML 2.0 is the substitution file. These files are used to modify text strings being passed through your bot in such a way that both the AIML interpreter and your client can parse their meanings.
 
 Substitution files look a lot like map files, but serve a different function. They look for defined sets of characters in text strings, and replace those sets of characters with new values. Depending on the substitution file, this transformation can either occur before the bot attempts to form a match with an input, or in the bot's response itself. Here's a basic example:
 
@@ -238,7 +238,7 @@ Without the denormalize tag, `<star/>` would have returned "pandorabots dot com"
 
 Our AIML interpreter attempts to form a match with each sentence found in the input. Most of the time, an input will only be one sentence long, but in the case that it is longer, we divide the input based on a hardcoded list of "sentence splitters". These are punctuation marks that generally mark the end of a sentence.
 
-We've recently changed our system to give more control to bot developers. This change is backward compatible, so your existing bots that do not have this new property will still work as normal. When you create a new bot, one of the default bot properties is called "sentence-splitters", and it includes the following items:
+Our system gives control to bot developers. When you create a new bot, one of the default bot properties is called "sentence-splitters", and it includes the following items:
 
 * **.** \(period\)
 * **?** \(question mark\)

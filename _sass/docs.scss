@@ -3,6 +3,24 @@
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   height: 100vh;
 
+  table {
+    background-color: $black;
+    border-radius: 4px;
+    margin-bottom: 24px;
+
+    thead {
+      background: $med-gray;
+    }
+
+    tbody {
+      background: $light-gray;
+    }
+
+    th, td {
+      padding: 5px 15px;
+    }
+  }
+
   &__navbar {
     overflow-y: scroll;
     max-height: calc(100vh - 62px);
@@ -42,6 +60,7 @@
     }
     max-height: calc(100vh - 60px);
     overflow-y: scroll;
+    overflow-x: hidden;
     padding: 30px;
 
     pre.highlight > code {

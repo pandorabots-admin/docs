@@ -669,7 +669,7 @@ The *program element* returns the name and version number of the AIML interprete
 
 #### Usage
 
-Using this element on the [Pandorabots Platform](https://home.pandorabots.com):
+Using this element on the [Pandorabots Platform](https://home.pandorabots.com){:target="_blank"}:
 
     <category>
     <pattern>PROGRAM</pattern>
@@ -699,7 +699,7 @@ This is a very useful tag to use in default categories, or categories that you t
     </template>
     </category>
 
-For the [UDC](http://docs.pandorabots.com/tutorials/wildcards/), each time this category is matched, the bot will pick one of the list elements (`<li>`) at random as its response.
+For the [UDC](/core-concepts/#wildcards), each time this category is matched, the bot will pick one of the list elements (`<li>`) at random as its response.
 
     <category>
     <pattern>HI</pattern>

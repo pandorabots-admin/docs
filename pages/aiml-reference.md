@@ -699,7 +699,7 @@ This is a very useful tag to use in default categories, or categories that you t
     </template>
     </category>
 
-For the [UDC](/core-concepts/#wildcards), each time this category is matched, the bot will pick one of the list elements (`<li>`) at random as its response.
+For the [UDC](/docs/core-concepts/#wildcards), each time this category is matched, the bot will pick one of the list elements (`<li>`) at random as its response.
 
     <category>
     <pattern>HI</pattern>

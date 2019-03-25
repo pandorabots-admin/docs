@@ -18,8 +18,6 @@ Pandorabots offers a cloud-based chatbot compiler and runtime. Our platform is t
 
 This tutorial will focus on how to actually develop the bot. We will be talking primarily about AIML, and how to organize your code into organized, reusable modules for maximum efficiency.
 
-This tutorial is platform-agnostic, meaning that you may use any of our services to edit and deploy your bot. If you’d like help deploying via the Pandorabots API, please take a look at our [CLI](https://github.com/pandorabots/pb-cli). We’ll assume that you have the capability to edit a file, add it to your bot, compile the bot, and talk to the bot.
-
 ## What is AIML? {#what-is-aiml}
 
 AIML is an acronym for “artificial intelligence markup language,” and is the primary language used currently by the Pandorabots platform. It is an extension of XML.
@@ -40,7 +38,7 @@ Let’s begin with everyone’s favorite lesson when learning a new programming 
 </aiml>
 ~~~
 
-Add this file to your bot, compile it, and now try talking to it:
+Save this file to your bot, and now try talking to it:
 
 > **Human**: Hi  
 > **Bot**: Hello world!
@@ -57,7 +55,7 @@ This line declares your file as an XML document. While this is unecessary from t
 <aiml version="2.0">
 ~~~
 
-This line declares the file as an AIML document. This line is required by the compiler. All of your AIML code will appear between this and the final line, which marks the end of the AIML document.
+This line declares the file as an AIML document. This line is required by the AIML compiler on our platform. All of your AIML code will appear between this and the final line, which marks the end of the AIML document.
 
 ~~~
 <category>
@@ -91,6 +89,6 @@ This marks the end of the AIML document.
 
 ## Moving forward {#moving-forward}
 
-Your next stop should be [Bot Building 101](/building-bots/tutorial/) where you can master both AIML and Platform basics.
+Your next stop should be [Bot Building 101](/docs/building-bots/tutorial/) where you can master both AIML and Platform basics.
 
 </div>

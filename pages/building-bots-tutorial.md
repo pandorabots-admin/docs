@@ -36,19 +36,19 @@ Experienced AIML writers may choose to use their favorite text editor instead of
 
 #### Log In
 
-The Pandorabots platform supports OAuth \(single sign-on\) via Google, Facebook, Twitter, Yahoo, and Github. You may also create an account using an email address and password. Upon initial log in, you will be assigned a username \(taking the form of "unXXXXXXXX"\) and prompted to create your first bot. Bot names must be 3-64 characters in length and lowercase alphanumeric. Together, your username and botname form a unique identifier for your bot, also known as your "botid."
+The Pandorabots platform supports OAuth \(single sign-on\) via Google, Facebook, Twitter, Yahoo, and Github. You may also create an account using an email address and password. Upon initial log in, you will be assigned a username \(taking the form of "unXXXXXXXX"\) and prompted to create your first bot. Bot names must be 3-64 characters in length and lowercase alphanumeric. Together, your username and botname form a unique identifier for your bot.
 
 #### Bot Creation
 
-To create a new bot, use the "+" button next to **My Bots** on the left navigation panel. Note that AIML can be written in almost any natural language, and you can select the language for your bot from a drop-down upon creation. \(For Asian and other languages that require segmentation, Pandorabots offers a machine learning-based segmenter as a service; email us to learn more\).
+To create a new bot, use the "+" button next to **My Bots** on the navigation panel. Note that AIML can be written in almost any natural language, and you can select the language for your bot from a drop-down upon creation. \(For Asian and other languages that require segmentation, Pandorabots offers a machine learning-based segmenter as a service; email us to learn more\).
 
-Content Libraries \(opensource AIML files\) may be available depending on the language selected. For example, adding the "Small Talk" Library \(also previously known as "Rosie"\) to your bot will enable basic chitchat right out of the gate. Adding Content Libraries can save you the hassle of reinventing the wheel by writing AIML categories to handle common things people say in conversation. However, you can always select "Blank Bot" if you prefer to build from scratch.
+Content Libraries \(open source AIML files\) may be available depending on the language selected. For example, adding the "Small Talk" Library \(also previously known as "Rosie"\) to your bot will enable basic chitchat right out of the gate. Adding Content Libraries can save you the hassle of reinventing the wheel by writing AIML categories to handle common things people say in conversation. This base bot files can be updated as needed for your own custom bot responses. However, you can always select "Blank Bot" if you prefer to build from scratch.
 
 If you have written a library and would like to open source it and see it featured for other developers, contact us!
 
 #### Bot Statistics
 
-Clicking on **My Bots** on the left navigation panel will display some key global statistics for all of your bots for the past 30 days. These include total _Interactions_, _Clients_, _Sessions_, and the average number of _Interactions/Session_. In the broader ecosystem, "Interactions/Session" is also sometimes known as _Turns per Conversation _\("_TPC_"\), and is a stat botmasters measure and reference to highlight client engagement with their chatbot.
+Clicking on **My Bots** on the navigation panel will display some key global statistics for your production bots for the past 30 days. These include total _Interactions_, _Clients_, _Sessions_, and the average number of _Interactions/Session_. In the broader ecosystem, "Interactions/Session" is also sometimes known as _Turns per Conversation _\("_TPC_"\), and is a stat botmasters measure and reference to highlight client engagement with their chatbot.
 
 Clicking on the name of each individual bot will display the same individual statistics for that specific bot.
 
@@ -56,9 +56,9 @@ Platform users who require more in-depth analytics can plug in additional third-
 
 #### Bot Editing
 
-Selecting the name of an individual bot on the left navigation panel will open a drop-down menu consisting of several components, including: _Edit_, _Deploy_, _Logs_, and _Delete_. The **Editor** is your gateway to creating and maintaining your bot files.
+Selecting the name of an individual bot will open a drop-down menu consisting of several components, including: _Edit_, _Deploy_, _Logs_, etc. The **Edit** is your gateway to creating and maintaining your bot. There are several options such as AIML code editor, Intents Tree, and Chat Design to make updates to your bot.
 
-From the Files tab drop-down you can accomplish the following:
+Using the Code Editor, from the Files option you can accomplish the following:
 
 * Create new files, including AIML files \(the primary type of bot files\), Sets, Maps, Substitutions, and Pdefaults
 * Save Files
@@ -73,7 +73,7 @@ _Staging versus Production_
 
 A common best practice in computer programming is to have two versions of software when one of those versions is live for the public: a _Production_ version that is live, and a _Staging_ version that is in development where you can test \(and back out of!\) any changes. This way, if something goes wrong in the staging version of the software you are editing, your changes do not impact the production version and disrupt end-users. One great feature of bots is that you can instantly update them after making changes, but it is important to first verify that none of your changes are breaking changes by testing thoroughly.
 
-So, if you have a bot deployed on the platform that is live for the public, any changes you make to your bot using the Editor will only impact the staging or _Sandbox_ version of your bot. Once you have tested your bot, clicking _Publish_ in the upper-right hand corner of the editor will push your changes live to production.
+So, if you have a bot deployed on the platform that is live for the public, any changes you make to your bot using the Edit features will only impact the staging or _Sandbox_ version of your bot. Once you have tested your bot, clicking _Publish_  will push your changes live to production.
 
 #### Bot Training via the Chat Widget
 
@@ -96,7 +96,7 @@ In the lower right hand corner of the interface, you may have noticed a circular
 
 #### Bot Log Review
 
-Reviewing chat logs and updating your bot frequently is a critical aspect of bot development. You can review logs by clicking "Logs" beneath your bot name. Chat logs are displayed dating back 30 days and available for download.
+Reviewing chat logs and updating your bot frequently is a critical aspect of bot development. You can review logs by clicking "Logs" associated with your bot. Chat logs are displayed dating back 30 days and available for download.
 
 Unread conversations appear in **bold**. Orange conversations contain at least one input that triggered the UDC. Orange highlighted input-output pairs that triggered the UDC are the highest priority log items to correct.
 
@@ -108,7 +108,7 @@ When you are ready to start collecting logs from actual clients, you can publish
 
 The **Deploy Page**, accessible via the _Deploy_ link under each individual bot name displayed on the left nav, lists a variety of _Integrations_. Integrations provide an easy method for deploying your bot to popular third party platforms and channels like Facebook Messenger and the Web. Supported Integrations are determined by a variety of factors including, but not limited to, technical feasibility, ecosystem demand, and platform partner relationships. If you wish to see support added for a channel that is not currently available, please email us at support@pandorabots.com and we'd be happy to consider your request.
 
-Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/docs/api-endpoints/), [SDKs](/docs/sdks/), and more. You may locate your _Application ID_ \(_"App ID"_\), which is the same as your username, and your _User Key_, by clicking on the "API Keys" button next to the "Custom Application" integration.
+Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/docs/api-endpoints/), [SDKs](/docs/sdks/), and more. You may locate your _Application ID_ \(_"App ID"_\), which is the same as your username, your _User Key_, and your _Botkey_ by clicking on the "API Keys" button next to the "Custom Application" integration.
 
 _Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the [Free Tier](/faq.md#pricing), which provides for unlimited Sandbox usage and up to 1,000 interactions / month._
 

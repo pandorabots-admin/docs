@@ -8,42 +8,25 @@ layout: default
 
 # Integrations
 
-#### _Code examples for integrating your bot with various third party services._
+#### _Code examples and/or tutorials for integrating your bot with various third party services._
 
 ---
 
-# Browser Integration {#browser}
+# Chat Widget Browser Integration {#browser}
 
-Using the [pb-html package](https://github.com/pandorabots/pb-html), you can now easily deploy an application which provides a web interface for chatting with your chatbot.
-
-If you're familiar with the now deprecated [AIML 1.0 system](http://www.pandorabots.com/botmaster/en/home), you'll probably remember how easy it was to publish your chatbot to a webpage using the "Custom HTML" tab in your dashboard. Now our APIs available via [chatbots.io](https://developer.pandorabots.com/) allow you integrate your chatbots into any application, however the "Custom HTML" feature was removed to protect the credentials and usage of your chatbot.
-
-The [pb-html package](https://github.com/pandorabots/pb-html) is a simple web server that can be deployed to [Heroku](https://www.heroku.com/) with the click of a button. We've also provided a reusable, customizable chat interface for end-users to access and chat with your chatbot.
-
-![](/images/pb-html.png)
+You can easily install a Pandorabots chat widget for your bot on your website by adding a simple code snippet to your webpage. This chat widget is very similar to the training widget that is on your Pandorabots dashboard for training your bot.
 
 ## Setup
 
-First, sign up for an account on [Heroku](https://www.heroku.com/). Then visit the [Github repository](https://github.com/pandorabots/pb-html) and click the "Deploy to Heroku" button. You'll be asked to provide your [Pandorabots API](https://developer.pandorabots.com/) credentials \(it's assumed you already have a plan and have deployed a chatbot\). Once you've clicked "Deploy for Free" and Heroku has built and launched your app, you may visit the site and start talking to your chatbot.
+Open your Pandorabots dashboard and expand the chatbot you wish to use. Click on the Deploy option to get started. This will display all the different channels and platforms you can use to connect your chatbot. Select the Add button next to the Pandorabots Chat Widget (if this option is not available, you will have to either upgrade your plan and/or publish your bot to production). You will be able to see all of options for you to customize your chat widget, such as Title, Subtitle, avatar, color themes, etc.
 
-## End-user management
+![](/docs/assets/img/chatwidgetmodal.png)
 
-Our other integrations feature Redis as a way to manage your users over time. This works by mapping the user's phone number or username \(depending on the platform\) to a unique Pandorabots `client_name`, allowing the bot to remember information about the user in future messages and conversations.
+After you complete customizing your chat widget, go to the Code tab to copy the Javascript code snippet to add to the bottom of the body of your HTML page. 
 
-With the browser, there is no phone number or username by which to identify the end-user. Instead, this implementation stores the `client_name` as a local variable, which is cleared when the user reloads the page. In other words, the chatbot will remember the user throughout the course of their conversation, but not after they have left the interface.
+## Updates
 
-To mitigate this difference, you could store the `client_name` in a cookie so that it is saved even when the user leaves the page. A better option might be to implement some sort of authentication of your users, so that they can log in to a session that stores their client\_name in memory. There is no "right" way to do this -- it all depends on the scope of your project!
-
-## Development
-
-If you'd like to customize your app, or make contributions to this project, first clone the repository. Once inside, run `npm start` to launch the app. You can then run `npm run watch` in a new terminal window to automatically build your frontend application when changes are saved.
-
-This project uses [ReactJS](https://facebook.github.io/react/), a Javascript library made at Facebook for the purpose of building user interfaces.
-
-### Styling
-
-Some base styles are provided in src/public/css/base.css. There is also a file  
-src/public/css/style.css provided for you to do custom styling to the chat interface.
+You can always return to this form to make changes to your chat widget snippet, or you can make a change directly to the code snippet already added to your webpage. Note that if you regenerate your user_key, you will have to make the necessary update to your webpage with a new PB_BOTKEY value or else the chat widget will not display on your page.
 
 ---
 

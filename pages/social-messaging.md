@@ -39,26 +39,26 @@ PB Chat Widget can render the buttons without accompanying text and can support 
 Twilio, Viber, and WeChat do not render tappable buttons but displays the action types as text, so postbacks do not work if you are using a different value than the text.
 
 #### Reply ####
-Same limitations as Buttons, except social messaging channels support a maximum of 11 replies, and PB chat widget can support more than 11 replies.
 
-Unlike Buttons, Viber does support tappable suggested replies.
+* Same limitations as Buttons, except social messaging channels support a maximum of 11 replies, 
+* PB chat widget can support more than 11 replies.
+* Unlike Buttons, Viber does support tappable suggested replies.
 
 #### Carousel ####
 
-Social messaging channels support a maximum of 10 cards in a carousel except Viber which has a 6 item limit.
-PB Chat Widget can support more than 10 cards in a carousel
-Telegram does not support a horizontal carousel with swipeable cards
-Twilio, WeChat supports only vertical display text of the carousel titles and does not support tappable buttons.
+* Social messaging channels support a maximum of 10 cards in a carousel except Viber which has a 6 item limit.
+* PB Chat Widget can support more than 10 cards in a carousel
+* Telegram does not support a horizontal carousel with swipeable cards
+* Twilio, WeChat supports only vertical display text of the carousel titles and does not support tappable buttons.
 
 #### Video ###
 
-All social messaging channels do not support embeddable videos, but will display video URL as a downloadable link
-PB chat widget supports embeddable videos
+* All social messaging channels do not support embeddable videos, but will display video URL as a downloadable link
+* PB chat widget supports embeddable videos
 
 #### Delay ####
 
-Some, but not all, social messaging channels provide a visual indicator of a delay, such as "typing…"
-
-PB chat widget displays a visual indicator (animated dots) during the time delay
+* Some, but not all, social messaging channels provide a visual indicator of a delay, such as "typing…"
+* PB chat widget displays a visual indicator (animated dots) during the time delay
 
 </div>

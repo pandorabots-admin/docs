@@ -31,75 +31,11 @@ tipue_search_active: true
         {{ content }}
     </div>
 
+    <script type="text/javascript" src="{{ "/assets/js/search-result-highlighter.js" | relative_url }}"></script>
     <script>
-      function indexByRegex(string, regex, startpos = 0) {
-        const substring = string.substring(startpos)
-
-        let match = substring.match(regex)
-
-        let index = string.substring(startpos).search(regex)
-        index = (index >= 0) ? (index + (startpos || 0)) : index
-
-        return {
-          index,
-          match
-        }
-      }
-
-      function getMatchIndices(string, regex, queryLength, startpos=0) {
-        const substring = string.substring(startpos)
-
-        let matchMap = []
-
-        while((matches = regex.exec(substring)) !== null) {
-          const prevMatchIndex = parseInt(regex.lastIndex)
-          const matchStart = (prevMatchIndex - queryLength)
-
-          matchMap.push({match: matches[0], index: matchStart})
-        }
-
-        return matchMap
-      }
-
-      function restoreSpacing(item) {
-        if(item == '<' || item == '>') {
-          return ''
-        } else {
-          return item
-        }
-      }
-
       $(document).ready(function() {
         $('#tipue_search_input').tipuesearch();
-        if(window.location.search.includes('?search=')) {
-          let searchQuery = (window.location.search.split('&')[0] || '').split(/[\?\=]/)
-          searchQuery = searchQuery[searchQuery.length - 1]
-
-          if(searchQuery) {
-            let pageContent = document.querySelector('.pb-docs__content')
-
-            let regex = new RegExp(`(${searchQuery})`, 'ig')
-
-            let results = getMatchIndices(pageContent.innerHTML, regex, searchQuery.length)
-
-            const resultSpanOpen = '<span id="search-result">'
-            const resultSpanClose = '</span>'
-
-            let before = 0
-            results.forEach((result, index) => {
-              let resultLocation = (result.index + ((resultSpanOpen.length + resultSpanClose.length) * index))
-              if(resultLocation < 0) return null
-
-              let before = pageContent.innerHTML.substr(0, resultLocation)
-              let offset = (resultLocation + searchQuery.length)
-              let after = pageContent.innerHTML.substr(offset, pageContent.innerHTML.length)
-
-              pageContent.innerHTML = before + resultSpanOpen + result.match + resultSpanClose + after
-            })
-            const firstResult = document.querySelector('.pb-docs__content #search-result')
-            pageContent.scrollTop = firstResult.offsetTop - 30
-          }
-        }
+        highlightSearchResult()
       });
     </script>
   </body>

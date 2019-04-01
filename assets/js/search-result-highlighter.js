@@ -16,7 +16,9 @@ function matchTextNodes(string) {
 
 function parseChildNodes(node, handleMatches) {
   return Array.from(node.childNodes).forEach(child => {
-    if(child.nodeType == 3) {
+    if(child.nodeType == 1 && child.nodeName == 'CODE') {
+      return null
+    } else if(child.nodeType == 3) {
       return handleMatches(child)
     } else {
       return parseChildNodes(child, handleMatches)

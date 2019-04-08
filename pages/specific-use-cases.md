@@ -429,6 +429,6 @@ Bot: Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper ...
 
 ## Final notes {#final-notes}
 
-Hopefully you’ve already gotten your hands on the [code](https://github.com/pandorabots/concierge-network). You can deploy this network yourself, just make sure to follow the directions in the Readme file to properly route your`<sraix>`calls!
+Hopefully you’ve already gotten your hands on the [code](https://github.com/pandorabots/concierge-network){:target="_blank"}. You can deploy this network yourself, just make sure to follow the directions in the Readme file to properly route your`<sraix>`calls!
 
 </div>

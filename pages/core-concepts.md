@@ -45,7 +45,7 @@ _Bot_ : I am 8 years old.
 
 Since this is a bot property, any client entering in this input will receive the same response. And since it is a constant, it can only be changed by updating the bot properties file, uploading the file, and re-compiling your bot.
 
-\*\*Note that a default bot properties file is automatically created when you create a bot on Pandorabots bot hosting platform. Bot properties file format is a key/value pair array \(see [Rosie example](https://github.com/pandorabots/rosie/blob/master/lib/system/rosie.properties) for format\).
+\*\*Note that a default bot properties file is automatically created when you create a bot on Pandorabots bot hosting platform. Bot properties file format is a key/value pair array \(see [Rosie example](https://github.com/pandorabots/rosie/blob/master/lib/system/rosie.properties){:target="_blank"} for format\).
 
 ### Setting and Recalling Predicates
 
@@ -285,7 +285,7 @@ You will also need to update normal.substitution to reflect this addition. By de
 
 **Big Picture**
 
-Substitutions are especially handy if you have connected your bot to messaging services or social media platforms \(like [Twitter](http://blog.pandorabots.com/putting-your-pandorabot-on-twitter/)\), where user inputs can often be colloquial or include things like emoticons, abbreviations, and hashtags. Luckily, using substitutions to transform inputs that include something like a \#--&gt;HASHTAG, you can code your bot to recognize all these things and more!
+Substitutions are especially handy if you have connected your bot to messaging services or social media platforms \(like [Twitter](http://blog.pandorabots.com/putting-your-pandorabot-on-twitter/){:target="_blank"}\), where user inputs can often be colloquial or include things like emoticons, abbreviations, and hashtags. Luckily, using substitutions to transform inputs that include something like a \#--&gt;HASHTAG, you can code your bot to recognize all these things and more!
 
 ---
 

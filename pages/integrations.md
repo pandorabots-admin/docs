@@ -32,22 +32,22 @@ You can always return to this form to make changes to your chat widget snippet, 
 
 # Tracking your bot's conversations {#firebase}
 
-In this week's tutorial, we'll be revisiting [Firebase](https://firebase.com), this time as a way to store the conversations that users are having with a chatbot. We'll be using jQuery and Twitter Bootstrap to create a responsive, real time interface that will also allow you to track conversations as they are happening.
+In this week's tutorial, we'll be revisiting [Firebase](https://firebase.com){:target="_blank"}, this time as a way to store the conversations that users are having with a chatbot. We'll be using jQuery and Twitter Bootstrap to create a responsive, real time interface that will also allow you to track conversations as they are happening.
 
 ## The code
 
-In our previous post on [Bot Possession](https://medium.com/pandorabots-blog/bot-possession-a-customer-service-solution-18fced1a6080), we explored Firebase as a tool to generate different types of events that would cause our interfaces to respond in different ways. In this post, we'll be using it more like a traditional database, with the added benefit of a responsive interface to track new conversations in real time.
+In our previous post on [Bot Possession](https://medium.com/pandorabots-blog/bot-possession-a-customer-service-solution-18fced1a6080){:target="_blank"}, we explored Firebase as a tool to generate different types of events that would cause our interfaces to respond in different ways. In this post, we'll be using it more like a traditional database, with the added benefit of a responsive interface to track new conversations in real time.
 
 **Setup**
 
-You can grab the source code for this tutorial from its [repository on Github](https://github.com/pandorabots/pb-logs-firebase):
+You can grab the source code for this tutorial from its [repository on Github](https://github.com/pandorabots/pb-logs-firebase){:target="_blank"}:
 
 ~~~
 $ git clone https://github.com/pandorabots/pb-logs-firebase.git
 $ cd pb-logs-firebase
 ~~~
 
-We'll be using the command line utility [Bower](http://bower.io/) to manage our dependencies \(Bower requires node.js, npm, and Git\):
+We'll be using the command line utility [Bower](http://bower.io/){:target="_blank"} to manage our dependencies \(Bower requires node.js, npm, and Git\):
 
 ~~~
 $ npm install -g bower
@@ -127,15 +127,15 @@ The importance of your bot's talk logs in the bot development process goes back 
 
 > Zipf's law states that given some corpus of natural language utterances, the frequency of any word is inversely proportional to its rank in the frequency table. Thus the most frequent word will occur approximately twice as often as the second most frequent word, three times as often as the third most frequent word, etc.
 >
-> * \[_Wikipedia_\]\(http://en.wikipedia.org/wiki/Zipf's_law\)
+> * \[_Wikipedia_\]\(http://en.wikipedia.org/wiki/Zipf's_law\){:target="_blank"}
 
 Dr. Richard Wallace, the creator of Alicebot and inventor of AIML, discerned that this applied not only to individual words, but to phrases as well. This distribution pattern led to a key insight in chatbot development. By writing patterns and content to capture only the most common inputs being used, the developer could actually account for the majority of potential inputs.
 
 > Specifically, 1800 words cover 95% of all the first words input to ALICE.
 >
-> * [_Dr. Richard Wallace_](http://www.alicebot.org/articles/wallace/zipf.html)
+> * [_Dr. Richard Wallace_](http://www.alicebot.org/articles/wallace/zipf.html){:target="_blank"}
 
-\(Note that the [Rosie Framework](https://github.com/pandorabots/rosie) is a product of this invaluable conversational data, designed to save developers from hacking away by blindly guessing what end-users might say.\)
+\(Note that the [Rosie Framework](https://github.com/pandorabots/rosie){:target="_blank"} is a product of this invaluable conversational data, designed to save developers from hacking away by blindly guessing what end-users might say.\)
 
 By keeping a close eye on your talk logs, you can gather similar data about your own bot. This will provide insight about the inputs that are the most important for your bot to understand given the context and domain in which your bot is being used. Keep in mind that the best bots are often **domain specific** -- and that designing a bot to be an expert on a particular topic or domain leads to a far higher rate of successful interactions. Once you've implemented the conversation tracking features outlined in this tutorial, you can start collecting the data needed to run your own Zipf's analysis and truly make your bot a master of its own domain.
 
@@ -145,7 +145,7 @@ By keeping a close eye on your talk logs, you can gather similar data about your
 
 Say you work in an industry like healthcare or financial services that typically deals with the treatment of “sensitive” end-user data. You want to build a conversational interface for your application, but you have concerns about using cloud services that might involve sending sensitive end-user inputs to third party services like Pandorabots for processing.
 
-As a matter of policy, you may not send Pandorabots confidential information and, according to our [Terms of Service](https://developer.pandorabots.com/policies), you must ensure that you take proper steps to obtain rights to send any end-user data to our service. Fortunately, there’s a simple solution for platform users in sensitive verticals to avoid sending sensitive information to Pandorabots’ servers.
+As a matter of policy, you may not send Pandorabots confidential information and, according to our [Terms of Service](https://developer.pandorabots.com/policies){:target="_blank"}, you must ensure that you take proper steps to obtain rights to send any end-user data to our service. Fortunately, there’s a simple solution for platform users in sensitive verticals to avoid sending sensitive information to Pandorabots’ servers.
 
 In the example below, we’ll explore how to use Pandorabots as the dialog engine for your application, without sending inputs containing personal health info \(PHI\) to your chatbot.
 
@@ -166,7 +166,7 @@ When Mary Sue asks: “What medication do I need to take today?” your applicat
 }
 ~~~
 
-You can use Pandorabots to parse the meaning of the question, and return an appropriate answer. But because this question involves some PHI, let’s use Pandorabots to generate a template of what the answer will look like. Here, we’ll use the [mustache templating engine](http://mustache.github.io/):
+You can use Pandorabots to parse the meaning of the question, and return an appropriate answer. But because this question involves some PHI, let’s use Pandorabots to generate a template of what the answer will look like. Here, we’ll use the [mustache templating engine](http://mustache.github.io/){:target="_blank"}:
 
 ~~~
 <category>
@@ -220,7 +220,7 @@ If you have the information elsewhere, such as in a database or via a third-part
 
 # Putting your bot on \#Slack {#slack}
 
-The [Hubot project](https://hubot.github.com/) headed by Github is a highly extensible bot application used to automate and simplify development tasks. Hubot acts as a member of a chatroom, reading and posting messages of its own.
+The [Hubot project](https://hubot.github.com/){:target="_blank"} headed by Github is a highly extensible bot application used to automate and simplify development tasks. Hubot acts as a member of a chatroom, reading and posting messages of its own.
 
 Unlike your human teammates, however, Hubot is backed by a server, and can do things like retrieve information from a database or post a message when a particular build is finished. While some Hubot tasks might be automated, others can be performed in response to messages posted by other users in the chatroom:
 
@@ -249,11 +249,11 @@ Today, we'll set up a simple event listener for Hubot that forwards messages to 
 
 You'll need a few things in place before you can start with the integration:
 
-1. A [Slack](http://slack.com) team and personal account. If you don't already have this, Slack's sign up procedure will guide you through the process.
-2. An account on [Heroku](http://heroku.com). There are different payment plans, however, the free tier should be more than enough for your Hubot instance.
-3. [The Heroku toolbelt](https://toolbelt.heroku.com/), for which Heroku offers installers for OS X, Windows, and Ubuntu. This is a set of command line tools that allow you to easily work with your applications deployed to Heroku.
-4. A Pandorabot deployed on [AIaaS](https://developer.pandorabots.com/).
-5. [Node.js](http://npmjs.org), for which there are installers for OS X and Windows, as well as the raw source.
+1. A [Slack](http://slack.com){:target="_blank"} team and personal account. If you don't already have this, Slack's sign up procedure will guide you through the process.
+2. An account on [Heroku](http://heroku.com){:target="_blank"}. There are different payment plans, however, the free tier should be more than enough for your Hubot instance.
+3. [The Heroku toolbelt](https://toolbelt.heroku.com/){:target="_blank"}, for which Heroku offers installers for OS X, Windows, and Ubuntu. This is a set of command line tools that allow you to easily work with your applications deployed to Heroku.
+4. A deployed Pandorabot 
+5. [Node.js](http://npmjs.org){:target="_blank"}, for which there are installers for OS X and Windows, as well as the raw source.
 
 ## Local setup
 
@@ -275,11 +275,11 @@ Linux/Ubuntu:
 $ sudo apt-get install redis-server
 ~~~
 
-Unfortunately, Redis does not officially support windows, however, you can try using this [port for Win64](https://github.com/MSOpenTech/redis) created by MSOpenTech.
+Unfortunately, Redis does not officially support windows, however, you can try using this [port for Win64](https://github.com/MSOpenTech/redis){:target="_blank"} created by MSOpenTech.
 
 ### Create a new Hubot instance
 
-There is a [Yeoman](http://yeoman.io/) generator that allows you to scaffold new Hubot projects.
+There is a [Yeoman](http://yeoman.io/){:target="_blank"} generator that allows you to scaffold new Hubot projects.
 
 ~~~
 $ npm install -g yo generator-hubot
@@ -323,7 +323,7 @@ You'll also want to add the Pandorabots script to the array in `external-scripts
 ]
 ~~~
 
-In many of our other tutorials, we've stored Pandorabots API credentials in JSON files or as variables. But for our use on a server, we're actually just going to set these as environment variables for Hubot to search for. Grab your `app_id` and `user_key` from the [Developer Portal](http://chatbots.io), and pick out one of your already deployed bot names. Make sure you are in the `mybot` directory \(NOTE: this command works for setting environment variables supported in Linux/OS X but not Windows\):
+In many of our other tutorials, we've stored Pandorabots API credentials in JSON files or as variables. But for our use on a server, we're actually just going to set these as environment variables for Hubot to search for. Grab your `app_id` and `user_key` from the [Developer Portal](http://chatbots.io){:target="_blank"}, and pick out one of your already deployed bot names. Make sure you are in the `mybot` directory \(NOTE: this command works for setting environment variables supported in Linux/OS X but not Windows\):
 
 ~~~
 mybot$ export app_id=**********
@@ -346,7 +346,7 @@ This response is just an example; your bot may have different responses dependin
 
 ## Deploy to Heroku
 
-Now that you've successfully configured Hubot to use the Pandorabots adapter along with one of your bots on [chatbots.io](http://chatbots.io), it is time to deploy Hubot to Heroku so that it may run continuously.
+Now that you've successfully configured Hubot to use the Pandorabots adapter along with one of your bots on [chatbots.io](http://chatbots.io){:target="_blank"}, it is time to deploy Hubot to Heroku so that it may run continuously.
 
 ### Heroku CLI
 
@@ -376,7 +376,7 @@ mybot$ heroku create
 
 ### Configuring Heroku
 
-Because of the Hubot's Redis dependency, you'll need some instance of Redis running online for your Heroku application to connect to. Heroku offers easy setup with [RedisToGo](https://redistogo.com), a database-as-a-service that has a free plan to get you started:
+Because of the Hubot's Redis dependency, you'll need some instance of Redis running online for your Heroku application to connect to. Heroku offers easy setup with [RedisToGo](https://redistogo.com){:target="_blank"}, a database-as-a-service that has a free plan to get you started:
 
 ~~~
 mybot$ heroku addons:add redistogo:nano

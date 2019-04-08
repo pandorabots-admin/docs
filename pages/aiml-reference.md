@@ -37,9 +37,27 @@ Specifies the name of the property being recalled. If no property exists under t
 
 #### Usage
 
+    <!-- Used in a bot response (template tag) -->
     <category>
       <pattern>WHAT IS YOUR NAME</pattern>
       <template>My name is <bot name="name" /></template>
+    </category>
+
+    <!-- Used to match a client's input (pattern tag) -->
+    <category>
+      <pattern><bot name="name"/> IS THE BEST</pattern>
+      <template>You are too kind.</template>
+    </category>
+
+    <!-- Used in a that tag for conversational context -->
+    <category>
+      <pattern>SAY YOUR NAME</pattern>
+      <template>My name is <bot name="name"/></template>
+    </category>
+    <category>
+      <pattern>COOL</pattern>
+      <that>My name is <bot name="name"/></that>
+      <template>I think my name is cool too!</template>
     </category>
 
 ### &lt;button /&gt;

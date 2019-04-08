@@ -8,7 +8,7 @@ layout: default
 
 # The Pandorabots CLI {#the-pandorabots-cli}
 
-While we offer a number of opensource SDKs and tools for working with the Pandorabots API, we highly recommend using the [Pandorabots CLI](https://github.com/pandorabots/pb-cli). This tool is designed to let you manage and interact with your bots straight from the command line.
+While we offer a number of opensource SDKs and tools for working with the Pandorabots API, we highly recommend using the [Pandorabots CLI](https://github.com/pandorabots/pb-cli){:target="_blank"}. This tool is designed to let you manage and interact with your bots straight from the command line.
 
 ## Why is this great? {#why-is-this-great}
 
@@ -31,9 +31,9 @@ The CLI offers an easy and slick interface for doing all the things you’ll nee
 
 ## Installation {#installation}
 
-The CLI itself is written in Javascript, so you’ll need to setup node.js on your machine before you can install it. Luckily, node.js offers a number of [installers](http://nodejs.org/download/) for OS X and Windows users to make this very easy. You can also download binaries for Linux, or build yourself from the source code.
+The CLI itself is written in Javascript, so you’ll need to setup node.js on your machine before you can install it. Luckily, node.js offers a number of [installers](http://nodejs.org/download/){:target="_blank"} for OS X and Windows users to make this very easy. You can also download binaries for Linux, or build yourself from the source code.
 
-Node.js comes prepackaged with [npm](http://npmjs.org/), which is a Javascript package manager that has an extremely vibrant community of modules and users. You can install the CLI using the`npm`command:
+Node.js comes prepackaged with [npm](http://npmjs.org/){:target="_blank"}, which is a Javascript package manager that has an extremely vibrant community of modules and users. You can install the CLI using the`npm`command:
 
 ~~~
 $ npm install -g pb-cli
@@ -78,5 +78,5 @@ $ pb push
 
 ## Next Steps {#further-information}
 
-Take a look at the CLI on [Github](https://github.com/pandorabots/pb-cli) for a complete list of the commands available. Please fork the project or report any issues or suggestions you may have!
+Take a look at the CLI on [Github](https://github.com/pandorabots/pb-cli){:target="_blank"} for a complete list of the commands available. Please fork the project or report any issues or suggestions you may have!
 </div>

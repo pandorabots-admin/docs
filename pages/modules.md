@@ -15,9 +15,9 @@ ___
 
 Certain dynamic information like the weather may be difficult or impossible to hard-code in AIML in advance. Enter bot modules, a handy solution for interfacing with third-party APIs, external knowledge or back-end databases, and more.
 
-The OpenWeather Bot is a utility bot module that allows you to access [OpenWeatherMap.org](http://www.openweathermap.org/api) current weather information through their Weather API. *To request alpha access, email info at pandorabots dot com and include your [AIaaS](https://developer.pandorabots.com/) account name and application ID.*
+The OpenWeather Bot is a utility bot module that allows you to access [OpenWeatherMap.org](http://www.openweathermap.org/api){:target="_blank"} current weather information through their Weather API. *To request alpha access, email info at pandorabots dot com and include your application ID.*
 
-Before getting started, familiarize yourself with the `<sraix>` [element](/docs/aiml-reference/#sraix), and sign up for your own [free (or paid) plan](http://openweathermap.org/appid)  at OpenWeatherMap.org.
+Before getting started, familiarize yourself with the `<sraix>` [element](/docs/aiml-reference/#sraix), and sign up for your own [free (or paid) plan](http://openweathermap.org/appid){:target="_blank"}  at OpenWeatherMap.org.
 
 Note: when using utility bot modules to access third party APIs, in addition to needing an account with that service provider you should familiarize yourself with any rate or other limitations. Some third-party services may cause additional latency in bot responses.
 
@@ -26,7 +26,7 @@ Note: when using utility bot modules to access third party APIs, in addition to 
 When first creating your bot, a default bot properties file is automatically created. We recommend adding three bot properties to this file to keep track of your specific values needed to make use of the module:
 
 * Utility bot identifier - **utility/openweather**
-* OpenWeather API Key - you must sign up for a weather API key at [OpenWeatherMap.org](http://openweathermap.org/appid)
+* OpenWeather API Key - you must sign up for a weather API key at [OpenWeatherMap.org](http://openweathermap.org/appid){:target="_blank"}
 * Units format - the OpenWeather utility bot supports units format: **imperial** (i.e. Fahrenheit, feet, etc), **metric** (Celsius, meters) or **kelvin**.  
 
 For example, try adding the following parameters to your bot properties file:  
@@ -155,7 +155,7 @@ Use of the Mitsuku Module is available as a premium add-on to select [AIaaS plan
 
 ## Credentials
 
-Following purchase and setup, you will receive a custom set of credentials required to make calls to the Mitsuku Module. These can be retrieved from your application details page at [chatbots.io](https://developer.pandorabots.com/), as Mitsuku Module.
+Following purchase and setup, you will receive a custom set of credentials required to make calls to the Mitsuku Module. These can be retrieved from your application details page at [chatbots.io](https://developer.pandorabots.com/){:target="_blank"}, as Mitsuku Module.
 
 You should store these as a bot property in your bot’s .properties file:
 

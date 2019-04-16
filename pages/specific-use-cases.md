@@ -138,7 +138,8 @@ Add all your categories to your Pandorabot, compile and start training your bot 
 
 ## TIPS TO STREAMLINE THIS PROCESS {#tips-to-streamline-this-process}
 
-Using a spreadsheet to automate building categories with AIML tags can make this process easier:  
+In the past, using a spreadsheet to automate building categories with AIML tags, and creating a tab-separated value file to upload into our bot on the dashboard made the process a bit easier. We now offer bot editting tools such as [Intents Tree](https://medium.com/pandorabots-blog/new-feature-visualize-your-aiml-26e33a590da1){:target="_blank"} and Beta feature Chat Design for a more visual experience.  
+
 ![](/docs/assets/img/csv.png)
 
 ---

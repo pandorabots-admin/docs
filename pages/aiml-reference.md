@@ -72,10 +72,10 @@ Both types of button take a *text* attribute, and an additional *postback* or *u
 `text` (optional)  
 Specifies the visible text that appears on the button itself.
 
-`postback` (optional)
+`postback` (optional)  
 Specifies the message that the bot receives when the button is clicked. The user doesn't see this part of the message, which allows you to trigger secret categories using postbacks.
 
-`url` (optional)
+`url` (optional)  
 Specifies the url to take the user to when the button is clicked.
 
 #### Usage
@@ -101,13 +101,13 @@ A *card tag* wraps around several other tags - an *image* tag, some number of *b
 `title` (required)  
 The bold text that appears at the top of your menu - describe what your user is seeing.
 
-`subtitle` (optional)
+`subtitle` (optional)  
 Lighter text used to provide more information to your users.
 
 `image` (required)  
 Provide the *url* where your menu image is hosted.
 
-`button` (required)
+`button` (required)  
 One or more *button* tags to offer your users response options.
 
 #### Usage
@@ -490,6 +490,34 @@ This makes it possible to vary the values of attributes using XML expressions, f
       </condition>
     </template>
     </category>
+
+### &lt;link&gt;
+{: #link}
+
+The *link element* is a reich media element used to display a hyperlink of URL. This is supported in the Pandorabots Chat Widget, and some of the 3rd party channel deployments.
+
+#### Attributes
+
+The link tag requires a *text* attribute and an additional *url* to define the hyperlink.
+
+`text`  
+Specifies the visible text that appears to the user.
+
+`url`  
+Specifieds the url to take the user to when the text is clicked.
+
+#### Usage
+    <category>
+    <pattern>TEST LINK</pattern>
+    <template> 
+        <link>
+            <text>Pandorabots</text>
+            <url>https://www.pandorabots.com/</url>
+        </link>
+    </template>
+    </category>  
+
+![](/docs/assets/img/AIML_linkelement.png)
 
 ### &lt;loop /&gt;
 {: #loop}

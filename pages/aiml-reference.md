@@ -494,7 +494,7 @@ This makes it possible to vary the values of attributes using XML expressions, f
 ### &lt;link&gt;
 {: #link}
 
-The *link element* is a reich media element used to display a hyperlink of URL. This is supported in the Pandorabots Chat Widget, and some of the 3rd party channel deployments.
+The *link element* is a rich media element used to display a hyperlink. This is supported in the Pandorabots Chat Widget, and some of the 3rd party channel deployments.
 
 #### Attributes
 

@@ -26,6 +26,7 @@ order_number: 4
 * [interval](/docs/aiml-reference/#interval)
 * [learn](/docs/aiml-reference/#learn)
 * [li](/docs/aiml-reference/#li)
+* [link](/docs/aiml-reference/#link)
 * [loop](/docs/aiml-reference/#loop)
 * [lowercase](/docs/aiml-reference/#lowercase)
 * [map](/docs/aiml-reference/#map)

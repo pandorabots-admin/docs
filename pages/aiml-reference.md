@@ -767,13 +767,13 @@ If the user's input is "HI", then one of the list item elements will be returned
 
 The *reply tag* is another rich media element with a *text* attribute and a *postback* attribute, similar to a postback button.
 
-The difference is that replies look and feel more like suggested responses than buttons, and are useful for letting your users quickly tap their way through a conversation.
+The difference is that replies look and feel more like suggested responses than buttons, and are useful for letting your users quickly tap their way through a conversation. Also unlike buttons that remain permanent in the messaging window, once a user has tapped one of the replies, replies are no longer visible on our chat widget (and also some third-party channels like Facebook Messenger, etc.).
 
 #### Attributes
 If the *reply* tag is wrapped around plain text, the text will be used as both the *text* and *postback* attributes.
 
 `text` (optional)
-The visible text that appears on the reply button.
+The visible text that appears on the reply response.
 `postback` (optional)
 The message sent to your bot - the user doesn't see this part of the message, allowing you to trigger secret categories within your bot.
 

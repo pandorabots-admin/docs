@@ -1,4 +1,4 @@
-<div markdown="1" class="pb-docs__navbar">
+`<div markdown="1" class="pb-docs__navbar">
   {% include search.html %}
 
   {% assign nav_sections = site.collections | sort:"order_number" %}
@@ -28,4 +28,4 @@
     {% endfor %}
   </ul>
   {% endfor %}
-</div>
+</div>`

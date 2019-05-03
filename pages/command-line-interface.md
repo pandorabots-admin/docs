@@ -3,7 +3,6 @@ permalink: /command-line-interface/
 layout: default
 ---
 
-{% include sidebar.md %}
 <div markdown="1" class="pb-docs__content">
 
 # The Pandorabots CLI {#the-pandorabots-cli}

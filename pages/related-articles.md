@@ -3,7 +3,6 @@ permalink: /related-articles/
 layout: default
 ---
 
-{% include sidebar.md %}
 <div markdown="1" class="pb-docs__content">
 
 # Related Articles

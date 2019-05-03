@@ -3,7 +3,6 @@ permalink: /building-bots/
 layout: default
 ---
 
-{% include sidebar.md %}
 <div markdown="1" class="pb-docs__content">
 
 # Getting started with chatbot development {#getting-started-with-chatbot-development}

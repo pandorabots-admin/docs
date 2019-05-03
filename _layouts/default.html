@@ -34,10 +34,21 @@ tipue_search_active: true
     <script type="text/javascript" src="{{ "/assets/js/search-result-highlighter.js" | relative_url }}"></script>
     <script>
       $(document).ready(function() {
-        $('#tipue_search_input').tipuesearch({
-          wholeWords: false
-        });
-        highlightSearchResult()
+        var sidebar = {% include sidebar.md %}
+        const sidebarDiv = document.createElement('div')
+        sidebarDiv.innerHTML = sidebar
+
+        const container = document.querySelector('.pb-docs')
+        container.insertBefore(sidebarDiv, container.firstChild)
+
+        function _runSearch() {
+          $('#tipue_search_input').tipuesearch({
+            wholeWords: false
+          });
+          highlightSearchResult()
+        }
+
+        setTimeout(_runSearch, 200)
       });
     </script>
   </body>

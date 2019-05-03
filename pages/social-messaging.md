@@ -3,7 +3,6 @@ permalink: /social-messaging/
 layout: default
 ---
 
-{% include sidebar.md %}
 <div markdown="1" class="pb-docs__content">
 # Deploying your Rich Media bot on Social Messaging channels #
 

@@ -3,7 +3,6 @@ permalink: /aiml-basics/
 layout: default
 ---
 
-{% include sidebar.md %}
 <div markdown="1" class="pb-docs__content">
 
 # Artificial Intelligence Markup Language \(AIML\)

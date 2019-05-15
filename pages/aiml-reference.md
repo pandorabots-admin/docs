@@ -27,7 +27,7 @@ Specifies the AIML version that the document is written in.
 ### &lt;bot /&gt;
 {: #bot}
 
-The *bot element* is used to recall custom bot properties defined in the `.properties` file. These variables are accessible to all users of the bot.
+The *bot element* is used to recall custom bot properties defined in the `.properties` file. These variables are accessible to all users of the bot. 
 
 #### Attributes
 
@@ -57,6 +57,12 @@ Specifies the name of the property being recalled. If no property exists under t
       <pattern>COOL</pattern>
       <that>My name is <bot name="name"/></that>
       <template>I think my name is cool too!</template>
+    </category>
+    
+    <!-- Used to replace a very long complicated URL in a bot response -->
+    <category>
+       <pattern>SHOW ME A CAT</pattern>
+       <template><image><bot name="catimageurl"/></image></template>
     </category>
 
 ### &lt;button /&gt;
@@ -359,7 +365,7 @@ The `gender.substitution` file contains properties whose names and values contai
 **Output:** No, it belongs to him
 
 
-### &lt;image /&gt;
+### &lt;image&gt;
 {: #image}
 
 The *image tag* allows your bot to send back image responses. It's simple to use - just wrap the tag around the *url* of the image.

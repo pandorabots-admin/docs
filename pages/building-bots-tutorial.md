@@ -245,9 +245,9 @@ The bot will search through all of its categories to form a match with the user 
 
 HTML is also an extension of XML.
 
-You can use HTML to markup your bot’s responses \(templates\) with the appropriate formatting.
+You can use some HTML to markup your bot’s responses \(templates\) with the appropriate formatting.
 
-You can also use HTML to include images and hyperlinks that lead to other websites. [See this page](http://www.w3schools.com/html/html_basic.asp) for some HTML basics.
+You can also use HTML to include images and hyperlinks that lead to other websites. [See this page](http://www.w3schools.com/html/html_basic.asp){target: _blank} for some HTML basics supported by our platform.
 
 For example, the &lt;br/&gt; HTML tag allows you to insert line breaks in the text.
 

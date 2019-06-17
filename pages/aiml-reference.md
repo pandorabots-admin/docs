@@ -179,7 +179,7 @@ The *condition element* is used to create an IF-THEN-ELSE type of control flow w
 You can choose whether your condition rests on a predicate or local variable, depending on the attribute you provide:
 
 `name`    
-Specifies the name of the predicate whose value will be checked.
+Specifies the name of the predicate whose value will be checked. Note that this does not apply to the built-in predicates such as topic or that.
 
 `var`    
 Specifies the name of the local variable whose value will be checked.

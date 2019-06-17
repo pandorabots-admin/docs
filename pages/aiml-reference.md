@@ -320,7 +320,9 @@ The *explode element* is used to break a single word in to multiple words, by in
 ### &lt;first&gt;
 {: #first}
 
-The *first element* returns the first word found in its contents. This is an implementation of list processing in AIML.
+The *first element* returns the first word found in its contents and applies to wildcards in patterns only.
+
+This is an implementation of list processing in AIML.
 
 #### Usage
 
@@ -932,7 +934,7 @@ Specifies the historical index of the bot response to recall. `index="0"` refers
 ### &lt;rest&gt;
 {: #rest}
 
-The *rest element* is a list processing tag that returns the contents of the element while omitting the first word.
+The *rest element* is a list processing tag that returns the contents of the element while omitting the first word. This only applies to a wildcard in the pattern.
 
 #### Usage
 

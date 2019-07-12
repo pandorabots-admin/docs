@@ -50,7 +50,7 @@ ___
 
 **What is an API alert?**
 
-When your application gets close to or exceeds a limitation you will be alerted via email and it will be included as an alert on your Account Page. Please see the _Limits_ section for more questions about limitations.
+When your application gets close to or exceeds a limitation you will be alerted via email. Please see the _Limits_ section for more questions about limitations.
 
 **What is an application (app) ID and user key?**
 
@@ -58,15 +58,15 @@ To access the API you need both a user key and application ID for authentication
 
 **How can I find my user key?**
 
-You may find your user key (and regenerate it) on your Account Page, and under the "Custom Application" Integration on the Deploy page.
+You may find your user key (and regenerate it) on your Account Page, under the Pandorabots API Channel on the Deploy page.
 
 **How can I find my app ID?**
 
-You may find your app ID under the "Custom Application" Integration on the Deploy page. Note that your application ID is also the same as your user name (and will take the form of "un" followed by a string of numbers).
+You may find your app ID under the Pandorabots API Channel on the Deploy page. 
 
 **I'm not a developer - can I use the API?**
 
-The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for any motivated self-starter eager to study the documentation!
+The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for any motivated self-starter eager to study the documentation. But why not try some of the other channels like Chat Widget, Pandorabots Landing Page, Facebook Messenger, etc.!
 ___
 ### Bots
 {: #bots}
@@ -83,13 +83,13 @@ However, you cannot license and download an on premise version of the Pandorabot
 
 **What do the bot indicator lights mean?**
 
-* Green: Your bot is compiled and should be responsive to clients on whatever channels it is deployed to.
-* Yellow: There are differences between the version of the bot you are currently editing on the _Staging Server_ and the bot that is live to the public on the _Production Server_. Push any new changes live by clicking the _Publish_ button in the upper right hand corner of the _Editor_, but not before thoroughly testing your bot for any breaking changes!
+* Green: Your bot is compiled and should be responsive to clients on whatever production channels it is deployed to.
+* Yellow: There are differences between the version of the bot you are currently editing on the _Staging Server_ and the bot that is live to the public on the _Production Server_. Push any new changes live by clicking the _Publish_ button in the upper right hand corner of the _Editor_, but not before thoroughly testing your bot for any breaking changes! If you have not upgraded from a sandbox plan, your bots will be permanently yellow!
 * Red: Your bot has compile errors that need to be addressed before it can function properly.
 
 **What does it mean if my bot is compiled / uncompiled?**
 
-There is a green indicator light next to your bot, meaning that it is currently _compiled_, i.e., working. If your bot becomes uncompiled (meaning something is broken!), a red indicator light will appear, along with the menu item “Compile.” Clicking on “Compile” will display compilation errors (often caused by malformed AIML such as missing tags or syntax errors). Fixing the errors and saving (or clicking on “Compile”) will re-compile your bot.
+There is a green (or yellow) indicator light next to your bot, meaning that it is currently _compiled_, i.e., working. If your bot becomes uncompiled (meaning something is broken!), a red indicator light will appear, along with the menu item “Compile.” Clicking on “Compile” will display compilation errors (often caused by malformed AIML such as missing tags or syntax errors). Fixing the errors and saving (or clicking on “Compile”) will re-compile your bot.
 
 **Can I create a bot in any language?**
 
@@ -139,7 +139,7 @@ We strive for service level uptimes of at least 99.5% for all users. However, on
 
 **Is there a limit to how many bots I can create?**
 
-The Free Tier allows up to 2 bots; the Developer Tier allows up to 10 bots; and the Enterprise Tier includes a custom configuration to accommodate the number of bots required by your application.
+The Free Tier allows up to 2 bots; Please review the home page for other plan allowances.
 
 **Where are my chatlogs from last month?**
 
@@ -206,25 +206,25 @@ ___
 ### User Interface
 {: #interface}
 
-**What is the Editor?**
+**What is the Edit menu?**
 
-The Editor is your gateway to creating and maintaining bot files. It is an embedded version of the ACE editor and is optimized for editing AIML files.
+We have multiple options for you to edit your chatbot. The Code Editor is your gateway to creating and maintaining bot files. It is an embedded version of the ACE editor and is optimized for editing AIML files. The Code Editor is best for those who want to write AIML code. The Intents Tree allows you to visualize your chatbot's intents and reductions, as well as create and/or update them. The Chat Design is another visual tool especially good for creating rich media AIML.  These last two editting tools provide a level of abstraction where the bot developer does not need to know detailed AIML syntax.
 
 **What is the Deploy page?**
 
-The Deploy page provides access to a variety of Integrations, which are easy methods for publishing your bot on third party channels.
+The Deploy page provides access to a variety of channels in which your chatbot can be deployed, both Pandorabots and Third-party channels such as Facebook Messenger, etc. 
 
 **What is the Logs page?**
 
 The Logs Page provides chatlogs (i.e., conversations clients have had qith your bot) dating back 30 days. Chatlogs are indispensable for improving your bot, and you should review them regularly and make updates accordingly. You may download your logs at any time using the Download Icon on the Logs Page.
 
-**What are "Integrations"?**
+**What is the Account page?**
 
-Integrations, accessible via the Deploy Page, are easy methods for publishing your bot on third party channels.
+The Account page is useful for managing your Pandorabots account. If you have upgraded from the free tier, you can view your account usage, user and billing details, and have access to API Settings for custom integration to our production API. You can also delete your account from this page.
 
-**What is the Clubhouse?**
+**What is the DIRECTORY?**
 
-The Clubhouse is a place where you can publish your bot-in-progress for other users to talk to, and chat with their bots as well. It's a great way to exchange logs and feedback and foster the community!
+The Internal Bot Directory is a place where you can publish your bot-in-progress for other Pandorabots users to talk to, and chat with their bots as well. It's a great way to train your bot, exchange logs and feedback and foster the community! This is a channel that Sandbox users can take advantage for unlimited usage.
 
 **What are Libraries?**
 

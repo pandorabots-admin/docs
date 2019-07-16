@@ -19,7 +19,7 @@ Artificial Intelligence Markup Language (AIML) is a simple, XML-based scripting 
 
 **What is the difference between AIML 1.0 and AIML 2.0?**
 
-The AIML 2.0 specification introduces a number of new features to the language that dramatically improve the natural language processing power of chatbots. The current Pandorabots AIML interpreter is backwards compatible with AIML 1.0, so platform users can make full use of any AIML 1.x bot files. However, it does not currently support Javascript. For more details, please read Dr. Richard Wallace's full [AIML 2.0 specification](http://aiml.foundation){:target="_blank"}.
+The AIML 2.0 specification introduces a number of new features to the language that dramatically improve the natural language processing power of chatbots. The current Pandorabots AIML interpreter is mostly backwards compatible with AIML 1.0, so platform users can make full use of any AIML 1.x bot files. However, it does not currently support Javascript, and character encoding UTF-8 is required. For more details, please read Dr. Richard Wallace's full [AIML 2.0 specification](http://aiml.foundation){:target="_blank"}.
 
 **What happened to the AIML 1.0 platform?**
 

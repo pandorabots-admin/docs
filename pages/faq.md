@@ -121,6 +121,7 @@ The maximum file size for upload is 2MB.
 
 There is no maximum number of concurrent requests imposed on the Free and Developer Tiers per se, but if you anticipate generating more than 200 requests per second, please let us know. Generally speaking, chatbots generating a high volume of messages qualify for the Enterprise Tier, which is designed to flexibly handle as many concurrent requests as may be required by you application. Please note that certain Messaging Platforms also enforce their own rate limits - visit their policies directly for more details.
 
+<!--
 **Why is the default max queries 100,000 per month?**
 
 The default exists for two reasons: (1) To protect any platform users whose bots experience a sudden, unanticipated surge in popularity from paying more than $225/month; and (2) Because any entity that anticipates more monthly traffic likely qualifies for the Enterprise Tier. You may contact us via email at support@pandorabots.com to request adjustments to your monthly maximum messages, and learn more about which plan is right for you.
@@ -128,6 +129,7 @@ The default exists for two reasons: (1) To protect any platform users whose bots
 **How can I adjust my max monthly limit?**
 
 Please email us at support@pandorabots.com to inquire about adjusting your monthly limit up or down. Note: customers who anticipate exceeding certain volumes may necessitate an upgrade to the Enterprise Tier.
+-->
 
 **What is the average response time for bots?**
 
@@ -154,19 +156,19 @@ A "message" is one input/output interaction between a client (the person chattin
 
 **What is included in the Free Tier?**
 
-The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform, but you can still enjoy up to 1,000 queries per month for free in production. If and when the sum total of your bots exceed 1,000 queries in a given month, you will be charged at a rate of $0.0025 (USD) per query. Users who input a credit card will automatically have access to the Developer Tier.
+The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, meaning that you can develop, test, and review logs for up to two bots for free! Once you are ready to unleash your bots to the public, a valid credit card will be required to access the deployment features of the platform. We offer a 2 week trial period for our Premium Tier plans.
 
-**What is included in the Developer Tier?**
+**What is included in the Premium Tier?**
 
-The Developer Tier includes all the features of the Free Tier plus up to 10 bots per month, email support, access to deployment features of the platform, and up to 100,000 queries per month.
+The Premium Tier includes all the features of the Free Tier plus 10+ bots, email support, access to deployment features of the platform, and more messages per month for production bots. Please review our [Pricing Table](https://www.pandorabots.com/home.html#pricing){:target="_blank"} for more details.
 
 **Why is a credit card required to access certain features?**
 
-The paywall barrier to making your bot publicly available is part of an effort to maintain high quality standards for bots published on the platform. _Your credit card will only ever be billed for usage that is not covered by the free tier_, meaning that you can still test and access all platform features for free up to a certain volume (1,000) of monthly messages. And, while we'd love to make everything free, there are commercial realities involved in running a bootstrapped business. We hope you enjoy the service and find it valuable enough to consider supporting our efforts.
+The paywall barrier to making your bot publicly available is part of an effort to maintain high quality standards for bots published on the platform. While we'd love to make everything free, there are commercial realities involved in running a bootstrapped business. We hope you enjoy the service and find it valuable enough to consider supporting our efforts.
 
 **When will Pandorabots charge my credit card?**
 
-Our billing cycle is monthly using UTC time. Charges are typically made on the 7th of each month for the previous monthly charges.
+Our billing cycle is monthly using UTC time. Charges are typically made between the 5th to 6th day of the month.
 
 **How do I track monthly charges and access invoices?**
 

@@ -47,7 +47,7 @@ Most GUIs are abstraction layers on top of scripting languages. In many cases, t
 
 #### Pricing
 
-Building a chatbot on the Pandorabots platform is 100% free. When you are ready to deploy your chatbot, i.e., make it available to the public, we require users to have a valid credit card on file, however you can still enjoy up to 1,000 chatbot interactions for free monthly. Above 1,000 interactions in a given month, a tiny fee of $0.0025 will be charged per interaction. By default, a max monthly cap of 100,000 interactions is in place to guard against egregious charges in the event of unexpected popularity or spam. This monthly cap can be adjusted upon request. If your chatbot will exceed 100,000 interactions per month, you likely qualify for the Enterprise tier, which provides a flat fee factoring in your unique business needs.
+Building a chatbot on the Pandorabots platform is 100% free. When you are ready to deploy your chatbot, i.e., make it available to the public, we require users to have a valid credit card on file. Please review our [Pricing table](https://www.pandorabots.com/home.html#pricing){:target="_blank"} on our home page for more details about our monthly subscription plans. If your chatbot will exceed 100,000 interactions per month, you likely qualify for the Enterprise tier, which provides a flat fee factoring in your unique business needs.
 
 This pricing model is consistent with industry standards for cloud services, and, to the best of our knowledge, competitive with or significantly cheaper than other offerings.
 

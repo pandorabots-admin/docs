@@ -160,7 +160,7 @@ The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, me
 
 **What is included in the Premium Tier?**
 
-The Premium Tier includes all the features of the Free Tier plus 10+ bots, email support, access to deployment features of the platform, and more messages per month for production bots. Please review our [Pricing Table](https://www.pandorabots.com/home.html#pricing){:target="_blank"} for more details.
+The Premium Tier includes all the features of the Free Tier plus 10+ bots, email support, access to deployment features of the platform, and more messages per month for production bots. Please review our [Pricing Table](https://home.pandorabots.com/home.html#pricing){:target="_blank"} for more details.
 
 **Why is a credit card required to access certain features?**
 

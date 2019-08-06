@@ -17,15 +17,20 @@ You can easily install a Pandorabots chat widget for your bot on your website by
 
 ## Setup
 
-Open your Pandorabots dashboard and expand the chatbot you wish to use. Click on the Deploy option to get started. This will display all the different channels and platforms you can use to connect your chatbot. Select the Add button next to the Pandorabots Chat Widget (if this option is not available, you will have to either upgrade your plan and/or publish your bot to production). You will be able to see all of options for you to customize your chat widget, such as Title, Subtitle, avatar, color themes, etc.
+Open your Pandorabots dashboard and expand the chatbot you wish to use. Click on the Deploy option to get started. This will display all the different channels and platforms you can use to connect your chatbot. Select the Set Up button next to the Pandorabots Chat Widget (if this option is not available, you will have to either upgrade your plan and/or publish your bot to production). You will be able to see all of options for you to customize your chat widget, such as Title, Subtitle, color themes, Call to Action configuration etc.
 
-![](/docs/assets/img/chatwidgetmodal.png)
+![](/docs/assets/img/addachatwidgettoyourwebsite1.png)  
+![](/docs/assets/img/addachatwidgettoyourwebsite2.png)
 
-After you complete customizing your chat widget, go to the Code tab to copy the Javascript code snippet to add to the bottom of the body of your HTML page. 
+After you complete customizing your chat widget, go to the Deploy tab to view and copy the Javascript code snippet to add to the bottom of the body of your HTML page. 
 
 ## Updates
 
 You can always return to this form to make changes to your chat widget snippet, or you can make a change directly to the code snippet already added to your webpage. Note that if you regenerate your user_key, you will have to make the necessary update to your webpage with a new PB_BOTKEY value or else the chat widget will not display on your page.
+
+## End-user Logs
+
+The Chat Widget will generate unqiue end user client names starting with 'cw' that is valid during an active browser session. Note that these client names are not preserved once the browser is closed. You can review your chat widget logs by going to the Logs option on your bots menu. You can filter only Chat Widget logs (if your bot is deployed on multiple channels or to filter out your sandbox logs).
 
 ---
 

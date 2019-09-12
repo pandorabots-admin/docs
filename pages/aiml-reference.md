@@ -1475,7 +1475,8 @@ If you set a topic with no value, the value will be "unknown" based on bot prope
 
     <set name="topic"></set>     --  topic = "unknown"
 
-Values for topic variables are only within the scope of an active conversation.
+**NOTE:** Values for topic variables are only within the scope of an active conversation. Once a conversation goes idle, value for topic is cleared, in a similar way as human conversations (a reset of topic per se).
+
 ---
 layout: aiml
 title: topicstar

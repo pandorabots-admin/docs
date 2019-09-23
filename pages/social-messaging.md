@@ -41,6 +41,7 @@ Twilio, Viber, and WeChat do not render tappable buttons but displays the action
 
 * Same limitations as Buttons, except social messaging channels support a maximum of 11 replies, 
 * PB chat widget can support more than 11 replies.
+* Social messaging channels cannot mix Replies with other types of elements (without a `<split/>` between them)
 * Unlike Buttons, Viber does support tappable suggested replies.
 
 #### Carousel ####

@@ -1,5 +1,6 @@
 ---
 title: Live Training
-permalink: /docs/features/
+permalink: /docs/live-training/
+url: /live-training/
 order_number: 1
 ---

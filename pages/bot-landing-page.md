@@ -35,10 +35,12 @@ wasn't already deployed to production (green dot status), creating your landing 
 deploy your bot to production.
 
 ---
+
 ### TIPS:  
 * The image/video size is 220px wide by 387px tall. Any image/video/gif that you place in there will be stretched to the full width and/or height, which may warp images that are not that aspect ratio. The formats we support are apng, bmp, gif, ico, jpeg, png, svg, tiff, and webp for images and mp4, webm, ogg for video.
 * Only the name field in the Contacts is required but we recommend you include an email or website. If you want to include other contact links, drop us a comment using the Ask a Question form.
 * As with all channels, if you regenerate your Pandorabots account userkey this will affect your landing page. The chat widget on your landing page would be configured with an invalid botkey. Please update your landing page to generate new widget parameters.
+
 ---
 
 One final thing, notice the “Report Content” button at the top of the landing page?

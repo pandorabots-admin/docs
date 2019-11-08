@@ -23,7 +23,7 @@ image/video link, and page contact name and links.
 
 ![](/docs/assets/img/bot-landing-page-contact.png)
 
-Chat Widget setup have default values so to customize it, scroll down and enter in your changes. For more details, see [documentation](/docs/pages/integrations#browser).
+Chat Widget setup have default values so to customize it, scroll down and enter in your changes. For more details, see [documentation](/docs/integrations#browser).
 
 All done? Great! Click the Publish button to create your new landing page. 
 
@@ -39,7 +39,6 @@ deploy your bot to production.
 * The image/video size is 220px wide by 387px tall. Any image/video/gif that you place in there will be stretched to the full width and/or height, which may warp images that are not that aspect ratio. The formats we support are apng, bmp, gif, ico, jpeg, png, svg, tiff, and webp for images and mp4, webm, ogg for video.
 * Only the name field in the Contacts is required but we recommend you include an email or website. If you want to include other contact links, drop us a comment using the Ask a Question form.
 * As with all channels, if you regenerate your Pandorabots account userkey this will affect your landing page. The chat widget on your landing page would be configured with an invalid botkey. Please update your landing page to generate new widget parameters.
-* 
 ---
 
 One final thing, notice the “Report Content” button at the top of the landing page?

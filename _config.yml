@@ -56,6 +56,9 @@ collections:
   deploy-and-extend:
     title: DEPLOY & EXTEND
     order_number: 5
+  features:
+    title: FEATURES
+    order_numer: 6
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

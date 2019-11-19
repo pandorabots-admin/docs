@@ -13,9 +13,9 @@ layout: default
 
 # What is Live Training?
 
-Live Training is a tool that allows you to pause bot responses to interact with the end user directly. The human written responses are then saved to your bot in the pand_livetraining file.
+Live Training is a tool that allows you to pause bot responses to interact with the end user directly. The human written responses are then saved to your bot in the pand_livetraining.aiml file.
 
-The feature is intended for conversation designers, or the person responsible for dat-to-day bot updates. The person writing the human responses should do so in the voice of the chatbot.
+The feature is intended for conversation designers, or the person responsible for day-to-day bot updates. The person writing the human responses should do so in the voice of the chatbot.
 
 ## Why would you use Live Training
 
@@ -56,7 +56,7 @@ You cannot have a human agent and a bot active in the same conversation at the s
 
 ---
 
-#Client Names
+# Client Names
 
 The client names are only intended to help you keep track of the separate conversations. They are randomly generated from a short list of adjectives and nouns that are mostly robot related.
 

@@ -9,7 +9,7 @@ layout: default
 
 AIML, or Artificial Intelligence Mark-up Language enables people to input knowledge into chatbots.
 
-*If you prefer learning by video, check out our [free AIML course](https://www.udemy.com/artificial-intelligence-markup-language/){:target="_blank"} on Udemy.com*
+*If you prefer learning by video, check out our [free AIML course](https://www.udemy.com/artificial-intelligence-markup-language/){:target="_blank"} on Udemy.com or our [Office Hours with Steve Worswick](https://www.youtube.com/channel/UCGsqke8OySdZEkTgNFeUeSQ/videos){:target="_blank"} on YouTube*
 
 AIML, describes a class of data objects called AIML objects and partially describes the behavior of computer programs that process them. AIML objects are made up of units called **topics** and **categories**, which contain either parsed or unparsed data.
 

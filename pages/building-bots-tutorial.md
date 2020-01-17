@@ -1204,7 +1204,7 @@ Substitutions are available to you via the substitution files provided by defaul
 
 #### Date
 
-You can return the current date in the format of your choice, specified like the arguments to the [**UNIX strftime function**](http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html). `<date format="%B %d, %Y />` will return today's date.
+You can return the current date in the format of your choice, specified like the arguments to the [**LINUX strftime function**](http://man7.org/linux/man-pages/man3/strftime.3.html). For example, `<date format="%B %d, %Y />` will return today's date.
 
 #### Interval
 
@@ -1213,7 +1213,7 @@ You can use `<interval>`, `<from>` and `<to>`, and `<style>` to calculate the in
 ~~~
 <category>
 <pattern>AGE IN YEARS</pattern>
-<template><interval format="%B %d, %Y">
+<template><interval>
 <style>years</style>
 <from><bot name="birthdate"/></from>
 <to><date format="%B %d, %Y" /></to>

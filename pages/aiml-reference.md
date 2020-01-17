@@ -386,6 +386,19 @@ The *interval element* is used in conjunction with the date element to calculate
 
 `format`  
 Specifies the format of the returned date. This can be written like arguments to UNIX's `strftime` function. More on this [here](http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html).
+Please note that the format attribute is now depreciated but is still included for backwards compatibility. It is no longer necessary to explicitly declare the format of your date, as the interval tag will parse any date with the following specifications:
+ 
+rfc2822: sample string is "Wed, 02 Jan 2013 15:16:17 -0800", see http://www.ietf.org/rfc/rfc2822.txt.
+
+w3cdtf: sample string is "2013-01-02T15:16:17-08:00", see http://www.w3.org/TR/NOTE-datetime. This format accepts dates prior to midnight, January 1, 1900 U (universal time 0) and even negative years (years BCE).
+
+iso8601: sample string is "2013-01-02T15:16:17-08:00", see https://en.wikipedia.org/wiki/ISO_8601.
+
+asctime: sample string is "Wed Jan 2 15:16:17 2013", see http://www.cplusplus.com/reference/ctime/asctime/.
+
+mssql: sample string is "2013-01-02 15:16:17", see http://msdn.microsoft.com/en-us/library/ms187819.aspx.
+
+Please also note that the rfc2822 and asctime formats can only support English weekday and month names/abbreviations. Any non English dates will need to be translated before using the &lt;interval&gt; tag.
 
 #### Child tags
 
@@ -396,19 +409,19 @@ Specifies the date from which the interval should begin.
 Specifies the date at which the interval should end.
 
 `<style>`  
-Specifies the style in which the interval should be returned. Can contain `years`, `months`, `days`, or `seconds`.
+Specifies the style in which the interval should be returned. Can contain `years`, `months`, `days`, `hours`, `minutes` or `seconds`.
 
 #### Usage
 
-To calculate the difference between the current date and the bot's birthdate, make sure to include a birthdate property in the `.properties` file, in a format that matches the format you intend to be working with.
+To calculate the difference between the current date and the bot's birthdate, make sure to include a birthdate property in the `.properties` file, in a format that the interval tag can parse (see above).
 
     <category>
     <pattern>AGE IN YEARS</pattern>
     <template>
-      <interval format="%B %d, %Y">
+      <interval>
         <style>years</style>
         <from><bot name="birthdate"/></from>
-        <to><date format="%B %d, %Y" /></to>
+        <to><date/></to>
       </interval>
     </template>
     </category>

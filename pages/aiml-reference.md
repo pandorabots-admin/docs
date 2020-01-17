@@ -225,7 +225,7 @@ Returns the date of the user's locale.
 #### Attributes
 
 `format` (optional)  
-Specifies the format of the returned date. This can be written like arguments to UNIX's `strftime` function. More on this [here](http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html).
+Specifies the format of the returned date. This can be written like arguments to UNIX's `strftime` function. More on this [here](http://man7.org/linux/man-pages/man3/strftime.3.html).
 
 #### Usage
 
@@ -385,7 +385,7 @@ The *interval element* is used in conjunction with the date element to calculate
 #### Attributes
 
 `format`  
-Specifies the format of the returned date. This can be written like arguments to UNIX's `strftime` function. More on this [here](http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html).
+Specifies the format of the returned date. This can be written like arguments to UNIX's `strftime` function. More on this [here](http://man7.org/linux/man-pages/man3/strftime.3.html).
 Please note that the format attribute is now depreciated but is still included for backwards compatibility. It is no longer necessary to explicitly declare the format of your date, as the interval tag will parse any date with the following specifications:
  
 rfc2822: sample string is "Wed, 02 Jan 2013 15:16:17 -0800", see http://www.ietf.org/rfc/rfc2822.txt.

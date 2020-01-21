@@ -253,24 +253,24 @@ ar_MA  cs_CZ  en_GB  es_CL  es_PR  fr_BE  id_ID  ms_MY  ru_UA  uk_UA`
     <template>Today is <date format="%B %d, %Y" /></template>
     </category>
     
-Human: What is the date?  
-Bot: Today is January 21, 2020
+>**Input:** What is the date?  
+**Output:** Today is January 21, 2020
     
     <category>
     <pattern>WHAT IS THE DATE IN FRENCH</pattern>
     <template>Today is <date locale="FR_fr" format="%A %B %d, %Y" /></template>
     </category>
 
-Human: What is the date in French?  
-Bot: Today is mardi janvier 21, 2020
+>**Input:** What is the date in French?  
+**Output:** Today is mardi janvier 21, 2020
     
     <category>
     <pattern>WHAT IS THE TIME IN NEW YORK</pattern>
     <template>It is <date timezone="-5" format="%I:%M%p"/></template>
     </category>
     
-Human: What is the date in French?  
-Bot: It is 07:08AM
+>**Input:** What is the time in New York?  
+**Output:** It is 07:08AM
 
 
 ### &lt;delay&gt;
@@ -466,9 +466,9 @@ To calculate the difference between the current date and the bot's birthdate, ma
 
 The style element specifies that the interval should be returned in years.
 
-It is important to bear in mind that if the date tag is used without formatting, this will be the date from midnight, eg: 29th February 2020 00:00 rather than 29th February 2020 18:47:23 which will be important if dealing with hours, minutes and seconds. Note also the %z parameter. This is used to specify the timezone difference from UTC either +hhmm or -hhmm, which again should be used in the date part of the interval tag to customise it for your timezone. Pandorabots does not support %Z (uppercase) and %z (lowercase) should always be used instead.
+It is important to bear in mind that if the date tag is used without formatting, this will be the date from midnight, eg: 29th February 2020 00:00 rather than 29th February 2020 18:47:23 which will be important if dealing with hours, minutes and seconds. Note also the %z parameter. This is used to specify the timezone difference from UTC either +hhmm or -hhmm, which should be used in the date part of the interval tag to customise it for your timezone. Do not use %Z (uppercase) in the date format. For the "to" and "from" attributes of the interval tag, Pandorabots only supports the 5 date standards as listed above, none of which use the timezone name (%Z), just the time offset (%z).
    
-Here is and example where we use formatting in the date tag to calculate the number of hours since midnight.
+Here is an example where we use formatting in the date tag to calculate the number of hours since midnight.
    
     <category>
     <pattern>HOW MANY HOURS SINCE MIDNIGHT</pattern>

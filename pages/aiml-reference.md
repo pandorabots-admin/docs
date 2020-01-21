@@ -227,12 +227,50 @@ Returns the date of the user's locale.
 `format` (optional)  
 Specifies the format of the returned date. This can be written like arguments to UNIX's `strftime` function. More on this [here](http://man7.org/linux/man-pages/man3/strftime.3.html).
 
+`timezone` (optional)  
+This should be an integer number of hours +/- from GMT.
+
+`locale` (optional)  
+This is the iso language/country code pair e.g., en_US, ja_JP.  Locale  defaults to en_US. 
+The set of supported locales are:
+`af_ZA  ar_OM  da_DK  en_HK  es_CO  es_PY  fr_CA  is_IS  mt_MT  sh_YU  vi_VN
+ar_AE  ar_QA  de_AT  en_IE  es_CR  es_SV  fr_CH  it_CH  nb_NO  sk_SK  zh_CN
+ar_BH  ar_SA  de_BE  en_IN  es_DO  es_US  fr_FR  it_IT  nl_BE  sl_SI  zh_HK
+ar_DZ  ar_SD  de_CH  en_NZ  es_EC  es_UY  fr_LU  ja_JP  nl_NL  sq_AL  zh_SG
+ar_EG  ar_SY  de_DE  en_PH  es_ES  es_VE  ga_IE  kl_GL  nn_NO  sr_YU  zh_TW
+ar_IN  ar_TN  de_LU  en_SG  es_GT  et_EE  gl_ES  ko_KR  no_NO  sv_FI
+ar_IQ  ar_YE  el_GR  en_US  es_HN  eu_ES  gv_GB  kw_GB  pl_PL  sv_SE
+ar_JO  be_BY  en_AU  en_ZA  es_MX  fa_IN  he_IL  lt_LT  pt_BR  ta_IN
+ar_KW  bg_BG  en_BE  en_ZW  es_NI  fa_IR  hi_IN  lv_LV  pt_PT  te_IN
+ar_LB  bn_IN  en_BW  es_AR  es_PA  fi_FI  hr_HR  mk_MK  ro_RO  th_TH
+ar_LY  ca_ES  en_CA  es_BO  es_PE  fo_FO  hu_HU  mr_IN  ru_RU  tr_TR
+ar_MA  cs_CZ  en_GB  es_CL  es_PR  fr_BE  id_ID  ms_MY  ru_UA  uk_UA`
+
 #### Usage
 
     <category>
     <pattern>WHAT IS THE DATE</pattern>
     <template>Today is <date format="%B %d, %Y" /></template>
     </category>
+    
+>**Input:** What is the date?  
+**Output:** Today is January 21, 2020
+    
+    <category>
+    <pattern>WHAT IS THE DATE IN FRENCH</pattern>
+    <template>Today is <date locale="FR_fr" format="%A %B %d, %Y" /></template>
+    </category>
+
+>**Input:** What is the date in French?  
+**Output:** Today is mardi janvier 21, 2020
+    
+    <category>
+    <pattern>WHAT IS THE TIME IN NEW YORK</pattern>
+    <template>It is <date timezone="-5" format="%I:%M%p"/></template>
+    </category>
+    
+>**Input:** What is the time in New York?  
+**Output:** It is 07:08AM
 
 
 ### &lt;delay&gt;
@@ -388,15 +426,15 @@ The *interval element* is used in conjunction with the date element to calculate
 Specifies the format of the returned date. This can be written like arguments to UNIX's `strftime` function. More on this [here](http://man7.org/linux/man-pages/man3/strftime.3.html).
 Please note that the format attribute is now depreciated but is still included for backwards compatibility. It is no longer necessary to explicitly declare the format of your date, as the interval tag will parse any date with the following specifications:
  
-rfc2822: sample string is "Wed, 02 Jan 2013 15:16:17 -0800", see http://www.ietf.org/rfc/rfc2822.txt.
+ [rfc2822](http://www.ietf.org/rfc/rfc2822.txt): sample string is "Wed, 02 Jan 2013 15:16:17 -0800", see .
 
-w3cdtf: sample string is "2013-01-02T15:16:17-08:00", see http://www.w3.org/TR/NOTE-datetime. This format accepts dates prior to midnight, January 1, 1900 U (universal time 0) and even negative years (years BCE).
+ [w3cdtf](http://www.w3.org/TR/NOTE-datetime): sample string is "2013-01-02T15:16:17-08:00". This format accepts dates prior to midnight, January 1, 1900 U (universal time 0) and even negative years (years BCE).
 
-iso8601: sample string is "2013-01-02T15:16:17-08:00", see https://en.wikipedia.org/wiki/ISO_8601.
+ [iso8601](https://en.wikipedia.org/wiki/ISO_8601): sample string is "2013-01-02T15:16:17-08:00"
 
-asctime: sample string is "Wed Jan 2 15:16:17 2013", see http://www.cplusplus.com/reference/ctime/asctime/.
+ [asctime](http://www.cplusplus.com/reference/ctime/asctime/): sample string is "Wed Jan 2 15:16:17 2013"
 
-mssql: sample string is "2013-01-02 15:16:17", see http://msdn.microsoft.com/en-us/library/ms187819.aspx.
+ [mssql](http://msdn.microsoft.com/en-us/library/ms187819.aspx): sample string is "2013-01-02 15:16:17"
 
 Please also note that the rfc2822 and asctime formats can only support English weekday and month names/abbreviations. Any non English dates will need to be translated before using the &lt;interval&gt; tag.
 
@@ -413,7 +451,7 @@ Specifies the style in which the interval should be returned. Can contain `years
 
 #### Usage
 
-To calculate the difference between the current date and the bot's birthdate, make sure to include a birthdate property in the `.properties` file, in a format that the interval tag can parse (see above).
+To calculate the difference between the current date and the bot's birthdate, make sure to include a birthdate property in the `.properties` file, in a format that the interval tag can parse eg ["birthdate", "January 2 1970"].
 
     <category>
     <pattern>AGE IN YEARS</pattern>
@@ -427,6 +465,21 @@ To calculate the difference between the current date and the bot's birthdate, ma
     </category>
 
 The style element specifies that the interval should be returned in years.
+
+It is important to bear in mind that if the date tag is used without formatting, this will be the date from midnight, eg: 29th February 2020 00:00 rather than 29th February 2020 18:47:23 which will be important if dealing with hours, minutes and seconds. Note also the %z parameter. This is used to specify the timezone difference from UTC either +hhmm or -hhmm, which should be used in the date part of the interval tag to customise it for your timezone. Do not use %Z (uppercase) in the date format. For the "to" and "from" attributes of the interval tag, Pandorabots only supports the 5 date standards as listed above, none of which use the timezone name (%Z), just the time offset (%z).
+   
+Here is an example where we use formatting in the date tag to calculate the number of hours since midnight.
+   
+    <category>
+    <pattern>HOW MANY HOURS SINCE MIDNIGHT</pattern>
+    <template>
+      <interval>
+        <style>hours</style>
+        <from><date/></from>
+        <to><date format="%Y-%m-%dT%T%z"/></to>
+      </interval> hours.
+    </template>
+    </category>
 
 ### &lt;learn&gt;
 {: #learn}

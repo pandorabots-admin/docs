@@ -162,6 +162,8 @@ The Free Tier provides unlimited Sandbox or _Staging_ access to the platform, me
 
 The Premium Tier includes all the features of the Free Tier plus 10+ bots, email support, access to deployment features of the platform, and more messages per month for production bots. Please review our [Pricing Table](https://home.pandorabots.com/home.html#pricing){:target="_blank"} for more details.
 
+NOTE: for grandfathered usage plan "uUI Plan" no longer available/documented in our Pricing table, the first 1000 messages per month are free. After that, you will be charged $2.50 per 1000 messages up to a hard cap of 100,000 messages per month.
+
 **Why is a credit card required to access certain features?**
 
 The paywall barrier to making your bot publicly available is part of an effort to maintain high quality standards for bots published on the platform. While we'd love to make everything free, there are commercial realities involved in running a bootstrapped business. We hope you enjoy the service and find it valuable enough to consider supporting our efforts.

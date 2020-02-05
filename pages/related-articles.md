@@ -45,7 +45,7 @@ Once an anonymous end-user `client_name` has been provided, your application sho
 
 Your application can save this `client_name` as an anonymous end-user either in a cookie, as a local variable in your application, or other mechanisms developed in your application.
 
-**NOTE OF CAUTION --** When testing your application, not including a `client_name` will result in a new end-user `client_name` being created; make sure your application ONLY excludes this parameter for brand new end-users or else you may end up reaching your maximum limit on anonymous users.
+**NOTE OF CAUTION --** When testing your application, not including a `client_name` will result in a new end-user `client_name` being created; make sure your application ONLY excludes this parameter for brand new end-users or else you may end up reaching your maximum limit on anonymous users. This is a lifetime limit of 10,000 per account. Please contact us if you need more than this.
 
 ### BONUS!
 

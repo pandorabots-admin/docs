@@ -8,8 +8,8 @@ layout: default
 
 # Frequently Asked Questions
 
-#### _Can't find the answer to your question below? Email us at support@pandorabots.com_
-___
+#### _Can't find the answer to your question below? Email us at support@pandorabots.com_  
+___  
 ### AIML
 {: #aiml}
 
@@ -43,8 +43,8 @@ Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot)
 
 **What tags are supported in AIML?**
 
-Please visit the AIML Reference section of the _Pandorabots Documentation_ for a full ist of supported tags.
-___
+Please visit the AIML Reference section of the _Pandorabots Documentation_ for a full ist of supported tags.  
+___  
 ### API
 {: #api}
 
@@ -66,8 +66,8 @@ You may find your app ID under the Pandorabots API Channel on the Deploy page.
 
 **I'm not a developer - can I use the API?**
 
-The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for any motivated self-starter eager to study the documentation. But why not try some of the other channels like Chat Widget, Pandorabots Landing Page, Facebook Messenger, etc.!
-___
+The API is designed with developers in mind but user friendly tools like the Pandorabots _Command Line Interface_ are accessible for any motivated self-starter eager to study the documentation. But why not try some of the other channels like Chat Widget, Pandorabots Landing Page, Facebook Messenger, etc.!  
+___  
 ### Bots
 {: #bots}
 
@@ -95,8 +95,8 @@ The Code Editor can also help debug your AIML errors. Some AIML syntax errors ar
 
 **Can I create a bot in any language?**
 
-AIML can be written in almost any natural language. Segmentation is required for some languages - please contact us to learn more about our machine learning based segmenter and other language-specific tools.
-___
+AIML can be written in almost any natural language. Segmentation is required for some languages - please contact us to learn more about our machine learning based segmenter and other language-specific tools.  
+___   
 ### Integrations
 {: #integrations}
 
@@ -110,9 +110,9 @@ Supported Integrations are determined by a variety of factors including, but not
 
 **Are custom Integrations available?**
 
-Yes, Pandorabots can develop and provide custom integrations for Enterprise Tier platform users. All other users are welcome to roll their own and integrate bots hosted on the platform into their application using our RESTful API.
-___
-### Limits
+Yes, Pandorabots can develop and provide custom integrations for Enterprise Tier platform users. All other users are welcome to roll their own and integrate bots hosted on the platform into their application using our RESTful API.  
+___  
+### Limits 
 {: #limits}
 
 **What is the max file size I can upload?**
@@ -147,8 +147,8 @@ The Free Tier allows up to 2 bots; Please review the home page for other plan al
 
 **Where are my chatlogs from last month?**
 
-Chatlog data and monthly statistics are only available dating back the previous 30 days. You may download your logs at any time from the Logs page. If you require longer or custom storage, dashboards, or analytics, please contact us to inquire about the Enterprise Tier.
-___
+Chatlog data and monthly statistics are only available dating back the previous 30 days. You may download your logs at any time from the Logs page. If you require longer or custom storage, dashboards, or analytics, please contact us to inquire about the Enterprise Tier.  
+___  
 ### Pricing
 {: #pricing}
 
@@ -184,8 +184,8 @@ Please have your organization or department head email us with any relevant deta
 
 **How can I update my credit card information?**
 
-Visit the Account Page to update (or delete) your credit card and other personal information on file.
-___
+Visit the Account Page to update (or delete) your credit card and other personal information on file.  
+___  
 
 ### Privacy, Security & Legal
 {: #privacy}
@@ -206,9 +206,9 @@ Yes, all the code you develop using our platform is owned by you or your organiz
 
 Bots that violate our Terms of Service can be deleted any time at Pandorabots' discretion. If you believe your bot or account were deleted for some other reason, please contact us at support@pandorabots.com.
 
-As a general policy, we recommend routinely backing up your bot files. You may download a zip file any time from the Files tab in the Editor.
+As a general policy, we recommend routinely backing up your bot files. You may download a zip file any time from the Files tab in the Editor.  
 
-___
+___  
 ### User Interface
 {: #interface}
 

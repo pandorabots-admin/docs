@@ -91,6 +91,8 @@ However, you cannot license and download an on premise version of the Pandorabot
 
 There is a green (or yellow) indicator light next to your bot, meaning that it is currently _compiled_, i.e., working. If your bot becomes uncompiled (meaning something is broken!), a red indicator light will appear, along with the menu item “Compile.” Clicking on “Compile” will display compilation errors (often caused by malformed AIML such as missing tags or syntax errors). Fixing the errors and saving (or clicking on “Compile”) will re-compile your bot.
 
+The Code Editor can also help debug your AIML errors. Some AIML syntax errors are flagged in the editor with a red [x] with error description if you hover your mouse over the error icon.
+
 **Can I create a bot in any language?**
 
 AIML can be written in almost any natural language. Segmentation is required for some languages - please contact us to learn more about our machine learning based segmenter and other language-specific tools.

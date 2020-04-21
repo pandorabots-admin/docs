@@ -109,11 +109,9 @@ The **Deploy Page**, accessible via the _Deploy_ link under each individual bot 
 
 Pandorabots also provides a RESTful API, meaning developer users can integrate their chatbot into any application. Please refer to the API REFERENCE section for a list of [API Endpoints](/docs/api-endpoints/), [SDKs](/docs/sdks/), and more. You may locate your _Application ID_ \(_"App ID"_\), which is the same as your username, your _User Key_, and your _Botkey_ by clicking on the "API Keys" button next to the "Custom Application" integration.
 
-_Note: A number of features on the Deployment Page require entry of a valid credit card to access. Your card will only be billed for usage that isn't covered by the [Free Tier](/faq.md#pricing), which provides for unlimited Sandbox usage and up to 1,000 interactions / month._
-
 #### The Internal Bot Directory
 
-The Deploy Page provides an option to publish your bot to **The Internal Bot Directory**, which will make your bot available to chat with other platform users. In the Directory, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs from other platform users to leverage for improving your bot prior to making it public, and to pay back the favor by chatting with their bots as well.
+The Deploy Page provides an option to publish your bot to **The Internal Bot Directory**, which will make your bot available to chat with other platform users. This is the only channel available to Sandbox users (Free tier). In the Directory, accessible via the left nav, you can also chat with other bots whose botmasters have chosen to make their works-in-progress visible. This is a great way to collect chatlogs from other platform users to leverage for improving your bot prior to making it public, and to pay back the favor by chatting with their bots as well.
 
 ---
 

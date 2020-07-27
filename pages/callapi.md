@@ -23,6 +23,22 @@ Call API has three primary purposes: to get dynamic data from an external source
 
 # Definitions
 
+### &lt;callapi /&gt;
+{: #callapi}
+
+This is the wrapping tag for the Call API function. Everything happening with the API call will be within the opening and closing tag. You will need to set either a `var` or a predicate around the `callapi` tag to be able to process the response.
+
+#### Attributes
+
+`response_code_var`
+This will be the http response code from the external service.
+
+#### Usage
+
+    <callapi response_code_var="response_code">
+        <url>http://api.coindesk.com/v1/bpi/currentprice.json</url>
+    </callapi>
+
 
 ## Notes
 

@@ -76,22 +76,13 @@ A header pair to be used in the HTTP request. Multiple header attributes can be 
 The name attribute for the header is specified by the API end point as a header parameter name. The header tag wraps around the value of the header parameter
 
 #### Usage
-```
-  <callapi url="https://api.github.com/...">                                
-        <header name="Authorization">token <secret name="github_token" />
-        </header>
-        <header name="User-Agent">freds_github_name</header>
-  </callapi>
-  
-  OR
-
+~~~
   <callapi>
         <url>https://api.github.com/...</url>                           
         <header><name>Authorization></name>token <secret name="github_token" /></header>
         <header><name>User-Agent</name>freds_github_name</header>
   </callapi>  
-  
-```
+~~~
 
 ### &lt;query /&gt;
 {: #query}
@@ -121,14 +112,29 @@ The name attribute for the query is the key for the query value. For example, if
 
 Number of seconds that the Call API request should wait before specifying a timeout error. This is optional, with the default value being 10 seconds.
 
-### &lt; 
+---
 
 ## Additional Features
 
 Additional AIML tags supporting the Call API feature
 
 ### &lt;secret /&gt; 
-This tag retrieves secret credentials needed when calling an API endpoint. While you can hardcode credentials into your AIML files, or include them as bot properties, we do not receommend that. Using the `secret` tag hides your credentials that are stored encrypted on our backend system. This is handled the same as `<bot>` to retrieve values. 
+This tag retrieves secret credentials needed when calling an API endpoint. While you can hardcode credentials into your AIML files, or include them as bot properties, we do not receommend that. Using the `<secret>` tag hides your credentials that are stored encrypted on our backend system. This is handled the same as `<bot>` to retrieve values. 
+
+#### Attributes
+`name`
+The name attribute for secret is the key in the secrets key/value pair.
+
+#### Usage
+~~~
+<callapi response_code_var="tempcode">
+    <url>http://api.openweathermap.org/data/2.5/weather<url/>
+    <query name="q"><star /></query>
+    <query name="APPID"><secret name="wkey" /></query>  
+    <query name="mode">xml</query>
+    <query name="units">imperial</query>
+</callapi>
+~~~
 
 ### &lt;xpath /&gt; and &lt;jsonpath /&gt;
 {: #xpath}

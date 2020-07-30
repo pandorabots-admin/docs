@@ -139,7 +139,7 @@ The name attribute for secret is the key in the secrets key/value pair.
 ### &lt;xpath /&gt; and &lt;jsonpath /&gt;
 {: #xpath}
 
-Both XML and JSON are supported, and the responses are parsed using either xpath or jsonpath tags. Please review Xpath and JsonPath standards for the syntax for navigating nodes/ in an XML or Json response. This is useful to pick out specific information from an Call API result that you want to store as a variable or predicate for use in a bot response.
+Both XML and JSON are supported, and the responses are parsed using either xpath or jsonpath tags. Please review [Xpath](https://www.w3schools.com/xml/xpath_intro.asp){:target="_blank"} and [JsonPath](https://www.npmjs.com/package/jsonpath){:target="_blank"} for details on the syntax for navigating nodes in an XML or Json response. This is useful to pick out specific information from an Call API result that you want to store as a variable or predicate for use in a bot response.
 
 #### Attributes
 `path`

@@ -15,7 +15,9 @@ layout: default
 
 Live Training is a tool that allows you to pause bot responses to interact with the end user directly. The human written responses are then saved to your bot in the pand_livetraining.aiml file.
 
-The feature is intended for conversation designers, or the person responsible for day-to-day bot updates. The person writing the human responses should do so in the voice of the chatbot.
+The feature is intended for conversation designers, or the person responsible for day-to-day bot updates. The person writing the human responses should do so in the voice of the chatbot. 
+
+NOTE: This tool is currently only supported for our own channels, Chat Widget and Landing Page.
 
 ## Why would you use Live Training
 

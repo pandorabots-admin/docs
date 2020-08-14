@@ -10,21 +10,27 @@ If you are building a bot you'd like to deploy on a social messaging channel usi
 
 #### Button ####
 
-All social messaging channels require that you have accompanying text before your buttons, and only supports a maximum of 3 buttons. Here is an example AIML of an accompany text (bolded) with max number of buttons:
-
+Here is an example AIML with multiple postback buttons:
 ~~~
+:
 <template>
 What cheese is your favorite?
 <button><text>Cheddar</text><postback>I LIKE CHEDDAR CHEESE</postback></button>
 <button><text>Swiss</text><postback>I LIKE SWISS CHEESE</postback></button>
 <button><text>Something else</text><postback>GO TO NEXT THING</postback></button>
 </template>
+:
+~~~
+Channel details:
+* Social messaging channels require that you have accompanying text before your buttons. If you create a category without accompnaying text for your buttons, our system will provide a default text of "Pick:" so the social messaging channels do not reject this message. We recommend you always include accompany text as the example above "What cheese is your favorite?"
+* Facebook Messenger only supports 3 buttons and a maximum of 20 characters in the text before cropping.
+* Telegram supports more than 10 buttons but button text is cropped to display buttons horizontally.
+* Twilio does not render tappable buttons. Postback buttons would not work, but URL buttons will display the button text and URL link, which is tappable
+* Twitter DM supports more than 10 buttons but displays them under their input field box rather than in the chat feed.
+* PB Chat Widget can render the buttons without accompanying text and can support more than 10 buttons. 
 
 ~~~
-
-PB Chat Widget can render the buttons without accompanying text and can support more than 3 buttons. For example, here is a valid bot response in AIML on the chat widget that would not work on other social messaging channels like Messenger, etc.:
-
-~~~
+:
 <template>
 <button><text>I like Brie</text><postback>I LIKE BRIE CHEESE</postback></button>
 <button><text>I like Cheddar</text><postback>I LIKE CHEDDAR CHEESE</postback></button>
@@ -33,32 +39,40 @@ PB Chat Widget can render the buttons without accompanying text and can support 
 <button><text>Other</text><postback>GO TO NEXT THING</postback></button>
 <button><text>I don't like cheese</text><postback>GO TO NEXT THING</postback></button>
 </template>
+:
 ~~~
 
-Twilio, Viber, and WeChat do not render tappable buttons but displays the action types as text, so postbacks do not work if you are using a different value than the text.
 
 #### Reply ####
 
-* Same limitations as Buttons, except social messaging channels support a maximum of 11 replies, 
-* PB chat widget can support more than 11 replies.
+* Social messaging channels require that you have accompanying text before your replies similar to buttons. 
+* Facebook Messenger supports up to 11 replies (called quick replies) and do not persist once you select a reply.
+* Telegram treats reply and buttons that same.
+* Twilio does not render tappable replies.
+* Twitter DM supports up to 20 predefined options presents as quick replies, rendered under the text input field.
+* PB chat widget can support more than 11 replies and do not persist once you select a reply.
 * Social messaging channels cannot mix Replies with other types of elements (without a `<split/>` between them)
-* Unlike Buttons, Viber does support tappable suggested replies.
 
 #### Carousel ####
 
-* Social messaging channels support a maximum of 10 cards in a carousel except Viber which has a 6 item limit.
-* PB Chat Widget can support more than 10 cards in a carousel
-* Telegram does not support a horizontal carousel with swipeable cards
-* Twilio, WeChat supports only vertical display text of the carousel titles and does not support tappable buttons.
+* Facebook Messenger supports a maximum of 10 cards in a carousel 
+* Telegram and Twitter DM do not support a horizontal carousel with swipeable cards, carousels do not work as expected and are not recommended
+* Twilio does not support carousel or card rich media element
+* PB Chat Widget can support more than 10 cards in a carousel, using horizontal swipeable cards
+
+#### Image ###
+
+* Twitter does not display animation for GIFs
+* Twilio does not support embeddable images, but will display image URL as a link
 
 #### Video ###
 
-* All social messaging channels do not support embeddable videos, but will display video URL as a downloadable link
-* PB chat widget supports embeddable videos
+* Twilio and Twitter DM does not support embeddable videos, but will display video URL as a link
 
 #### Delay ####
 
-* Some, but not all, social messaging channels provide a visual indicator of a delay, such as "typing…"
+* Facebook Messenger, Telegram, and Twitter DM provide a visual indicator of a delay, such as "typing…" or animated dots
+* Twilio supports delay but no visual indicator
 * PB chat widget displays a visual indicator (animated dots) during the time delay
 
 </div>

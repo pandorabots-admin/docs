@@ -62,12 +62,11 @@ Channel details:
 
 #### Image ###
 
-* Twitter does not display animation for GIFs
 * Twilio does not support embeddable images, but will display image URL as a link
 
 #### Video ###
 
-* Twilio and Twitter DM does not support embeddable videos, but will display video URL as a link
+* Twilio does not support embeddable videos, but will display video URL as a link
 
 #### Delay ####
 

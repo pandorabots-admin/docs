@@ -3,7 +3,7 @@
 <div markdown="1" class="pb-docs__content">
 
 # Modules
-#### Modules are now deprecated and no longer supported.
+# >>>>Modules are now deprecated and no longer supported<<<<
 
 ___
 

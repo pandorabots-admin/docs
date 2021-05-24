@@ -39,7 +39,7 @@ You can still access the AIML 1.0 platform [here](https://www.pandorabots.com/bo
 
 **What AIML Libraries are available?**
 
-Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot) in addition to premium libraries and modules (like the Mitsuku Module) available for an additional montly fee. Contact us to learn more.
+Pandorabots offers free, open source libraries (like Rosie, ALICE, and Base Bot) in addition to premium libraries and modules available for an additional montly fee. Contact us to learn more.
 
 **What tags are supported in AIML?**
 

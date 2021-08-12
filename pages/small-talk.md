@@ -1,5 +1,5 @@
 ---
-permalink: /rosie/
+permalink: /small-talk/
 layout: default
 ---
 

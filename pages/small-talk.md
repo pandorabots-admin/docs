@@ -35,7 +35,10 @@ in which these values are returned. For example, I might edit the above category
 
     <category>
       <pattern>JOB</pattern> 
-      <template>By day, I am a <bot name="job"/>. At night, I crawl the internet looking for pictures of cats wearing funny hats.</template> 
+      <template>
+        By day, I am a <bot name="job"/>. At night, I crawl the internet looking for 
+        pictures of cats wearing funny hats.
+      </template> 
     </category>
 
 ## Client Profile (client_profile.aiml)  
@@ -69,9 +72,11 @@ using the <that> tag. The &lt;that&gt; tag is used to attach a category to the p
 in other words, a category with a &lt;that&gt; tag can only be matched if the the previous response matches 
 the contents. For example:
 
-    <category><pattern>YES</pattern> 
-    <that>IS IT A NICE PLACE</that> 
-    <template>What do you like best about it?</template> </category>
+    <category>
+      <pattern>YES</pattern> 
+      <that>IS IT A NICE PLACE</that> 
+      <template>What do you like best about it?</template>
+    </category>
 
 Out of context, the input "yes" could be referring to anything. This category’s &lt;that&gt; tag, however, places the yes 
 in the context of the bot's previous response (IT IS A NICE PLACE).  

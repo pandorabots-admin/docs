@@ -3,7 +3,6 @@ permalink: /building-bots/small-talk/
 layout: default
 ---
 
-{% include sidebar.md %}
 <div markdown="1" class="pb-docs__content">
 
 # Customizable Small Talk Content (aka Rosie)

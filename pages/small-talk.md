@@ -33,10 +33,10 @@ property in the properties file.
 Most of the fun in bot development is not only picking out custom property values for your bot, but also customizing the templates 
 in which these values are returned. For example, I might edit the above category to add a little more flair to my bot:
 
-   <category>
-     <pattern>JOB</pattern> 
-     <template>By day, I am a <bot name="job"/>. At night, I crawl the internet looking for pictures of cats wearing funny hats.</template> 
-   </category>
+    <category>
+      <pattern>JOB</pattern> 
+      <template>By day, I am a <bot name="job"/>. At night, I crawl the internet looking for pictures of cats wearing funny hats.</template> 
+    </category>
 
 ## Client Profile (client_profile.aiml)  
 

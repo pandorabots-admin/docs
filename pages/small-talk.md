@@ -1,5 +1,5 @@
 ---
-permalink: /small-talk/
+permalink: /building-bots/small-talk/
 layout: default
 ---
 

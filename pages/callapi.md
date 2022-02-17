@@ -99,7 +99,7 @@ The name attribute for the query is the key for the query value. For example, if
 #### Usage
 ~~~
 <callapi response_code_var="tempcode">
-    <url>http://api.openweathermap.org/data/2.5/weather<url/>
+    <url>http://api.openweathermap.org/data/2.5/weather</url>
     <query name="q"><star /></query>
     <query name="APPID"><secret name="wkey" /></query>  
     <query name="mode">xml</query>

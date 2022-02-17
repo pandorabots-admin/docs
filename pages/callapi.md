@@ -128,7 +128,7 @@ The name attribute for secret is the key in the secrets key/value pair.
 #### Usage
 ~~~
 <callapi response_code_var="tempcode">
-    <url>http://api.openweathermap.org/data/2.5/weather<url/>
+    <url>http://api.openweathermap.org/data/2.5/weather</url>
     <query name="q"><star /></query>
     <query name="APPID"><secret name="wkey" /></query>  
     <query name="mode">xml</query>

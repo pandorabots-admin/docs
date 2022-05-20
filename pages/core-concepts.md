@@ -89,7 +89,7 @@ Let's say you don't want your bot to return "Your name is unknown." in the case 
 <pattern>WHAT IS MY NAME</pattern>
 <template>
    <think><set var="checkname"><get name="name" /></set></think>
-   <condition name="checkname">
+   <condition var="checkname">
      <li value="unknown">You haven't told me your name yet!</li>
      <li>Your name is <get var="checkname" />.</li>
    </condition>

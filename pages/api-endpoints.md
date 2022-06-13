@@ -335,7 +335,9 @@ curl -v  -X GET 'https://api.pandorabots.com/bot/APP_ID/BOTNAME/verify?user_key=
 
 #### Implementation Notes
 
-Start or continue a conversation with the bot using the Talk API with your public botkey. Pandorabots will return a new session ID if not included in the call. Use the session ID returned to group interactions together to view in your bot's Logs on the Dashboard. If you do not provide a client name, Pandorabots will assume client is your application and all predicates and variable information will be associated with your application. Predicates assigned to clientname only persist during an active conversation and are flushed after a certain idle period.
+Start or continue a conversation with the bot using the Talk API with your public botkey. Pandorabots will return a new session ID if not included in the call. Use the session ID returned to group interactions together to view in your bot's Logs on the Dashboard. We recommend using the first session ID returned in subsequent API calls during an active conversation by your end-user. (NOTE: our system considers 30 minutes of idleness as the end of an active conversation)
+
+If you do not provide a client name, Pandorabots will assume client is your application and all predicates and variable information will be associated with your application. Predicates assigned to clientname only persist during an active conversation and are flushed after a certain idle period.
 
 NOTE: If you send multiple sentences to your bot in a single input, the API response will include multiple bot responses.
 
@@ -375,7 +377,9 @@ curl -v  -X POST 'https://api.pandorabots.com/talk?botkey=BOTKEY&input=INPUT'
 
 #### Implementation Notes
 
-Start a conversation with the bot using the Anonymous Talk API. This method will allow you to request creation of an end-user client\_name that can maintain persistent predicates per end-user talking to your bot. If client\_name is NOT sent in the request, then Pandorabots will create a end-user client\_name and return it in the response. Similar to the Talk to Bot API, Pandorabots will also return a new session ID if not included in the call. Use the session ID returned to group interactions together to view in your bot's Log on the Dashboard.
+Start a conversation with the bot using the Anonymous Talk API. This method will allow you to request creation of an end-user client\_name that can maintain persistent predicates per end-user talking to your bot. 
+
+If client\_name is NOT sent in the request, then Pandorabots will create a end-user client\_name and return it in the response. Similar to the Talk to Bot API, Pandorabots will also return a new session ID if not included in the call. Use the session ID returned to group interactions together to view in your bot's Log on the Dashboard. We recommend using the first session ID returned in subsequent API calls during an active conversation by your end-user. (NOTE: our system considers 30 minutes of idleness as the end of an active conversation)
 
 In addition to bot response and session ID, the HTTP response will include a new end-user client\_name in the following format:  
 aiaas-XXX-user-nnnn, where XXX is your app\_ID and nnnn is numeric starting with 0000 and incrementing after each request.

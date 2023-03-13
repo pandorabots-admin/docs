@@ -343,7 +343,7 @@ NOTE: If you send multiple sentences to your bot in a single input, the API resp
 
 See Anonymous Talk API for details on how you can maintain persistent predicates for your end-users.
 
-Malformed requests such as exceeding size of input or invalid clientname returns 400 error code. Error code 412 is returned if the bot is not compiled or does not exist. Error code 429 is returned if your application has reached maximum plan API call limit.
+Malformed requests such as exceeding size of input or invalid clientname returns 400 error code. Error code 412 is returned if the bot is not compiled or does not exist. Error code 429 is returned if your application has reached maximum plan API call limit. If you receive intermittent 404 error messages, please contact support@pandorabots.com, as this could be load balancing issue we need to resolve.
 
 The response array will contain one element \(response\) for each sentence you input to the bot. You can configure which characters delimit a new sentence in the input by modifying the sentence-splitters property in your bot's property file.
 
